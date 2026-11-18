@@ -675,22 +675,25 @@
     }
   }
 
+  /* 텐핑은 광고 요청이 실패해도 iframe 을 기본 150px 로 남겨 빈 흰 박스가 됩니다.
+     그래서 iframeResizer 가 잡아 준 높이가 기본값(150px)보다 커야 '찼다'고 봅니다.
+     (아주 작은 광고는 애드픽 카드로 대체되어도 손에 해가 없습니다) */
+  var TP_MIN_H = 160;
+
   function tenpingHeight() {
     var box = $("#adSlotBox");
     var tp = box && box.querySelector("tenping");
     if (!tp) return 0;
     var ifr = tp.querySelector("iframe");
-    /* 텐핑은 광고 요청이 실패해도 iframe 을 기본 150px 로 남겨 빈 흰 박스가 됩니다.
-       그래서 iframeResizer 가 실제 내용 높이를 잡아 준(style.height) 경우만 '찼다'고 봅니다. */
     if (!ifr || !ifr.style.height) return 0;
     var h = parseFloat(ifr.style.height) || 0;
-    return h > 20 ? h : 0;
+    return h >= TP_MIN_H ? h : 0;
   }
 
   function adCheck() {
     var slot = $("#adSlot");
     if (!slot || slot.hidden) return;
-    if (tenpingHeight() > 20) { adSetMode("tenping"); return; }
+    if (tenpingHeight() > 0) { adSetMode("tenping"); return; }
     /* 텐핑이 안 뜨면 빨리 애드픽 카드로 바꿔 빈 흰 칸이 남지 않게 합니다 */
     if (adState.offer && Date.now() - adState.t0 >= 1400) adSetMode("adpick");
   }
@@ -705,7 +708,7 @@
       // 애드픽 자료까지 없으면: 8초까지 기다렸다 비어 있으면 자리째 숨김
       var tries = 0;
       (function wait() {
-        if (tenpingHeight() > 20) { adSetMode("tenping"); return; }
+        if (tenpingHeight() > 0) { adSetMode("tenping"); return; }
         if (++tries >= 16) { slot.classList.add("is-empty"); return; }
         setTimeout(wait, 500);
       })();
@@ -731,9 +734,12 @@
     }
   }
 
-  /* ───────── 접속자 카운터 (가벼운 무료 API, 실패하면 조용히 무시) ─────────
-     일일 키: naongnabi-oneul-deuktem-YYYY-MM-DD / 누적 키: naongnabi-oneul-deuktem-total
-     한 세션에서는 한 번만 올립니다(sessionStorage). */
+  /* ───────── 접속자 카운터 (hits.sh 무료 카운터, 실패하면 조용히 무시) ─────────
+     · 셀 때: 이미지 한 장을 불러오는 방식이라 CORS·광고차단 영향이 적어요.
+       일일 https://hits.sh/naongnabi.github.io/daily/YYYY-MM-DD.svg
+       누적 https://hits.sh/naongnabi.github.io/total.svg
+     · 읽을 때(증가 없이): curl -s https://hits.sh/api/urns/naongnabi.github.io/daily/YYYY-MM-DD
+     · 한 세션(새로고침 포함)에서는 한 번만 올립니다(sessionStorage). */
   (function counter() {
     try {
       if (!/^https?:$/.test(location.protocol)) return;
@@ -741,13 +747,21 @@
       if (sessionStorage.getItem(KEY)) return;
       sessionStorage.setItem(KEY, "1");
       var d = SEOUL_DAY.format(new Date());   // YYYY-MM-DD (한국 시간)
-      var base = "https://abacus.jasoncameron.dev/hit/naongnabi/";
-      var ping = function (name) {
-        try { fetch(base + name, { mode: "cors", cache: "no-store", keepalive: true }).catch(function () {}); } catch (e) {}
+      var BASE = "https://hits.sh/naongnabi.github.io/";
+      var beacon = function (path) {
+        try {
+          var img = new Image(1, 1);
+          img.alt = "";
+          img.style.cssText = "position:absolute;left:-9999px;top:0;width:1px;height:1px;opacity:0;pointer-events:none";
+          img.referrerPolicy = "no-referrer";
+          img.onload = img.onerror = function () { if (img.parentNode) img.parentNode.removeChild(img); };
+          img.src = BASE + path + ".svg?style=flat";
+          (document.body || document.documentElement).appendChild(img);
+        } catch (e) {}
       };
-      ping("oneul-deuktem-" + d);
-      ping("oneul-deuktem-total");
-    } catch (e) { /* 카운터 실패는 페이지에 영향 없음 */ }
+      beacon("daily/" + d);
+      beacon("total");
+    } catch (e) { /* 카운터 실패는 페이지에 동작 영향 없음 */ }
   })();
 
   /* PWA 서비스 워커 (http/https 에서만) */
