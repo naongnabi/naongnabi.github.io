@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-19T08:20:00+09:00",
+  "updatedAt": "2026-11-19T08:30:00+09:00",
   "items": [
+    {
+      "id": "deal-haepycall-pan-28",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "주방용품",
+      "title": "해피콜 체인지 다이아몬드 IH 프라이팬 28cm",
+      "highlight": "11,900원",
+      "highlightSub": "정가 39,800원 → 70%",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "28cm 1개",
+        "IH 인덕션 사용 가능",
+        "골드박스 특가"
+      ],
+      "note": "11/19 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-haepycall-pan-28.webp",
+      "url": "https://link.coupang.com/a/iM9TPcOM1s",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "deal-romons-bedding-set",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "침구",
+      "title": "르몽스 먼지없는 알러지케어 차렵이불 세트",
+      "highlight": "52,330원",
+      "highlightSub": "정가 81,100원 → 35%",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "차렵이불 세트",
+        "먼지없는 알러지케어",
+        "골드박스 특가"
+      ],
+      "note": "11/19 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-romons-bedding-set.webp",
+      "url": "https://link.coupang.com/a/iNabtEl5tA",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
     {
       "id": "deal-ali-cat-water-fountain",
       "cat": "deal",
