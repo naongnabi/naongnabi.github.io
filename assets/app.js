@@ -14,6 +14,7 @@
     deal: { label: "오늘의 특가", icon: "🔥" },
     exp: { label: "무료 체험단", icon: "🎁" },
     quiz: { label: "경품 퀴즈", icon: "🎯" },
+    contest: { label: "공모전", icon: "🏆" },
     apptech: { label: "앱테크", icon: "💸" }
   };
 
@@ -107,7 +108,7 @@
   /* ───────── 상품 사진 ─────────
      데이터의 image 값(assets/thumbs/… 또는 상품 이미지 주소)이 있으면 사진을 넣고,
      없거나 불러오지 못하면 같은 자리에 카테고리 아이콘만 남겨 깨진 이미지가 보이지 않게 합니다. */
-  var CAT_ICO = { deal: "🛒", exp: "🎁", quiz: "🎯", apptech: "💸" };
+  var CAT_ICO = { deal: "🛒", exp: "🎁", quiz: "🎯", contest: "🏆", apptech: "💸" };
 
   function thumbHTML(it, cls, lazy) {
     if (!it.image) return "";
@@ -217,7 +218,7 @@
         html += sectionHead("", label, items.length) + items.map(cardHTML).join("");
       }
     } else if (state.tab === "all") {
-      ["deal", "exp", "quiz", "apptech"].forEach(function (cat) {
+      ["deal", "exp", "quiz", "contest", "apptech"].forEach(function (cat) {
         var sub = items.filter(function (it) { return it.cat === cat; });
         if (!sub.length) return;
         html += sectionHead(CAT[cat].icon, CAT[cat].label, sub.length) + sub.map(cardHTML).join("");
@@ -267,6 +268,7 @@
     $("#n-deal").textContent = all.filter(function (i) { return i.cat === "deal"; }).length;
     $("#n-exp").textContent = all.filter(function (i) { return i.cat === "exp"; }).length;
     $("#n-quiz").textContent = all.filter(function (i) { return i.cat === "quiz"; }).length;
+    $("#n-contest").textContent = all.filter(function (i) { return i.cat === "contest"; }).length;
     $("#n-apptech").textContent = all.filter(function (i) { return i.cat === "apptech"; }).length;
     $("#todayTotal").textContent = all.length;
 
@@ -497,6 +499,14 @@
 
   render();
   syncTabsFade();
+
+  /* 탭이 6개라 390px 폭을 넘어갑니다 — 주소로 바로 들어온 탭(?tab=contest 등)이 가려지지 않게 가운데로 */
+  if (state.tab !== "all") {
+    var initTab = $('.tab[data-tab="' + state.tab + '"]');
+    if (initTab && initTab.scrollIntoView) {
+      requestAnimationFrame(function () { initTab.scrollIntoView({ block: "nearest", inline: "center" }); });
+    }
+  }
 
   /* PWA 서비스 워커 (http/https 에서만) */
   if ("serviceWorker" in navigator && (location.protocol === "http:" || location.protocol === "https:")) {

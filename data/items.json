@@ -1,12 +1,12 @@
 {
   "brand": {
     "name": "오늘도득템",
-    "tagline": "특가·체험단·퀴즈·앱테크",
+    "tagline": "특가·체험단·퀴즈·공모전·앱테크",
     "blog": "https://blog.naver.com/allmine1981",
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-18T13:10:00+09:00",
+  "updatedAt": "2026-11-18T14:35:00+09:00",
   "items": [
     {
       "id": "deal-sandleneun-egg-60",
@@ -827,6 +827,138 @@
       "url": "https://nabo.go.kr/ko/fiscalQuiz/quiz.do?key=2507040020",
       "cta": "퀴즈 풀러 가기",
       "verifiedAt": "2026-11-15"
+    },
+    {
+      "id": "contest-krace-2026",
+      "cat": "contest",
+      "hot": null,
+      "platform": "국민체육진흥공단",
+      "pkey": "gov",
+      "tag": "슬로건·숏폼",
+      "title": "2026 대국민 경륜·경정 건전화 공모전",
+      "highlight": "총 930만원",
+      "highlightSub": "슬로건 20자만 내도 OK · 참가상 30명",
+      "deadline": "2026-12-06",
+      "deadlineText": null,
+      "meta": [
+        "숏폼·포스터·슬로건",
+        "분야별 1인 2점",
+        "발표 12/18"
+      ],
+      "note": "11/18 확인 · 띄어쓰기 빼고 20자 안쪽 슬로건만 내도 되고, 참가상(추첨 30명 네이버페이 3만원)만 노려도 본전이에요. AI로 만든 숏폼도 됩니다.",
+      "url": "https://kracecontest.co.kr/",
+      "cta": "공모전 홈페이지에서 보기",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "contest-sff-character",
+      "cat": "contest",
+      "hot": null,
+      "platform": "서울미래인재재단",
+      "pkey": "gov",
+      "tag": "캐릭터·네이밍",
+      "title": "서울의 미래, 새로운 얼굴 — 서울미래인재재단 대표 캐릭터 공모전",
+      "highlight": "총 440만원 상품권",
+      "highlightSub": "대상 200만원 · 지역·나이 제한 없음",
+      "deadline": "2026-11-30",
+      "deadlineText": null,
+      "meta": [
+        "캐릭터+이름+스토리",
+        "1인(팀) 1작품",
+        "발표 12/10"
+      ],
+      "note": "11/18 확인 · 그림 1장에 이름과 짧은 스토리만 붙이면 접수 끝. 4인 이하 팀도 되니 가족·친구랑 같이 해도 돼요.",
+      "url": "https://sffcharacter.kr/once.html",
+      "cta": "접수 페이지 열기",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "contest-seoul-shortform",
+      "cat": "contest",
+      "hot": null,
+      "platform": "서울특별시",
+      "pkey": "gov",
+      "tag": "숏폼 영상",
+      "title": "2026 내가 소개하는 서울 숏폼 공모전",
+      "highlight": "총 1,000만원",
+      "highlightSub": "대상 300만원 · 60초 영상",
+      "deadline": "2026-11-27",
+      "deadlineText": null,
+      "meta": [
+        "국내 거주 외국인도 가능",
+        "가로·세로 모두 OK",
+        "발표 12/14"
+      ],
+      "note": "11/18 확인 · 27일 17시 마감이라 주말에 폰으로 60초만 찍어 두면 됩니다. AI로 만든 영상도 되고 여러 편 내도 돼요.",
+      "url": "https://mediahub.seoul.go.kr/gongmo/2000791",
+      "cta": "서울시 공모전 안내 보기",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "contest-nia-onewindow-idea",
+      "cat": "contest",
+      "hot": null,
+      "platform": "과기정통부·NIA",
+      "pkey": "gov",
+      "tag": "아이디어",
+      "title": "제1회 국가데이터통합플랫폼(원-윈도우) 활용 아이디어 공모전",
+      "highlight": "총 360만원",
+      "highlightSub": "A4 5장 기획서 · 개인 참가",
+      "deadline": "2026-11-30",
+      "deadlineText": null,
+      "meta": [
+        "데이터 활용·플랫폼 기획 2부문",
+        "이메일 접수",
+        "발표 12/10 전후"
+      ],
+      "note": "11/18 확인 · 데이터 부문은 원-윈도우 데이터 1종만 인용하면 되고, AI를 썼으면 신청서에 표시만 하면 감점 없어요. 30일 18시 마감!",
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99835&bcIdx=30205",
+      "cta": "공고문 내려받기",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "contest-chungnam-traffic",
+      "cat": "contest",
+      "hot": null,
+      "platform": "충남자치경찰위",
+      "pkey": "gov",
+      "tag": "포스터·숏폼",
+      "title": "2026 충청남도 자치경찰위원회 교통안전 콘텐츠 공모전",
+      "highlight": "총 600만원",
+      "highlightSub": "숏폼 대상 200만원 · 전 국민",
+      "deadline": "2026-12-11",
+      "deadlineText": null,
+      "meta": [
+        "포스터·숏폼 각 2점",
+        "60초 이내 · AI 가능",
+        "시상 8점"
+      ],
+      "note": "11/18 확인 · 포스터에 안전 슬로건 한 줄만 넣어도 출품돼요. 두 분야 다 내도 수상은 높은 순위 1작품만이라 부담 없습니다.",
+      "url": "https://www.chungnam.go.kr/contest/competition/codeManage/view.do?menuNo=2600003&pssrpDspyCd=10016",
+      "cta": "충남 공모전 안내 보기",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "contest-kiturami-ai-shortform",
+      "cat": "contest",
+      "hot": null,
+      "platform": "귀뚜라미",
+      "pkey": "etc",
+      "tag": "AI 숏폼",
+      "title": "2026 귀뚜라미 AI 숏폼 영상 챌린지",
+      "highlight": "최우수 100만원",
+      "highlightSub": "15초 AI 영상 · 성인 누구나",
+      "deadline": "2026-11-30",
+      "deadlineText": null,
+      "meta": [
+        "우수상 3명 각 50만원",
+        "참가상 20명 5만원권",
+        "발표 12/4"
+      ],
+      "note": "11/18 확인 · AI로 15초 영상 만들어 인스타·유튜브에 해시태그 달아 올리고, 구글폼에 링크만 제출하면 끝. 참가상 20명이라 해볼 만해요.",
+      "url": "https://linkareer.com/activity/363760",
+      "cta": "공모 요강 보기",
+      "verifiedAt": "2026-11-18"
     },
     {
       "id": "apptech-naverpay-pet",
