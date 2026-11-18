@@ -6,7 +6,7 @@
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-18T18:15:00+09:00",
+  "updatedAt": "2026-11-18T21:55:00+09:00",
   "items": [
     {
       "id": "deal-norang-gamjatang-3",
@@ -1885,6 +1885,55 @@
       "url": "https://www.bitbunny.io/",
       "cta": "비트버니 보기",
       "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "exp-rnote-handwarmer",
+      "cat": "exp",
+      "hot": null,
+      "platform": "리뷰노트",
+      "pkey": "rnote",
+      "tag": "가전·디지털",
+      "title": "[그립뱅크] 듀얼 충전식 손난로 (39,800원)",
+      "highlight": "0원 배송형",
+      "highlightSub": "재택 배송형 · 모집 10명",
+      "deadline": "2026-11-28",
+      "deadlineText": null,
+      "meta": [
+        "리뷰노트 배송형",
+        "블로그 리뷰",
+        "발표 11/29"
+      ],
+      "note": "11/18 확인 · 사진 15장과 짧은 영상(또는 GIF)이 미션이에요. 얼굴 노출 없이 집에서 쓴 후기를 올리면 됩니다.",
+      "url": "https://www.reviewnote.co.kr/campaigns/1545167",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "quiz-nps-ox",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "편의점",
+      "title": "국민연금을 맞혀라! OX 퀴즈 (하반기호)",
+      "highlight": "편의점 기프티콘 15명",
+      "highlightSub": "OX 3문항",
+      "deadline": "2026-12-25",
+      "deadlineText": null,
+      "meta": [
+        "국민연금공단",
+        "발표 12/31 17:00",
+        "네이버폼 응모"
+      ],
+      "note": "11/18 확인 · 세 문항 모두 웹진 기사 내용 그대로라 정답이에요. 제출하면 바로 응모 완료됩니다.",
+      "url": "https://www.npswebzine.kr/html/vol206/event-03.php",
+      "cta": "퀴즈 풀러 가기",
+      "verifiedAt": "2026-11-18",
+      "answer": [
+        "1번 O",
+        "2번 O",
+        "3번 O"
+      ]
     }
   ]
 }
