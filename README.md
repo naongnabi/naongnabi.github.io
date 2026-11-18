@@ -18,7 +18,7 @@
 | 🔥 지금 제일 핫한 특가 TOP | 가로 스와이프 카드 3장 (`items.json`의 `hot` 값 순서) — **상품 사진 68×68 썸네일** 포함 |
 | 카테고리 탭 | 전체 / 🔥 오늘의 특가 / 🎁 무료 체험단 / 🎯 경품 퀴즈 / 🏆 공모전 / 💸 앱테크 (스크롤 시 상단 고정) |
 | 카드 | 플랫폼 배지 · D-day · **상품 사진 80×80 썸네일** · 제목 · 가격/경품 · 마감·확인일 · 메모 · **보기 / 블로그 / 찜 / 공유** |
-| 광고 | 목록 맨 끝 1곳에 텐핑(소문박스) CPA 배너(`#adSlot`) — 결과 없을 때·광고 재고 없을 때 숨김 |
+| 광고 | 모든 탭에서 **3번째 카드 바로 아래**에 텐핑(소문박스) CPA 배너(`#adSlot`) — 텐핑이 비면 같은 자리에 애드픽(`affid=395343`) 카드. 카드가 많으면 **10번째 카드 뒤(애드픽) · 목록 하단(애드픽)** 에 하나씩 더(광고끼리 최소 5칸 간격). 결과 0건일 때만 숨김 |
 | 푸터 | 홈 화면 추가(PWA 설치) · 채널 링크(**블로그 후기 · 쓰레드 · 유튜브**) · 대가성 안내 재노출 · 마지막 확인일 |
 
 **수익 구조**: 카드의 `보기` 버튼이 3사 제휴 링크(쿠팡 파트너스 · 네이버 쇼핑 커넥트 · 토스 셰어링크)로 바로 이동하고,
@@ -39,7 +39,9 @@ apps/oneul-deuktem/
 │  └─ thumbs/               # 상품 사진 21장 (정사각 168×168 WebP, 장당 2~9KB)
 ├─ data/
 │  ├─ items.json            # ★ 원본 데이터 (여기만 고치면 됨)
-│  └─ items.js              # items.json 에서 자동 생성 (직접 수정 금지)
+│  ├─ items.js              # items.json 에서 자동 생성 (직접 수정 금지)
+│  ├─ adpick.json           # 애드픽 광고 캐시 원본 (tools/fetch_adpick.py 가 갱신)
+│  └─ adpick.js             # adpick.json 에서 자동 생성 (직접 수정 금지)
 ├─ icons/
 │  ├─ icon.svg, icon-192.png, icon-512.png
 │  ├─ icon-maskable-192.png, icon-maskable-512.png
@@ -47,6 +49,7 @@ apps/oneul-deuktem/
 │  └─ make_icons.py         # 아이콘 재생성 스크립트
 ├─ tools/
 │  ├─ validate.py           # 데이터 검증 + items.js 동기화 + 링크 확인
+│  ├─ fetch_adpick.py       # 애드픽 제휴 광고 받아와 data/adpick.json·js 갱신 (텐핑 빈 자리 대체 광고)
 │  ├─ build_preview.py      # 한 파일 미리보기(downloads/oneul-deuktem-preview.html) 생성 — 상품 사진은 data URI 로 인라인
 │  ├─ deploy.sh             # 검증 → 커밋 → GitHub Pages 푸시 (매일 갱신용)
 │  ├─ qa_live.py            # 배포된 실제 URL 점검 + 스크린샷
@@ -125,6 +128,9 @@ bash tools/deploy.sh "커밋 메시지 직접 지정"
 # 1) data/items.json 만 수정
 # 2) 검증 + items.js 재생성
 python3 tools/validate.py --sync
+
+# 애드픽 광고 캐시도 같이 갱신 (텐핑이 비었을 때 그 자리를 채우는 광고)
+python3 tools/fetch_adpick.py
 
 # 링크가 실제로 열리는지까지 확인 (느림, 배포 전 1회 권장)
 python3 tools/validate.py --sync --check-links
