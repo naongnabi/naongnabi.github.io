@@ -147,7 +147,7 @@ python3 tools/validate.py --sync --check-links
 | `id` | 고유 ID. 찜 저장 키로 쓰이므로 한 번 정하면 유지 |
 | `cat` | `deal`(특가) · `exp`(체험단) · `quiz`(경품 퀴즈) · `contest`(공모전) · `apptech`(앱테크) |
 | `hot` | 1,2,3… 이면 상단 "핫 TOP"에 그 순서로 노출. 없으면 `null` |
-| `platform`, `pkey` | 배지 이름 / 색상 키 `toss·coupang·naver·gov·revu·rnote·kakaopay·kb·shinhan·etc` (공모전은 주최가 공공이면 `gov`, 기업이면 `etc`) |
+| `platform`, `pkey` | 배지 이름 / 색상 키 `toss·coupang·naver·ali·gov·revu·rnote·kakaopay·kb·shinhan·etc` (공모전은 주최가 공공이면 `gov`, 기업이면 `etc`) |
 | `tag` | 종류 태그(생필품, 고양이, 가전·디지털, 커피 …). 체험단 탭에서 `가전·디지털`은 '가전·IT'로 묶입니다 |
 | `title` | 상품·이벤트 이름 그대로 (과장 금지) |
 | `highlight`, `highlightSub` | 카드의 큰 글씨(가격 또는 경품) / 보조 설명(단가·할인율·모집 인원) |
