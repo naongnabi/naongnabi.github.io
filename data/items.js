@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-19T06:55:00+09:00",
+  "updatedAt": "2026-11-19T08:20:00+09:00",
   "items": [
+    {
+      "id": "deal-ali-cat-water-fountain",
+      "cat": "deal",
+      "hot": null,
+      "platform": "알리",
+      "pkey": "ali",
+      "tag": "고양이용품",
+      "title": "ZYFeeder 스테인리스 고양이 자동 급수기 2.2L",
+      "highlight": "15,941원",
+      "highlightSub": "정가 59,274원 → 73% · 무료배송",
+      "deadline": null,
+      "deadlineText": "11/24~30 도착",
+      "meta": [
+        "2.2L 스테인리스 · 무소음 모터",
+        "평점 4.7 (1,842) · 1만+ 판매",
+        "Choice 특가 · 1인 1개 한정"
+      ],
+      "note": "11/19 확인 · 알리 Choice 특가 기준(옵션·쿠폰에 따라 달라짐) · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-ali-cat-water-fountain.webp",
+      "url": "https://s.click.aliexpress.com/e/_c4dzah4z",
+      "cta": "알리에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "deal-ali-turbo-jet-fan",
+      "cat": "deal",
+      "hot": null,
+      "platform": "알리",
+      "pkey": "ali",
+      "tag": "생활가전",
+      "title": "X8 브러시리스 터보 제트팬 150,000RPM 미니 송풍기",
+      "highlight": "8,700원",
+      "highlightSub": "정가 19,118원 → 54% · 무료배송",
+      "deadline": null,
+      "deadlineText": "11/24~30 도착",
+      "meta": [
+        "150,000RPM · USB-C 충전",
+        "평점 4.9 (16,915) · 10만+ 판매",
+        "Choice 특가 · 최대 20개"
+      ],
+      "note": "11/19 확인 · 알리 Choice 특가 기준 · KC 인증 정보는 판매자가 제공하지 않아요 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-ali-turbo-jet-fan.webp",
+      "url": "https://s.click.aliexpress.com/e/_c3urPQLR",
+      "cta": "알리에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
     {
       "id": "deal-chungseong-hotpack-30",
       "cat": "deal",
