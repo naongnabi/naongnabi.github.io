@@ -137,7 +137,7 @@ python3 tools/validate.py --sync --check-links
 ```
 
 `validate.py`가 잡아 주는 것: JSON 문법 · 필수 필드 · `cat`/`pkey` 허용값 · **id 중복** · 마감일 형식/과거 여부 ·
-**URL 형식·제휴 도메인** · **상품 사진(`image`) 형식·파일 존재·용량** · `verifiedAt` 미래 여부 · `items.js` 동기화 · (옵션) 깨진 링크.
+**URL 형식·제휴 도메인** · **상품 사진(`image`) 형식·파일 존재·용량** · `verifiedAt` 미래 여부 · **퀴즈 정답(`answer`) 누락·길이** · `items.js` 동기화 · (옵션) 깨진 링크.
 실패가 하나라도 있으면 종료 코드 1로 끝나므로 자동 갱신 스크립트에서 그대로 막을 수 있습니다.
 
 ### 항목 필드
@@ -151,6 +151,7 @@ python3 tools/validate.py --sync --check-links
 | `tag` | 종류 태그(생필품, 고양이, 가전·디지털, 커피 …). 체험단 탭에서 `가전·디지털`은 '가전·IT'로 묶입니다 |
 | `title` | 상품·이벤트 이름 그대로 (과장 금지) |
 | `highlight`, `highlightSub` | 카드의 큰 글씨(가격 또는 경품) / 보조 설명(단가·할인율·모집 인원) |
+| `answer` | **경품 퀴즈 정답.** 문자열 또는 문자열 배열(문항이 여러 개면 `["1번 쐬러", "2번 담갔다"]`). 카드 안 노란 박스에 빨간 굵은 글씨로 표시되고, `정답 없음`이 들어가면 파란 글씨로 표시됩니다. `cat: quiz` 는 필수 |
 | `deadline` | `YYYY-MM-DD`. 지나면 앱이 자동으로 숨김. 기한 없는 특가는 `null` |
 | `deadlineText` | `deadline`이 `null`일 때 배지 문구 (`가격 변동`, `마감 미확인` 등) |
 | `meta` | 주관 기관·발표일 등 작은 정보(배열) |
@@ -192,6 +193,12 @@ python3 tools/validate.py --sync --check-links
 - 카드 본문 / CTA 클릭 → 해당 주소로 새 창 · 찜 · 가로 넘침 0px · 스크롤 시 탭 고정
 - 광고는 목록 맨 끝 1곳(텐핑 CPA 배너). 결과 없음·재고 없음일 때는 자리째 숨김
 - **콘솔 에러 0건 · 페이지 예외 0건**(file:// 에서도 `history.replaceState` 예외 없음)
+
+`python3 tools/qa_quiz_answer.py` — **경품 퀴즈 정답 표시 점검 (2026-11-18). 10개 카드 전부 통과**
+
+- 390×844 로 `?tab=quiz` 를 열어 카드마다 정답 박스(`.card-answer`)·빨간 굵은 글씨(`rgb(200,27,6)`, \"정답 없음\"은 파랑)·노란 형광 하이라이트 유무 확인
+- 카드 가로 넘침 0px · 정답 글자 잘림 0 · 우리 페이지 콘솔 오류 **0건**(텐핑 iframe 쪽 잡음은 제외)
+- 스크린샷 `preview_quiz_answer.png` · `preview_quiz_card_multi.png` · `preview_quiz_card_single.png`
 
 상세 결과: `tools/qa-report.json` · `tools/qa-preview-file-report.json` · `tools/qa-images-report.json`
 

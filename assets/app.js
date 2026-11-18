@@ -83,7 +83,7 @@
   function matchesQuery(it, q) {
     if (!q) return true;
     var hay = [(CAT[it.cat] ? CAT[it.cat].label : ""), it.title, it.platform, it.tag, it.highlight, it.highlightSub,
-      (it.meta || []).join(" "), it.note, it.deadlineText, it.cta].join(" ").toLowerCase();
+      answerLines(it).join(" "), (it.meta || []).join(" "), it.note, it.deadlineText, it.cta].join(" ").toLowerCase();
     return hay.indexOf(q) !== -1;
   }
 
@@ -120,6 +120,33 @@
       '<img src="' + esc(it.image) + '" alt=""' + (lazy ? ' loading="lazy"' : "") + ' decoding="async" ' +
         'onerror="this.parentNode.classList.add(\'is-fallback\');this.remove();" />' +
       "</span>";
+  }
+
+  /* ───────── 퀴즈 정답 ─────────
+     data/items.json 의 answer(문자열 또는 문자열 배열)를 카드 안에 그대로 보여 줍니다.
+     정답이 없는 설문형은 "설문 참여형 (정답 없음)" 처럼 사실대로 적고 파란 글씨로 구분합니다. */
+  function answerLines(it) {
+    var a = it.answer;
+    if (!a) return [];
+    if (typeof a === "string") a = [a];
+    if (!Array.isArray(a)) return [];
+    return a.filter(function (v) { return typeof v === "string" && v.trim(); });
+  }
+
+  function isNoAnswer(line) { return line.indexOf("정답 없음") !== -1; }
+
+  function answerHTML(it) {
+    var lines = answerLines(it);
+    if (!lines.length) return "";
+    var multi = lines.length > 1;
+    return '<div class="card-answer' + (multi ? " card-answer--multi" : "") + '">' +
+      '<span class="ans-badge" aria-hidden="true">💡 정답</span>' +
+      '<div class="ans-list">' +
+        lines.map(function (l) {
+          return '<p class="ans-line' + (isNoAnswer(l) ? " ans-line--none" : "") + '">' +
+            '<span class="ans-hl">' + esc(l) + "</span></p>";
+        }).join("") +
+      "</div></div>";
   }
 
   function ddayBadge(it, big) {
@@ -185,6 +212,7 @@
               (it.highlightSub ? "<span>" + esc(it.highlightSub) + "</span>" : "") + "</p>" +
           "</div>" +
         "</div>" +
+        answerHTML(it) +
         '<p class="card-meta">' +
           meta.map(function (m) { return "<span>" + esc(m) + "</span>"; }).join("<i>·</i>") + "</p>" +
         (it.note ? '<p class="card-note">' + esc(it.note) + "</p>" : "") +

@@ -626,17 +626,20 @@
       "tag": "커피·배달",
       "title": "흙사랑 물사랑 9+10월호 퀴즈",
       "highlight": "배민 5만원 2명 · 투썸 5천원 20명",
-      "highlightSub": "정답 ④ BF인증제도",
+      "highlightSub": "4지선다 1문항",
+      "answer": [
+        "④ BF인증제도"
+      ],
       "deadline": "2026-11-20",
       "deadlineText": null,
       "meta": [
         "한국농어촌공사",
         "상품 발송 12/4"
       ],
-      "note": "11/15 확인 · 구글폼 응모",
+      "note": "11/15 확인 · 구글폼 응모 · 정답 11/18 확인",
       "url": "https://docs.google.com/forms/d/e/1FAIpQLScB7PkfHIsgD3dK8c8dREVVIVgCMF9tUn9MnCBFT6pgHSYQvA/viewform",
       "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-15"
+      "verifiedAt": "2026-11-18"
     },
     {
       "id": "quiz-seocho-newsletter",
@@ -648,16 +651,20 @@
       "title": "소식지 11월호 독자퀴즈",
       "highlight": "모바일상품권 2만원 26명",
       "highlightSub": "서울 서초구청",
+      "answer": [
+        "1번 ① 성금과 성품을 기부할 수 있다",
+        "2번 ② 자격증 응시료"
+      ],
       "deadline": "2026-11-20",
       "deadlineText": null,
       "meta": [
         "서초구청",
         "12월 이후 문자 안내"
       ],
-      "note": "11/15 확인 · 구청 홈페이지에서 응모",
+      "note": "11/15 확인 · 구청 홈페이지에서 응모 · 정답 11/18 확인",
       "url": "https://www.seocho.go.kr/site/seocho/ex/poll/PollUserFForm.do?plIdx=PL00000246&searchType=S",
       "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-15"
+      "verifiedAt": "2026-11-18"
     },
     {
       "id": "quiz-kepco-word",
@@ -669,16 +676,21 @@
       "title": "KEPCO 11월호 재미있는 낱말 퀴즈",
       "highlight": "신세계상품권 2만원권 10명",
       "highlightSub": "한국전력공사 웹진",
+      "answer": [
+        "1번 SURVIVE",
+        "2번 프렌즈",
+        "3번 피자설기"
+      ],
       "deadline": "2026-11-20",
       "deadlineText": null,
       "meta": [
         "한국전력공사",
         "12/10경 발송"
       ],
-      "note": "11/15 확인 · 구글폼 응모",
+      "note": "11/15 확인 · 구글폼 응모 · 정답 11/18 확인",
       "url": "http://www.kepco-webzine.co.kr/2611/quiz.html",
       "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-15"
+      "verifiedAt": "2026-11-18"
     },
     {
       "id": "quiz-itstat",
@@ -690,16 +702,19 @@
       "title": "2026년 11월 퀴즈이벤트",
       "highlight": "커피 기프티콘 100명",
       "highlightSub": "ICT통계포털",
+      "answer": [
+        "① 최근 1개월"
+      ],
       "deadline": "2026-11-22",
       "deadlineText": null,
       "meta": [
         "정보통신정책연구원",
         "발표 11/25"
       ],
-      "note": "11/15 확인",
+      "note": "11/15 확인 · 정답 11/18 확인",
       "url": "https://www.itstat.go.kr/itstat/kor/event/EventList.html",
       "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-15"
+      "verifiedAt": "2026-11-18"
     },
     {
       "id": "quiz-sokcho-book",
@@ -711,16 +726,23 @@
       "title": "온라인 독서퀴즈 「책은 답을 알고 있다」 11월",
       "highlight": "모바일 음료 교환권 6명",
       "highlightSub": "「열일곱의 사계」 독서퀴즈",
+      "answer": [
+        "1번 17살",
+        "2번 과외",
+        "3번 4명",
+        "4번 청소년들의 유대와 연대, 그 사이에서 자라나는 따스함과 성장",
+        "5번 주관식 (정답 없음)"
+      ],
       "deadline": "2026-11-25",
       "deadlineText": null,
       "meta": [
         "국립속초교육문화관",
         "발표 11/27 14:00"
       ],
-      "note": "11/15 확인 · 구글폼 응모",
+      "note": "11/15 확인 · 구글폼 응모 · 정답 11/18 확인",
       "url": "https://forms.gle/2FzDM3rXq7mRfK4T8",
       "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-15"
+      "verifiedAt": "2026-11-18"
     },
     {
       "id": "quiz-hangeul-spelling",
@@ -732,16 +754,21 @@
       "title": "『한박웃음』 2026년 11월호 맞춤법 퀴즈",
       "highlight": "메가MGC커피 3천원권 20명",
       "highlightSub": "맞춤법 3문항",
+      "answer": [
+        "1번 쐬러",
+        "2번 담갔다",
+        "3번 새우다"
+      ],
       "deadline": "2026-11-30",
       "deadlineText": null,
       "meta": [
         "국립한글박물관",
         "당첨자 개별 연락"
       ],
-      "note": "11/15 확인 · 웹진 → 구글폼 응모",
+      "note": "11/15 확인 · 웹진 → 구글폼 응모 · 정답 11/18 확인",
       "url": "https://www.hangeul.go.kr/webzine/202611/sub3_2.html",
       "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-15"
+      "verifiedAt": "2026-11-18"
     },
     {
       "id": "quiz-nl-sns-survey",
@@ -753,6 +780,9 @@
       "title": "2026 SNS 이용자 만족도 조사",
       "highlight": "모바일 커피 교환권 100명",
       "highlightSub": "설문 참여형",
+      "answer": [
+        "설문 참여형 (정답 없음)"
+      ],
       "deadline": "2026-11-30",
       "deadlineText": null,
       "meta": [
@@ -760,10 +790,10 @@
         "발표 12/4",
         "18:00 마감"
       ],
-      "note": "11/15 확인 · 로그인 없이 구글폼 응모",
+      "note": "11/15 확인 · 로그인 없이 구글폼 응모 · 정답 11/18 확인",
       "url": "https://forms.gle/KbVbTTJW4xHNscLT7",
       "cta": "설문 참여하기",
-      "verifiedAt": "2026-11-15"
+      "verifiedAt": "2026-11-18"
     },
     {
       "id": "quiz-kepco-power",
@@ -775,16 +805,21 @@
       "title": "전력을 다해 맞혀라! 전력퀴즈",
       "highlight": "투썸플레이스 아메리카노 100명",
       "highlightSub": "3문항",
+      "answer": [
+        "1번 11년",
+        "2번 약 9분",
+        "3번 CES 2026 혁신상 5관왕"
+      ],
       "deadline": "2026-11-30",
       "deadlineText": null,
       "meta": [
         "한국전력공사",
         "발표 12/7"
       ],
-      "note": "11/15 확인",
+      "note": "11/15 확인 · 정답 11/18 확인",
       "url": "https://kepcoquiz.kr/",
       "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-15"
+      "verifiedAt": "2026-11-18"
     },
     {
       "id": "quiz-kwdi-gender",
@@ -796,16 +831,20 @@
       "title": "성인지통계 Quiz 이벤트 (11월)",
       "highlight": "문화상품권 5천원 30명",
       "highlightSub": "통계 2문항 + OX",
+      "answer": [
+        "1번 증가 / 68.0",
+        "2번 OX → O"
+      ],
       "deadline": "2026-11-30",
       "deadlineText": null,
       "meta": [
         "한국여성정책연구원",
         "발표 12/10"
       ],
-      "note": "11/15 확인",
+      "note": "11/15 확인 · 정답 11/18 확인",
       "url": "https://gsis.kwdi.re.kr/kr/event/EventView.html",
       "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-15"
+      "verifiedAt": "2026-11-18"
     },
     {
       "id": "quiz-nabo-fiscal",
@@ -817,16 +856,19 @@
       "title": "2026년 11월 재정퀴즈 이벤트",
       "highlight": "모바일 커피쿠폰 30명",
       "highlightSub": "재정경제 1문항",
+      "answer": [
+        "③ 2.7%"
+      ],
       "deadline": "2026-11-30",
       "deadlineText": null,
       "meta": [
         "국회예산정책처",
         "발표 12/7"
       ],
-      "note": "11/15 확인",
+      "note": "11/15 확인 · 정답 11/18 확인",
       "url": "https://nabo.go.kr/ko/fiscalQuiz/quiz.do?key=2507040020",
       "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-15"
+      "verifiedAt": "2026-11-18"
     },
     {
       "id": "contest-krace-2026",
