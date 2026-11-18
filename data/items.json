@@ -6,8 +6,54 @@
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-18T16:00:00+09:00",
+  "updatedAt": "2026-11-18T18:15:00+09:00",
   "items": [
+    {
+      "id": "deal-norang-gamjatang-3",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "식품",
+      "title": "노랑 곱빼기 뼈없는 감자탕 600g × 3봉",
+      "highlight": "11,900원",
+      "highlightSub": "1봉당 3,967원 · 정가 19,900원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "평점 4.3 (147)",
+        "무료배송 · 내일도착",
+        "뼈 발라내지 않는 곱빼기"
+      ],
+      "note": "11/18 확인 · 토스쇼핑 선착순특가가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-norang-gamjatang-3.webp",
+      "url": "https://toss.shopping/_m/NIGN5y3p",
+      "cta": "토스쇼핑에서 보기",
+      "verifiedAt": "2026-11-18"
+    },
+    {
+      "id": "deal-monariza-tissue-12",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "생필품",
+      "title": "모나리자 에코 미용티슈 300매 × 12입 (1박스)",
+      "highlight": "11,900원",
+      "highlightSub": "1개당 992원 · 정가 46,900원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "각티슈·미용티슈 1위",
+        "평점 4.7 (8,365)",
+        "무료배송 · 내일도착"
+      ],
+      "note": "11/18 확인 · 토스쇼핑 선착순특가가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-monariza-tissue-12.webp",
+      "url": "https://toss.shopping/_m/bj1zTY1D",
+      "cta": "토스쇼핑에서 보기",
+      "verifiedAt": "2026-11-18"
+    },
     {
       "id": "deal-sandleneun-egg-60",
       "cat": "deal",
