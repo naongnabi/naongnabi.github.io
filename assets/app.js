@@ -613,7 +613,13 @@
   function tenpingHeight() {
     var box = $("#adSlotBox");
     var tp = box && box.querySelector("tenping");
-    return tp ? (tp.getBoundingClientRect().height || 0) : 0;
+    if (!tp) return 0;
+    var ifr = tp.querySelector("iframe");
+    /* 텐핑은 광고 요청이 실패해도 iframe 을 기본 150px 로 남겨 빈 흰 박스가 됩니다.
+       그래서 iframeResizer 가 실제 내용 높이를 잡아 준(style.height) 경우만 '찼다'고 봅니다. */
+    if (!ifr || !ifr.style.height) return 0;
+    var h = parseFloat(ifr.style.height) || 0;
+    return h > 20 ? h : 0;
   }
 
   function adCheck() {
