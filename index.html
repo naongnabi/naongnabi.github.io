@@ -4,7 +4,11 @@
 <meta charset="utf-8" />
 <title>오늘도득템 — 오늘의 특가·무료 체험단·경품 퀴즈·공모전·앱테크</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="description" content="오늘 살 만한 특가, 0원 무료 체험단, 마감 임박 경품 퀴즈, 누구나 응모할 수 있는 공모전, 매일 1분 앱테크까지 한 화면에 모았습니다. 매일 저녁 새로 확인해서 올려요." />
+<meta name="description" content="오늘도득템 — 오늘의 특가, 무료 체험단 모음, 11월 경품퀴즈 정답, 접수 중인 공모전, 매일 1분 앱테크를 한 화면에 모았습니다. 경품 퀴즈는 정답까지 확인해 카드에 적어 두고 매일 저녁 새로 올려요." />
+<meta name="keywords" content="오늘도득템, 오늘의 특가, 무료 체험단 모음, 11월 경품퀴즈 정답, 경품 퀴즈, 공모전, 앱테크, 리뷰노트 체험단, 레뷰 체험단, 공모전 접수중, 앱테크 추천, 마감임박 이벤트" />
+<meta name="author" content="오늘도득템" />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://naongnabi.github.io/" />
 <meta name="theme-color" content="#FF5A36" />
 <meta name="color-scheme" content="light" />
 <meta name="format-detection" content="telephone=no" />
@@ -21,11 +25,15 @@
 
 <!-- 공유 미리보기 -->
 <meta property="og:type" content="website" />
+<meta property="og:site_name" content="오늘도득템" />
+<meta property="og:url" content="https://naongnabi.github.io/" />
 <meta property="og:title" content="오늘도득템 — 오늘의 특가·무료 체험단·경품 퀴즈·공모전·앱테크" />
-<meta property="og:description" content="오늘 살 만한 특가, 0원 무료 체험단, 마감 임박 경품 퀴즈, 누구나 응모할 수 있는 공모전, 매일 1분 앱테크를 한 화면에 모았습니다." />
-<meta property="og:image" content="icons/icon-512.png" />
+<meta property="og:description" content="오늘 살 만한 특가, 0원 무료 체험단, 정답까지 적어 둔 경품 퀴즈, 접수 중인 공모전, 매일 1분 앱테크를 한 화면에 모았습니다." />
+<meta property="og:image" content="https://naongnabi.github.io/icons/icon-512.png" />
 <meta property="og:locale" content="ko_KR" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="오늘도득템 — 오늘의 특가·무료 체험단·경품 퀴즈·공모전·앱테크" />
+<meta name="twitter:description" content="오늘의 특가·무료 체험단·경품 퀴즈 정답·공모전·앱테크를 한 화면에. 매일 저녁 새로 확인해 올려요." />
 
 <link rel="stylesheet" href="assets/styles.css" />
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8406690795825886" crossorigin="anonymous"></script>
@@ -70,6 +78,9 @@
           </span>
         </a>
         <div class="hdr-actions">
+          <button class="link-btn shortcut-btn" id="shortcutOpen" type="button" aria-label="즐겨찾기·홈 화면 바로가기 안내" title="⭐ 즐겨찾기·바로가기">
+            <svg class="ic" aria-hidden="true"><use href="#i-spark"/></svg>
+          </button>
           <button class="saved-btn" id="savedBtn" type="button" aria-pressed="false" aria-label="찜한 항목만 보기">
             <svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>
             <span class="saved-count" id="savedCount">0</span>
@@ -209,13 +220,13 @@
         </div>
       </div>
 
-      <div class="foot-hint" id="installBox" hidden>
+      <div class="foot-hint" id="shortcutBox">
         <div class="foot-hint-txt">
-          <strong>홈 화면에 추가하면 앱처럼 열려요</strong>
-          <p id="installDesc">아래 버튼을 누르면 바로 설치됩니다.</p>
+          <strong>⭐ 즐겨찾기 해두면 매일 새 소식이 바로 보여요</strong>
+          <p>북마크나 <b>홈 화면 아이콘</b>으로 1초 만에 열 수 있어요. 설치는 필요 없어요.</p>
         </div>
-        <button class="install-btn" id="installBtn" type="button" hidden>
-          <svg class="ic" aria-hidden="true"><use href="#i-install"/></svg> 앱으로 추가
+        <button class="install-btn" id="shortcutFootOpen" type="button">
+          <svg class="ic" aria-hidden="true"><use href="#i-spark"/></svg> 바로가기
         </button>
       </div>
 
@@ -230,6 +241,44 @@
   </main>
 
   <button class="to-top" id="toTop" type="button" aria-label="맨 위로">↑</button>
+
+  <!-- ⭐ 즐겨찾기 · 홈 화면 바로가기 안내 시트 -->
+  <div class="sheet" id="shortcutSheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <button class="sheet-dim" type="button" data-sheet-close aria-label="안내 닫기"></button>
+    <div class="sheet-panel" role="document">
+      <div class="sheet-head">
+        <strong id="sheetTitle">⭐ 즐겨찾기 · 홈 화면 바로가기</strong>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="닫기">
+          <svg class="ic" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+      <p class="sheet-lead">한 번만 저장해 두면 매일 새 체험단·퀴즈를 1초 만에 열 수 있어요.</p>
+
+      <section class="sheet-sec">
+        <h4>1. 즐겨찾기(북마크)에 넣기</h4>
+        <ul class="sheet-list">
+          <li><b>삼성 인터넷</b> · 주소창 옆 <b>☆</b>를 누르면 바로 추가</li>
+          <li><b>크롬</b> · 오른쪽 위 <b>⋮</b> → ☆ 북마크 추가</li>
+          <li><b>사파리</b> · 아래 <b>공유</b> → 즐겨찾기 추가</li>
+        </ul>
+      </section>
+
+      <section class="sheet-sec">
+        <h4>2. 홈 화면에 아이콘 만들기</h4>
+        <ul class="sheet-list">
+          <li><b>크롬·삼성 인터넷</b> · 메뉴 → 홈 화면에 추가</li>
+          <li><b>사파리</b> · 공유 → 홈 화면에 추가</li>
+        </ul>
+        <button class="sheet-cta" id="shortcutInstall" type="button" hidden>홈 화면에 아이콘 추가</button>
+      </section>
+
+      <section class="sheet-sec">
+        <h4>3. 주소만 복사해 두기</h4>
+        <button class="sheet-copy" id="shortcutCopy" type="button">naongnabi.github.io 주소 복사</button>
+      </section>
+    </div>
+  </div>
+
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </div>
 

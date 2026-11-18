@@ -580,39 +580,69 @@
     if (BRAND.tagline) $("#brandTagline").textContent = BRAND.tagline;
   })();
 
-  /* 홈 화면에 추가 (PWA 설치) */
-  (function install() {
-    var box = $("#installBox"), btn = $("#installBtn"), desc = $("#installDesc");
-    if (!box) return;
-    var standalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
-    if (standalone) return;
+  /* ───────── ⭐ 즐겨찾기 · 홈 화면 바로가기 ─────────
+     '앱 설치' 대신 부담 없는 재방문 안내만 띄웁니다.
+     · 즐겨찾기(북마크) 방법 한 줄 안내
+     · 홈 화면 아이콘 추가 (지원 브라우저에서는 1탭으로 바로 호출)
+     · 주소 복사 */
+  var HOME_URL = "https://naongnabi.github.io/";
 
-    var ua = navigator.userAgent || "";
-    var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-    if (isIOS) {
-      box.hidden = false;
-      btn.hidden = true;
-      desc.innerHTML = "Safari 아래 <b>공유</b> 버튼 → <b>홈 화면에 추가</b>를 눌러 주세요.";
+  (function shortcut() {
+    var sheet = $("#shortcutSheet");
+    if (!sheet) return;
+    var openers = [$("#shortcutOpen"), $("#shortcutFootOpen")].filter(Boolean);
+    var installBtn = $("#shortcutInstall"), copyBtn = $("#shortcutCopy");
+    var deferred = null, lastFocus = null;
+
+    function show() {
+      lastFocus = document.activeElement;
+      sheet.hidden = false;
+      document.documentElement.style.overflow = "hidden";
+      var x = $(".sheet-x", sheet);
+      if (x) x.focus();
+    }
+    function hide() {
+      sheet.hidden = true;
+      document.documentElement.style.overflow = "";
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
     }
 
-    var deferred = null;
+    openers.forEach(function (b) { b.addEventListener("click", show); });
+    $$("[data-sheet-close]", sheet).forEach(function (b) { b.addEventListener("click", hide); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !sheet.hidden) hide();
+    });
+
     window.addEventListener("beforeinstallprompt", function (e) {
-      e.preventDefault();
+      e.preventDefault();      // 브라우저가 먼저 띄우는 설치 배너는 막고, 시트 버튼으로만
       deferred = e;
-      box.hidden = false;
-      btn.hidden = false;
-      desc.textContent = "아래 버튼을 누르면 바로 설치됩니다.";
+      if (installBtn) installBtn.hidden = false;
     });
-    btn.addEventListener("click", function () {
-      if (!deferred) return;
-      deferred.prompt();
-      deferred.userChoice.then(function (choice) {
-        deferred = null;
-        btn.hidden = true;
-        desc.textContent = choice.outcome === "accepted" ? "설치 중이에요. 홈 화면을 확인해 주세요!" : "언제든 다시 추가할 수 있어요.";
-      }).catch(function () {});
-    });
-    window.addEventListener("appinstalled", function () { box.hidden = true; toast("홈 화면에 추가했어요"); });
+    if (installBtn) {
+      installBtn.addEventListener("click", function () {
+        if (!deferred) return;
+        deferred.prompt();
+        deferred.userChoice.then(function (choice) {
+          deferred = null;
+          installBtn.hidden = true;
+          if (choice.outcome === "accepted") { hide(); toast("홈 화면에 아이콘을 만들었어요"); }
+          else toast("언제든 다시 만들 수 있어요");
+        }).catch(function () {});
+      });
+    }
+    window.addEventListener("appinstalled", function () { hide(); toast("홈 화면에 아이콘을 만들었어요"); });
+
+    if (copyBtn) {
+      copyBtn.addEventListener("click", function () {
+        copyText(HOME_URL).then(function () {
+          copyBtn.textContent = "주소를 복사했어요";
+          toast("주소를 복사했어요 · 붙여넣기만 하면 돼요");
+          setTimeout(function () { copyBtn.textContent = "naongnabi.github.io 주소 복사"; }, 2200);
+        }).catch(function () {
+          copyBtn.textContent = HOME_URL;
+        });
+      });
+    }
   })();
 
   render();
@@ -636,6 +666,8 @@
     if (box) {
       if (mode === "adpick") {
         if (!box.innerHTML) box.innerHTML = adCardHTML(adState.offer);
+        /* 채울 광고가 실제로 없으면 흰 칸 대신 자리째 숨깁니다 */
+        if (!box.innerHTML) { box.hidden = true; slot.classList.add("is-empty"); return; }
         box.hidden = false;
       } else {
         box.hidden = true;
@@ -659,7 +691,8 @@
     var slot = $("#adSlot");
     if (!slot || slot.hidden) return;
     if (tenpingHeight() > 20) { adSetMode("tenping"); return; }
-    if (adState.offer && Date.now() - adState.t0 >= 2400) adSetMode("adpick");
+    /* 텐핑이 안 뜨면 빨리 애드픽 카드로 바꿔 빈 흰 칸이 남지 않게 합니다 */
+    if (adState.offer && Date.now() - adState.t0 >= 1400) adSetMode("adpick");
   }
 
   (function adStart() {
@@ -697,6 +730,25 @@
       requestAnimationFrame(function () { initTab.scrollIntoView({ block: "nearest", inline: "center" }); });
     }
   }
+
+  /* ───────── 접속자 카운터 (가벼운 무료 API, 실패하면 조용히 무시) ─────────
+     일일 키: naongnabi-oneul-deuktem-YYYY-MM-DD / 누적 키: naongnabi-oneul-deuktem-total
+     한 세션에서는 한 번만 올립니다(sessionStorage). */
+  (function counter() {
+    try {
+      if (!/^https?:$/.test(location.protocol)) return;
+      var KEY = "deuktem.counted";
+      if (sessionStorage.getItem(KEY)) return;
+      sessionStorage.setItem(KEY, "1");
+      var d = SEOUL_DAY.format(new Date());   // YYYY-MM-DD (한국 시간)
+      var base = "https://abacus.jasoncameron.dev/hit/naongnabi/";
+      var ping = function (name) {
+        try { fetch(base + name, { mode: "cors", cache: "no-store", keepalive: true }).catch(function () {}); } catch (e) {}
+      };
+      ping("oneul-deuktem-" + d);
+      ping("oneul-deuktem-total");
+    } catch (e) { /* 카운터 실패는 페이지에 영향 없음 */ }
+  })();
 
   /* PWA 서비스 워커 (http/https 에서만) */
   if ("serviceWorker" in navigator && (location.protocol === "http:" || location.protocol === "https:")) {

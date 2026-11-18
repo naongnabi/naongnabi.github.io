@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 오늘도득템 — 오늘의 특가·무료 체험단·경품 퀴즈·공모전·앱테크
+Sitemap: https://naongnabi.github.io/sitemap.xml
