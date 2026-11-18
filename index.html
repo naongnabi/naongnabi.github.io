@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>오늘도득템 — 오늘의 특가·무료 체험단·경품 퀴즈·앱테크</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="오늘 살 만한 특가, 0원 무료 체험단, 마감 임박 경품 퀴즈, 매일 1분 앱테크까지 한 화면에 모았습니다. 매일 저녁 새로 확인해서 올려요." />
+<meta name="theme-color" content="#FF5A36" />
+<meta name="color-scheme" content="light" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- PWA: 홈 화면에 추가하면 앱처럼 열립니다 -->
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="오늘도득템" />
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+<link rel="icon" href="icons/icon-192.png" sizes="192x192" type="image/png" />
+
+<!-- 공유 미리보기 -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="오늘도득템 — 오늘의 특가·무료 체험단·경품 퀴즈·앱테크" />
+<meta property="og:description" content="오늘 살 만한 특가, 0원 무료 체험단, 마감 임박 경품 퀴즈, 매일 1분 앱테크를 한 화면에 모았습니다." />
+<meta property="og:image" content="icons/icon-512.png" />
+<meta property="og:locale" content="ko_KR" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<!-- 아이콘 모음 -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.3l-1.5-1.35C5.4 14.4 2.5 11.8 2.5 8.6 2.5 6.1 4.5 4 7 4c1.9 0 3.7 1.1 5 2.9C13.3 5.1 15.1 4 17 4c2.5 0 4.5 2.1 4.5 4.6 0 3.2-2.9 5.8-8 10.35L12 20.3z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-heart-fill" viewBox="0 0 24 24"><path d="M12 20.3l-1.5-1.35C5.4 14.4 2.5 11.8 2.5 8.6 2.5 6.1 4.5 4 7 4c1.9 0 3.7 1.1 5 2.9C13.3 5.1 15.1 4 17 4c2.5 0 4.5 2.1 4.5 4.6 0 3.2-2.9 5.8-8 10.35L12 20.3z" fill="currentColor"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13M12.5 5.5L19 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 10.6v6M12 7.6v.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-blog" viewBox="0 0 24 24"><path d="M5 4.5h9.5L19 9v10.5H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 12h7M8.5 15.5h4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-threads" viewBox="0 0 24 24"><path d="M12.2 21c-4.7 0-7.9-3.1-7.9-8.9S7.3 3 12.1 3c4.1 0 6.9 2.2 7.6 5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8.7 13.9c0-2 1.6-3.4 3.7-3.4 2.6 0 3.9 1.6 3.9 3.5 0 1.6-1 2.6-2.4 2.6-1.2 0-1.9-.7-1.9-1.6 0-1 .9-1.7 2.3-1.7 2 0 3.3.9 3.3 2.3 0 2.2-2 3.6-4.6 3.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.4" y="5.4" width="19.2" height="13.2" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.3 9.3l4.9 2.7-4.9 2.7z" fill="currentColor"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15.5V4.2M8.2 7.8L12 4l3.8 3.8" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 13.5v4.8a1.7 1.7 0 0 0 1.7 1.7h9.6a1.7 1.7 0 0 0 1.7-1.7v-4.8" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-install" viewBox="0 0 24 24"><rect x="6" y="2.6" width="12" height="18.8" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.4 5.8h3.2M12 10v6M9.6 13.6L12 16l2.4-2.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 40 40"><path d="M11.5 15.5h17l-1.7 13.2a3.4 3.4 0 0 1-3.4 3H16.6a3.4 3.4 0 0 1-3.4-3L11.5 15.5Z" fill="#fff"/><path d="M15.8 15.5v-3.1a4.2 4.2 0 0 1 8.4 0v3.1" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><circle cx="20" cy="23.4" r="2.4" fill="#FF5A36"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2.6l2.1 6.3 6.3 2.1-6.3 2.1L12 19.4l-2.1-6.3L3.6 11l6.3-2.1L12 2.6z" fill="currentColor"/></symbol>
+</svg>
+
+<div class="app" id="app">
+
+  <!-- ── 상단 고정: 브랜드 · 검색 · 대가성 안내 ── -->
+  <div class="sticky-top" id="stickyTop">
+    <header class="hdr">
+      <div class="hdr-row">
+        <a class="brand" href="./index.html" aria-label="오늘도득템 홈">
+          <span class="brand-mark">
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <rect width="40" height="40" rx="11.5" fill="url(#bg-grad)"/>
+              <path d="M8.6 16.2h22.8l-1.2 12.4a3.2 3.2 0 0 1-3.2 2.9H13a3.2 3.2 0 0 1-3.2-2.9L8.6 16.2Z" fill="#fff"/>
+              <path d="M14.9 16.2v-2.4a5.1 5.1 0 0 1 10.2 0v2.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 19.9l1 2.55 2.55 1-2.55 1-1 2.55-1-2.55-2.55-1 2.55-1z" fill="#FF5A36"/>
+              <defs><linearGradient id="bg-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF7C57"/><stop offset="1" stop-color="#EE3C16"/></linearGradient></defs>
+            </svg>
+          </span>
+          <span class="brand-txt">
+            <strong>오늘도득템</strong>
+            <em id="brandTagline">특가·체험단·퀴즈·앱테크</em>
+          </span>
+        </a>
+        <div class="hdr-actions">
+          <button class="saved-btn" id="savedBtn" type="button" aria-pressed="false" aria-label="찜한 항목만 보기">
+            <svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>
+            <span class="saved-count" id="savedCount">0</span>
+          </button>
+          <a class="link-btn" href="https://blog.naver.com/allmine1981" target="_blank" rel="noopener noreferrer" aria-label="블로그 바로가기" title="블로그">
+            <svg class="ic" aria-hidden="true"><use href="#i-blog"/></svg>
+          </a>
+          <a class="link-btn" href="https://www.threads.com/@naong_nabi" target="_blank" rel="noopener noreferrer" aria-label="쓰레드 바로가기" title="쓰레드">
+            <svg class="ic" aria-hidden="true"><use href="#i-threads"/></svg>
+          </a>
+          <a class="link-btn" href="https://www.youtube.com/@naong_nabi_cat" target="_blank" rel="noopener noreferrer" aria-label="유튜브 바로가기" title="유튜브">
+            <svg class="ic" aria-hidden="true"><use href="#i-youtube"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="searchbox">
+        <svg class="ic search-ic" aria-hidden="true"><use href="#i-search"/></svg>
+        <input id="q" type="search" inputmode="search" autocomplete="off" placeholder="생수, 고양이모래, 커피 쿠폰 검색" aria-label="검색" />
+        <button class="q-clear" id="qClear" type="button" aria-label="검색어 지우기" hidden>
+          <svg class="ic" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- 공정위·제휴 대가성 안내 (항상 노출) -->
+    <div class="disclosure" role="note">
+      <svg class="ic disc-ic" aria-hidden="true"><use href="#i-info"/></svg>
+      <p>일부 링크는 쿠팡 파트너스·네이버 쇼핑 커넥트·토스 쉐어링크 제휴 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.</p>
+    </div>
+  </div>
+
+  <main class="main" id="main">
+
+    <!-- 지금 제일 핫한 TOP -->
+    <section class="hot" id="hotBlock" aria-label="지금 제일 핫한 특가">
+      <div class="hot-head">
+        <h2><span class="hot-flame" aria-hidden="true">🔥</span> 지금 제일 핫한 특가 <span class="hot-top">TOP</span></h2>
+        <p>오늘 확인한 것 중 먼저 볼 것만</p>
+      </div>
+      <div class="hot-track" id="hotTrack"></div>
+    </section>
+
+    <!-- 카테고리 탭 (스크롤해도 상단 고정) -->
+    <div class="tabbar">
+      <nav class="tabs" id="tabs" aria-label="카테고리">
+        <button class="tab is-on" type="button" data-tab="all" aria-pressed="true">전체 <span class="tab-n" id="n-all"></span></button>
+        <button class="tab" type="button" data-tab="deal" aria-pressed="false">🔥 오늘의 특가 <span class="tab-n" id="n-deal"></span></button>
+        <button class="tab" type="button" data-tab="exp" aria-pressed="false">🎁 무료 체험단 <span class="tab-n" id="n-exp"></span></button>
+        <button class="tab" type="button" data-tab="quiz" aria-pressed="false">🎯 경품 퀴즈 <span class="tab-n" id="n-quiz"></span></button>
+        <button class="tab" type="button" data-tab="apptech" aria-pressed="false">💸 앱테크 <span class="tab-n" id="n-apptech"></span></button>
+      </nav>
+      <span class="tabs-fade" id="tabsFade" aria-hidden="true"></span>
+    </div>
+
+    <div class="today-strip">
+      <div class="today-date">
+        <strong id="todayDate">11월 17일 화요일</strong>
+        <span>확인한 것만 올려요 · 매일 저녁 갱신</span>
+      </div>
+      <p class="today-count"><span id="todayTotal">0</span>건 진행 중</p>
+    </div>
+
+    <div class="urgent-strip" id="urgentStrip" hidden>
+      <span class="urgent-ic" aria-hidden="true">⏰</span>
+      <p id="urgentText"></p>
+    </div>
+
+    <div class="list" id="list" aria-live="polite"></div>
+
+    <!-- 광고 자리(미리보기) — 애드핏 승인 후 이 자리에 배너가 들어갑니다. 지금은 클릭 요소가 아닙니다. -->
+    <div class="adslot" id="adSlot" role="complementary" aria-label="광고 영역 미리보기">
+      <span class="adslot-tag" aria-hidden="true">AD</span>
+      <span class="adslot-txt">광고 배너 자리 <b>(미리보기)</b></span>
+    </div>
+
+    <div class="empty" id="empty" hidden>
+      <div class="empty-mark" aria-hidden="true">🐱</div>
+      <p class="empty-title" id="emptyTitle">찾는 게 없어요</p>
+      <p class="empty-sub" id="emptySub">다른 말로 검색해 보세요.</p>
+      <button class="empty-btn" id="emptyReset" type="button">전체 보기</button>
+    </div>
+
+    <p class="list-foot" id="listFoot"></p>
+
+    <footer class="foot">
+      <div class="foot-brand">
+        <span class="foot-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="12" fill="#FFEFE9"/><path d="M8.6 16.2h22.8l-1.2 12.4a3.2 3.2 0 0 1-3.2 2.9H13a3.2 3.2 0 0 1-3.2-2.9L8.6 16.2Z" fill="#FF5A36"/><path d="M14.9 16.2v-2.4a5.1 5.1 0 0 1 10.2 0v2.4" fill="none" stroke="#FF5A36" stroke-width="2" stroke-linecap="round"/><path d="M20 19.9l1 2.55 2.55 1-2.55 1-1 2.55-1-2.55-2.55-1 2.55-1z" fill="#fff"/></svg>
+        </span>
+        <div>
+          <strong>오늘도득템</strong>
+          <p>직접 확인한 특가·무료 체험단·경품 퀴즈·앱테크만 올려요.<br />매일 저녁 새로 확인해서 정리합니다.</p>
+        </div>
+      </div>
+
+      <div class="foot-hint" id="installBox" hidden>
+        <div class="foot-hint-txt">
+          <strong>홈 화면에 추가하면 앱처럼 열려요</strong>
+          <p id="installDesc">아래 버튼을 누르면 바로 설치됩니다.</p>
+        </div>
+        <button class="install-btn" id="installBtn" type="button" hidden>
+          <svg class="ic" aria-hidden="true"><use href="#i-install"/></svg> 앱으로 추가
+        </button>
+      </div>
+
+      <div class="foot-links">
+        <a href="https://blog.naver.com/allmine1981" target="_blank" rel="noopener noreferrer">블로그 후기</a>
+        <a href="https://www.threads.com/@naong_nabi" target="_blank" rel="noopener noreferrer">쓰레드</a>
+        <a href="https://www.youtube.com/@naong_nabi_cat" target="_blank" rel="noopener noreferrer">유튜브</a>
+      </div>
+      <p class="foot-disc">일부 링크는 쿠팡 파트너스·네이버 쇼핑 커넥트·토스 쉐어링크 제휴 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다. 가격·마감일·경품은 각 사이트 사정에 따라 바뀔 수 있으니 신청 전에 꼭 확인해 주세요.</p>
+      <p class="foot-meta"><span id="updatedAt">마지막 확인 2026.11.17</span></p>
+    </footer>
+  </main>
+
+  <button class="to-top" id="toTop" type="button" aria-label="맨 위로">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</div>
+
+<script src="data/items.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
