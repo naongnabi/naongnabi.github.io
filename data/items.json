@@ -1694,8 +1694,8 @@
       "pkey": "etc",
       "tag": "퀴즈·출석",
       "title": "OK캐쉬백 오!퀴즈 · 출석체크 — 1P=1원",
-      "highlight": "1P = 1원",
-      "highlightSub": "매시 정각 오퀴즈 + 출석 미션",
+      "highlight": "1P=1원",
+      "highlightSub": "오퀴즈·출석 미션",
       "deadline": null,
       "deadlineText": "매일 반복",
       "meta": [
@@ -1826,8 +1826,8 @@
       "pkey": "etc",
       "tag": "출석·퀴즈",
       "title": "비트버니 — 출석·퀴즈·미션으로 네이버페이·현금",
-      "highlight": "네이버페이·현금 교환",
-      "highlightSub": "출석체크·오늘의 퀴즈·버니로또",
+      "highlight": "네이버페이·현금",
+      "highlightSub": "출석·퀴즈·버니로또",
       "deadline": null,
       "deadlineText": "매일 반복",
       "meta": [
