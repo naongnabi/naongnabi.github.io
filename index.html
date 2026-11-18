@@ -139,19 +139,55 @@
       <p id="urgentText"></p>
     </div>
 
-    <div class="list" id="list" aria-live="polite"></div>
+    <!-- 목록 — 광고 자리(#adSlot)는 이 안에 고정으로 두고, 카드만 그 앞뒤로 다시 그립니다.
+         (텐핑 iframe 을 DOM 에서 옮기면 다시 로드되며 비어 버리기 때문) -->
+    <div class="list" id="list" aria-live="polite">
+      <!-- 광고 — 모든 탭에서 3번째 카드 바로 아래 1곳.
+           텐핑이 안 뜨면 애드픽(affid=395343) 카드로 채워 자리가 비지 않습니다. 결과 0건일 때만 숨김 -->
+      <section class="adslot" id="adSlot" aria-label="광고">
+        <div class="adslot-head">
+          <span class="adslot-tag" aria-hidden="true">AD</span>
+          <span class="adslot-note" id="adslotNote">광고</span>
+        </div>
+        <div class="adslot-box" id="adSlotBox">
+          <tenping class="adsbytenping" style="width: 100%; margin: 0px auto; display: block; max-width: 580px;" tenping-ad-client="FDIiYBvj8rjZqeYfXVMBmcOv972YSp4LwhlH94KNjiMRRLwA4p84TzTZ7Exbjp1V" tenping-ad-display-type="UD8Mia8gyIoT5Z2MT6VB3Q%3d%3d"></tenping>
+        </div>
+        <!-- 텐핑이 비었을 때 그 자리에 뜨는 애드픽 광고 카드 (JS 가 data/adpick.js 로 채움) -->
+        <div id="adpickBox" hidden></div>
+      </section>
+    </div>
+    <script async src="https://ads.tenping.kr/scripts/adsbytenping.min.js"></script>
 
-    <!-- 광고 — 텐핑(소문박스) CPA 배너. 목록 맨 끝 1곳, 결과 없을 때는 숨김 -->
-    <section class="adslot" id="adSlot" aria-label="광고">
+    <!-- ── 광고 자리(승인 대기) — 지금은 hidden 이라 빈 칸도 안 보입니다 ──
+         ◎ 애드핏(카카오) 승인 뒤: 아래 <div id="adfitSlot"> 안의 <ins> 주석을 풀고
+            data-ad-unit 에 발급받은 DAN-... 단위 ID 를 넣은 뒤 hidden 만 지우세요.
+            (같이 들어 있는 ba.min.js 스크립트도 주석을 풀면 바로 광고가 채워집니다.)
+         ◎ 애드센스 승인 뒤: #adsenseSlot 안의 <ins class="adsbygoogle"> 의
+            data-ad-slot 에 발급받은 광고 단위 ID 를 넣고 push 줄과 hidden 을 살리세요.
+            (자동 광고 스크립트는 이미 <head> 에 들어 있습니다.) -->
+    <div class="adslot adslot--pending" id="adfitSlot" hidden aria-label="광고">
       <div class="adslot-head">
         <span class="adslot-tag" aria-hidden="true">AD</span>
         <span class="adslot-note">광고</span>
       </div>
-      <div class="adslot-box">
-        <tenping class="adsbytenping" style="width: 100%; margin: 0px auto; display: block; max-width: 580px;" tenping-ad-client="FDIiYBvj8rjZqeYfXVMBmcOv972YSp4LwhlH94KNjiMRRLwA4p84TzTZ7Exbjp1V" tenping-ad-display-type="UD8Mia8gyIoT5Z2MT6VB3Q%3d%3d"></tenping>
+      <!--
+      <ins class="kakao_ad_area" style="display:none" data-ad-unit="DAN-XXXXXXXXXXXX"
+           data-ad-width="320" data-ad-height="100"></ins>
+      <script async src="//t1.daumcdn.net/kas/static/ba.min.js"></script>
+      -->
+    </div>
+
+    <div class="adslot adslot--pending" id="adsenseSlot" hidden aria-label="광고">
+      <div class="adslot-head">
+        <span class="adslot-tag" aria-hidden="true">AD</span>
+        <span class="adslot-note">광고</span>
       </div>
-    </section>
-    <script async src="https://ads.tenping.kr/scripts/adsbytenping.min.js"></script>
+      <!--
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8406690795825886"
+           data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+    </div>
 
     <div class="empty" id="empty" hidden>
       <div class="empty-mark" aria-hidden="true">🐱</div>
@@ -198,6 +234,7 @@
 </div>
 
 <script src="data/items.js"></script>
+<script src="data/adpick.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

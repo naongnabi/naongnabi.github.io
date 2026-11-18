@@ -340,9 +340,10 @@ h1,h2,h3,p{margin:0}
 
 .list-foot{padding:14px 20px 0;text-align:center;font-size:10.5px;color:var(--ink-4);line-height:1.55}
 
-/* ───────── 광고 (텐핑 소문박스) ─────────
-   목록 맨 끝 1곳. 광고가 비어 있으면 자리도 남기지 않습니다(.is-empty). */
-.adslot{margin:16px 16px 0}
+/* ───────── 광고 (텐핑 + 애드픽 폴백) ─────────
+   목록 3번째 카드 아래 1곳(텐핑) + 10번째 뒤·목록 하단(애드픽).
+   텐핑이 비면 그 자리를 애드픽 카드가 대신 채워 빈 칸이 생기지 않습니다. */
+.adslot{margin:4px 0 0}
 .adslot-head{display:flex;align-items:center;gap:4px;margin-bottom:6px;padding-left:2px}
 .adslot-tag{
   font-size:9px;font-weight:900;letter-spacing:.5px;line-height:1.2;
@@ -355,7 +356,41 @@ h1,h2,h3,p{margin:0}
   overflow:hidden;
 }
 .adslot-box tenping{width:100%;display:block}
+/* 애드픽 카드가 대신 뜰 때는 텐핑 박스를 접어 둡니다(높이는 그대로 재서 나중에 복귀 판단) */
+.adslot.is-adpick .adslot-box{height:0;min-height:0;padding:0;border:0;margin:0;box-shadow:none;background:transparent}
 .adslot.is-empty{display:none}
+
+/* 애드픽 네이티브 추천 카드 */
+.adcard{
+  display:flex;align-items:center;gap:10px;padding:10px 12px;
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow);text-decoration:none;color:inherit;
+  transition:transform .14s ease;
+}
+.adcard:active{transform:scale(.988)}
+.adcard-thumb{
+  position:relative;flex:0 0 auto;width:52px;height:52px;border-radius:11px;overflow:hidden;
+  background:#F6F1EC;display:flex;align-items:center;justify-content:center;
+}
+.adcard-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.adcard-thumb.is-fallback::before{content:"🛍️";font-size:22px;line-height:1}
+.adcard-ad{
+  position:absolute;left:3px;bottom:3px;
+  font-size:8px;font-weight:900;letter-spacing:.3px;line-height:1;
+  color:#fff;background:rgba(32,24,16,.55);border-radius:3px;padding:2px 3px;
+}
+.adcard-body{flex:1;min-width:0}
+.adcard-title{
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  font-size:13.5px;font-weight:800;letter-spacing:-.5px;line-height:1.32;color:var(--ink);
+}
+.adcard-desc{
+  display:block;margin-top:3px;font-size:11px;color:var(--ink-3);letter-spacing:-.2px;line-height:1.35;
+  overflow:hidden;white-space:nowrap;text-overflow:ellipsis;
+}
+.adcard-go{flex:0 0 auto;font-size:11px;font-weight:800;color:var(--coral-deep);letter-spacing:-.3px}
+/* 상단(텐핑 자리)이 애드픽으로 바뀌면 같은 광고가 두 번 보이지 않게 하단 카드는 접습니다 */
+.list.is-adpick-top .adcard--bottom{display:none}
 
 /* ───────── 푸터 ───────── */
 .foot{

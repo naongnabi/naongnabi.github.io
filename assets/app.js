@@ -6,6 +6,10 @@
   var DATA = window.DEUKTEM_DATA || { items: [], brand: {} };
   var ITEMS = (DATA.items || []).slice();
   var BRAND = DATA.brand || {};
+  /* 텐핑이 비었을 때 그 자리를 채우는 애드픽 광고 캐시 (data/adpick.js) */
+  var ADPICK = window.DEUKTEM_ADPICK || null;
+  /* 광고 상태 — render() 가 adCheck() 를 부르므로 먼저 선언해 둡니다 */
+  var adState = { mode: "", t0: 0, offer: null };
   var FAV_KEY = "deuktem.favs";
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
@@ -202,43 +206,124 @@
       '<span class="section-n">' + n + '</span><span class="section-line"></span></div>';
   }
 
+  /* ───────── 광고 배치 ─────────
+     슬롯 A = 텐핑(#adSlot, #list 안에 고정) 3번째 카드 뒤 — 텐핑이 비면 애드픽 카드로 채움
+     슬롯 B = 애드픽 10번째 카드 뒤 · 슬롯 C = 애드픽 목록 하단 (카드가 충분할 때만)
+     광고끼리 최소 5칸은 띄워서 과하지 않게 합니다. */
+  var AD_AFTER = 3;
+  var AD_MID = 10;
+  var AD_MIN_GAP = 5;
+
+  function adPlan(n) {
+    if (n < 1) return { a: 0, mid: 0, bottom: false };
+    var a = Math.min(AD_AFTER, n);
+    var mid = n >= AD_MID + AD_MIN_GAP ? AD_MID : 0;
+    var last = mid || a;
+    return { a: a, mid: mid, bottom: n - last >= AD_MIN_GAP };
+  }
+
+  function adOffers() {
+    return ((ADPICK && ADPICK.offers) || []).filter(function (o) {
+      return o && o.link && o.title && (o.remain === null || o.remain === undefined || o.remain > 0);
+    });
+  }
+
+  /* 0: 슬롯 A 대체 · 1: 슬롯 B · 2: 슬롯 C — 겹치지 않게 하루 단위로 돌려 씁니다 */
+  function adOffer(idx) {
+    var list = adOffers();
+    if (!list.length) return null;
+    var day = Math.floor(Date.now() / 86400000);
+    return list[(day + idx) % list.length];
+  }
+
+  function adCardHTML(o, cls) {
+    if (!o) return "";
+    var thumb = o.image
+      ? '<span class="adcard-thumb"><img src="' + esc(o.image) + '" alt="" loading="lazy" decoding="async" ' +
+          'onerror="this.parentNode.classList.add(\'is-fallback\');this.remove();" />' +
+          '<span class="adcard-ad" aria-hidden="true">AD</span></span>'
+      : '<span class="adcard-thumb is-fallback"><span class="adcard-ad" aria-hidden="true">AD</span></span>';
+    return '<a class="adcard' + (cls ? " " + cls : "") + '" href="' + esc(o.link) + '" target="_blank" rel="noopener noreferrer sponsored">' +
+      thumb +
+      '<span class="adcard-body">' +
+        '<strong class="adcard-title">' + esc(o.title) + '</strong>' +
+        (o.desc ? '<span class="adcard-desc">' + esc(o.desc) + '</span>' : "") +
+      '</span>' +
+      '<span class="adcard-go" aria-hidden="true">보기 ›</span>' +
+    '</a>';
+  }
+
+  /* 텐핑 iframe 은 DOM 에서 옮기면 다시 로드되며 비어 버립니다.
+     그래서 #adSlot 은 그 자리에 두고, 카드만 그 앞(lead)/뒤(rest)로 다시 그립니다. */
+  function paintList(lead, rest) {
+    var list = $("#list"), ad = $("#adSlot");
+    if (!list) return;
+    if (!ad) { list.innerHTML = lead + rest; return; }
+    while (list.firstElementChild && list.firstElementChild !== ad) list.removeChild(list.firstElementChild);
+    while (ad.nextElementSibling) list.removeChild(ad.nextElementSibling);
+    if (lead) ad.insertAdjacentHTML("beforebegin", lead);
+    if (rest) ad.insertAdjacentHTML("afterend", rest);
+  }
+
   /* ───────── 렌더 ───────── */
   function render() {
     renderHot();
     var items = filtered();
-    var list = $("#list");
-    var html = "";
     var searching = state.q.trim() !== "" || state.onlyFav;
 
+    // 1) 카테고리 묶음
+    var groups = [];
     if (searching) {
       if (items.length) {
         var label = state.onlyFav && !state.q.trim()
           ? "찜한 항목"
           : (state.q.trim() ? "‘" + state.q.trim() + "’ 검색 결과" : "찜한 항목");
-        html += sectionHead("", label, items.length) + items.map(cardHTML).join("");
+        groups.push({ icon: "", label: label, items: items, head: true });
       }
     } else if (state.tab === "all") {
       ["deal", "exp", "quiz", "contest", "apptech"].forEach(function (cat) {
         var sub = items.filter(function (it) { return it.cat === cat; });
         if (!sub.length) return;
-        html += sectionHead(CAT[cat].icon, CAT[cat].label, sub.length) + sub.map(cardHTML).join("");
+        groups.push({ icon: CAT[cat].icon, label: CAT[cat].label, items: sub, head: true });
       });
     } else if (state.tab === "exp") {
       // 체험단 탭: 가전·IT 를 위로 (혜영 님 요청)
       var isIt = function (it) { return it.tag === "가전·디지털"; };
       var it1 = items.filter(isIt), it2 = items.filter(function (it) { return !isIt(it); });
-      if (it1.length) html += sectionHead("📺", "가전·IT 체험단", it1.length) + it1.map(cardHTML).join("");
-      if (it2.length) html += sectionHead("🧺", "생활·뷰티·식품", it2.length) + it2.map(cardHTML).join("");
-    } else {
-      html += items.map(cardHTML).join("");
+      if (it1.length) groups.push({ icon: "📺", label: "가전·IT 체험단", items: it1, head: true });
+      if (it2.length) groups.push({ icon: "🧺", label: "생활·뷰티·식품", items: it2, head: true });
+    } else if (items.length) {
+      groups.push({ icon: "", label: "", items: items, head: false });
     }
 
-    list.innerHTML = html;
+    // 2) 카드 순번에 맞춰 광고 카드까지 끼워 넣기
+    var plan = adPlan(items.length);
+    var lead = "", rest = "", cardN = 0;
+    groups.forEach(function (g) {
+      if (g.head) {
+        var head = sectionHead(g.icon, g.label, g.items.length);
+        if (cardN < plan.a) lead += head; else rest += head;
+      }
+      g.items.forEach(function (it) {
+        var html = cardHTML(it);
+        cardN++;
+        if (cardN <= plan.a) lead += html; else rest += html;
+        if (plan.mid && cardN === plan.mid) rest += adCardHTML(adOffer(1), "adcard--mid");
+        if (plan.bottom && cardN === items.length) rest += adCardHTML(adOffer(2), "adcard--bottom");
+      });
+    });
+
+    paintList(lead, rest);
+
+    var list = $("#list");
     list.hidden = items.length === 0;
 
-    // 광고(텐핑) — 목록 맨 끝 1곳, 결과 없을 때는 숨김
+    // 텐핑 자리 — 결과 0건일 때만 숨김
     var adSlot = $("#adSlot");
-    if (adSlot) adSlot.hidden = items.length === 0;
+    if (adSlot) {
+      adSlot.hidden = items.length === 0;
+      if (items.length) adCheck();
+    }
 
     var empty = $("#empty");
     empty.hidden = items.length > 0;
@@ -500,30 +585,69 @@
   render();
   syncTabsFade();
 
-  /* 광고(텐핑) — 광고 재고가 없어 비어 있으면 빈 흰 박스가 남지 않게 자리째 숨김.
-     나중에 채워지면 다시 보이게 합니다. */
-  (function adSlotFill() {
+  /* ───────── 광고 채우기 (텐핑 → 안 뜨면 애드픽) ─────────
+     텐핑 스크립트는 페이지 로드 때 <tenping> 을 한 번만 채우고 다시 훑지 않습니다.
+     그래서 8초 뒤 자리째 숨기던 예전 방식 대신, 광고가 실제로 그려졌는지(높이)를
+     계속 지켜보고 비어 있으면 애드픽 추천 카드로 그 자리를 채웁니다.
+     애드핏·애드센스는 승인 전이라 지금은 비워 두고 자리만 잡아 둡니다(index.html). */
+
+  function adSetMode(mode) {
+    var slot = $("#adSlot"), box = $("#adpickBox"), list = $("#list");
+    if (!slot || mode === adState.mode) return;
+    adState.mode = mode;
+    slot.classList.remove("is-empty");
+    slot.classList.toggle("is-adpick", mode === "adpick");
+    if (list) list.classList.toggle("is-adpick-top", mode === "adpick");
+    var note = $("#adslotNote");
+    if (note) note.textContent = mode === "adpick" ? "광고 · 애드픽 제휴" : "광고";
+    if (box) {
+      if (mode === "adpick") {
+        if (!box.innerHTML) box.innerHTML = adCardHTML(adState.offer);
+        box.hidden = false;
+      } else {
+        box.hidden = true;
+      }
+    }
+  }
+
+  function tenpingHeight() {
+    var box = $("#adSlotBox");
+    var tp = box && box.querySelector("tenping");
+    return tp ? (tp.getBoundingClientRect().height || 0) : 0;
+  }
+
+  function adCheck() {
+    var slot = $("#adSlot");
+    if (!slot || slot.hidden) return;
+    if (tenpingHeight() > 20) { adSetMode("tenping"); return; }
+    if (adState.offer && Date.now() - adState.t0 >= 2400) adSetMode("adpick");
+  }
+
+  (function adStart() {
     var slot = $("#adSlot");
     if (!slot) return;
-    var ad = slot.querySelector("tenping");
-    if (!ad) return;
-    var tries = 0, done = false;
-    function filled() {
-      if (ad.querySelector("iframe, img, ins, div, video") ) return true;
-      return ad.getBoundingClientRect().height > 20;
+    adState.offer = adOffer(0);
+    adState.t0 = Date.now();
+
+    if (!adState.offer) {
+      // 애드픽 자료까지 없으면: 8초까지 기다렸다 비어 있으면 자리째 숨김
+      var tries = 0;
+      (function wait() {
+        if (tenpingHeight() > 20) { adSetMode("tenping"); return; }
+        if (++tries >= 16) { slot.classList.add("is-empty"); return; }
+        setTimeout(wait, 500);
+      })();
+      return;
     }
-    function settle() {
-      if (filled()) { slot.classList.remove("is-empty"); done = true; return done; }
-      return false;
-    }
+
     (function poll() {
-      if (done || settle()) return;
-      if (slot.hidden) { setTimeout(poll, 500); return; }   // 결과 없음으로 숨겨진 동안은 세지 않음
-      if (++tries >= 16) { slot.classList.add("is-empty"); done = true; return; }  // 약 8초까지 기다림
-      setTimeout(poll, 500);
+      adCheck();
+      if (Date.now() - adState.t0 < 30000) setTimeout(poll, 500);   // 30초까지는 계속 지켜봄
     })();
-    if (window.MutationObserver) {
-      new MutationObserver(function () { settle(); }).observe(ad, { childList: true, subtree: true, attributes: true });
+
+    var box = $("#adSlotBox"), tp = box && box.querySelector("tenping");
+    if (tp && window.MutationObserver) {
+      new MutationObserver(function () { adCheck(); }).observe(tp, { childList: true, subtree: true, attributes: true });
     }
   })();
 
