@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-19T08:30:00+09:00",
+  "updatedAt": "2026-11-19T08:25:00+09:00",
   "items": [
     {
       "id": "deal-haepycall-pan-28",
@@ -73,7 +73,7 @@ window.DEUKTEM_DATA = {
         "평점 4.7 (1,842) · 1만+ 판매",
         "Choice 특가 · 1인 1개 한정"
       ],
-      "note": "11/19 확인 · 알리 Choice 특가 기준(옵션·쿠폰에 따라 달라짐) · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 확인 · 알리 Choice 특가 기준(옵션·쿠폰에 따라 달라짐) · 정가는 알리 표시가 · 가격은 언제든 바뀔 수 있어요",
       "image": "assets/thumbs/deal-ali-cat-water-fountain.webp",
       "url": "https://s.click.aliexpress.com/e/_c4dzah4z",
       "cta": "알리에서 보기",
@@ -96,7 +96,7 @@ window.DEUKTEM_DATA = {
         "평점 4.9 (16,915) · 10만+ 판매",
         "Choice 특가 · 최대 20개"
       ],
-      "note": "11/19 확인 · 알리 Choice 특가 기준 · KC 인증 정보는 판매자가 제공하지 않아요 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 확인 · 알리 Choice 특가 기준 · 정가는 알리 표시가 · KC 인증 정보는 판매자가 제공하지 않아요 · 가격은 언제든 바뀔 수 있어요",
       "image": "assets/thumbs/deal-ali-turbo-jet-fan.webp",
       "url": "https://s.click.aliexpress.com/e/_c3urPQLR",
       "cta": "알리에서 보기",
