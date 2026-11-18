@@ -437,6 +437,7 @@
 
   /* ───────── 이벤트 ───────── */
   function setTab(tab) {
+    var changed = state.tab !== tab;
     state.tab = tab;
     render();
     try {
@@ -446,6 +447,8 @@
         history.replaceState(null, "", u.pathname + u.search);
       }
     } catch (e) {}
+    /* 카테고리마다 스크롤을 따로 — 탭을 바꾸면 그 탭의 1번 카드부터 보이게 맨 위로 */
+    if (changed) window.scrollTo(0, 0);
     var active = $('.tab[data-tab="' + tab + '"]');
     if (active && active.scrollIntoView) active.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
   }
