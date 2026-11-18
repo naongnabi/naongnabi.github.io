@@ -48,6 +48,9 @@ apps/oneul-deuktem/
 ├─ tools/
 │  ├─ validate.py           # 데이터 검증 + items.js 동기화 + 링크 확인
 │  ├─ build_preview.py      # 한 파일 미리보기(downloads/oneul-deuktem-preview.html) 생성 — 상품 사진은 data URI 로 인라인
+│  ├─ deploy.sh             # 검증 → 커밋 → GitHub Pages 푸시 (매일 갱신용)
+│  ├─ qa_live.py            # 배포된 실제 URL 점검 + 스크린샷
+│  ├─ qa_pages_path.py      # 서브패스(/onen1-deuktem/) 배포 환경 재현 점검
 │  ├─ thumbs-sources.json   # 상품 사진 원본 주소(og:image) 기록
 │  ├─ qa.py                 # 실제 브라우저 자동 점검 + 스크린샷 (http)
 │  ├─ qa_images.py          # 상품 사진 로드·깨짐 점검 (http + file://)
@@ -73,28 +76,46 @@ python3 -m http.server 8000
 
 ---
 
-## 4. 배포 (5분)
+## 4. 배포 (GitHub Pages — 운영 방식)
 
-### A. Netlify Drop (가장 빠름)
-1. https://app.netlify.com/drop 접속
-2. `oneul-deuktem` **폴더 전체**를 끌어다 놓기
-3. 나오는 주소(`https://xxx.netlify.app`)가 바로 앱 주소. 이후 폴더 다시 끌어다 놓으면 갱신됩니다.
+| 항목 | 값 |
+|---|---|
+| 공개 주소 | **https://naongnabi.github.io/onen1-deuktem/** |
+| 저장소 | `naongnabi/onen1-deuktem` (public) · 브랜치 `main` · 폴더 `/ (root)` |
+| 배포용 로컬 경로 | `apps/oneul-deuktem` (이 폴더 자체가 git 저장소, origin = 위 저장소) |
 
-### B. GitHub Pages
+> 저장소 이름을 `oneul-deuktem`으로 바꾸면 주소도 `https://naongnabi.github.io/oneul-deuktem/` 가 됩니다(로컬 origin URL도 함께 수정).
+
+### 매일 데이터 갱신 → 라이브 반영 (한 줄)
 ```bash
-# 저장소 루트에 이 폴더를 올린 경우
-git add apps/oneul-deuktem && git commit -m "오늘도득템 웹앱" && git push
+cd apps/oneul-deuktem && bash tools/deploy.sh          # 검증 → 커밋 → 푸시 → 라이브 확인
+bash tools/deploy.sh --no-push                        # 커밋까지만
+bash tools/deploy.sh "커밋 메시지 직접 지정"
 ```
-GitHub → Settings → Pages → Source: `Deploy from a branch` → 브랜치 선택 → 폴더 `/apps/oneul-deuktem` → Save
-→ `https://<아이디>.github.io/<저장소>/apps/oneul-deuktem/` 로 열립니다.
-(저장소 이름이 `아이디.github.io` 이면 폴더 경로만 붙습니다.)
+푸시 후 GitHub Pages가 1~2분 안에 다시 빌드합니다(CDN 캐시로 최대 10분 지연될 수 있음).
 
-### C. Cloudflare Pages
-`Create project → Direct upload` → 폴더 업로드. 커스텀 도메인은 `Custom domains`에서 연결.
+### 처음 배포할 때 (다시 할 일이 생기면)
+1. GitHub에서 **public** 저장소를 만들고 이 폴더를 푸시
+   ```bash
+   gh repo create <아이디>/<저장소> --public      # 또는 GitHub 웹에서 생성
+   cd apps/oneul-deuktem && git remote add origin https://github.com/<아이디>/<저장소>.git
+   git push -u origin main
+   ```
+2. 저장소 → **Settings → Pages** → Source `Deploy from a branch` → Branch `main` / `/ (root)` → Save
+3. 1~2분 뒤 `https://<아이디>.github.io/<저장소>/` 확인
+
+> Pages 활성화는 저장소 관리자만 할 수 있습니다. Pickle 쪽 GitHub 연결에는 Pages 설정 권한이 없어서, 새로 배포할 때는 이 2번 클릭만 직접 해 주셔야 합니다.
+
+배포 파일은 git이 추적하는 것만 나갑니다: `index.html`, `manifest.webmanifest`, `sw.js`, `.nojekyll`, `assets/`, `data/`, `icons/` (+ `README.md`). `tools/`, `preview_*.png`, `qa-*.json`은 `.gitignore`로 제외.
+
+### 다른 정적 호스팅으로 옮길 때
+- **Netlify Drop**: https://app.netlify.com/drop 에 폴더 전체를 끌어다 놓기 → `https://xxx.netlify.app`
+- **Cloudflare Pages**: `Create project → Direct upload` → 폴더 업로드
 
 ### 배포 후 확인
 - 폰에서 주소 열기 → 메뉴의 **홈 화면에 추가**(또는 푸터의 `앱으로 추가` 버튼) → 주소창 없는 앱처럼 열림
 - 배포 주소가 https 이면 서비스 워커가 등록되어 두 번째 방문부터 더 빨리 열립니다.
+- 자동 점검: `python3 tools/qa_live.py` (기본 주소) 또는 `--url <주소>` → `preview_live_pages.png` 저장
 
 ---
 
@@ -168,8 +189,14 @@ python3 tools/validate.py --sync --check-links
 
 상세 결과: `tools/qa-report.json` · `tools/qa-preview-file-report.json` · `tools/qa-images-report.json`
 
+`python3 tools/qa_pages_path.py` — **GitHub Pages 서브패스 환경 그대로**(`/onen1-deuktem/`) 재현 점검. **34개 항목 전부 통과**
+
+- 배포 파일만 복사해 `http://127.0.0.1:PORT/onen1-deuktem/` 로 서빙(실제 Pages와 동일한 경로 구조)
+- 페이지·manifest·sw.js·items.json·아이콘 6종 전부 200 · 상품 사진 24장 `naturalWidth>0`
+- 탭 5개(42/21/6/10/5) · 채널 버튼 3개 · 카드 CTA 새 창 · 가로 넘침 0px
+- 서비스 워커 범위 `/onen1-deuktem/` · 콘솔 에러 0 · 페이지 예외 0 · 실패 요청 0
+
 ```bash
-# 같은 점검을 다시 돌리려면 (playwright 필요)
 pip install playwright && playwright install chromium
 python3 tools/qa.py
 ```
