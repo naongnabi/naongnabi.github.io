@@ -139,8 +139,10 @@
     var lines = answerLines(it);
     if (!lines.length) return "";
     var multi = lines.length > 1;
-    return '<div class="card-answer' + (multi ? " card-answer--multi" : "") + '">' +
-      '<span class="ans-badge" aria-hidden="true">💡 정답</span>' +
+    var onlyNone = lines.every(isNoAnswer);   // 설문형처럼 정답이 없는 건 "안내"로 표기
+    return '<div class="card-answer' + (multi ? " card-answer--multi" : "") +
+      (onlyNone ? " card-answer--none" : "") + '">' +
+      '<span class="ans-badge" aria-hidden="true">' + (onlyNone ? "📝 안내" : "💡 정답") + '</span>' +
       '<div class="ans-list">' +
         lines.map(function (l) {
           return '<p class="ans-line' + (isNoAnswer(l) ? " ans-line--none" : "") + '">' +

@@ -329,6 +329,8 @@ h1,h2,h3,p{margin:0}
 }
 .card-answer--multi .ans-line{font-size:13px;line-height:1.5}
 .ans-line--none{color:#1449CC}
+.card-answer--none{border-left-color:#2E6BE6}
+.card-answer--none .ans-badge{background:#1F55C8;box-shadow:0 3px 7px -4px rgba(31,85,200,.95)}
 .ans-hl{
   background:linear-gradient(180deg,rgba(255,226,64,0) 50%,#FFE24A 50%,#FFE24A 95%,rgba(255,226,64,0) 95%);
   -webkit-box-decoration-break:clone;box-decoration-break:clone;
