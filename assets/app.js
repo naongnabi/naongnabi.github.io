@@ -236,7 +236,7 @@
     list.innerHTML = html;
     list.hidden = items.length === 0;
 
-    // 광고 배너 자리(미리보기) — 목록 맨 끝, 클릭 요소 아님
+    // 광고(텐핑) — 목록 맨 끝 1곳, 결과 없을 때는 숨김
     var adSlot = $("#adSlot");
     if (adSlot) adSlot.hidden = items.length === 0;
 
@@ -499,6 +499,33 @@
 
   render();
   syncTabsFade();
+
+  /* 광고(텐핑) — 광고 재고가 없어 비어 있으면 빈 흰 박스가 남지 않게 자리째 숨김.
+     나중에 채워지면 다시 보이게 합니다. */
+  (function adSlotFill() {
+    var slot = $("#adSlot");
+    if (!slot) return;
+    var ad = slot.querySelector("tenping");
+    if (!ad) return;
+    var tries = 0, done = false;
+    function filled() {
+      if (ad.querySelector("iframe, img, ins, div, video") ) return true;
+      return ad.getBoundingClientRect().height > 20;
+    }
+    function settle() {
+      if (filled()) { slot.classList.remove("is-empty"); done = true; return done; }
+      return false;
+    }
+    (function poll() {
+      if (done || settle()) return;
+      if (slot.hidden) { setTimeout(poll, 500); return; }   // 결과 없음으로 숨겨진 동안은 세지 않음
+      if (++tries >= 16) { slot.classList.add("is-empty"); done = true; return; }  // 약 8초까지 기다림
+      setTimeout(poll, 500);
+    })();
+    if (window.MutationObserver) {
+      new MutationObserver(function () { settle(); }).observe(ad, { childList: true, subtree: true, attributes: true });
+    }
+  })();
 
   /* 탭이 6개라 390px 폭을 넘어갑니다 — 주소로 바로 들어온 탭(?tab=contest 등)이 가려지지 않게 가운데로 */
   if (state.tab !== "all") {

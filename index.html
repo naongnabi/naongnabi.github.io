@@ -141,11 +141,17 @@
 
     <div class="list" id="list" aria-live="polite"></div>
 
-    <!-- 광고 자리(미리보기) — 애드핏 승인 후 이 자리에 배너가 들어갑니다. 지금은 클릭 요소가 아닙니다. -->
-    <div class="adslot" id="adSlot" role="complementary" aria-label="광고 영역 미리보기">
-      <span class="adslot-tag" aria-hidden="true">AD</span>
-      <span class="adslot-txt">광고 배너 자리 <b>(미리보기)</b></span>
-    </div>
+    <!-- 광고 — 텐핑(소문박스) CPA 배너. 목록 맨 끝 1곳, 결과 없을 때는 숨김 -->
+    <section class="adslot" id="adSlot" aria-label="광고">
+      <div class="adslot-head">
+        <span class="adslot-tag" aria-hidden="true">AD</span>
+        <span class="adslot-note">광고</span>
+      </div>
+      <div class="adslot-box">
+        <tenping class="adsbytenping" style="width: 100%; margin: 0px auto; display: block; max-width: 580px;" tenping-ad-client="FDIiYBvj8rjZqeYfXVMBmcOv972YSp4LwhlH94KNjiMRRLwA4p84TzTZ7Exbjp1V" tenping-ad-display-type="UD8Mia8gyIoT5Z2MT6VB3Q%3d%3d"></tenping>
+      </div>
+    </section>
+    <script async src="https://ads.tenping.kr/scripts/adsbytenping.min.js"></script>
 
     <div class="empty" id="empty" hidden>
       <div class="empty-mark" aria-hidden="true">🐱</div>

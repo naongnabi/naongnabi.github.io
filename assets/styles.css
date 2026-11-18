@@ -340,20 +340,22 @@ h1,h2,h3,p{margin:0}
 
 .list-foot{padding:14px 20px 0;text-align:center;font-size:10.5px;color:var(--ink-4);line-height:1.55}
 
-/* ───────── 광고 배너 자리 (미리보기) ─────────
-   애드핏 승인 후 이 자리에 배너가 들어갑니다. 지금은 클릭 요소가 아니라서 카드 사이 이동을 방해하지 않습니다. */
-.adslot{
-  display:flex;align-items:center;justify-content:center;gap:6px;
-  margin:12px 16px 0;padding:11px 12px;
-  border:1px dashed #DED5CD;border-radius:14px;
-  background:#FCFAF8;color:#A79E96;
-}
+/* ───────── 광고 (텐핑 소문박스) ─────────
+   목록 맨 끝 1곳. 광고가 비어 있으면 자리도 남기지 않습니다(.is-empty). */
+.adslot{margin:16px 16px 0}
+.adslot-head{display:flex;align-items:center;gap:4px;margin-bottom:6px;padding-left:2px}
 .adslot-tag{
   font-size:9px;font-weight:900;letter-spacing:.5px;line-height:1.2;
-  color:#968D85;border:1px solid #DED5CD;border-radius:4px;padding:1px 3px;
+  color:#968D85;border:1px solid #E2DAD3;border-radius:4px;padding:1px 3px;background:#fff;
 }
-.adslot-txt{font-size:10.5px;font-weight:600;letter-spacing:-.2px}
-.adslot-txt b{font-weight:800;color:#8C847C}
+.adslot-note{font-size:10px;font-weight:600;letter-spacing:-.2px;color:#A79E96}
+.adslot-box{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow);padding:8px;
+  overflow:hidden;
+}
+.adslot-box tenping{width:100%;display:block}
+.adslot.is-empty{display:none}
 
 /* ───────── 푸터 ───────── */
 .foot{
