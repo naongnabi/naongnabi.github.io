@@ -781,7 +781,7 @@ window.DEUKTEM_DATA = {
       "tag": "커피",
       "title": "2026 SNS 이용자 만족도 조사",
       "highlight": "모바일 커피 교환권 100명",
-      "highlightSub": "설문 참여형",
+      "highlightSub": "로그인 없이 참여",
       "answer": [
         "설문 참여형 (정답 없음)"
       ],
@@ -792,7 +792,7 @@ window.DEUKTEM_DATA = {
         "발표 12/4",
         "18:00 마감"
       ],
-      "note": "11/15 확인 · 로그인 없이 구글폼 응모 · 정답 11/18 확인",
+      "note": "11/15 확인 · 로그인 없이 구글폼 응모 · 설문형(정답 없음) 11/18 확인",
       "url": "https://forms.gle/KbVbTTJW4xHNscLT7",
       "cta": "설문 참여하기",
       "verifiedAt": "2026-11-18"
