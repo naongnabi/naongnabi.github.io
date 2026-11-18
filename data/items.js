@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-18T21:55:00+09:00",
+  "updatedAt": "2026-11-19T06:55:00+09:00",
   "items": [
+    {
+      "id": "deal-chungseong-hotpack-30",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활용품",
+      "title": "충성 포켓용 핫팩 대형 160g × 30개",
+      "highlight": "14,160원",
+      "highlightSub": "정가 29,620원 → 52% · 개당 472원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "대형 160g × 30개",
+        "골드박스 특가",
+        "개당 472원"
+      ],
+      "note": "11/19 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-chungseong-hotpack-30.webp",
+      "url": "https://link.coupang.com/a/iM3CDMzZpA",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "deal-snuggle-softener-26l",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활용품",
+      "title": "스너글 초고농축 섬유유연제 오리지널 허거블 코튼 리필 2.6L",
+      "highlight": "8,990원",
+      "highlightSub": "정가 23,400원 → 61% · 리필 2.6L",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "2.6L 리필 1개",
+        "골드박스 특가",
+        "초고농축"
+      ],
+      "note": "11/19 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-snuggle-softener-26l.webp",
+      "url": "https://link.coupang.com/a/iM3BfI4m9k",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
     {
       "id": "deal-norang-gamjatang-3",
       "cat": "deal",
