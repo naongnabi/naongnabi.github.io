@@ -7,3 +7,5 @@ qa-*.json
 .DS_Store
 __pycache__/
 *.pyc
+# QA 스크린샷(라이브 확인용)
+live_*.png
