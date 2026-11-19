@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-19T08:25:00+09:00",
+  "updatedAt": "2026-11-19T10:12:00+09:00",
   "items": [
+    {
+      "id": "deal-prog-rubber-gloves-5",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활용품",
+      "title": "프로그 라텍스 고무장갑 컴포트 5세트 (대 L · 베이비핑크)",
+      "highlight": "7,280원",
+      "highlightSub": "정가 16,400원 → 55% · 한 켤레 1,456원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "5세트 구성 · 대(L)",
+        "한 켤레당 1,456원",
+        "골드박스 특가"
+      ],
+      "note": "11/19 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-prog-rubber-gloves-5.webp",
+      "url": "https://link.coupang.com/a/iNihpLWPcW",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "deal-bareun-hotteok-5",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "식품",
+      "title": "바른호떡 통밀 견과호떡 70g × 5개입 (냉동)",
+      "highlight": "3,450원",
+      "highlightSub": "정가 6,900원 → 50% · 개당 690원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "70g × 5개입",
+        "개당 690원",
+        "로켓프레시 · 냉동"
+      ],
+      "note": "11/19 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-bareun-hotteok-5.webp",
+      "url": "https://link.coupang.com/a/iNijoP7IYK",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
     {
       "id": "deal-haepycall-pan-28",
       "cat": "deal",
