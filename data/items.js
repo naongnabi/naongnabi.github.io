@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-19T18:15:00+09:00",
+  "updatedAt": "2026-11-19T22:35:00+09:00",
   "items": [
     {
       "id": "deal-heomandu-dumpling-set",
@@ -2212,6 +2212,141 @@ window.DEUKTEM_DATA = {
         "2번 O",
         "3번 O"
       ]
+    },
+    {
+      "id": "exp-revu-gdevil",
+      "cat": "exp",
+      "hot": null,
+      "platform": "레뷰",
+      "pkey": "revu",
+      "tag": "가전·디지털",
+      "title": "[지데빌] MK850W 무선 키보드&마우스 세트",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 블로그 15장+1,000자",
+      "deadline": "2026-11-23",
+      "deadlineText": null,
+      "meta": [
+        "레뷰 배송형",
+        "블로그 리뷰",
+        "발표 11/25"
+      ],
+      "note": "11/19 확인 · 사진 15장에 타건 소리가 담긴 짧은 영상 1개가 미션이에요. 얼굴은 나오지 않습니다.",
+      "url": "https://www.revu.net/campaign/1439726",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "exp-revu-dinus-cushion",
+      "cat": "exp",
+      "hot": null,
+      "platform": "레뷰",
+      "pkey": "revu",
+      "tag": "가전·디지털",
+      "title": "[디누스] 탄소방석 그레이 2인용 전기방석",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 사진 15장·1,000자",
+      "deadline": "2026-11-23",
+      "deadlineText": null,
+      "meta": [
+        "레뷰 배송형",
+        "블로그 리뷰",
+        "발표 11/25"
+      ],
+      "note": "11/19 확인 · 겨울 소파용 전기방석이에요. 얼굴 노출 문항은 '비노출'로 신청하면 됩니다.",
+      "url": "https://www.revu.net/campaign/1439732",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "exp-revu-kakao-humid",
+      "cat": "exp",
+      "hot": null,
+      "platform": "레뷰",
+      "pkey": "revu",
+      "tag": "가전·디지털",
+      "title": "[카카오프렌즈] 스윙클립 듀얼 무선 가습기",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 핑크/화이트 선택",
+      "deadline": "2026-11-22",
+      "deadlineText": null,
+      "meta": [
+        "레뷰 배송형",
+        "블로그+영상·GIF",
+        "발표 11/23"
+      ],
+      "note": "11/19 확인 · 사진 15장과 영상·GIF 미션, 그리고 네이버 스토어 알림받기·찜 인증이 함께 필요해요.",
+      "url": "https://www.revu.net/campaign/1439671",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "exp-revu-tplink",
+      "cat": "exp",
+      "hot": null,
+      "platform": "레뷰",
+      "pkey": "revu",
+      "tag": "가전·디지털",
+      "title": "[티피링크] Archer BE3600 와이파이7 공유기",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 지원 131명",
+      "deadline": "2026-11-25",
+      "deadlineText": null,
+      "meta": [
+        "레뷰 배송형",
+        "블로그+영상",
+        "발표 11/27"
+      ],
+      "note": "11/19 확인 · 기존 공유기와 속도를 비교하는 미션이라 집 인터넷만 있으면 됩니다. 경쟁이 낮은 편이에요.",
+      "url": "https://www.revu.net/campaign/1439580",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "exp-revu-alrok",
+      "cat": "exp",
+      "hot": null,
+      "platform": "레뷰",
+      "pkey": "revu",
+      "tag": "가전·디지털",
+      "title": "[알록] 울트라올라 고주파 뷰티디바이스",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 얼굴 비노출 가능",
+      "deadline": "2026-11-23",
+      "deadlineText": null,
+      "meta": [
+        "레뷰 배송형",
+        "블로그+영상",
+        "발표 11/25"
+      ],
+      "note": "11/19 확인 · 제품 단독 촬영과 비포·애프터 삽입이 필수이고, 상세페이지 캡처는 금지예요.",
+      "url": "https://www.revu.net/campaign/1439658",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "quiz-npark-sns-survey",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "생필품",
+      "title": "국립공원 SNS 운영 만족도 조사",
+      "highlight": "다이소 상품권 5,000원 20명",
+      "highlightSub": "로그인 없이 참여 · 설문 25문항",
+      "answer": [
+        "설문 참여형 (정답 없음)"
+      ],
+      "deadline": "2026-11-25",
+      "deadlineText": null,
+      "meta": [
+        "국립공원공단",
+        "네이버폼 응모",
+        "발표일 미안내"
+      ],
+      "note": "11/19 확인 · 네이버폼 설문에 답하면 응모 끝이에요. 5분이면 됩니다.",
+      "url": "https://form.naver.com/response/7pIGBMsnk5X",
+      "cta": "설문 참여하기",
+      "verifiedAt": "2026-11-19"
     }
   ]
 };
