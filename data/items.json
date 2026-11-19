@@ -6,8 +6,54 @@
   "threads": "https://www.threads.com/@naong_nabi",
   "youtube": "https://www.youtube.com/@naong_nabi_cat"
  },
- "updatedAt": "2026-11-19T10:12:00+09:00",
+ "updatedAt": "2026-11-19T12:25:00+09:00",
  "items": [
+  {
+   "id": "deal-sistima-toothbrush-13",
+   "cat": "deal",
+   "hot": null,
+   "platform": "네이버",
+   "pkey": "naver",
+   "tag": "생필품",
+   "title": "시스테마 치석케어 콤팩트 칫솔 10개+3개 (총 13개)",
+   "highlight": "17,900원",
+   "highlightSub": "정가 34,300원 → 47% · 1개당 1,377원",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "10개 + 3개 = 총 13개",
+    "평점 4.8 (12,906)",
+    "무료배송 · 22시 전 결제 시 내일 07시 전 도착"
+   ],
+   "note": "11/19 확인 · 무료배송(제주·도서 추가) · 쿠폰 적용 시 17,800원 · 최대구매 1인 10개 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-sistima-toothbrush-13.webp",
+   "url": "https://naver.me/xllfpW90",
+   "cta": "네이버에서 보기",
+   "verifiedAt": "2026-11-19"
+  },
+  {
+   "id": "deal-bear-egg-cooker",
+   "cat": "deal",
+   "hot": null,
+   "platform": "네이버",
+   "pkey": "naver",
+   "tag": "주방용품",
+   "title": "Bear 올스텐 미니 계란찜기 1단 타이머 (에그 쿠커)",
+   "highlight": "31,800원",
+   "highlightSub": "정가 54,000원 → 41% · 쿠폰 적용 시 25,800원",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "1단 타이머 · 계란 7개까지",
+    "평점 4.87 (27,904)",
+    "내일 도착 · 사은품 레시피북+슬라이서"
+   ],
+   "note": "11/19 확인 · 배송비 3,000원(네이버플러스 멤버십 N배송 무료배송) · 2개 이상 구매 시 3,000원 할인 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-bear-egg-cooker.webp",
+   "url": "https://naver.me/5IfZtgC7",
+   "cta": "네이버에서 보기",
+   "verifiedAt": "2026-11-19"
+  },
   {
    "id": "deal-prog-rubber-gloves-5",
    "cat": "deal",
