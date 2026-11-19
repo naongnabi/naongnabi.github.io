@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-19T22:35:00+09:00",
+  "updatedAt": "2026-11-19T22:15:00+09:00",
   "items": [
+    {
+      "id": "deal-glaslock-tpu-board-3",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "주방용품",
+      "title": "글라스락 베이비 TPU 도마 3P 세트 (파스텔)",
+      "highlight": "10,330원",
+      "highlightSub": "정가 37,730원 → 72% · 한 장 3,443원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "3장 1세트",
+        "TPU 소재 · 칼집에 강함",
+        "골드박스 특가"
+      ],
+      "note": "11/19 22:05 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-glaslock-tpu-board-3.webp",
+      "url": "https://link.coupang.com/a/iN7QazbROC",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "deal-saranghae-rimyeonsu-1kg",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "간편식",
+      "title": "사랑해어 손질 임연수어 (냉동) 1kg",
+      "highlight": "14,800원",
+      "highlightSub": "정가 22,900원 → 35% · 1kg",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "손질 완료 · 굽기만 하면 됨",
+        "냉동 1kg",
+        "로켓프레시"
+      ],
+      "note": "11/19 22:05 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-saranghae-rimyeonsu-1kg.webp",
+      "url": "https://link.coupang.com/a/iN7SSxnm0W",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
     {
       "id": "deal-heomandu-dumpling-set",
       "cat": "deal",
@@ -294,8 +340,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "식품",
       "title": "노랑 곱빼기 뼈없는 감자탕 600g × 3봉",
-      "highlight": "11,900원",
-      "highlightSub": "1봉당 3,967원 · 정가 19,900원",
+      "highlight": "13,500원",
+      "highlightSub": "1봉당 4,500원 · 정가 19,900원",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -303,11 +349,11 @@ window.DEUKTEM_DATA = {
         "무료배송 · 내일도착",
         "뼈 발라내지 않는 곱빼기"
       ],
-      "note": "11/18 확인 · 토스쇼핑 선착순특가가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 22:10 확인 · 특가 종료로 11,900원→13,500원 · 토스 링크 관리 표시가",
       "image": "assets/thumbs/deal-norang-gamjatang-3.webp",
       "url": "https://toss.shopping/_m/NIGN5y3p",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-18"
+      "verifiedAt": "2026-11-19"
     },
     {
       "id": "deal-monariza-tissue-12",
@@ -317,8 +363,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "생필품",
       "title": "모나리자 에코 미용티슈 300매 × 12입 (1박스)",
-      "highlight": "11,900원",
-      "highlightSub": "1개당 992원 · 정가 46,900원",
+      "highlight": "15,700원",
+      "highlightSub": "1개당 1,308원 · 정가 46,900원",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -326,11 +372,11 @@ window.DEUKTEM_DATA = {
         "평점 4.7 (8,365)",
         "무료배송 · 내일도착"
       ],
-      "note": "11/18 확인 · 토스쇼핑 선착순특가가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 22:10 확인 · 특가 종료로 11,900원→15,700원 · 토스 링크 관리 표시가",
       "image": "assets/thumbs/deal-monariza-tissue-12.webp",
       "url": "https://toss.shopping/_m/bj1zTY1D",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-18"
+      "verifiedAt": "2026-11-19"
     },
     {
       "id": "deal-sandleneun-egg-60",
@@ -340,8 +386,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "식품",
       "title": "산들내음 산림방사 유정란 난각번호 1번 60구 (1박스)",
-      "highlight": "20,940원",
-      "highlightSub": "1구당 349원 · 난각번호 1번",
+      "highlight": "22,900원",
+      "highlightSub": "1구당 382원 · 난각번호 1번",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -349,11 +395,11 @@ window.DEUKTEM_DATA = {
         "평점 4.4 (3,024)",
         "내일 출발 · 모레 도착 예정"
       ],
-      "note": "11/18 확인 · 토스쇼핑 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 22:10 확인 · 20,940원→22,900원 · 토스 링크 관리 표시가",
       "image": "assets/thumbs/deal-sandleneun-egg-60.webp",
       "url": "https://toss.shopping/_m/Ff6PrP1n",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-18"
+      "verifiedAt": "2026-11-19"
     },
     {
       "id": "deal-sum-wipes-70-10",
@@ -386,8 +432,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "생필품",
       "title": "테조 1450 고불소 구취케어 치약 120g × 5개",
-      "highlight": "7,680원",
-      "highlightSub": "개당 1,536원 · 치약 1위",
+      "highlight": "8,700원",
+      "highlightSub": "개당 1,740원 · 치약 1위",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -395,11 +441,11 @@ window.DEUKTEM_DATA = {
         "평점 4.6 (1,105)",
         "내일 도착"
       ],
-      "note": "11/18 확인 · 토스쇼핑 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 22:10 확인 · 7,680원→8,700원 · 토스 링크 관리 표시가",
       "image": "assets/thumbs/deal-tejo-toothpaste-5.webp",
       "url": "https://toss.shopping/_m/Vynf6Wz",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-18"
+      "verifiedAt": "2026-11-19"
     },
     {
       "id": "deal-maxmax-ramen-container-2",
@@ -409,8 +455,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "주방",
       "title": "맥스 앤 맥스 전자레인지 라면 용기 1L × 2개 (뚜껑 포함)",
-      "highlight": "5,600원",
-      "highlightSub": "개당 2,800원 · 용기 2개 + 뚜껑",
+      "highlight": "5,900원",
+      "highlightSub": "개당 2,950원 · 용기 2개 + 뚜껑",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -418,11 +464,11 @@ window.DEUKTEM_DATA = {
         "평점 4.5 (11,169)",
         "내일 도착"
       ],
-      "note": "11/18 확인 · 토스쇼핑 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 22:10 확인 · 5,600원→5,900원 · 토스 링크 관리 표시가",
       "image": "assets/thumbs/deal-maxmax-ramen-container-2.webp",
       "url": "https://toss.shopping/_m/9ouLaXyf",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-18"
+      "verifiedAt": "2026-11-19"
     },
     {
       "id": "deal-pepsi-zero-peach-18",
@@ -432,8 +478,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "음료",
       "title": "펩시 제로슈거 피치향 500ml × 18개",
-      "highlight": "9,900원",
-      "highlightSub": "30일 내 최저가 · 개당 550원",
+      "highlight": "11,000원",
+      "highlightSub": "개당 611원",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -441,11 +487,11 @@ window.DEUKTEM_DATA = {
         "500ml × 18개",
         "평점 4.7 (55)"
       ],
-      "note": "11/17 확인 · 토스 표시 30일 내 최저가·선착순 특가 · 내일 도착 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 22:10 확인 · 특가 종료로 9,900원→11,000원 · 토스 링크 관리 표시가",
       "image": "assets/thumbs/deal-pepsi-zero-peach-18.webp",
       "url": "https://toss.shopping/_m/RCvV2dF3",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-17"
+      "verifiedAt": "2026-11-19"
     },
     {
       "id": "deal-dailylab-umbrella-3fold",
@@ -501,8 +547,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "커피",
       "title": "할리스 시그니처 아메리카노 미니 마일드 0.9g 100개입 × 3개 (총 300개입)",
-      "highlight": "25,900원",
-      "highlightSub": "30일 내 최저가 · 1개입당 87원",
+      "highlight": "26,900원",
+      "highlightSub": "1개입당 90원",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -510,11 +556,11 @@ window.DEUKTEM_DATA = {
         "100개입 × 3",
         "평점 4.7 (577)"
       ],
-      "note": "11/17 확인 · 선착순특가·30일 내 최저가 표시 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 22:10 확인 · 25,900원→26,900원 · 토스 링크 관리 표시가",
       "image": "assets/thumbs/deal-hollys-coffee-stick-300.webp",
       "url": "https://toss.shopping/_m/DM8sIOiB",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-17"
+      "verifiedAt": "2026-11-19"
     },
     {
       "id": "deal-allchallenge-kitchen-towel-9",
@@ -662,8 +708,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "주방",
       "title": "디어커스 원데이 수세미 에코컷 100매 × 2팩 (200매)",
-      "highlight": "3,850원",
-      "highlightSub": "정가 19,800원 → 80% · 1매당 20원",
+      "highlight": "6,900원",
+      "highlightSub": "정가 19,800원 → 65% · 1매당 35원",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -671,11 +717,11 @@ window.DEUKTEM_DATA = {
         "평점 4.7 (680)",
         "무료배송"
       ],
-      "note": "11/17 확인 · 선착순특가 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 22:10 확인 · 3,850원→6,900원 · 토스 링크 관리 표시가",
       "image": "assets/thumbs/deal-dearcus-scrubber.webp",
       "url": "https://toss.shopping/_m/TZWBP0Na",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-17"
+      "verifiedAt": "2026-11-19"
     },
     {
       "id": "deal-kla-capsule-detergent",
@@ -685,8 +731,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "생필품",
       "title": "클라 듀얼 울트라 클린 캡슐세제 8g 100개입 × 2 (클린코튼·프리지아)",
-      "highlight": "11,100원",
-      "highlightSub": "정가 30,000원 → 63%",
+      "highlight": "11,900원",
+      "highlightSub": "정가 30,000원 → 60%",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -694,11 +740,11 @@ window.DEUKTEM_DATA = {
         "평점 4.7 (1,055)",
         "무료배송"
       ],
-      "note": "11/17 확인 · 선착순특가 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 22:10 확인 · 11,100원→11,900원 · 토스 링크 관리 표시가",
       "image": "assets/thumbs/deal-kla-capsule-detergent.webp",
       "url": "https://toss.shopping/_m/JhoGFCF9",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-17"
+      "verifiedAt": "2026-11-19"
     },
     {
       "id": "deal-matkkun-eggs",
@@ -708,8 +754,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "간편식",
       "title": "맛꾼 구운란 대란 30구",
-      "highlight": "9,800원",
-      "highlightSub": "정가 19,900원 → 50% · 1구당 327원",
+      "highlight": "8,200원",
+      "highlightSub": "정가 19,900원 → 59% · 1구당 273원",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -717,11 +763,11 @@ window.DEUKTEM_DATA = {
         "평점 4.6 (15,840)",
         "무료배송"
       ],
-      "note": "11/17 확인 · 50% 특가 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/19 22:10 확인 · 9,800원→8,200원 · 토스 링크 관리 표시가",
       "image": "assets/thumbs/deal-matkkun-eggs.webp",
       "url": "https://toss.shopping/_m/zFdJpvSp",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-17"
+      "verifiedAt": "2026-11-19"
     },
     {
       "id": "deal-listerine-3pack",
