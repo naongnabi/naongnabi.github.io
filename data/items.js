@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-19T12:25:00+09:00",
+  "updatedAt": "2026-11-19T18:15:00+09:00",
   "items": [
+    {
+      "id": "deal-heomandu-dumpling-set",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "간편식",
+      "title": "허만두 잎새만두 알찬고기 1.4kg + 알찬김치 1.4kg (1세트, 총 2.8kg)",
+      "highlight": "11,400원",
+      "highlightSub": "30일 내 최저가 · 1kg당 4,071원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "손만두 1위 · 평점 4.4 (5,863)",
+        "내일 도착 예정",
+        "1.4kg 봉당 5,700원"
+      ],
+      "note": "11/19 확인 · 토스쇼핑 하루특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-heomandu-dumpling-set.webp",
+      "url": "https://toss.shopping/_m/pLR5dckg",
+      "cta": "토스쇼핑에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "deal-ryuqe-fresh-detergent-4",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "생활용품",
+      "title": "애경 리큐 프레쉬 실내건조 액상세제 2.1L × 4개 (1세트)",
+      "highlight": "9,780원",
+      "highlightSub": "30일 내 최저가 · 1L당 1,164원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "액상세제 4위 · 평점 4.7 (1,096)",
+        "애경산업 공식 · 베스트판매자",
+        "실내건조용 · 11/25 도착 예정"
+      ],
+      "note": "11/19 확인 · 토스쇼핑 특가 기준 · 배송이 11/25 예정으로 느린 편이에요 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-ryuqe-fresh-detergent-4.webp",
+      "url": "https://toss.shopping/_m/bc6rRPKn",
+      "cta": "토스쇼핑에서 보기",
+      "verifiedAt": "2026-11-19"
+    },
     {
       "id": "deal-sistima-toothbrush-13",
       "cat": "deal",
