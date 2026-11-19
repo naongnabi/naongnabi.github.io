@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-19T22:15:00+09:00",
+  "updatedAt": "2026-11-20T08:20:00+09:00",
   "items": [
+    {
+      "id": "deal-soonsaem-dish-soap-3",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활용품",
+      "title": "순샘 구연산 자몽향 주방세제 리필 1.4L × 3개 (총 4.2L)",
+      "highlight": "6,460원",
+      "highlightSub": "정가 9,370원 → 31% · L당 1,540원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "1.4L 리필 3개 · 총 4.2L",
+        "구연산 세정 · 자몽향",
+        "쿠팡 골드박스 특가"
+      ],
+      "note": "11/20 08:10 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-soonsaem-dish-soap-3.webp",
+      "url": "https://link.coupang.com/a/iOOHX3v1bg",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-20"
+    },
+    {
+      "id": "deal-dumari-chicken-11kg",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "식품",
+      "title": "두마리 통닭 백숙용 1.1kg (1개)",
+      "highlight": "7,990원",
+      "highlightSub": "정가 15,900원 → 49%",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "백숙·삼계탕용",
+        "로켓프레시",
+        "쿠팡 골드박스 특가"
+      ],
+      "note": "11/20 08:10 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-dumari-chicken-11kg.webp",
+      "url": "https://link.coupang.com/a/iOOJ0n31hI",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-20"
+    },
     {
       "id": "deal-glaslock-tpu-board-3",
       "cat": "deal",
@@ -1696,14 +1742,14 @@ window.DEUKTEM_DATA = {
       "title": "「월간 내일」 11월호 독자 퀴즈",
       "highlight": "모바일 커피 쿠폰 추첨",
       "highlightSub": "4지선다 2문항",
-      "deadline": "2026-11-19",
-      "deadlineText": null,
+      "deadline": null,
+      "deadlineText": "응모 마감 (11/19)",
       "meta": [
         "고용노동부 웹진",
         "정답자 추첨",
         "당첨자 개별 연락"
       ],
-      "note": "11/18 확인 · 문제 아래 HINT에 답이 그대로 나와 있어요. 19일(목) 마감이니 오늘 넣어 두세요.",
+      "note": "11/20 확인 · 응모가 마감됐어요. 당첨자는 개별 연락 예정이라 결과만 지켜보면 됩니다.",
       "url": "https://www.labor21.kr/2026/11/event.php",
       "cta": "퀴즈 풀러 가기",
       "verifiedAt": "2026-11-18",
