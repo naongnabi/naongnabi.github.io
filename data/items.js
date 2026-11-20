@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-21T06:20:00+09:00",
+  "updatedAt": "2026-11-21T08:15:00+09:00",
   "items": [
+    {
+      "id": "deal-tplink-re305-extender",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "살림템",
+      "title": "티피링크 AC1200 와이파이 증폭기 RE305, 1개",
+      "highlight": "19,900원",
+      "highlightSub": "정가 24,900원 → 20% · 5,000원 차이",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "RE305 · 듀얼밴드 AC1200 와이파이 증폭기",
+        "정가 24,900원 → 19,900원 (5,000원 차이)",
+        "쿠팡 골드박스 특가"
+      ],
+      "note": "11/21 08:10 확인 · 쿠팡 골드박스 표시가 기준 · 평점·배송 표기는 상품 상세 미확인 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-tplink-re305-extender.webp",
+      "url": "https://link.coupang.com/a/iQtA3wNPDo",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "deal-silicook-garlic-container-5",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "살림템",
+      "title": "실리쿡 마늘칸칸용기 5개",
+      "highlight": "9,840원",
+      "highlightSub": "정가 24,000원 → 59% · 개당 1,968원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "5개 세트 · 개당 1,968원",
+        "칸칸 용기 · 다진 마늘 소분 보관용",
+        "쿠팡 골드박스 특가"
+      ],
+      "note": "11/21 08:10 확인 · 쿠팡 골드박스 표시가 기준 · 평점·배송 표기는 상품 상세 미확인 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-silicook-garlic-container-5.webp",
+      "url": "https://link.coupang.com/a/iQtCEE3QI0",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-21"
+    },
     {
       "id": "deal-spesifit-mold-remover-2",
       "cat": "deal",
