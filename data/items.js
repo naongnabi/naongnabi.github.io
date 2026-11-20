@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-20T12:15:00+09:00",
+  "updatedAt": "2026-11-20T18:15:00+09:00",
   "items": [
+    {
+      "id": "deal-palgong-skewer-fishcake-4",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "식품",
+      "title": "팔공어묵 프리미엄 꼬치어묵 가쓰오소스 세트 350g × 4팩 (총 40꼬치)",
+      "highlight": "12,010원",
+      "highlightSub": "정가 22,900원 → 47% · 꼬치당 300원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "350g × 4팩 · 10개입씩 총 40꼬치",
+        "평점 4.7 (574) · 볼·꼬치·봉어묵 4위",
+        "가쓰오 소스 포함 · 무료배송"
+      ],
+      "note": "11/20 18:00 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 10g당 86원 · 판매자 욜로그룹 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-palgong-skewer-fishcake-4.webp",
+      "url": "https://toss.shopping/_m/Xk1jrcvq",
+      "cta": "토스에서 보기",
+      "verifiedAt": "2026-11-20"
+    },
+    {
+      "id": "deal-merhent-shampoo-1l-2",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "생필품",
+      "title": "메르헨트 퍼퓸 대용량 샴푸 호텔 딥 우드향 1L × 2개",
+      "highlight": "7,990원",
+      "highlightSub": "정가 30,000원 → 73% · 개당 3,995원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "1L × 2개 · 호텔 딥 우드향",
+        "평점 4.6 (1,740) · 일반샴푸 1위",
+        "무료배송 · 내일도착 · 늦으면 보상"
+      ],
+      "note": "11/20 18:00 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 디에스엠인터내셔널 공식·베스트판매자 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-merhent-shampoo-1l-2.webp",
+      "url": "https://toss.shopping/_m/VtYV7Pn5",
+      "cta": "토스에서 보기",
+      "verifiedAt": "2026-11-20"
+    },
     {
       "id": "deal-aekyung-handwash-245",
       "cat": "deal",
@@ -202,8 +248,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "간편식",
       "title": "허만두 잎새만두 알찬고기 1.4kg + 알찬김치 1.4kg (1세트, 총 2.8kg)",
-      "highlight": "11,400원",
-      "highlightSub": "30일 내 최저가 · 1kg당 4,071원",
+      "highlight": "13,500원",
+      "highlightSub": "1kg당 4,821원 · 손만두 1위",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -211,11 +257,11 @@ window.DEUKTEM_DATA = {
         "내일 도착 예정",
         "1.4kg 봉당 5,700원"
       ],
-      "note": "11/19 확인 · 토스쇼핑 하루특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/20 18:00 토스 링크 관리 표시가 (11,400 → 13,500원 인상 · 30일 최저가 종료) · 가격은 언제든 바뀔 수 있어요",
       "image": "assets/thumbs/deal-heomandu-dumpling-set.webp",
       "url": "https://toss.shopping/_m/pLR5dckg",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-19"
+      "verifiedAt": "2026-11-20"
     },
     {
       "id": "deal-ryuqe-fresh-detergent-4",
@@ -225,8 +271,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "생활용품",
       "title": "애경 리큐 프레쉬 실내건조 액상세제 2.1L × 4개 (1세트)",
-      "highlight": "9,780원",
-      "highlightSub": "30일 내 최저가 · 1L당 1,164원",
+      "highlight": "10,080원",
+      "highlightSub": "1L당 1,200원 · 액상세제 4위",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -234,11 +280,11 @@ window.DEUKTEM_DATA = {
         "애경산업 공식 · 베스트판매자",
         "실내건조용 · 11/25 도착 예정"
       ],
-      "note": "11/19 확인 · 토스쇼핑 특가 기준 · 배송이 11/25 예정으로 느린 편이에요 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/20 18:00 토스 링크 관리 표시가 (9,780 → 10,080원) · 배송은 11/25 예정으로 느린 편이에요 · 가격은 언제든 바뀔 수 있어요",
       "image": "assets/thumbs/deal-ryuqe-fresh-detergent-4.webp",
       "url": "https://toss.shopping/_m/bc6rRPKn",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-19"
+      "verifiedAt": "2026-11-20"
     },
     {
       "id": "deal-sistima-toothbrush-13",
@@ -662,8 +708,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "생활용품",
       "title": "수뜰리에 퍼퓸 고체 탈취제 데이지향 310g × 2개",
-      "highlight": "9,900원",
-      "highlightSub": "토스 83% 특가 · 개당 4,950원",
+      "highlight": "8,290원",
+      "highlightSub": "개당 4,145원 · 실내 탈취제 2위",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -671,11 +717,11 @@ window.DEUKTEM_DATA = {
         "평점 4.7 (9,606)",
         "내일 도착"
       ],
-      "note": "11/17 확인 · 토스 표시 83% 특가·30일 내 최저가 · 특가라 가격은 언제든 바뀔 수 있어요",
+      "note": "11/20 18:00 토스 링크 관리 표시가 (9,900 → 8,290원 인하) · 가격은 언제든 바뀔 수 있어요",
       "image": "assets/thumbs/deal-sutelier-deodorizer-daisy-2.webp",
       "url": "https://toss.shopping/_m/lBgaB7Cj",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-17"
+      "verifiedAt": "2026-11-20"
     },
     {
       "id": "deal-hollys-coffee-stick-300",
@@ -892,8 +938,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "간편식",
       "title": "맛꾼 구운란 대란 30구",
-      "highlight": "8,200원",
-      "highlightSub": "정가 19,900원 → 59% · 1구당 273원",
+      "highlight": "10,000원",
+      "highlightSub": "1구당 333원",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -901,11 +947,11 @@ window.DEUKTEM_DATA = {
         "평점 4.6 (15,840)",
         "무료배송"
       ],
-      "note": "11/19 22:10 확인 · 9,800원→8,200원 · 토스 링크 관리 표시가",
+      "note": "11/20 18:00 토스 링크 관리 표시가 (8,200 → 10,000원) · 가격은 언제든 바뀔 수 있어요",
       "image": "assets/thumbs/deal-matkkun-eggs.webp",
       "url": "https://toss.shopping/_m/zFdJpvSp",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-19"
+      "verifiedAt": "2026-11-20"
     },
     {
       "id": "deal-listerine-3pack",
