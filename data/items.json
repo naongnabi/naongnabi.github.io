@@ -6,8 +6,54 @@
   "threads": "https://www.threads.com/@naong_nabi",
   "youtube": "https://www.youtube.com/@naong_nabi_cat"
  },
- "updatedAt": "2026-11-20T10:30:00+09:00",
+ "updatedAt": "2026-11-20T12:15:00+09:00",
  "items": [
+  {
+   "id": "deal-aekyung-handwash-245",
+   "cat": "deal",
+   "hot": null,
+   "platform": "네이버",
+   "pkey": "naver",
+   "tag": "생필품",
+   "title": "아이깨끗해 핸드워시 2.45L 레몬향 + 250ml 공용기 + 100ml",
+   "highlight": "15,900원",
+   "highlightSub": "정가 32,900원 → 51% · 100ml당 649원 · 무료배송",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "2.45L + 공용기 250ml + 미니 100ml",
+    "평점 4.89 (17,867) · 4점 이상 98%",
+    "무료배송 · 22시 전 결제 시 내일 07시 전 도착"
+   ],
+   "note": "11/20 12:00 확인 · 네이버 쇼핑 커넥트(수수료 8%) · 쿠폰 적용 시 15,800원 · 제주 3,000원·도서 5,000원 추가 · 최대구매 1인 10개 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-aekyung-handwash-245.webp",
+   "url": "https://naver.me/I5wvGVSA",
+   "cta": "네이버에서 보기",
+   "verifiedAt": "2026-11-20"
+  },
+  {
+   "id": "deal-duplex-humidifier-35",
+   "cat": "deal",
+   "hot": null,
+   "platform": "네이버",
+   "pkey": "naver",
+   "tag": "생활가전",
+   "title": "듀플렉스 무드등 초음파 가습기 3.5L (DP-G50UH)",
+   "highlight": "23,800원",
+   "highlightSub": "정가 36,900원 → 35% · 무료배송 · 쿠폰 적용 시 21,420원",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "3.5L 대용량 · 다이얼식 · 무드등 · 통세척",
+    "평점 4.81 (21,683) · 4점 이상 97%",
+    "무료배송 · 평균 2일 이내 도착 99%"
+   ],
+   "note": "11/20 12:00 확인 · 네이버 쇼핑 커넥트(수수료 16%) · 2,380원 추가할인 쿠폰 적용 시 21,420원 · 제주·도서 배송비 3,000원 추가 · 오늘 56명 구매 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-duplex-humidifier-35.webp",
+   "url": "https://naver.me/5AuvbYQK",
+   "cta": "네이버에서 보기",
+   "verifiedAt": "2026-11-20"
+  },
   {
    "id": "deal-daepae-samgyeop-1kg",
    "cat": "deal",
