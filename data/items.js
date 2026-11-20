@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-20T18:15:00+09:00",
+  "updatedAt": "2026-11-21T06:00:00+09:00",
   "items": [
     {
       "id": "deal-palgong-skewer-fishcake-4",
@@ -18,8 +18,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "식품",
       "title": "팔공어묵 프리미엄 꼬치어묵 가쓰오소스 세트 350g × 4팩 (총 40꼬치)",
-      "highlight": "12,010원",
-      "highlightSub": "정가 22,900원 → 47% · 꼬치당 300원 · 무료배송",
+      "highlight": "12,900원",
+      "highlightSub": "정가 22,900원 → 44% · 꼬치당 323원 · 무료배송",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -27,11 +27,11 @@ window.DEUKTEM_DATA = {
         "평점 4.7 (574) · 볼·꼬치·봉어묵 4위",
         "가쓰오 소스 포함 · 무료배송"
       ],
-      "note": "11/20 18:00 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 10g당 86원 · 판매자 욜로그룹 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/21 06:00 토스 링크 관리 표시가 (12,010 → 12,900원 인상) · 판매자 욜로그룹 · 가격은 언제든 바뀔 수 있어요",
       "image": "assets/thumbs/deal-palgong-skewer-fishcake-4.webp",
       "url": "https://toss.shopping/_m/Xk1jrcvq",
       "cta": "토스에서 보기",
-      "verifiedAt": "2026-11-20"
+      "verifiedAt": "2026-11-21"
     },
     {
       "id": "deal-merhent-shampoo-1l-2",
@@ -41,8 +41,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "생필품",
       "title": "메르헨트 퍼퓸 대용량 샴푸 호텔 딥 우드향 1L × 2개",
-      "highlight": "7,990원",
-      "highlightSub": "정가 30,000원 → 73% · 개당 3,995원 · 무료배송",
+      "highlight": "9,500원",
+      "highlightSub": "정가 30,000원 → 68% · 개당 4,750원 · 무료배송",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -50,11 +50,11 @@ window.DEUKTEM_DATA = {
         "평점 4.6 (1,740) · 일반샴푸 1위",
         "무료배송 · 내일도착 · 늦으면 보상"
       ],
-      "note": "11/20 18:00 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 디에스엠인터내셔널 공식·베스트판매자 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/21 06:00 토스 링크 관리 표시가 (7,990 → 9,500원 인상) · 가격은 언제든 바뀔 수 있어요",
       "image": "assets/thumbs/deal-merhent-shampoo-1l-2.webp",
       "url": "https://toss.shopping/_m/VtYV7Pn5",
       "cta": "토스에서 보기",
-      "verifiedAt": "2026-11-20"
+      "verifiedAt": "2026-11-21"
     },
     {
       "id": "deal-aekyung-handwash-245",
@@ -708,8 +708,8 @@ window.DEUKTEM_DATA = {
       "pkey": "toss",
       "tag": "생활용품",
       "title": "수뜰리에 퍼퓸 고체 탈취제 데이지향 310g × 2개",
-      "highlight": "8,290원",
-      "highlightSub": "개당 4,145원 · 실내 탈취제 2위",
+      "highlight": "9,900원",
+      "highlightSub": "개당 4,950원 · 실내 탈취제 2위",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
@@ -717,11 +717,11 @@ window.DEUKTEM_DATA = {
         "평점 4.7 (9,606)",
         "내일 도착"
       ],
-      "note": "11/20 18:00 토스 링크 관리 표시가 (9,900 → 8,290원 인하) · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/21 06:00 토스 링크 관리 표시가 (8,290 → 9,900원 인상) · 가격은 언제든 바뀔 수 있어요",
       "image": "assets/thumbs/deal-sutelier-deodorizer-daisy-2.webp",
       "url": "https://toss.shopping/_m/lBgaB7Cj",
       "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-20"
+      "verifiedAt": "2026-11-21"
     },
     {
       "id": "deal-hollys-coffee-stick-300",
@@ -1058,13 +1058,13 @@ window.DEUKTEM_DATA = {
       "answer": [
         "④ BF인증제도"
       ],
-      "deadline": "2026-11-20",
-      "deadlineText": null,
+      "deadline": null,
+      "deadlineText": "응모 마감 (11/20) · 상품 발송 12/4",
       "meta": [
         "한국농어촌공사",
         "상품 발송 12/4"
       ],
-      "note": "11/15 확인 · 구글폼 응모 · 정답 11/18 확인",
+      "note": "11/21 기준 응모 마감(11/20) · 11/15 확인 · 구글폼 응모 · 정답 11/18 확인",
       "url": "https://docs.google.com/forms/d/e/1FAIpQLScB7PkfHIsgD3dK8c8dREVVIVgCMF9tUn9MnCBFT6pgHSYQvA/viewform",
       "cta": "퀴즈 풀러 가기",
       "verifiedAt": "2026-11-18"
@@ -1083,13 +1083,13 @@ window.DEUKTEM_DATA = {
         "1번 ① 성금과 성품을 기부할 수 있다",
         "2번 ② 자격증 응시료"
       ],
-      "deadline": "2026-11-20",
-      "deadlineText": null,
+      "deadline": null,
+      "deadlineText": "응모 마감 (11/20) · 12월 이후 문자 안내",
       "meta": [
         "서초구청",
         "12월 이후 문자 안내"
       ],
-      "note": "11/15 확인 · 구청 홈페이지에서 응모 · 정답 11/18 확인",
+      "note": "11/21 기준 응모 마감(11/20) · 11/15 확인 · 구청 홈페이지에서 응모 · 정답 11/18 확인",
       "url": "https://www.seocho.go.kr/site/seocho/ex/poll/PollUserFForm.do?plIdx=PL00000246&searchType=S",
       "cta": "퀴즈 풀러 가기",
       "verifiedAt": "2026-11-18"
@@ -1109,13 +1109,13 @@ window.DEUKTEM_DATA = {
         "2번 프렌즈",
         "3번 피자설기"
       ],
-      "deadline": "2026-11-20",
-      "deadlineText": null,
+      "deadline": null,
+      "deadlineText": "응모 마감 (11/20) · 12/10경 발송",
       "meta": [
         "한국전력공사",
         "12/10경 발송"
       ],
-      "note": "11/15 확인 · 구글폼 응모 · 정답 11/18 확인",
+      "note": "11/21 기준 응모 마감(11/20) · 11/15 확인 · 구글폼 응모 · 정답 11/18 확인",
       "url": "http://www.kepco-webzine.co.kr/2611/quiz.html",
       "cta": "퀴즈 풀러 가기",
       "verifiedAt": "2026-11-18"
@@ -1906,14 +1906,14 @@ window.DEUKTEM_DATA = {
       "title": "「월간 내일」 독자 만족도 조사",
       "highlight": "모바일 커피 쿠폰 50명",
       "highlightSub": "로그인 없이 설문만",
-      "deadline": "2026-11-20",
-      "deadlineText": null,
+      "deadline": null,
+      "deadlineText": "응모 마감 (11/20) · 발표 12/1",
       "meta": [
         "고용노동부 웹진",
         "발표 12/1",
         "정답 없이 의견만"
       ],
-      "note": "11/18 확인 · 정답 없이 「월간 내일」에 대한 의견만 남기면 응모돼요. 같은 페이지에서 독자 퀴즈와 함께 참여할 수 있습니다.",
+      "note": "11/21 기준 응모 마감(11/20) · 11/18 확인 · 정답 없이 「월간 내일」에 대한 의견만 남기면 응모돼요. 같은 페이지에서 독자 퀴즈와 함께 참여할 수 있습니다.",
       "url": "https://www.labor21.kr/2026/11/event.php",
       "cta": "설문 참여하기",
       "verifiedAt": "2026-11-18",
@@ -1931,14 +1931,14 @@ window.DEUKTEM_DATA = {
       "title": "〈장애인과 일터〉 초성퀴즈 — 한글 점자의 이름",
       "highlight": "음료 기프티콘 10명",
       "highlightSub": "초성 4글자 1문항",
-      "deadline": "2026-11-20",
-      "deadlineText": null,
+      "deadline": null,
+      "deadlineText": "응모 마감 (11/20) · 발표 12월호",
       "meta": [
         "한국장애인고용공단",
         "발표 12월호",
         "홈페이지에서 응모"
       ],
-      "note": "11/18 확인 · 1926년 박두성 선생이 만든 점자의 이름이에요. 초성 ㉭㉤㉨㉧에 그대로 맞춰 적으면 됩니다.",
+      "note": "11/21 기준 응모 마감(11/20) · 11/18 확인 · 1926년 박두성 선생이 만든 점자의 이름이에요. 초성 ㉭㉤㉨㉧에 그대로 맞춰 적으면 됩니다.",
       "url": "https://www.kead-webzine.or.kr/2026/vol379/pc/sub_03_04.html",
       "cta": "퀴즈 풀러 가기",
       "verifiedAt": "2026-11-18",
