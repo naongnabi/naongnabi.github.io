@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-21T06:00:00+09:00",
+  "updatedAt": "2026-11-21T06:20:00+09:00",
   "items": [
     {
       "id": "deal-spesifit-mold-remover-2",
@@ -2623,6 +2623,236 @@ window.DEUKTEM_DATA = {
       "url": "https://form.naver.com/response/7pIGBMsnk5X",
       "cta": "설문 참여하기",
       "verifiedAt": "2026-11-19"
+    },
+    {
+      "id": "exp-revu-mooas-humid",
+      "cat": "exp",
+      "hot": null,
+      "platform": "레뷰",
+      "pkey": "revu",
+      "tag": "가전·디지털",
+      "title": "[무아스] 미스티케어 UV 복합식 가습기 8L",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 신청 806명",
+      "deadline": "2026-11-22",
+      "deadlineText": null,
+      "meta": [
+        "레뷰 긴급체험단",
+        "블로그 1,000자+영상 15초",
+        "발표 11/24"
+      ],
+      "note": "11/21 신청 · 스토어 알림 받기와 상품 찜을 마쳤어요. 신청 후 취소·일정 연장이 안 되는 긴급체험단입니다.",
+      "url": "https://www.revu.net/campaign/1441015",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "exp-revu-villar-massager",
+      "cat": "exp",
+      "hot": null,
+      "platform": "레뷰",
+      "pkey": "revu",
+      "tag": "가전·디지털",
+      "title": "[빌라르] 울트라 목어깨 마사지기 V2",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 신청 769명",
+      "deadline": "2026-11-25",
+      "deadlineText": null,
+      "meta": [
+        "레뷰 배송형",
+        "사진 15장+영상·GIF 5개",
+        "발표 11/27"
+      ],
+      "note": "11/21 신청 · 이미지 10장과 영상·GIF 5개 이상이 필수라 사진·영상 작업 시간이 조금 필요해요.",
+      "url": "https://www.revu.net/campaign/1440506",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "exp-revu-iriver-mp3",
+      "cat": "exp",
+      "hot": null,
+      "platform": "레뷰",
+      "pkey": "revu",
+      "tag": "가전·디지털",
+      "title": "[아이리버] MP3 무선이어폰 IB-TMP1",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 신청 678명",
+      "deadline": "2026-11-25",
+      "deadlineText": null,
+      "meta": [
+        "레뷰 배송형",
+        "이미지 15장+영상 2개",
+        "발표 11/27"
+      ],
+      "note": "11/21 신청 · PC에서 음악을 넣어 스마트폰 없이 듣는 과정을 담아야 하고, 영상 2개 이상이 필요해요.",
+      "url": "https://www.revu.net/campaign/1440215",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "exp-rnote-medion",
+      "cat": "exp",
+      "hot": null,
+      "platform": "리뷰노트",
+      "pkey": "rnote",
+      "tag": "가전·디지털",
+      "title": "[재택] 산타시트 적외선 좌욕기 메디온애니",
+      "highlight": "0원 배송형",
+      "highlightSub": "239,000원 상당 · 모집 1명",
+      "deadline": "2026-11-30",
+      "deadlineText": null,
+      "meta": [
+        "리뷰노트 재택",
+        "1,000자+사진 15장",
+        "발표 12/01"
+      ],
+      "note": "11/21 신청 · 키워드(근적외선·가정용좌욕기)를 넣어 1,000자 이상 쓰면 되는 배송형이에요.",
+      "url": "https://www.reviewnote.co.kr/campaigns/1552269",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "exp-rnote-caremi",
+      "cat": "exp",
+      "hot": null,
+      "platform": "리뷰노트",
+      "pkey": "rnote",
+      "tag": "가전·디지털",
+      "title": "[재택] 산타시트 적외선 좌욕 방석 케어미",
+      "highlight": "0원 배송형",
+      "highlightSub": "248,000원 상당 · 모집 1명",
+      "deadline": "2026-11-30",
+      "deadlineText": null,
+      "meta": [
+        "리뷰노트 재택",
+        "1,000자+사진 15장",
+        "발표 12/01"
+      ],
+      "note": "11/21 신청 · 의자에 앉아 쓰는 방석형이라 사진 찍기 쉬운 편이에요.",
+      "url": "https://www.reviewnote.co.kr/campaigns/1552271",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "exp-rnote-hurex-pad",
+      "cat": "exp",
+      "hot": null,
+      "platform": "리뷰노트",
+      "pkey": "rnote",
+      "tag": "가전·디지털",
+      "title": "[재택] 휴렉스 적외선 온열 국소부위패드+무선리모컨",
+      "highlight": "0원 배송형",
+      "highlightSub": "98,800원 상당 · 모집 1명",
+      "deadline": "2026-11-30",
+      "deadlineText": null,
+      "meta": [
+        "리뷰노트 재택",
+        "1,000자+사진 15장",
+        "발표 12/01"
+      ],
+      "note": "11/21 신청 · 손목·발목에 감아 쓰는 찜질 패드로, 온도·착용감 후기를 쓰면 됩니다.",
+      "url": "https://www.reviewnote.co.kr/campaigns/1552274",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "exp-rnote-hurex-heater",
+      "cat": "exp",
+      "hot": null,
+      "platform": "리뷰노트",
+      "pkey": "rnote",
+      "tag": "가전·디지털",
+      "title": "[재택] 휴렉스 적외선 온열 찜질기 CP002+무선리모컨",
+      "highlight": "0원 배송형",
+      "highlightSub": "258,800원 상당 · 모집 1명",
+      "deadline": "2026-11-30",
+      "deadlineText": null,
+      "meta": [
+        "리뷰노트 재택",
+        "1,000자+사진 15장",
+        "발표 12/01"
+      ],
+      "note": "11/21 신청 · 무선 리모컨으로 온도를 바꾸는 모습을 영상으로 담으면 좋아요.",
+      "url": "https://www.reviewnote.co.kr/campaigns/1552277",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "quiz-bucheon-safety",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "생필품",
+      "title": "부천시 '스마트 안전 퀴즈!'",
+      "highlight": "모바일 커피 쿠폰 50명",
+      "highlightSub": "정답 2문항 · 로그인 없이 참여",
+      "answer": [
+        "8,815",
+        "비상벨"
+      ],
+      "deadline": "2026-11-29",
+      "deadlineText": null,
+      "meta": [
+        "부천시",
+        "네이버폼 제출",
+        "발표 12/02"
+      ],
+      "note": "11/21 응모 · 부천시 CCTV는 8,815대, 위급할 때 누르는 것은 CCTV에 달린 비상벨이에요.",
+      "url": "https://form.naver.com/response/J0nJDiS3qua",
+      "cta": "퀴즈 참여하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "quiz-ggnews-survey",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "생필품",
+      "title": "경기도뉴스포털 홈페이지 만족도 조사",
+      "highlight": "네이버페이 5,000원 400명",
+      "highlightSub": "문항별 페이지 진행 · 로그인 없이 참여",
+      "answer": [
+        "설문 참여형 (정답 없음)"
+      ],
+      "deadline": "2026-12-04",
+      "deadlineText": null,
+      "meta": [
+        "경기도",
+        "설문 23문항",
+        "발표 12/18"
+      ],
+      "note": "11/21 응모 · 휴대폰 번호만 넣고 답하면 되고, 방문 경험이 없으면 중간에 문항이 줄어 10분 안쪽이에요.",
+      "url": "https://survey.gg.go.kr/app/onvy/qestnnm.do?onvySn=548",
+      "cta": "설문 참여하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "quiz-jdlib-survey",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "생필품",
+      "title": "정독도서관 이용서비스 만족도 조사",
+      "highlight": "모바일 커피 쿠폰 150명",
+      "highlightSub": "설문 36문항 · 로그인 없이 참여",
+      "answer": [
+        "설문 참여형 (정답 없음)"
+      ],
+      "deadline": "2026-11-25",
+      "deadlineText": null,
+      "meta": [
+        "서울시교육청 정독도서관",
+        "이름·휴대폰만 입력",
+        "발표 12/07"
+      ],
+      "note": "11/21 응모 · 마지막에 이름과 휴대폰 번호를 넣어야 응모로 인정돼요.",
+      "url": "https://ksurv.kr/akM3PTw2Njs",
+      "cta": "설문 참여하기",
+      "verifiedAt": "2026-11-21"
     }
   ]
 };
