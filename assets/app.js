@@ -63,13 +63,29 @@
     return m + "월 " + day + "일 " + get("weekday");
   }
 
-  /* ───────── 상태 ───────── */
+  /* ───────── 상태 ─────────
+     탭별 페이지(/quiz/ 등)는 <html data-default-tab="quiz"> 로 첫 탭을 지정합니다.
+     기존 ?tab=… 주소도 그대로 동작합니다(주소의 tab 이 페이지 기본값보다 우선). */
   var startTab = new URLSearchParams(location.search).get("tab");
+  var PAGE_TAB = document.documentElement.getAttribute("data-default-tab");
+  var TAB_PAGE = CAT[PAGE_TAB] ? PAGE_TAB : null;
   var state = {
-    tab: CAT[startTab] ? startTab : "all",
+    tab: CAT[startTab] ? startTab : (TAB_PAGE || "all"),
     q: "",
     onlyFav: false
   };
+
+  /* 탭별 페이지(/quiz/ 등)는 한 단계 아래에 있어서 사진 같은 자료 경로에 "../" 를 붙입니다.
+     루트 도메인·서브경로 양쪽에서 모두 맞게 풀립니다. */
+  var ROOT_PREFIX = TAB_PAGE ? "../" : "";
+
+  /* 지금 보고 있는 페이지 기준으로 다른 탭 페이지 주소를 만듭니다.
+     (/quiz/ → /deal/ , /onen1-deuktem/quiz/ → /onen1-deuktem/deal/ , 전체 → 사이트 루트) */
+  function tabPageURL(tab) {
+    var dir = location.pathname.replace(/[^/]*$/, "");
+    if (TAB_PAGE) dir = dir.replace(new RegExp(TAB_PAGE + "/$"), "");
+    return dir + (tab === "all" ? "" : tab + "/");
+  }
 
   var esc = function (s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -116,8 +132,9 @@
 
   function thumbHTML(it, cls, lazy) {
     if (!it.image) return "";
+    var src = /^https?:/i.test(it.image) ? it.image : ROOT_PREFIX + it.image;
     return '<span class="thumb ' + cls + '" data-ico="' + (CAT_ICO[it.cat] || "🛍️") + '">' +
-      '<img src="' + esc(it.image) + '" alt=""' + (lazy ? ' loading="lazy"' : "") + ' decoding="async" ' +
+      '<img src="' + esc(src) + '" alt=""' + (lazy ? ' loading="lazy"' : "") + ' decoding="async" ' +
         'onerror="this.parentNode.classList.add(\'is-fallback\');this.remove();" />' +
       "</span>";
   }
@@ -269,7 +286,8 @@
   function adCardHTML(o, cls) {
     if (!o) return "";
     var thumb = o.image
-      ? '<span class="adcard-thumb"><img src="' + esc(o.image) + '" alt="" loading="lazy" decoding="async" ' +
+      ? '<span class="adcard-thumb"><img src="' +
+          esc(/^https?:/i.test(o.image) ? o.image : ROOT_PREFIX + o.image) + '" alt="" loading="lazy" decoding="async" ' +
           'onerror="this.parentNode.classList.add(\'is-fallback\');this.remove();" />' +
           '<span class="adcard-ad" aria-hidden="true">AD</span></span>'
       : '<span class="adcard-thumb is-fallback"><span class="adcard-ad" aria-hidden="true">AD</span></span>';
@@ -467,6 +485,14 @@
 
   /* ───────── 이벤트 ───────── */
   function setTab(tab) {
+    /* 탭별 페이지에서는 주소가 곧 카테고리입니다.
+       다른 탭을 누르면 화면만 바꾸지 않고 그 탭의 페이지로 이동합니다
+       (canonical·제목과 실제 보이는 내용이 어긋나지 않게). */
+    if (TAB_PAGE) {
+      if (tab === state.tab) window.scrollTo({ top: 0, behavior: "smooth" });
+      else location.href = tabPageURL(tab);
+      return;
+    }
     var changed = state.tab !== tab;
     state.tab = tab;
     render();
@@ -500,6 +526,7 @@
   });
 
   $("#emptyReset").addEventListener("click", function () {
+    if (TAB_PAGE) { location.href = tabPageURL("all"); return; }
     state.q = ""; state.onlyFav = false; state.tab = "all";
     $("#q").value = ""; render();
   });
@@ -767,7 +794,7 @@
   /* PWA 서비스 워커 (http/https 에서만) */
   if ("serviceWorker" in navigator && (location.protocol === "http:" || location.protocol === "https:")) {
     window.addEventListener("load", function () {
-      navigator.serviceWorker.register("sw.js").catch(function () {});
+      navigator.serviceWorker.register(ROOT_PREFIX + "sw.js").catch(function () {});
     });
   }
 })();

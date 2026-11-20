@@ -77,6 +77,9 @@
 
 <div class="app" id="app">
 
+  <!-- 화면에는 보이지 않는 대표 제목(검색엔진용). 탭별 페이지는 생성기가 탭에 맞게 바꿉니다. -->
+  <h1 class="sr-only">오늘도득템 — 오늘의 특가·무료 체험단·경품 퀴즈 정답·공모전·앱테크 모음</h1>
+
   <!-- ── 상단 고정: 브랜드 · 검색 · 대가성 안내 ── -->
   <div class="sticky-top" id="stickyTop">
     <header class="hdr">
@@ -245,6 +248,16 @@
           <svg class="ic" aria-hidden="true"><use href="#i-spark"/></svg> 바로가기
         </button>
       </div>
+
+      <!-- 카테고리별 페이지 — 검색에서 바로 들어올 수 있는 주소(생성기: tools/build_tabs.py) -->
+      <nav class="foot-tabs" aria-label="카테고리별 페이지">
+        <a href="./">전체</a>
+        <a href="deal/">오늘의 특가</a>
+        <a href="exp/">무료 체험단</a>
+        <a href="quiz/">경품 퀴즈</a>
+        <a href="contest/">공모전</a>
+        <a href="apptech/">앱테크</a>
+      </nav>
 
       <div class="foot-links">
         <a href="https://blog.naver.com/allmine1981" target="_blank" rel="noopener noreferrer">블로그 후기</a>

@@ -30,7 +30,13 @@
 
 ```
 apps/oneul-deuktem/
-├─ index.html               # 화면 (이 파일 하나)
+├─ index.html               # 화면 (원본 · 탭별 페이지의 template)
+├─ quiz/index.html          # 탭별 페이지 — 생성기(tools/build_tabs.py)가 만듭니다 (직접 수정 금지)
+├─ exp/index.html           #   ↳ 무료 체험단
+├─ deal/index.html          #   ↳ 오늘의 특가
+├─ contest/index.html       #   ↳ 공모전
+├─ apptech/index.html       #   ↳ 앱테크
+├─ sitemap.xml              # 생성기가 items.json 의 updatedAt 으로 갱신 (6개 URL)
 ├─ manifest.webmanifest     # PWA 매니페스트
 ├─ sw.js                    # 서비스 워커 (앱 껍데기 캐시, 네트워크 우선)
 ├─ assets/
@@ -48,6 +54,7 @@ apps/oneul-deuktem/
 │  ├─ apple-touch-icon.png, favicon-32.png
 │  └─ make_icons.py         # 아이콘 재생성 스크립트
 ├─ tools/
+│  ├─ build_tabs.py         # index.html → 탭별 페이지(/quiz/ …)·sitemap.xml 생성 (deploy.sh 가 자동 실행)
 │  ├─ validate.py           # 데이터 검증 + items.js 동기화 + 링크 확인
 │  ├─ fetch_adpick.py       # 애드픽 제휴 광고 받아와 data/adpick.json·js 갱신 (텐핑 빈 자리 대체 광고)
 │  ├─ build_preview.py      # 한 파일 미리보기(downloads/oneul-deuktem-preview.html) 생성 — 상품 사진은 data URI 로 인라인
@@ -83,7 +90,8 @@ python3 -m http.server 8000
 
 | 항목 | 값 |
 |---|---|
-| 공개 주소 | **https://naongnabi.github.io/onen1-deuktem/** |
+| 공개 주소(검색 노출) | **https://naongnabi.github.io/** (루트 저장소 `naongnabi.github.io`) |
+| 미러 주소 | **https://naongnabi.github.io/onen1-deuktem/** (저장소 `naongnabi/onen1-deuktem`, 같은 파일) |
 | 저장소 | `naongnabi/onen1-deuktem` (public) · 브랜치 `main` · 폴더 `/ (root)` |
 | 배포용 로컬 경로 | `apps/oneul-deuktem` (이 폴더 자체가 git 저장소, origin = 위 저장소) |
 
@@ -96,6 +104,12 @@ bash tools/deploy.sh --no-push                        # 커밋까지만
 bash tools/deploy.sh "커밋 메시지 직접 지정"
 ```
 푸시 후 GitHub Pages가 1~2분 안에 다시 빌드합니다(CDN 캐시로 최대 10분 지연될 수 있음).
+
+> **탭별 페이지**(`/quiz/`, `/exp/`, `/deal/`, `/contest/`, `/apptech/`)와 `sitemap.xml`은
+> `index.html` 하나에서 **`tools/build_tabs.py`** 가 만들어 냅니다. `deploy.sh` 가 배포 전에 자동으로
+> 다시 만들므로 고칠 곳은 `index.html` 하나뿐이고, 커밋된 `quiz/index.html` 같은 파일은 직접 고치지 마세요.
+> 루트(`naongnabi.github.io`)·미러(`/onen1-deuktem/`) 어느 쪽에 올려도 상대 경로로 동작합니다.
+> 확인: `python3 tools/build_tabs.py --check` (달라진 파일이 있으면 exit 1).
 
 ### 처음 배포할 때 (다시 할 일이 생기면)
 1. GitHub에서 **public** 저장소를 만들고 이 폴더를 푸시
