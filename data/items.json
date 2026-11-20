@@ -6,8 +6,54 @@
   "threads": "https://www.threads.com/@naong_nabi",
   "youtube": "https://www.youtube.com/@naong_nabi_cat"
  },
- "updatedAt": "2026-11-20T08:20:00+09:00",
+ "updatedAt": "2026-11-20T10:30:00+09:00",
  "items": [
+  {
+   "id": "deal-daepae-samgyeop-1kg",
+   "cat": "deal",
+   "hot": null,
+   "platform": "쿠팡",
+   "pkey": "coupang",
+   "tag": "식품",
+   "title": "무연골 돌돌말이 대패삼겹살 (냉동) 1kg",
+   "highlight": "9,700원",
+   "highlightSub": "정가 17,500원 → 44% · 100g당 970원",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "냉동 1kg · 무연골 돌돌말이",
+    "100g당 970원",
+    "로켓프레시 · 쿠팡 골드박스 특가"
+   ],
+   "note": "11/20 10:20 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-daepae-samgyeop-1kg.webp",
+   "url": "https://link.coupang.com/a/iOXSsuPUiG",
+   "cta": "쿠팡에서 보기",
+   "verifiedAt": "2026-11-20"
+  },
+  {
+   "id": "deal-coke-zero-370-24",
+   "cat": "deal",
+   "hot": null,
+   "platform": "쿠팡",
+   "pkey": "coupang",
+   "tag": "식품",
+   "title": "코카콜라 제로 무라벨 370ml × 24캔",
+   "highlight": "17,480원",
+   "highlightSub": "정가 28,600원 → 38% · 1캔 728원",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "370ml × 24캔 · 총 8.88L",
+    "제로 · 무라벨",
+    "쿠팡 골드박스 특가"
+   ],
+   "note": "11/20 10:22 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-coke-zero-370-24.webp",
+   "url": "https://link.coupang.com/a/iOYdmM3b2a",
+   "cta": "쿠팡에서 보기",
+   "verifiedAt": "2026-11-20"
+  },
   {
    "id": "deal-soonsaem-dish-soap-3",
    "cat": "deal",
@@ -39,8 +85,8 @@
    "pkey": "coupang",
    "tag": "식품",
    "title": "두마리 통닭 백숙용 1.1kg (1개)",
-   "highlight": "7,990원",
-   "highlightSub": "정가 15,900원 → 49%",
+   "highlight": "8,990원",
+   "highlightSub": "정가 15,900원 → 43%",
    "deadline": null,
    "deadlineText": "가격 변동",
    "meta": [
@@ -48,7 +94,7 @@
     "로켓프레시",
     "쿠팡 골드박스 특가"
    ],
-   "note": "11/20 08:10 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+   "note": "11/20 10:22 확인 · 쿠팡 골드박스 표시가 기준(08:10 7,990원 → 8,990원) · 가격은 언제든 바뀔 수 있어요",
    "image": "assets/thumbs/deal-dumari-chicken-11kg.webp",
    "url": "https://link.coupang.com/a/iOOJ0n31hI",
    "cta": "쿠팡에서 보기",
