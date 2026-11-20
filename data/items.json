@@ -9,6 +9,52 @@
   "updatedAt": "2026-11-21T06:00:00+09:00",
   "items": [
     {
+      "id": "deal-spesifit-mold-remover-2",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "살림템",
+      "title": "스페시핏 곰팡이 제거제 500ml × 2개",
+      "highlight": "7,600원",
+      "highlightSub": "정가 35,600원 → 78% · 한 통 3,800원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "500ml × 2개 · 곰팡이세정제 1위",
+        "평점 4.6 (5,248) · (주)신세계리빙 베스트판매자",
+        "무료배송 · 내일도착·늦으면보상"
+      ],
+      "note": "11/21 06:00 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-spesifit-mold-remover-2.webp",
+      "url": "https://toss.shopping/_m/PAbskSd4",
+      "cta": "토스에서 보기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "deal-br-melon-milk-24",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "식품",
+      "title": "배스킨라빈스 메롱멜론 우유 190ml × 24개",
+      "highlight": "8,250원",
+      "highlightSub": "정가 28,800원 → 71% · 1개당 344원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "190ml × 24개 · 총 4.56L",
+        "평점 4.7 (4,160) · 딸기·초코·커피·바나나우유 3위",
+        "배스킨라빈스 공식스토어 베스트판매자 · 내일도착"
+      ],
+      "note": "11/21 06:00 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 선착순특가 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-br-melon-milk-24.webp",
+      "url": "https://toss.shopping/_m/5vbZN0N1",
+      "cta": "토스에서 보기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
       "id": "deal-palgong-skewer-fishcake-4",
       "cat": "deal",
       "hot": null,
