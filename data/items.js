@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-21T15:39:52+09:00",
+  "updatedAt": "2026-11-21T22:15:00+09:00",
   "items": [
+    {
+      "id": "deal-ali-winter-cat-cave-bed",
+      "cat": "deal",
+      "hot": null,
+      "platform": "알리",
+      "pkey": "ali",
+      "tag": "고양이용품",
+      "title": "겨울 고양이 동굴형 방석 (S/M/L)",
+      "highlight": "8,375원",
+      "highlightSub": "Choice 한정딜 7,607원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "11/26~12/2 도착",
+      "meta": [
+        "텐트형 동굴 방석 · S/M/L · 라이트그레이·블랙",
+        "평점 4.7 · 1만+ 판매",
+        "Choice 특가 · 1인 1개 한정"
+      ],
+      "note": "11/21 22:00 확인 · 알리 Choice 특가 기준(옵션·쿠폰에 따라 달라짐) · 정가는 알리 표시가 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-ali-winter-cat-cave-bed.webp",
+      "url": "https://s.click.aliexpress.com/e/_c4bhpymt",
+      "cta": "알리에서 보기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "deal-ali-ramen-storage-box",
+      "cat": "deal",
+      "hot": null,
+      "platform": "알리",
+      "pkey": "ali",
+      "tag": "주방용품",
+      "title": "라면·컵라면 수납함 (S/L)",
+      "highlight": "6,900원",
+      "highlightSub": "Choice 한정딜 · 무료배송",
+      "deadline": null,
+      "deadlineText": "11/26~12/2 도착",
+      "meta": [
+        "컵라면·라면봉지 적재형 · S/L 2가지",
+        "평점 4.9 (34) · 1,000+ 판매",
+        "무료배송 · 지연 시 1,300원 쿠폰"
+      ],
+      "note": "11/21 22:00 확인 · 알리 Choice 특가 기준(S 사이즈·쿠폰에 따라 달라짐) · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-ali-ramen-storage-box.webp",
+      "url": "https://s.click.aliexpress.com/e/_c4S2DqT7",
+      "cta": "알리에서 보기",
+      "verifiedAt": "2026-11-21"
+    },
     {
       "id": "deal-haenam-sweet-potato-3kg",
       "cat": "deal",
