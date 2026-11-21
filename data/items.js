@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-21T10:10:00+09:00",
+  "updatedAt": "2026-11-21 14:40",
   "items": [
     {
       "id": "deal-tefal-easycook-saucepan-16",
@@ -2943,6 +2943,104 @@ window.DEUKTEM_DATA = {
       ],
       "note": "11/21 응모 · 마지막에 이름과 휴대폰 번호를 넣어야 응모로 인정돼요.",
       "url": "https://ksurv.kr/akM3PTw2Njs",
+      "cta": "설문 참여하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "quiz-gangwon-sns-survey",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "치킨·페이",
+      "title": "강원특별자치도 2026 SNS 만족도 설문조사",
+      "highlight": "BHC 뿌링클 20명 · 네이버페이 1만 20명 · 강원더몰 1만원권 30명",
+      "highlightSub": "설문 10단계 · 70명 추첨",
+      "answer": [
+        "설문 참여형 (정답 없음)"
+      ],
+      "deadline": "2026-11-29",
+      "deadlineText": "응모 마감 11/29 · 발표 12/09",
+      "meta": [
+        "강원특별자치도",
+        "발표 12/09 · 네이버폼"
+      ],
+      "note": "11/21 응모 완료 · 네이버폼 10단계 설문 · 확인 시점 기준",
+      "url": "https://form.naver.com/response/FT6Pj5TZlo9",
+      "cta": "설문 참여하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "quiz-gwcf-survey",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "커피",
+      "title": "강원문화재단 2026 고객만족도조사",
+      "highlight": "커피쿠폰 100명",
+      "highlightSub": "38문항 · 추첨 100명",
+      "answer": [
+        "설문 참여형 (정답 없음)"
+      ],
+      "deadline": "2026-12-08",
+      "deadlineText": "응모 마감 12/08 · 발표 12/11",
+      "meta": [
+        "강원문화재단",
+        "발표 12/11 · 구글폼"
+      ],
+      "note": "11/21 응모 완료 · 구글폼 38문항 · 줄건너뛰기 없음",
+      "url": "https://forms.gle/YoSjWPHdbXJTMw3k6",
+      "cta": "설문 참여하기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "quiz-yongsan-drinking-ox",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "편의점",
+      "title": "용산구청 음주폐해 예방의 달 OX퀴즈",
+      "highlight": "편의점 모바일상품권 5천원 200명",
+      "highlightSub": "OX 3문항",
+      "answer": [
+        "1번 O",
+        "2번 X",
+        "3번 X"
+      ],
+      "deadline": "2026-11-22",
+      "deadlineText": "응모 마감 11/22 · 발표 11/27",
+      "meta": [
+        "용산구정신건강복지센터",
+        "발표 11/27 · 네이버폼"
+      ],
+      "note": "11/21 응모 완료 · 정답 O/X/X · 확인 시점 기준",
+      "url": "https://form.naver.com/response/Hy2ChNv1tmY",
+      "cta": "퀴즈 풀러 가기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "quiz-ggtour-survey",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "여행·커피",
+      "title": "경기관광 플랫폼 이용 만족도 설문조사",
+      "highlight": "여기어때 5만원 50명 · 컴포즈 돌체라떼 500명",
+      "highlightSub": "설문 16문항 · 550명 추첨",
+      "answer": [
+        "설문 참여형 (정답 없음)"
+      ],
+      "deadline": "2026-12-06",
+      "deadlineText": "응모 마감 12/06 · 발표 12/09",
+      "meta": [
+        "경기관광공사",
+        "발표 12/09 · 구글폼"
+      ],
+      "note": "11/21 응모 완료 · 로그인 없이 참여 · 확인 시점 기준",
+      "url": "https://forms.gle/1pSJVrAbJTwHSvbC9",
       "cta": "설문 참여하기",
       "verifiedAt": "2026-11-21"
     }
