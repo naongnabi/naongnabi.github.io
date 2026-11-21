@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-21 14:40",
+  "updatedAt": "2026-11-21T15:39:52+09:00",
   "items": [
+    {
+      "id": "deal-haenam-sweet-potato-3kg",
+      "cat": "deal",
+      "hot": null,
+      "platform": "네이버",
+      "pkey": "naver",
+      "tag": "식품",
+      "title": "해남 꿀고구마 한입 3kg (베니하루카)",
+      "highlight": "9,900원",
+      "highlightSub": "정가 19,200원 → 48% · 100g당 330원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "해남 꿀고구마 한입 3kg · 베니하루카 · 세척 손질",
+        "평점 4.58 (407,631) · 4점 이상 90%",
+        "무료배송 · 11/24(화) 도착 · 최대할인가 6,830원(쿠폰)"
+      ],
+      "note": "11/21 15:35 확인 · 네이버 쇼핑 커넥트(수수료 5%) · 100g당 330원 · 쿠폰 적용 시 6,830원 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-haenam-sweet-potato-3kg.webp",
+      "url": "https://naver.me/5WURbLAD",
+      "cta": "네이버에서 보기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "deal-tongyeong-oyster-500g",
+      "cat": "deal",
+      "hot": null,
+      "platform": "네이버",
+      "pkey": "naver",
+      "tag": "식품",
+      "title": "통영 생굴 500g (석화 · 하프셀)",
+      "highlight": "7,490원",
+      "highlightSub": "정가 9,900원 → 24% · 100g당 1,498원 · 1만원 이상 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "통영 산지직송 · 당일 채취 · 자체 3중 세척",
+        "평점 4.83 (38,866) · 4점 이상 97%",
+        "배송비 3,000원 · 1만원 이상 무료(N배송) · 11/24(화) 도착"
+      ],
+      "note": "11/21 15:40 확인 · 네이버 쇼핑 커넥트(수수료 5%) · 최대할인가 5,930원(쿠폰 D-3) · 수령 후 선도 확인, 익혀 드시는 걸 권장(판매자 안내) · 제주·도서 배송 불가 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-tongyeong-oyster-500g.webp",
+      "url": "https://naver.me/xm06bnSW",
+      "cta": "네이버에서 보기",
+      "verifiedAt": "2026-11-21"
+    },
     {
       "id": "deal-tefal-easycook-saucepan-16",
       "cat": "deal",
