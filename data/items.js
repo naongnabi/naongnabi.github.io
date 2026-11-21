@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-21T08:15:00+09:00",
+  "updatedAt": "2026-11-21T10:10:00+09:00",
   "items": [
+    {
+      "id": "deal-tefal-easycook-saucepan-16",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "살림템",
+      "title": "테팔 인덕션 스테인리스 이지쿡 편수냄비 16cm, 실버, 1개",
+      "highlight": "21,900원",
+      "highlightSub": "정가 83,100원 → 73% · 61,200원 차이",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "16cm 편수냄비 · 스테인리스 스틸 · 인덕션 겸용",
+        "정가 83,100원 → 21,900원 (61,200원 차이)",
+        "쿠팡 골드박스 특가"
+      ],
+      "note": "11/21 10:05 확인 · 쿠팡 골드박스 표시가 기준 · 평점·배송 표기는 상품 상세 미확인 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-tefal-easycook-saucepan-16.webp",
+      "url": "https://link.coupang.com/a/iQB77KXoQe",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "deal-comet-bubble-scrubber-20",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "살림템",
+      "title": "코멧 양면 버블 스펀지 수세미 핑크, 10개입 × 2개(총 20개)",
+      "highlight": "7,280원",
+      "highlightSub": "정가 12,200원 → 40% · 개당 364원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "10개입 × 2개 = 총 20개 · 개당 364원",
+        "정가 12,200원 → 7,280원 (40%)",
+        "쿠팡 골드박스 특가"
+      ],
+      "note": "11/21 10:05 확인 · 쿠팡 골드박스 표시가 기준 · 평점·배송 표기는 상품 상세 미확인 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-comet-bubble-scrubber-20.webp",
+      "url": "https://link.coupang.com/a/iQB9M3M79o",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-21"
+    },
     {
       "id": "deal-tplink-re305-extender",
       "cat": "deal",
