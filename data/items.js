@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-21T22:15:00+09:00",
+  "updatedAt": "2026-11-22T07:20:00+09:00",
   "items": [
     {
       "id": "deal-ali-winter-cat-cave-bed",
@@ -3135,6 +3135,79 @@ window.DEUKTEM_DATA = {
       "url": "https://forms.gle/1pSJVrAbJTwHSvbC9",
       "cta": "설문 참여하기",
       "verifiedAt": "2026-11-21"
+    },
+    {
+      "id": "quiz-kric-youtube-quiz2",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "편의점",
+      "title": "철도산업정보센터 제2회 유튜브 구독자 퀴즈",
+      "highlight": "CU 편의점 모바일상품권 1만원 10명",
+      "highlightSub": "빈칸 1문항 · 추첨 10명",
+      "answer": [
+        "철도산업 지능형 검색 서비스"
+      ],
+      "deadline": "2026-11-22",
+      "deadlineText": "응모 마감 11/22 · 발표 11/23",
+      "meta": [
+        "국가철도공단 철도산업정보센터",
+        "발표 11/23 · 홈페이지 응모폼"
+      ],
+      "note": "11/22 응모 완료 · 이름 칸에 유튜브 아이디 함께 기재 · 영상 구독·좋아요 조건",
+      "url": "https://www.kric.go.kr/jsp/general/event/quizEventForm.jsp?q_seq=73",
+      "cta": "퀴즈 풀러 가기",
+      "verifiedAt": "2026-11-22"
+    },
+    {
+      "id": "quiz-kogl-type-quiz",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "커피",
+      "title": "공공누리 유형 퀴즈 (누리집으로 가자)",
+      "highlight": "이디야 아이스아메리카노 100명",
+      "highlightSub": "빈칸 2문항 · 추첨 100명",
+      "answer": [
+        "1번 자유",
+        "2번 출처"
+      ],
+      "deadline": "2026-11-22",
+      "deadlineText": "응모 마감 11/22 · 발표 11/24",
+      "meta": [
+        "공공누리(한국문화정보원)",
+        "발표 11/24 · 네이버폼"
+      ],
+      "note": "11/22 응모 완료 · 제0유형=자유이용, 제1유형=출처표시 · 연락처당 1회",
+      "url": "https://form.naver.com/response/H99F46manU0",
+      "cta": "퀴즈 풀러 가기",
+      "verifiedAt": "2026-11-22"
+    },
+    {
+      "id": "quiz-sh-webzine56",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "커피",
+      "title": "SH 웹진 '서울을 Shㅏ랑해' VOL.56 독자퀴즈",
+      "highlight": "커피 모바일쿠폰 20명",
+      "highlightSub": "주관식 1문항 · 추첨 20명",
+      "answer": [
+        "SH주택정보"
+      ],
+      "deadline": "2026-11-22",
+      "deadlineText": "응모 마감 11/22 · 발표 11/26",
+      "meta": [
+        "서울주택도시개발공사",
+        "발표 11/26 이후 인스타그램 · 구글폼"
+      ],
+      "note": "11/22 응모 완료 · 지도 기반 통합 주거정보 포털(힌트: 영문포함 6글자) · 인스타 아이디 기재",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdgmW_FjYEavPQuqhmSEfHo6Qa8JCpq5pGgLRChyFVe9MnL8Q/viewform",
+      "cta": "퀴즈 풀러 가기",
+      "verifiedAt": "2026-11-22"
     }
   ]
 };
