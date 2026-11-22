@@ -8,8 +8,77 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-22T07:20:00+09:00",
+  "updatedAt": "2026-11-22T15:45:00+09:00",
   "items": [
+    {
+      "id": "deal-munjjing-glass-meal-container-6",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "주방용품",
+      "title": "Munjjing 내열강화유리 햇밥용기 흰색 원형 400ml 6개",
+      "highlight": "13,200원",
+      "highlightSub": "정가 23,610원 → 44% · 개당 2,200원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "전자레인지·냉동 겸용 내열강화유리 400ml × 6개",
+        "골드박스 특가 · 밀폐 뚜껑 포함",
+        "국·반찬 통째로 데우는 용도"
+      ],
+      "note": "11/22 15:35 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-munjjing-glass-meal-container-6.webp",
+      "url": "https://link.coupang.com/a/iSEAxWFR8K",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-22"
+    },
+    {
+      "id": "deal-dove-shea-butter-soap-12",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생필품",
+      "title": "도브 시어버터 뷰티 바 클렌징 비누 90g 12개입",
+      "highlight": "10,990원",
+      "highlightSub": "정가 28,800원 → 61% · 개당 916원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "시어버터 함유 클렌징 비누 90g × 12개",
+        "골드박스 특가 · 겨울 건조할 때 쓰기 좋은 보습형",
+        "개당 916원이라 1년치로 쌓아두기 좋음"
+      ],
+      "note": "11/22 15:36 확인 · 쿠팡 골드박스 특가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-dove-shea-butter-soap-12.webp",
+      "url": "https://link.coupang.com/a/iSEBZfkKqW",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-22"
+    },
+    {
+      "id": "deal-energizer-eveready-battery-40",
+      "cat": "deal",
+      "hot": null,
+      "platform": "네이버",
+      "pkey": "naver",
+      "tag": "생필품",
+      "title": "에너자이저 에버레디 알카라인 AA20입+AAA20입 (총 40입)",
+      "highlight": "14,900원",
+      "highlightSub": "정가 31,960원 → 53% · 개당 373원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "AA 20입 + AAA 20입 = 총 40입",
+        "평점 4.88 (2,894) · 4점 이상 98%",
+        "무료배송 · 11/23(월) 07시 전 도착 · 최대할인가 14,450원(쿠폰)"
+      ],
+      "note": "11/22 15:36 확인 · 네이버 쇼핑 커넥트(수수료 6%) · 쿠폰 적용 시 14,450원 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-energizer-eveready-battery-40.webp",
+      "url": "https://naver.me/Fc6N6lBO",
+      "cta": "네이버에서 보기",
+      "verifiedAt": "2026-11-22"
+    },
     {
       "id": "deal-ali-winter-cat-cave-bed",
       "cat": "deal",
