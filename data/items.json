@@ -6,8 +6,54 @@
   "threads": "https://www.threads.com/@naong_nabi",
   "youtube": "https://www.youtube.com/@naong_nabi_cat"
  },
- "updatedAt": "2026-11-22T15:45:00+09:00",
+ "updatedAt": "2026-11-22T21:45:00+09:00",
  "items": [
+  {
+   "id": "deal-toss-soundocks-earbuds-y07",
+   "cat": "deal",
+   "hot": null,
+   "platform": "토스",
+   "pkey": "toss",
+   "tag": "생활가전",
+   "title": "사운독스 노이즈 캔슬링 무선 이어폰 Y-07 (화이트)",
+   "highlight": "19,700원",
+   "highlightSub": "평점 4.6 (6,184) · 11/24 도착 예정",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "노이즈 캔슬링 · 주변음 허용 모드 · 화이트 1개",
+    "평점 4.6 (6,184) · 블루투스이어폰 1위",
+    "11/24 도착 예정 · 배송비는 결제 화면 확인"
+   ],
+   "note": "11/22 21:35 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-toss-soundocks-earbuds-y07.webp",
+   "url": "https://toss.shopping/_m/VJdeRLDb",
+   "cta": "토스에서 보기",
+   "verifiedAt": "2026-11-22"
+  },
+  {
+   "id": "deal-ali-thermal-blackout-curtain",
+   "cat": "deal",
+   "hot": null,
+   "platform": "알리",
+   "pkey": "ali",
+   "tag": "살림템",
+   "title": "붙이는 단열 암막커튼 145×300cm (DIY 부착형)",
+   "highlight": "9,830원",
+   "highlightSub": "정가 21,480원 → 54% · 무료배송",
+   "deadline": null,
+   "deadlineText": "12/3 23:59 종료",
+   "meta": [
+    "찍붙이는 암막·단열 시트 · 145×100/200/300cm",
+    "평점 4.9 · 4,000+ 판매(알리 유사상품 집계 표시)",
+    "무료배송 · 11/27~12/2 도착 예정"
+   ],
+   "note": "11/22 21:40 확인 · 알리 Choice 한정딜 기준(옵션·쿠폰에 따라 달라짐) · 평점·판매량은 알리 유사상품 집계 표시 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-ali-thermal-blackout-curtain.webp",
+   "url": "https://s.click.aliexpress.com/e/_c3guz5a9",
+   "cta": "알리에서 보기",
+   "verifiedAt": "2026-11-22"
+  },
   {
    "id": "deal-munjjing-glass-meal-container-6",
    "cat": "deal",
