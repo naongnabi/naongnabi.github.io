@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-22T21:45:00+09:00",
+  "updatedAt": "2026-11-23T07:10:00+09:00",
   "items": [
     {
       "id": "deal-toss-soundocks-earbuds-y07",
@@ -1466,30 +1466,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-18"
     },
     {
-      "id": "quiz-itstat",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "커피",
-      "title": "2026년 11월 퀴즈이벤트",
-      "highlight": "커피 기프티콘 100명",
-      "highlightSub": "ICT통계포털",
-      "answer": [
-        "① 최근 1개월"
-      ],
-      "deadline": "2026-11-22",
-      "deadlineText": null,
-      "meta": [
-        "정보통신정책연구원",
-        "발표 11/25"
-      ],
-      "note": "11/15 확인 · 정답 11/18 확인",
-      "url": "https://www.itstat.go.kr/itstat/kor/event/EventList.html",
-      "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-18"
-    },
-    {
       "id": "quiz-sokcho-book",
       "cat": "quiz",
       "hot": null,
@@ -2924,28 +2900,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-19"
     },
     {
-      "id": "exp-revu-mooas-humid",
-      "cat": "exp",
-      "hot": null,
-      "platform": "레뷰",
-      "pkey": "revu",
-      "tag": "가전·디지털",
-      "title": "[무아스] 미스티케어 UV 복합식 가습기 8L",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 신청 806명",
-      "deadline": "2026-11-22",
-      "deadlineText": null,
-      "meta": [
-        "레뷰 긴급체험단",
-        "블로그 1,000자+영상 15초",
-        "발표 11/24"
-      ],
-      "note": "11/21 신청 · 스토어 알림 받기와 상품 찜을 마쳤어요. 신청 후 취소·일정 연장이 안 되는 긴급체험단입니다.",
-      "url": "https://www.revu.net/campaign/1441015",
-      "cta": "체험단 신청하기",
-      "verifiedAt": "2026-11-21"
-    },
-    {
       "id": "exp-revu-villar-massager",
       "cat": "exp",
       "hot": null,
@@ -3202,32 +3156,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-21"
     },
     {
-      "id": "quiz-yongsan-drinking-ox",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "편의점",
-      "title": "용산구청 음주폐해 예방의 달 OX퀴즈",
-      "highlight": "편의점 모바일상품권 5천원 200명",
-      "highlightSub": "OX 3문항",
-      "answer": [
-        "1번 O",
-        "2번 X",
-        "3번 X"
-      ],
-      "deadline": "2026-11-22",
-      "deadlineText": "응모 마감 11/22 · 발표 11/27",
-      "meta": [
-        "용산구정신건강복지센터",
-        "발표 11/27 · 네이버폼"
-      ],
-      "note": "11/21 응모 완료 · 정답 O/X/X · 확인 시점 기준",
-      "url": "https://form.naver.com/response/Hy2ChNv1tmY",
-      "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-21"
-    },
-    {
       "id": "quiz-ggtour-survey",
       "cat": "quiz",
       "hot": null,
@@ -3252,77 +3180,108 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-21"
     },
     {
-      "id": "quiz-kric-youtube-quiz2",
+      "id": "exp-revu-wispal-frame",
+      "cat": "exp",
+      "hot": null,
+      "platform": "레뷰",
+      "pkey": "revu",
+      "tag": "가전·디지털",
+      "title": "[위스팔] 프레임 AI 스마트액자",
+      "highlight": "0원 배송형",
+      "highlightSub": "990,000원 상당 · 모집 10명 · 신청 1,203명",
+      "deadline": "2026-11-23",
+      "deadlineText": null,
+      "meta": [
+        "레뷰 프리미엄 체험단",
+        "블로그 1,000자+사진 15장",
+        "발표 11/25 · 등록 11/26~12/02"
+      ],
+      "note": "11/23 신청 완료 · 신청 마감이 11/23인 건이라 오늘 신청했어요.",
+      "url": "https://www.revu.net/campaign/1438321",
+      "cta": "체험단 보기",
+      "verifiedAt": "2026-11-23"
+    },
+    {
+      "id": "quiz-jijinanjeon-nov2026",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "모바일상품권",
+      "title": "2026 지진안전 누리집 11월 퀴즈",
+      "highlight": "모바일 상품권 5,000원 30명",
+      "highlightSub": "OX 3문항 · 추첨 30명",
+      "answer": [
+        "1번 O — 해안에서 벗어나 멀리 높은 곳으로 대피",
+        "2번 O — 특보 해제까지 안전한 곳에서 대기",
+        "3번 X — 선박은 수심이 깊은 먼 바다로"
+      ],
+      "deadline": "2026-11-27",
+      "deadlineText": null,
+      "meta": [
+        "행정안전부 지진안전 누리집",
+        "발표 12/04 · 누리집 공지"
+      ],
+      "note": "11/23 응모 완료 · 구글폼 3문항 제출 · 경품은 국내에서만 사용 가능",
+      "url": "https://www.xn--le5b23c9wbqa.com/communication/event.php?code=event02&idx=5364&ptype=view",
+      "cta": "퀴즈 풀러 가기",
+      "verifiedAt": "2026-11-23"
+    },
+    {
+      "id": "quiz-nhis-nursing-ox",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "모바일상품권",
+      "title": "우리동네 간호·간병통합서비스 제대로 알기 OX 퀴즈",
+      "highlight": "모바일 문화상품권 1만원 100명",
+      "highlightSub": "OX 5문항 · 추첨 100명",
+      "answer": [
+        "1번 O — 보호자·사적 간병인 없이 전문 간호인력이 제공",
+        "2번 X — 사적 간병인 고용은 안 됨",
+        "3번 O — 일반병동보다 간병비 부담 70~80% 경감",
+        "4번 X — 모든 병원에서 이용할 수 있는 건 아님",
+        "5번 O — 담당 주치의가 입원 여부 결정"
+      ],
+      "deadline": "2026-11-24",
+      "deadlineText": null,
+      "meta": [
+        "국민건강보험공단",
+        "발표 11/27"
+      ],
+      "note": "11/23 응모 완료 · 이름·휴대폰만 입력하는 설문형",
+      "url": "https://www.nhis.or.kr/nhis/etc/20261104_banner_pop01.do",
+      "cta": "퀴즈 풀러 가기",
+      "verifiedAt": "2026-11-23"
+    },
+    {
+      "id": "quiz-goesan-disability-2026-3",
       "cat": "quiz",
       "hot": null,
       "platform": "공공",
       "pkey": "gov",
       "tag": "편의점",
-      "title": "철도산업정보센터 제2회 유튜브 구독자 퀴즈",
-      "highlight": "CU 편의점 모바일상품권 1만원 10명",
-      "highlightSub": "빈칸 1문항 · 추첨 10명",
+      "title": "괴산군장애인복지관 제3차 장애인 고용캠페인 퀴즈",
+      "highlight": "CU 편의점 쿠폰 80명",
+      "highlightSub": "객관식 5문항 · 추첨 80명",
       "answer": [
-        "철도산업 지능형 검색 서비스"
+        "1번 ② 일정 규모 이상 공공기관·민간기업의 장애인 고용 의무",
+        "2번 ④ ㄱ·ㄴ·ㄷ·ㄹ 모두 가능",
+        "3번 ② 4월 20일",
+        "4번 ② 1.1% 이상",
+        "5번 ③ 50인 미만이라고 면제되지는 않음"
       ],
-      "deadline": "2026-11-22",
-      "deadlineText": "응모 마감 11/22 · 발표 11/23",
+      "deadline": "2026-11-27",
+      "deadlineText": null,
       "meta": [
-        "국가철도공단 철도산업정보센터",
-        "발표 11/23 · 홈페이지 응모폼"
+        "괴산군장애인복지관",
+        "발표 12/01 · 쿠폰 12/04"
       ],
-      "note": "11/22 응모 완료 · 이름 칸에 유튜브 아이디 함께 기재 · 영상 구독·좋아요 조건",
-      "url": "https://www.kric.go.kr/jsp/general/event/quizEventForm.jsp?q_seq=73",
-      "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-22"
-    },
-    {
-      "id": "quiz-kogl-type-quiz",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "커피",
-      "title": "공공누리 유형 퀴즈 (누리집으로 가자)",
-      "highlight": "이디야 아이스아메리카노 100명",
-      "highlightSub": "빈칸 2문항 · 추첨 100명",
-      "answer": [
-        "1번 자유",
-        "2번 출처"
-      ],
-      "deadline": "2026-11-22",
-      "deadlineText": "응모 마감 11/22 · 발표 11/24",
-      "meta": [
-        "공공누리(한국문화정보원)",
-        "발표 11/24 · 네이버폼"
-      ],
-      "note": "11/22 응모 완료 · 제0유형=자유이용, 제1유형=출처표시 · 연락처당 1회",
-      "url": "https://form.naver.com/response/H99F46manU0",
-      "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-22"
-    },
-    {
-      "id": "quiz-sh-webzine56",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "커피",
-      "title": "SH 웹진 '서울을 Shㅏ랑해' VOL.56 독자퀴즈",
-      "highlight": "커피 모바일쿠폰 20명",
-      "highlightSub": "주관식 1문항 · 추첨 20명",
-      "answer": [
-        "SH주택정보"
-      ],
-      "deadline": "2026-11-22",
-      "deadlineText": "응모 마감 11/22 · 발표 11/26",
-      "meta": [
-        "서울주택도시개발공사",
-        "발표 11/26 이후 인스타그램 · 구글폼"
-      ],
-      "note": "11/22 응모 완료 · 지도 기반 통합 주거정보 포털(힌트: 영문포함 6글자) · 인스타 아이디 기재",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdgmW_FjYEavPQuqhmSEfHo6Qa8JCpq5pGgLRChyFVe9MnL8Q/viewform",
-      "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-22"
+      "note": "11/23 확인 · 홍보물 QR로 네이버폼 접속(링크 따로 없음) · 정답은 홍보물 문제 기준",
+      "url": "https://www.goesan.go.kr/www/selectBbsNttView.do?bbsNo=190&key=135&nttNo=140526",
+      "cta": "이벤트 안내 보기",
+      "verifiedAt": "2026-11-23"
     }
   ]
 };
