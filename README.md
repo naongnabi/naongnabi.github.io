@@ -54,12 +54,14 @@ apps/oneul-deuktem/
 │  ├─ apple-touch-icon.png, favicon-32.png
 │  └─ make_icons.py         # 아이콘 재생성 스크립트
 ├─ tools/
-│  ├─ build_tabs.py         # index.html → 탭별 페이지(/quiz/ …)·sitemap.xml 생성 (deploy.sh 가 자동 실행)
-│  ├─ validate.py           # 데이터 검증 + items.js 동기화 + 링크 확인
+│  ├─ prerender.py          # index.html 목록·핫 TOP 에 실제 카드 HTML 을 미리 넣기 (크롤러용 정적 프리렌더)
+│  ├─ build_tabs.py         # index.html → 탭별 페이지(/quiz/ …)·sitemap.xml 생성 (탭 카드까지 프리렌더)
+│  ├─ validate.py           # 데이터 검증 + items.js 동기화 + 6개 HTML 프리렌더·탭 페이지 재생성 + 링크 확인
 │  ├─ fetch_adpick.py       # 애드픽 제휴 광고 받아와 data/adpick.json·js 갱신 (텐핑 빈 자리 대체 광고)
 │  ├─ build_preview.py      # 한 파일 미리보기(downloads/oneul-deuktem-preview.html) 생성 — 상품 사진은 data URI 로 인라인
 │  ├─ deploy.sh             # 검증 → 커밋 → GitHub Pages 푸시 (매일 갱신용)
 │  ├─ qa_live.py            # 배포된 실제 URL 점검 + 스크린샷
+│  ├─ qa_prerender.py       # 프리렌더 점검 — JS 끈 HTML 원문 + JS 켠 화면·콘솔 에러·탭/검색/찜
 │  ├─ qa_pages_path.py      # 서브패스(/onen1-deuktem/) 배포 환경 재현 점검
 │  ├─ thumbs-sources.json   # 상품 사진 원본 주소(og:image) 기록
 │  ├─ qa.py                 # 실제 브라우저 자동 점검 + 스크린샷 (http)
@@ -110,6 +112,13 @@ bash tools/deploy.sh "커밋 메시지 직접 지정"
 > 다시 만들므로 고칠 곳은 `index.html` 하나뿐이고, 커밋된 `quiz/index.html` 같은 파일은 직접 고치지 마세요.
 > 루트(`naongnabi.github.io`)·미러(`/onen1-deuktem/`) 어느 쪽에 올려도 상대 경로로 동작합니다.
 > 확인: `python3 tools/build_tabs.py --check` (달라진 파일이 있으면 exit 1).
+
+> **검색 색인용 정적 프리렌더**: 6개 HTML 은 목록·핫 TOP 카드를 **자바스크립트 없이도** 담고 있습니다
+> (`#list` 안의 `<!--prerender:lead-->` · `<!--prerender:rest-->`, `#hotTrack` 안의 `<!--prerender:hot-->` 구역).
+> `python3 tools/validate.py --sync` 한 번이면 `items.js` → `index.html` 프리렌더 → 탭 5장·`sitemap.xml`
+> 순서로 전부 최신이 됩니다. 배포 후 확인은 `python3 tools/qa_prerender.py`.
+> 브라우저에서 `app.js` 가 돌면 `paintList()` 가 이 정적 카드를 지우고 같은 카드를 다시 그리므로
+> 화면·필터·탭·검색·찜·조회수 카운터는 예전과 똑같이 동작합니다.
 
 ### 처음 배포할 때 (다시 할 일이 생기면)
 1. GitHub에서 **public** 저장소를 만들고 이 폴더를 푸시
@@ -231,7 +240,16 @@ python3 tools/qa.py
 > 이 작업 환경에는 chromium 실행에 필요한 시스템 라이브러리(libatk 등)가 없어 로컬 캐시에 따로 받아 두었습니다.
 > 다른 환경에서 결과가 같게 나오면 그대로 쓰시면 되고, 같은 환경에서 다시 돌릴 때는
 > `LD_LIBRARY_PATH=/workspace/.cache/chromium-libs PLAYWRIGHT_BROWSERS_PATH=/workspace/.cache/ms-playwright python3 tools/qa.py`
-> 로 실행하면 됩니다.
+> 로 실행하면 됩니다. (라이브러리 폴더를 다시 받아야 하면 `python3 /workspace/.cache/chromium-libs/build-libs.py`)
+
+`python3 tools/qa_prerender.py` — **정적 프리렌더 점검 (2026-11-22). 22개 항목 전부 통과**
+
+- 자바스크립트를 끈 상태에서도 카드가 그대로 있음: `/` 142장 · `/quiz/` 27 · `/exp/` 28 · `/deal/` 58 · `/contest/` 16 · `/apptech/` 13
+- JS 를 켜면 `paintList()` 가 정적 카드를 지우고 같은 카드를 다시 그림 — 카드 수 동일, 중복 0장
+- 6개 페이지 모두 **콘솔 에러 0 · 페이지 예외 0**(광고 테넷·애드샌스 프레임 메시지는 제외)
+- 탭 전환 · 검색(`고양이` 4건) · 찜 카운터 · `/quiz/` → `/deal/` 이동 모두 정상
+- 탭 페이지 정적 카드의 사진 경로는 `../assets/thumbs/…` 로 나가 서브패스 배포에서도 보임
+- 스크린샷: JS 끈 `nojs-*.png` / JS 켠 `live-*.png` (`/workspace/tmp/prerender-qa/`)
 
 ---
 
