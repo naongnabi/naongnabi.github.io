@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-23T07:10:00+09:00",
+  "updatedAt": "2026-11-23T08:45:00+09:00",
   "items": [
+    {
+      "id": "deal-naver-christmas-mini-tree-set-45",
+      "cat": "deal",
+      "hot": null,
+      "platform": "네이버",
+      "pkey": "naver",
+      "tag": "크리스마스",
+      "title": "트마 크리스마스 미니 트리 세트 풀세트 지네전구 오너먼트 골드 45cm",
+      "highlight": "29,800원",
+      "highlightSub": "정가 49,800원 → 40% · 무료배송 · 최대할인가 29,200원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "45cm 미니트리 + 지네전구 + 오너먼트 풀세트 · 골드",
+        "평점 4.82 (560) · 4점 이상 97% · 최근 1주 53명 구매",
+        "무료배송 · 11/24(화) 도착(16시 전 결제) · 사은품 AA건전지 3개"
+      ],
+      "note": "11/23 08:35 확인 · 네이버 쇼핑 커넥트(수수료 5%) · 1인가구·원룸 선반용 45cm · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-naver-christmas-mini-tree-set-45.webp",
+      "url": "https://naver.me/IgMwo7f0",
+      "cta": "네이버에서 보기",
+      "verifiedAt": "2026-11-23"
+    },
+    {
+      "id": "deal-naver-christmas-worm-light-400",
+      "cat": "deal",
+      "hot": null,
+      "platform": "네이버",
+      "pkey": "naver",
+      "tag": "크리스마스",
+      "title": "지네전구 400구 크리스마스 트리전구 웜 어댑터 세트 (코지바이브)",
+      "highlight": "19,800원",
+      "highlightSub": "정가 30,000원 → 34% · 무료배송 · 전구만 고르면 17,800원",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "400구 웜 + 8가지 모드 어댑터 세트 · 리모컨 4단계 밝기",
+        "평점 4.87 (1,532) · 4점 이상 98% · KC 전기용품 안전인증",
+        "무료배송 · 11/24(화) 도착 · 150cm 트리엔 2~3세트 추천"
+      ],
+      "note": "11/23 08:40 확인 · 네이버 쇼핑 커넥트(수수료 16%) · 5만원 이상 구매 시 1,980원 쿠폰 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-naver-christmas-worm-light-400.webp",
+      "url": "https://naver.me/xRgFCwWn",
+      "cta": "네이버에서 보기",
+      "verifiedAt": "2026-11-23"
+    },
     {
       "id": "deal-toss-soundocks-earbuds-y07",
       "cat": "deal",
