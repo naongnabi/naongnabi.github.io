@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-24T07:25:00+09:00",
+  "updatedAt": "2026-11-24T08:05:00+09:00",
   "items": [
     {
       "id": "deal-toss-ilwon-carbon-mat-single",
@@ -3446,7 +3446,7 @@ window.DEUKTEM_DATA = {
         "한국철도공사",
         "발표 별도 공지"
       ],
-      "note": "11/24 확인 · 로그인 없이 네이버폼 · 11/28 00:00까지 · 공공데이터 인식·이용 경험 조사",
+      "note": "11/24 응모 완료 · 로그인 없이 네이버폼 15단계 · 이름·휴대폰만 입력 · 공공데이터 인식·수요 조사",
       "url": "https://form.naver.com/response/8iZIZqjRoVE",
       "cta": "설문 참여하기",
       "verifiedAt": "2026-11-24"
@@ -3470,7 +3470,7 @@ window.DEUKTEM_DATA = {
         "농림축산식품부 농식품정보누리",
         "발표 개별 안내"
       ],
-      "note": "11/24 확인 · 로그인 없이 네이버폼 · 마감 11/27",
+      "note": "11/24 확인 · 이전 회차에서 이미 참여한 설문으로 중복 응모 불가(폼에서 확인)",
       "url": "https://form.naver.com/response/AJpHyznLro8",
       "cta": "설문 참여하기",
       "verifiedAt": "2026-11-24"
