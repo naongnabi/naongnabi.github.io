@@ -1,6 +1,6 @@
 /* 오늘도득템 서비스 워커 — 앱 껍데기만 캐시해서 홈 화면 앱처럼 빠르게 열리게 합니다.
    내용(데이터)은 항상 네트워크를 먼저 보고, 실패하면 캐시로 대신합니다. */
-const CACHE = "deuktem-v3";
+const CACHE = "deuktem-v4";
 const SHELL = [
   "./",
   "./index.html",

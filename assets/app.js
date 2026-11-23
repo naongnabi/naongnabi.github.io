@@ -177,10 +177,11 @@
     return '<span class="' + cls + '">D-' + d + "</span>";
   }
 
-  /* ───────── 핫 TOP 카드 ───────── */
+  /* ───────── 핫 TOP 카드 ─────────
+     카드 전체가 사이트 안의 상세 시트를 여는 버튼입니다(외부로 바로 나가지 않음). */
   function hotCard(it, rank) {
     return '' +
-      '<a class="hot-card' + (it.image ? " has-thumb" : "") + '" href="' + esc(it.url) + '" target="_blank" rel="noopener noreferrer">' +
+      '<button class="hot-card' + (it.image ? " has-thumb" : "") + '" type="button" data-detail="' + esc(it.id) + '">' +
         '<span class="hot-rank">' + rank + "</span>" +
         '<div class="hot-main">' +
           thumbHTML(it, "thumb--hot") +
@@ -194,9 +195,9 @@
         "</div>" +
         '<p class="hot-price"><strong>' + esc(it.highlight) + "</strong></p>" +
         '<div class="hot-foot">' + ddayBadge(it) +
-          '<span class="hot-go">보러가기' + ARROW + "</span>" +
+          '<span class="hot-go">자세히' + ARROW + "</span>" +
         "</div>" +
-      "</a>";
+      "</button>";
   }
 
   function renderHot() {
@@ -217,7 +218,7 @@
     meta.push("확인 " + mmdd(it.verifiedAt));
 
     return '' +
-      '<article class="card card--' + esc(it.cat) + '" data-id="' + esc(it.id) + '" data-url="' + esc(it.url) + '">' +
+      '<article class="card card--' + esc(it.cat) + '" data-id="' + esc(it.id) + '">' +
         '<div class="card-top">' +
           '<span class="pbadge pb-' + esc(it.pkey || "gov") + '">' + esc(it.platform) + "</span>" +
           (it.tag ? '<span class="tag">' + esc(it.tag) + "</span>" : "") +
@@ -236,10 +237,9 @@
           meta.map(function (m) { return "<span>" + esc(m) + "</span>"; }).join("<i>·</i>") + "</p>" +
         (it.note ? '<p class="card-note">' + esc(it.note) + "</p>" : "") +
         '<div class="card-foot">' +
-          '<a class="cta" href="' + esc(it.url) + '" target="_blank" rel="noopener noreferrer">' +
-            esc(it.cta || "바로 보기") + ARROW + "</a>" +
-          '<a class="icon-btn" href="' + esc(BRAND.blog || "#") + '" target="_blank" rel="noopener noreferrer" aria-label="블로그 보기" title="블로그">' +
-            '<svg class="ic" aria-hidden="true"><use href="#i-blog"/></svg></a>' +
+          '<button class="cta" type="button" data-detail="' + esc(it.id) + '">자세히 보기' + ARROW + "</button>" +
+          '<button class="icon-btn" type="button" data-ext="blog" aria-label="블로그 보기" title="블로그">' +
+            '<svg class="ic" aria-hidden="true"><use href="#i-blog"/></svg></button>' +
           '<button class="fav' + (on ? " is-on" : "") + '" type="button" aria-pressed="' + on + '" aria-label="' +
             (on ? "찜 해제" : "찜하기") + '" data-fav="' + esc(it.id) + '">' + (on ? HEART_FILL : HEART) + "</button>" +
           '<button class="icon-btn share" type="button" aria-label="공유하기" title="공유" data-share="' + esc(it.id) + '">' +
@@ -483,6 +483,212 @@
     });
   }
 
+  /* ───────── 카드 상세 시트 ─────────
+     카드의 '자세히 보기' → 사이트 안에서 요약·참여 방법·정답·유의사항을 먼저 보여 주고,
+     시트 안의 버튼으로만 바깥 페이지(제휴 링크)로 나갑니다.
+     (HTML 원문에 외부 <a href> 가 카드 수만큼 깔리지 않게 하는 구조) */
+
+  function itemById(id) {
+    return ITEMS.filter(function (x) { return x.id === id; })[0] || null;
+  }
+
+  var DETAIL_GUIDES = {
+    deal: [
+      ["lowest-price-checklist", "온라인 최저가·특가 비교 체크리스트 7단계"],
+      ["coupon-stacking-order", "쿠폰·포인트·카드할인 겹쳐 쓰는 순서"]
+    ],
+    exp: [
+      ["first-experience-campaign", "무료 체험단 첫 선정 받는 법"],
+      ["experience-campaign-mission", "체험단 미션 체크리스트 — 사진·글자수·표기"]
+    ],
+    quiz: [["quiz-win-tips", "경품 퀴즈 당첨 확률 높이는 실전 팁 7가지"]],
+    contest: [["contest-entry-checklist", "공모전 응모 전 확인할 다섯 가지"]],
+    apptech: [["apptech-10min-routine", "앱테크 하루 10분 출석 루틴 짜는 법"]]
+  };
+
+  var DETAIL_STEPS = {
+    deal: {
+      head: "사기 전에 확인할 것",
+      steps: [
+        "결제 화면의 최종 금액을 확인해요 — 쿠폰·배송비가 붙으면 카드의 가격과 달라질 수 있어요.",
+        "옵션(용량·색상·수량)이 카드에 적힌 구성과 같은지 봐요.",
+        "배송 예정일과 무료배송 조건(최소 구매 금액)을 확인해요.",
+        "가격은 자주 바뀌어요. 카드에 적힌 확인 날짜를 기준으로 판단해 주세요."
+      ]
+    },
+    exp: {
+      head: "신청 순서와 체크리스트",
+      steps: [
+        "모집처에서 내 블로그·인스타 주소와 최근 글을 먼저 볼 수 있게 정리해 둬요.",
+        "신청서에 쓰는 이유와 후기 계획을 구체적으로 적어요 — 같은 상품에 여러 명이 몰리면 여기서 갈려요.",
+        "선정되면 안내된 사진 장수·글자수·필수 문구를 꼭 지켜요.",
+        "후기 마감을 놓치면 재선정이 어려우니 제품을 받은 날 일정을 먼저 잡아 두세요."
+      ]
+    },
+    quiz: {
+      head: "응모 순서",
+      steps: [
+        "아래 정답을 먼저 확인해요(정답이 없는 설문형은 참여만 하면 돼요).",
+        "응모 화면에서 이름·연락처가 정확한지 확인해요.",
+        "경품과 발표일을 확인하고, 발표일이 지나면 당첨자 발표를 한 번 더 봐요."
+      ]
+    },
+    contest: {
+      head: "응모 전 확인할 것",
+      steps: [
+        "응모 자격(나이·지역·인원)과 1인 응모 편수를 확인해요.",
+        "작품 규격(파일 형식·용량·해상도·글자수)을 먼저 맞춰요.",
+        "다른 곳에 공개한 작품은 안 되는 경우가 많으니 신작 여부를 봐요.",
+        "마감은 대개 마감일 18시예요 — 하루 전에 제출해 두는 게 안전해요."
+      ]
+    },
+    apptech: {
+      head: "시작하는 순서",
+      steps: [
+        "앱을 설치하고 이벤트·혜택 메뉴에서 참여를 먼저 켜요.",
+        "출석·걷기·퀴즈처럼 매일 반복되는 것부터 순서를 정해요.",
+        "포인트 유효기간과 최소 전환 금액을 확인해요.",
+        "현금 전환이 안 되는 포인트도 있으니 사용처를 먼저 봐요."
+      ]
+    }
+  };
+
+  var DETAIL_WARN = [
+    "카드에 적힌 내용은 확인한 날 기준이에요. 가격·마감일·경품은 바뀔 수 있어요.",
+    "응모·구매 전에 해당 사이트의 최신 안내를 한 번 더 확인해 주세요."
+  ];
+
+  function detailHTML(it) {
+    var cat = CAT[it.cat] || { label: "", icon: "" };
+    var meta = (it.meta || []).slice();
+    if (it.deadline) meta.push("마감 " + mmdd(it.deadline));
+    meta.push("확인 " + mmdd(it.verifiedAt));
+    var plan = DETAIL_STEPS[it.cat] || DETAIL_STEPS.deal;
+    var guides = DETAIL_GUIDES[it.cat] || [];
+    var host = String(it.url || "").replace(/^https?:\/\//, "").split("/")[0];
+
+    return '' +
+      '<p class="dt-kicker">' + cat.icon + " " + esc(cat.label) + " · " + esc(it.platform) + "</p>" +
+      '<h3 class="dt-title">' + esc(it.title) + "</h3>" +
+      '<p class="dt-benefit"><strong>' + esc(it.highlight) + "</strong>" +
+        (it.highlightSub ? "<span>" + esc(it.highlightSub) + "</span>" : "") + "</p>" +
+      '<div class="dt-badges">' + ddayBadge(it) +
+        (it.tag ? '<span class="tag">' + esc(it.tag) + "</span>" : "") + "</div>" +
+      answerHTML(it) +
+      '<ul class="dt-meta">' + meta.map(function (m) { return "<li>" + esc(m) + "</li>"; }).join("") + "</ul>" +
+      '<section class="dt-sec"><h4>✅ ' + esc(plan.head) + "</h4><ol class=\"dt-steps\">" +
+        plan.steps.map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("") + "</ol></section>" +
+      '<section class="dt-sec"><h4>⚠️ 확인해야 할 점</h4>' +
+        (it.note ? '<p class="dt-note">' + esc(it.note) + "</p>" : "") +
+        '<ul class="dt-warn">' + DETAIL_WARN.map(function (w) { return "<li>" + esc(w) + "</li>"; }).join("") + "</ul></section>" +
+      (guides.length ? '<section class="dt-sec"><h4>📖 같이 읽으면 좋은 가이드</h4><ul class="dt-links">' +
+        guides.map(function (g) {
+          return '<li><a href="' + ROOT_PREFIX + "guide/" + g[0] + '.html">' + esc(g[1]) + "</a></li>";
+        }).join("") + "</ul></section>" : "") +
+      '<div class="dt-foot">' +
+        '<button class="cta" type="button" data-open-item="' + esc(it.id) + '">' +
+          esc(it.cta || "바로 보기") + ARROW + "</button>" +
+        '<button class="fav' + (favs.has(it.id) ? " is-on" : "") + '" type="button" aria-pressed="' +
+          favs.has(it.id) + '" aria-label="' + (favs.has(it.id) ? "찜 해제" : "찜하기") +
+          '" data-fav="' + esc(it.id) + '">' + (favs.has(it.id) ? HEART_FILL : HEART) + "</button>" +
+      "</div>" +
+      '<p class="dt-disc">버튼을 누르면 ' + esc(host) + " 페이지가 새 창으로 열립니다. " +
+        "일부 링크는 쿠팡 파트너스·네이버 쇼핑 커넥트·토스 쉐어링크·알리익스프레스 어필리에이트 활동의 일환으로 수수료를 받을 수 있어요.</p>";
+  }
+
+  var detailSheet = $("#detailSheet"), detailBody = $("#detailBody");
+  var detailLastFocus = null;
+
+  function openDetail(id) {
+    var it = itemById(id);
+    if (!it || !detailSheet || !detailBody) return;
+    detailLastFocus = document.activeElement;
+    detailBody.innerHTML = detailHTML(it);
+    detailSheet.hidden = false;
+    document.documentElement.style.overflow = "hidden";
+    var panel = $(".sheet-panel", detailSheet);
+    if (panel) panel.scrollTop = 0;
+    var x = $(".sheet-x", detailSheet);
+    if (x) x.focus();
+  }
+
+  function closeDetail() {
+    if (!detailSheet || detailSheet.hidden) return;
+    detailSheet.hidden = true;
+    document.documentElement.style.overflow = "";
+    if (detailLastFocus && detailLastFocus.focus) detailLastFocus.focus();
+  }
+
+  /* 찜 — 카드·상세 시트 어디서 눌러도 같은 상태를 씁니다 */
+  function toggleFav(id, btn) {
+    if (favs.has(id)) favs.delete(id); else favs.add(id);
+    saveFavs();
+    var on = favs.has(id);
+    if (btn) {
+      btn.classList.toggle("is-on", on);
+      btn.setAttribute("aria-pressed", String(on));
+      btn.setAttribute("aria-label", on ? "찜 해제" : "찜하기");
+      btn.innerHTML = on ? HEART_FILL : HEART;
+      btn.classList.remove("pop");
+      void btn.offsetWidth;
+      btn.classList.add("pop");
+    }
+    $("#savedCount").textContent = favs.size;
+    $("#savedBtn").classList.toggle("has-fav", !state.onlyFav && favs.size > 0);
+    /* 카드 목록의 같은 항목 하트도 맞춰 줍니다 */
+    $$('[data-fav="' + id + '"]').forEach(function (b) {
+      if (b === btn) return;
+      b.classList.toggle("is-on", on);
+      b.setAttribute("aria-pressed", String(on));
+      b.innerHTML = on ? HEART_FILL : HEART;
+    });
+    toast(on ? "찜했어요" : "찜을 풀었어요");
+  }
+
+  function openExternal(url) {
+    if (!url || !/^https?:/i.test(url)) return;
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
+
+  /* 상세 시트 안 — 찜 · 바깥 페이지로 나가기 */
+  if (detailBody) {
+    detailBody.addEventListener("click", function (e) {
+      var favBtn = e.target.closest("[data-fav]");
+      if (favBtn) { e.preventDefault(); toggleFav(favBtn.getAttribute("data-fav"), favBtn); return; }
+      var openBtn = e.target.closest("[data-open-item]");
+      if (openBtn) {
+        e.preventDefault();
+        var it = itemById(openBtn.getAttribute("data-open-item"));
+        if (it) openExternal(it.url);
+      }
+    });
+  }
+  if (detailSheet) {
+    $$("[data-detail-close]", detailSheet).forEach(function (b) {
+      b.addEventListener("click", function (e) { e.preventDefault(); closeDetail(); });
+    });
+  }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeDetail();
+  });
+
+  /* 상세 열기 · 블로그/스토어 같은 바깥 이동 — 페이지 어디서든 한 곳에서 처리 */
+  document.addEventListener("click", function (e) {
+    var det = e.target.closest("[data-detail]");
+    if (det) {
+      e.preventDefault();
+      openDetail(det.getAttribute("data-detail"));
+      return;
+    }
+    var ext = e.target.closest("[data-ext]");
+    if (ext) {
+      e.preventDefault();
+      var key = ext.getAttribute("data-ext");
+      var brandLinks = { blog: BRAND.blog, threads: BRAND.threads, youtube: BRAND.youtube };
+      openExternal(brandLinks[key] || key);
+    }
+  });
+
   /* ───────── 이벤트 ───────── */
   function setTab(tab) {
     /* 탭별 페이지에서는 주소가 곧 카테고리입니다.
@@ -536,20 +742,7 @@
     if (favBtn) {
       e.preventDefault();
       e.stopPropagation();
-      var id = favBtn.getAttribute("data-fav");
-      if (favs.has(id)) favs.delete(id); else favs.add(id);
-      saveFavs();
-      var on = favs.has(id);
-      favBtn.classList.toggle("is-on", on);
-      favBtn.setAttribute("aria-pressed", String(on));
-      favBtn.setAttribute("aria-label", on ? "찜 해제" : "찜하기");
-      favBtn.innerHTML = on ? HEART_FILL : HEART;
-      favBtn.classList.remove("pop");
-      void favBtn.offsetWidth;
-      favBtn.classList.add("pop");
-      $("#savedCount").textContent = favs.size;
-      $("#savedBtn").classList.toggle("has-fav", !state.onlyFav && favs.size > 0);
-      toast(on ? "찜했어요" : "찜을 풀었어요");
+      toggleFav(favBtn.getAttribute("data-fav"), favBtn);
       return;
     }
 
@@ -561,12 +754,11 @@
       return;
     }
 
-    if (e.target.closest("a")) return; // CTA·블로그 링크는 기본 동작
+    if (e.target.closest("a")) return; // 가이드·탭 링크는 기본 동작
 
+    /* 카드 본문을 눌러도 바깥으로 나가지 않고 상세 시트를 엽니다 */
     var card = e.target.closest(".card");
-    if (card && card.getAttribute("data-url")) {
-      window.open(card.getAttribute("data-url"), "_blank", "noopener,noreferrer");
-    }
+    if (card && card.getAttribute("data-id")) openDetail(card.getAttribute("data-id"));
   });
 
   /* 맨 위로 · 상단 그림자 · 탭 고정 위치 */

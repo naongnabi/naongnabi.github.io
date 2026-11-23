@@ -145,6 +145,7 @@ h1,h2,h3,p{margin:0}
 .hot-card{
   position:relative;flex:0 0 234px;scroll-snap-align:start;
   display:flex;flex-direction:column;
+  font:inherit;color:inherit;text-align:left;cursor:pointer;
   padding:11px 12px 10px;border-radius:16px;
   background:linear-gradient(158deg,#FFF9F6 0%,#FFFFFF 62%);
   border:1px solid #FFE1D5;
@@ -231,7 +232,8 @@ h1,h2,h3,p{margin:0}
 /* ───────── 쿠팡 내 스토어 배너 ───────── */
 .store-banner{margin:2px 16px 10px}
 .store-card{
-  display:flex;align-items:center;gap:9px;
+  display:flex;align-items:center;gap:9px;width:100%;
+  font:inherit;color:inherit;text-align:left;cursor:pointer;
   padding:11px 11px 11px 13px;border-radius:16px;
   background:linear-gradient(135deg,#FFF5F0 0%,#FFE7DC 100%);
   border:1px solid #FFD3C2;
@@ -378,7 +380,8 @@ h1,h2,h3,p{margin:0}
 .card-foot{display:flex;align-items:center;gap:6px;margin-top:10px}
 .cta{
   flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:4px;
-  height:38px;border-radius:12px;
+  height:38px;border:0;padding:0 10px;border-radius:12px;
+  font-family:inherit;cursor:pointer;appearance:none;
   background:var(--coral);color:#fff;
   font-size:12.5px;font-weight:800;letter-spacing:-.4px;
   box-shadow:0 8px 16px -12px rgba(232,69,31,.95);
@@ -614,3 +617,101 @@ h1,h2,h3,p{margin:0}
   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
 }
 .gcard-meta{margin-top:auto;font-size:10px;color:var(--ink-4);letter-spacing:-.2px}
+.gcard-sum{
+  font-size:11px;line-height:1.45;letter-spacing:-.3px;color:var(--ink-3);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+
+/* ───────── 📖 가이드 미리 읽기 (홈 자체 콘텐츠 · 외부 이탈 없이 사이트 안에서 읽기) ───────── */
+.gread{
+  margin:10px 0 0;padding:15px 16px 4px;
+  background:linear-gradient(180deg,#FFFDFB 0%,#FFF7F2 100%);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.gread-head h2{font-size:15px;font-weight:900;letter-spacing:-.6px;color:var(--ink)}
+.gread-head p{margin-top:5px;font-size:11px;line-height:1.6;color:var(--ink-3);letter-spacing:-.25px}
+.gr-list{display:grid;gap:9px;margin-top:12px}
+.gr-item{padding:12px 13px;background:#fff;border:1px solid rgba(32,24,16,.06);border-radius:14px;box-shadow:var(--shadow)}
+.gr-title{font-size:13.5px;font-weight:800;line-height:1.4;letter-spacing:-.5px}
+.gr-title a{color:var(--ink)}
+.gr-emoji{font-size:13px}
+.gr-sum{margin-top:6px;font-size:11.5px;font-weight:700;line-height:1.52;color:#B4391C;letter-spacing:-.3px}
+.gr-body{margin-top:6px;font-size:11.5px;line-height:1.66;color:var(--ink-2);letter-spacing:-.25px}
+.gr-foot{margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);font-size:10.5px;color:var(--ink-4);letter-spacing:-.2px}
+.gr-more{font-weight:800;color:var(--coral-deep);margin-left:2px}
+.gread-all{
+  display:flex;align-items:center;justify-content:center;gap:3px;
+  height:38px;margin:12px 0 8px;border:1px solid #FFD3C2;border-radius:12px;
+  background:#fff;font-size:12px;font-weight:800;color:var(--coral-deep);letter-spacing:-.35px;
+}
+.gread-all .ic{width:13px;height:13px}
+
+/* ───────── 자주 묻는 질문 ───────── */
+.faq{
+  margin:14px 16px 4px;padding:14px 14px 8px;
+  background:#fff;border:1px solid rgba(32,24,16,.06);border-radius:16px;box-shadow:var(--shadow);
+}
+.faq h2{display:flex;align-items:center;gap:5px;font-size:14px;font-weight:900;letter-spacing:-.6px;color:var(--ink)}
+.faq-lead{margin-top:5px;font-size:11px;line-height:1.6;color:var(--ink-3)}
+.faq-item{border-top:1px solid var(--line);padding:10px 0 9px}
+.faq-item:first-of-type{border-top:0;margin-top:8px}
+.faq-q{
+  display:flex;gap:7px;align-items:flex-start;
+  font-size:12.5px;font-weight:800;line-height:1.5;letter-spacing:-.4px;color:var(--ink);
+  cursor:pointer;list-style:none;
+}
+.faq-q::-webkit-details-marker{display:none}
+.faq-q::before{content:"Q.";flex:none;color:var(--coral-deep);font-weight:900}
+.faq-q::after{content:"+";margin-left:auto;color:var(--ink-4);font-weight:900}
+.faq-item[open] .faq-q::after{content:"–"}
+.faq-a{margin-top:7px;font-size:11.5px;line-height:1.68;color:var(--ink-2);letter-spacing:-.25px}
+.faq-a p+p{margin-top:6px}
+.faq-a a{color:var(--coral-deep);font-weight:800;text-decoration:underline;text-underline-offset:2px}
+
+/* ───────── 이용 안내 · 카테고리 바로가기 ───────── */
+.site-note{margin:14px 16px 6px;padding:13px 14px;background:#FBFAF8;border:1px solid var(--line);border-radius:14px}
+.site-note h2{font-size:13px;font-weight:900;letter-spacing:-.5px;color:var(--ink)}
+.site-note p{margin-top:7px;font-size:11.5px;line-height:1.68;color:var(--ink-2);letter-spacing:-.25px}
+.site-note ul{margin-top:7px;display:grid;gap:5px;list-style:none}
+.site-note li{position:relative;padding-left:10px;font-size:11.5px;line-height:1.62;color:var(--ink-2)}
+.site-note li::before{content:"·";position:absolute;left:2px;color:#C9BEB4}
+.cat-links{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}
+.cat-links a{
+  display:flex;align-items:center;gap:6px;padding:10px 11px;
+  border:1px solid var(--line-2);border-radius:11px;background:#fff;
+  font-size:11.5px;font-weight:800;color:var(--ink-2);letter-spacing:-.3px;
+}
+.cat-links a:active{background:#FFF1EB;border-color:#FFD3C4;color:#E8431C}
+.cat-links .n{font-size:10px;font-weight:800;color:var(--ink-4)}
+
+/* ───────── 📄 카드 상세 시트 ─────────
+   카드의 '자세히 보기' → 이 시트에서 요약·참여 방법·정답·유의사항을 먼저 읽고,
+   시트 안 버튼으로만 바깥 페이지로 나갑니다. */
+.sheet--detail .sheet-panel{max-height:88vh;padding-top:14px}
+.dt-kicker{font-size:11px;font-weight:800;color:#B4391C;letter-spacing:-.3px}
+.dt-title{margin-top:5px;font-size:16.5px;font-weight:800;line-height:1.38;letter-spacing:-.6px;color:var(--ink)}
+.dt-benefit{display:flex;align-items:baseline;flex-wrap:wrap;gap:0 6px;margin-top:8px}
+.dt-benefit strong{font-size:21px;font-weight:900;line-height:1.15;color:var(--coral-deep);letter-spacing:-.8px}
+.dt-benefit span{font-size:11.5px;font-weight:600;color:var(--ink-2);letter-spacing:-.3px}
+.dt-badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.dt-meta{display:flex;flex-wrap:wrap;gap:5px 10px;margin-top:10px;font-size:11px;color:var(--ink-3);letter-spacing:-.2px;line-height:1.5}
+.dt-meta li{position:relative;padding-left:8px}
+.dt-meta li::before{content:"·";position:absolute;left:0;color:#C9BEB4}
+.dt-sec{margin-top:13px;padding:12px 13px;background:#FBFAF8;border:1px solid var(--line);border-radius:13px}
+.dt-sec h4{font-size:12px;font-weight:800;color:var(--ink);letter-spacing:-.3px}
+.dt-steps{margin-top:9px;display:grid;gap:7px;counter-reset:dt;list-style:none}
+.dt-steps li{position:relative;padding-left:21px;list-style:none;font-size:11.5px;line-height:1.62;color:var(--ink-2);letter-spacing:-.2px;counter-increment:dt}
+.dt-steps li::before{
+  content:counter(dt);position:absolute;left:0;top:2px;
+  width:15px;height:15px;border-radius:50%;background:var(--coral-soft);color:#B4391C;
+  font-size:9.5px;font-weight:900;display:grid;place-items:center;
+}
+.dt-note{margin-top:8px;font-size:11.5px;line-height:1.62;color:var(--ink-2);letter-spacing:-.2px}
+.dt-warn{margin-top:7px;display:grid;gap:4px;list-style:none}
+.dt-warn li{position:relative;padding-left:10px;font-size:11px;line-height:1.6;color:var(--ink-3)}
+.dt-warn li::before{content:"·";position:absolute;left:2px;color:#C9BEB4}
+.dt-links{margin-top:8px;display:grid;gap:6px}
+.dt-links li a{display:block;font-size:11.5px;font-weight:700;line-height:1.5;color:var(--coral-deep);text-decoration:underline;text-underline-offset:2px}
+.dt-foot{display:flex;align-items:center;gap:7px;margin-top:14px}
+.dt-disc{margin-top:9px;font-size:10px;line-height:1.6;color:#A29A92}
+#detailBody .card-answer{margin-top:10px}
