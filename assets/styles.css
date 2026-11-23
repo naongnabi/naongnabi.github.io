@@ -426,8 +426,8 @@ h1,h2,h3,p{margin:0}
 .adslot.is-adpick .adslot-box{height:0;min-height:0;padding:0;border:0;margin:0;box-shadow:none;background:transparent}
 .adslot.is-empty{display:none}
 
-/* 카카오 애드핏 배너(320×100) — 광고가 채워지면 가운데, 비어 있으면 라벨만 */
-.adslot--adfit{display:flex;flex-direction:column;align-items:center;margin:16px 0 0}
+/* 카카오 애드핏 배너(320×100) — 스토어 배너 아래 상단에 고정. 광고가 채워지면 가운데, 비어 있으면 라벨만 */
+.adslot--adfit{display:flex;flex-direction:column;align-items:center;margin:4px 16px}
 .adslot--adfit .adslot-head{align-self:flex-start}
 .adslot-adfit{width:100%;display:flex;justify-content:center;overflow:hidden}
 .adslot-adfit .kakao_ad_area{max-width:100%}

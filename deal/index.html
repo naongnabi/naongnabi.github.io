@@ -203,6 +203,25 @@
       <p class="store-note">쿠팡 파트너스 활동의 일환으로 일정액의 수수료를 받을 수 있어요.</p>
     </section>
 
+    <!-- ── 상단 광고 자리 ─────────────────────────────────────────
+         ◎ 애드핏(카카오) — 2026-11-23 설치 · 2026-11-23 스토어 배너 아래(상단)로 이동.
+            광고단위 DAN-uGDXjD28L8ogr0Vq · 320×100.
+            애드핏 규격대로 <ins> 는 style="display:none" 으로 두고, ba.min.js 가 광고를
+            채우면 스스로 보입니다. (심사 봇이 HTML 원본에서 바로 읽도록 주석 없이 둡니다.) -->
+    <section class="adslot adslot--adfit" id="adfitSlot" aria-label="광고">
+      <div class="adslot-head">
+        <span class="adslot-tag" aria-hidden="true">AD</span>
+        <span class="adslot-note">광고</span>
+      </div>
+      <div class="adslot-adfit">
+        <ins class="kakao_ad_area" style="display:none;"
+        data-ad-unit = "DAN-uGDXjD28L8ogr0Vq"
+        data-ad-width = "320"
+        data-ad-height = "100"></ins>
+        <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
+      </div>
+    </section>
+
     <div class="today-strip">
       <div class="today-date">
         <strong id="todayDate">11월 23일 월요일</strong>
@@ -302,26 +321,9 @@
     </div>
     <script async src="https://ads.tenping.kr/scripts/adsbytenping.min.js"></script>
 
-    <!-- ── 광고 자리 ───────────────────────────────────────────────
-         ◎ 애드핏(카카오) — 2026-11-23 설치. 광고단위 DAN-uGDXjD28L8ogr0Vq · 320×100.
-            애드핏 규격대로 <ins> 는 style="display:none" 으로 두고, ba.min.js 가 광고를
-            채우면 스스로 보입니다. (심사 봇이 HTML 원본에서 바로 읽도록 주석 없이 둡니다.)
-         ◎ 애드센스 승인 뒤: #adsenseSlot 안의 <ins class="adsbygoogle"> 의
-            data-ad-slot 에 발급받은 광고 단위 ID 를 넣고 push 줄과 hidden 을 살리세요.
-            (자동 광고 스크립트는 이미 <head> 에 들어 있습니다.) -->
-    <section class="adslot adslot--adfit" id="adfitSlot" aria-label="광고">
-      <div class="adslot-head">
-        <span class="adslot-tag" aria-hidden="true">AD</span>
-        <span class="adslot-note">광고</span>
-      </div>
-      <div class="adslot-adfit">
-        <ins class="kakao_ad_area" style="display:none;"
-        data-ad-unit = "DAN-uGDXjD28L8ogr0Vq"
-        data-ad-width = "320"
-        data-ad-height = "100"></ins>
-        <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
-      </div>
-    </section>
+    <!-- ◎ 애드센스 승인 뒤: #adsenseSlot 안의 <ins class="adsbygoogle"> 의
+         data-ad-slot 에 발급받은 광고 단위 ID 를 넣고 push 줄과 hidden 을 살리세요.
+         (자동 광고 스크립트는 이미 <head> 에 들어 있습니다.) -->
 
     <div class="adslot adslot--pending" id="adsenseSlot" hidden aria-label="광고">
       <div class="adslot-head">
