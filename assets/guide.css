@@ -40,11 +40,22 @@
 }
 .g-hero-title{margin-top:9px;font-size:25px;font-weight:900;letter-spacing:-1.1px;line-height:1.25}
 .g-hero-lead{margin-top:8px;font-size:13px;line-height:1.7;color:var(--ink-2);letter-spacing:-.35px}
+/* 카테고리 필터 칩 — 클릭하면 아래 목록이 그 카테고리만 남습니다 */
 .g-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
 .g-chip{
-  font-size:10.5px;font-weight:700;color:var(--ink-2);
+  display:inline-flex;align-items:center;gap:4px;
+  font-family:inherit;font-size:10.5px;font-weight:700;line-height:1.5;letter-spacing:inherit;
+  color:var(--ink-2);text-align:center;
   background:#fff;border:1px solid var(--line-2);border-radius:999px;padding:3px 9px;
+  -webkit-appearance:none;appearance:none;cursor:pointer;
+  transition:background .15s ease,border-color .15s ease,color .15s ease;
 }
+.g-chip:active{background:#FFF1EB}
+.g-chip:focus-visible{outline:2px solid #FFA98F;outline-offset:2px}
+.g-chip.is-on{background:var(--coral-soft);border-color:#FFC8B9;color:var(--coral-deep)}
+.g-chip-n{font-size:9.5px;font-weight:800;color:var(--ink-4);letter-spacing:0}
+.g-chip.is-on .g-chip-n{color:var(--coral-deep);opacity:.7}
+.g-chip-note{margin-top:7px;font-size:10.5px;color:var(--ink-3);letter-spacing:-.2px}
 
 .g-list{display:flex;flex-direction:column;gap:9px;padding:14px 16px 0}
 .g-card{
