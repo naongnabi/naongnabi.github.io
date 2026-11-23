@@ -302,24 +302,26 @@
     </div>
     <script async src="https://ads.tenping.kr/scripts/adsbytenping.min.js"></script>
 
-    <!-- ── 광고 자리(승인 대기) — 지금은 hidden 이라 빈 칸도 안 보입니다 ──
-         ◎ 애드핏(카카오) 승인 뒤: 아래 <div id="adfitSlot"> 안의 <ins> 주석을 풀고
-            data-ad-unit 에 발급받은 DAN-... 단위 ID 를 넣은 뒤 hidden 만 지우세요.
-            (같이 들어 있는 ba.min.js 스크립트도 주석을 풀면 바로 광고가 채워집니다.)
+    <!-- ── 광고 자리 ───────────────────────────────────────────────
+         ◎ 애드핏(카카오) — 2026-11-23 설치. 광고단위 DAN-uGDXjD28L8ogr0Vq · 320×100.
+            애드핏 규격대로 <ins> 는 style="display:none" 으로 두고, ba.min.js 가 광고를
+            채우면 스스로 보입니다. (심사 봇이 HTML 원본에서 바로 읽도록 주석 없이 둡니다.)
          ◎ 애드센스 승인 뒤: #adsenseSlot 안의 <ins class="adsbygoogle"> 의
             data-ad-slot 에 발급받은 광고 단위 ID 를 넣고 push 줄과 hidden 을 살리세요.
             (자동 광고 스크립트는 이미 <head> 에 들어 있습니다.) -->
-    <div class="adslot adslot--pending" id="adfitSlot" hidden aria-label="광고">
+    <section class="adslot adslot--adfit" id="adfitSlot" aria-label="광고">
       <div class="adslot-head">
         <span class="adslot-tag" aria-hidden="true">AD</span>
         <span class="adslot-note">광고</span>
       </div>
-      <!--
-      <ins class="kakao_ad_area" style="display:none" data-ad-unit="DAN-XXXXXXXXXXXX"
-           data-ad-width="320" data-ad-height="100"></ins>
-      <script async src="//t1.daumcdn.net/kas/static/ba.min.js"></script>
-      -->
-    </div>
+      <div class="adslot-adfit">
+        <ins class="kakao_ad_area" style="display:none;"
+        data-ad-unit = "DAN-uGDXjD28L8ogr0Vq"
+        data-ad-width = "320"
+        data-ad-height = "100"></ins>
+        <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
+      </div>
+    </section>
 
     <div class="adslot adslot--pending" id="adsenseSlot" hidden aria-label="광고">
       <div class="adslot-head">

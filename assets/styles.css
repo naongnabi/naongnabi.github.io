@@ -426,6 +426,12 @@ h1,h2,h3,p{margin:0}
 .adslot.is-adpick .adslot-box{height:0;min-height:0;padding:0;border:0;margin:0;box-shadow:none;background:transparent}
 .adslot.is-empty{display:none}
 
+/* 카카오 애드핏 배너(320×100) — 광고가 채워지면 가운데, 비어 있으면 라벨만 */
+.adslot--adfit{display:flex;flex-direction:column;align-items:center;margin:16px 0 0}
+.adslot--adfit .adslot-head{align-self:flex-start}
+.adslot-adfit{width:100%;display:flex;justify-content:center;overflow:hidden}
+.adslot-adfit .kakao_ad_area{max-width:100%}
+
 /* 애드픽 네이티브 추천 카드 */
 .adcard{
   display:flex;align-items:center;gap:10px;padding:10px 12px;
