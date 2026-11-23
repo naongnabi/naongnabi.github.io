@@ -3,13 +3,13 @@
 
 .g-main{padding:0 0 8px}
 
-/* 상단 가이드 메뉴 (가이드 페이지에서는 홈 탭 대신) */
+/* 상단 가이드 메뉴 (가이드 페이지에서는 홈 탭 대신)
+   홈 탭(.tabs)과 같이 모바일에서 가로 스크롤 없이 두 줄로 줄바꿈합니다. */
 .hdr-guide-nav{
-  display:flex;gap:6px;margin-top:9px;overflow-x:auto;scrollbar-width:none;
+  display:flex;flex-wrap:wrap;gap:6px 5px;margin-top:9px;
 }
-.hdr-guide-nav::-webkit-scrollbar{display:none}
 .hdr-guide-nav a{
-  flex:none;display:flex;align-items:center;height:30px;padding:0 10px;
+  flex:none;display:flex;align-items:center;height:30px;padding:0 9px;
   border:1px solid var(--line-2);border-radius:999px;background:#fff;
   font-size:11.5px;font-weight:700;color:var(--ink-2);white-space:nowrap;letter-spacing:-.35px;
 }
