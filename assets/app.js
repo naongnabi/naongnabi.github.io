@@ -315,8 +315,31 @@
     if (rest) ad.insertAdjacentHTML("afterend", rest);
   }
 
+  /* ───────── 자체 콘텐츠(가이드 미리 읽기·FAQ·이용 안내) 위치 ─────────
+     홈 '전체'에서는 목록 위에 두어 사이트 안에서 읽을 거리를 먼저 보여 주고,
+     카테고리 탭·탭 페이지에서는 카드를 먼저 보여 주고 읽을 거리는 목록 아래로 내립니다.
+     (HTML 원문에는 두 곳 모두 들어 있어 크롤러·심사 로봇은 그대로 읽습니다) */
+  var guideBlocks = ["#guideRead", "#faq", "#siteGuide"]
+    .map(function (sel) { return $(sel); }).filter(Boolean);
+  var todayStrip = $(".today-strip"), footEl = $(".foot");
+
+  function placeGuideBlocks() {
+    if (!guideBlocks.length) return;
+    var toTop = state.tab === "all";
+    guideBlocks.forEach(function (el) {
+      if (toTop) {
+        if (todayStrip && el.nextElementSibling !== todayStrip) {
+          todayStrip.parentNode.insertBefore(el, todayStrip);
+        }
+      } else if (footEl && el.nextElementSibling !== footEl) {
+        footEl.parentNode.insertBefore(el, footEl);
+      }
+    });
+  }
+
   /* ───────── 렌더 ───────── */
   function render() {
+    placeGuideBlocks();
     renderHot();
     var items = filtered();
     var searching = state.q.trim() !== "" || state.onlyFav;
