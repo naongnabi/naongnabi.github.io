@@ -6,7 +6,7 @@
   "threads": "https://www.threads.com/@naong_nabi",
   "youtube": "https://www.youtube.com/@naong_nabi_cat"
  },
- "updatedAt": "2026-11-23T21:50:00+09:00",
+ "updatedAt": "2026-11-24T07:25:00+09:00",
  "items": [
   {
    "id": "deal-toss-ilwon-carbon-mat-single",
@@ -3375,6 +3375,102 @@
    "image": "assets/thumbs/deal-coupang-ilwol-water-mat-single.webp",
    "url": "https://link.coupang.com/a/iVkYqOv8xM",
    "cta": "쿠팡에서 보기",
+   "verifiedAt": "2026-11-24"
+  },
+  {
+   "id": "quiz-sejongedu-pr-survey",
+   "cat": "quiz",
+   "hot": null,
+   "platform": "공공",
+   "pkey": "gov",
+   "tag": "상품권",
+   "title": "2026년 하반기 세종교육 홍보 만족도 설문조사",
+   "highlight": "신세계상품권 5만원 3명 외 113명",
+   "highlightSub": "설문 참여형 · 추첨 113명",
+   "answer": [
+    "설문 참여형 (정답 없음)"
+   ],
+   "deadline": "2026-11-24",
+   "deadlineText": null,
+   "meta": [
+    "세종특별자치시교육청",
+    "발표 12/09 · 개인 안내"
+   ],
+   "note": "11/24 응모 완료 · 로그인 없이 네이버폼 15단계 설문 · 이름·휴대폰만 입력 · 신세계상품권 5만원 3명·도미노피자 10명·컴포즈커피 100명",
+   "url": "https://form.naver.com/response/3xmDyb8CL5p",
+   "cta": "설문 참여하기",
+   "verifiedAt": "2026-11-24"
+  },
+  {
+   "id": "quiz-kins-sns-survey",
+   "cat": "quiz",
+   "hot": null,
+   "platform": "공공",
+   "pkey": "gov",
+   "tag": "치킨",
+   "title": "2026 한국원자력안전기술원 SNS 만족도 조사",
+   "highlight": "BHC 뿌링클 5명·배민 1만원 30명·커피 100명",
+   "highlightSub": "설문 참여형 · 추첨 135명",
+   "answer": [
+    "설문 참여형 (정답 없음)"
+   ],
+   "deadline": "2026-11-24",
+   "deadlineText": null,
+   "meta": [
+    "한국원자력안전기술원",
+    "발표 11/30"
+   ],
+   "note": "11/24 응모 완료 · 로그인 없이 네이버폼 7단계 설문 · 정성 답변은 당첨 확률 UP 안내",
+   "url": "https://form.naver.com/response/ID2HfGrlx0M",
+   "cta": "설문 참여하기",
+   "verifiedAt": "2026-11-24"
+  },
+  {
+   "id": "quiz-korail-data-survey",
+   "cat": "quiz",
+   "hot": null,
+   "platform": "공공",
+   "pkey": "gov",
+   "tag": "상품권",
+   "title": "한국철도공사 공공데이터 활용·개방 수요조사",
+   "highlight": "모바일 상품권 5,000원 100명",
+   "highlightSub": "설문 참여형 · 추첨 100명",
+   "answer": [
+    "설문 참여형 (정답 없음)"
+   ],
+   "deadline": "2026-11-28",
+   "deadlineText": null,
+   "meta": [
+    "한국철도공사",
+    "발표 별도 공지"
+   ],
+   "note": "11/24 확인 · 로그인 없이 네이버폼 · 11/28 00:00까지 · 공공데이터 인식·이용 경험 조사",
+   "url": "https://form.naver.com/response/8iZIZqjRoVE",
+   "cta": "설문 참여하기",
+   "verifiedAt": "2026-11-24"
+  },
+  {
+   "id": "quiz-mafra-nuri-survey",
+   "cat": "quiz",
+   "hot": null,
+   "platform": "공공",
+   "pkey": "gov",
+   "tag": "상품권",
+   "title": "농식품정보누리 이용자 만족도 조사",
+   "highlight": "소정 경품 40명",
+   "highlightSub": "설문 참여형 · 추첨 40명",
+   "answer": [
+    "설문 참여형 (정답 없음)"
+   ],
+   "deadline": "2026-11-27",
+   "deadlineText": null,
+   "meta": [
+    "농림축산식품부 농식품정보누리",
+    "발표 개별 안내"
+   ],
+   "note": "11/24 확인 · 로그인 없이 네이버폼 · 마감 11/27",
+   "url": "https://form.naver.com/response/AJpHyznLro8",
+   "cta": "설문 참여하기",
    "verifiedAt": "2026-11-24"
   }
  ]
