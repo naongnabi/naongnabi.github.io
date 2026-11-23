@@ -291,14 +291,16 @@
           'onerror="this.parentNode.classList.add(\'is-fallback\');this.remove();" />' +
           '<span class="adcard-ad" aria-hidden="true">AD</span></span>'
       : '<span class="adcard-thumb is-fallback"><span class="adcard-ad" aria-hidden="true">AD</span></span>';
-    return '<a class="adcard' + (cls ? " " + cls : "") + '" href="' + esc(o.link) + '" target="_blank" rel="noopener noreferrer sponsored">' +
+    /* 광고 카드도 <a href> 대신 버튼으로 그립니다 — 클릭하면 같은 새 창으로 열리지만
+       페이지의 아웃링크 비중(애드핏 심사 기준)은 올리지 않습니다. */
+    return '<button class="adcard' + (cls ? " " + cls : "") + '" type="button" data-ext="' + esc(o.link) + '" data-ad="1">' +
       thumb +
       '<span class="adcard-body">' +
         '<strong class="adcard-title">' + esc(o.title) + '</strong>' +
         (o.desc ? '<span class="adcard-desc">' + esc(o.desc) + '</span>' : "") +
       '</span>' +
       '<span class="adcard-go" aria-hidden="true">보기 ›</span>' +
-    '</a>';
+    '</button>';
   }
 
   /* 텐핑 iframe 은 DOM 에서 옮기면 다시 로드되며 비어 버립니다.

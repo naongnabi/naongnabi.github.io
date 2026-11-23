@@ -441,7 +441,8 @@ h1,h2,h3,p{margin:0}
 
 /* 애드픽 네이티브 추천 카드 */
 .adcard{
-  display:flex;align-items:center;gap:10px;padding:10px 12px;
+  display:flex;align-items:center;gap:10px;padding:10px 12px;width:100%;
+  font:inherit;text-align:left;cursor:pointer;
   background:#fff;border:1px solid var(--line);border-radius:14px;
   box-shadow:var(--shadow);text-decoration:none;color:inherit;
   transition:transform .14s ease;
