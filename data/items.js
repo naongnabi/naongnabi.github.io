@@ -2903,50 +2903,6 @@ window.DEUKTEM_DATA = {
       ]
     },
     {
-      "id": "exp-revu-gdevil",
-      "cat": "exp",
-      "hot": null,
-      "platform": "레뷰",
-      "pkey": "revu",
-      "tag": "가전·디지털",
-      "title": "[지데빌] MK850W 무선 키보드&마우스 세트",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 블로그 15장+1,000자",
-      "deadline": "2026-11-23",
-      "deadlineText": null,
-      "meta": [
-        "레뷰 배송형",
-        "블로그 리뷰",
-        "발표 11/25"
-      ],
-      "note": "11/19 확인 · 사진 15장에 타건 소리가 담긴 짧은 영상 1개가 미션이에요. 얼굴은 나오지 않습니다.",
-      "url": "https://www.revu.net/campaign/1439726",
-      "cta": "체험단 신청하기",
-      "verifiedAt": "2026-11-19"
-    },
-    {
-      "id": "exp-revu-dinus-cushion",
-      "cat": "exp",
-      "hot": null,
-      "platform": "레뷰",
-      "pkey": "revu",
-      "tag": "가전·디지털",
-      "title": "[디누스] 탄소방석 그레이 2인용 전기방석",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 사진 15장·1,000자",
-      "deadline": "2026-11-23",
-      "deadlineText": null,
-      "meta": [
-        "레뷰 배송형",
-        "블로그 리뷰",
-        "발표 11/25"
-      ],
-      "note": "11/19 확인 · 겨울 소파용 전기방석이에요. 얼굴 노출 문항은 '비노출'로 신청하면 됩니다.",
-      "url": "https://www.revu.net/campaign/1439732",
-      "cta": "체험단 신청하기",
-      "verifiedAt": "2026-11-19"
-    },
-    {
       "id": "exp-revu-kakao-humid",
       "cat": "exp",
       "hot": null,
@@ -2987,28 +2943,6 @@ window.DEUKTEM_DATA = {
       ],
       "note": "11/19 확인 · 기존 공유기와 속도를 비교하는 미션이라 집 인터넷만 있으면 됩니다. 경쟁이 낮은 편이에요.",
       "url": "https://www.revu.net/campaign/1439580",
-      "cta": "체험단 신청하기",
-      "verifiedAt": "2026-11-19"
-    },
-    {
-      "id": "exp-revu-alrok",
-      "cat": "exp",
-      "hot": null,
-      "platform": "레뷰",
-      "pkey": "revu",
-      "tag": "가전·디지털",
-      "title": "[알록] 울트라올라 고주파 뷰티디바이스",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 얼굴 비노출 가능",
-      "deadline": "2026-11-23",
-      "deadlineText": null,
-      "meta": [
-        "레뷰 배송형",
-        "블로그+영상",
-        "발표 11/25"
-      ],
-      "note": "11/19 확인 · 제품 단독 촬영과 비포·애프터 삽입이 필수이고, 상세페이지 캡처는 금지예요.",
-      "url": "https://www.revu.net/campaign/1439658",
       "cta": "체험단 신청하기",
       "verifiedAt": "2026-11-19"
     },
@@ -3318,28 +3252,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-21"
     },
     {
-      "id": "exp-revu-wispal-frame",
-      "cat": "exp",
-      "hot": null,
-      "platform": "레뷰",
-      "pkey": "revu",
-      "tag": "가전·디지털",
-      "title": "[위스팔] 프레임 AI 스마트액자",
-      "highlight": "0원 배송형",
-      "highlightSub": "990,000원 상당 · 모집 10명 · 신청 1,203명",
-      "deadline": "2026-11-23",
-      "deadlineText": null,
-      "meta": [
-        "레뷰 프리미엄 체험단",
-        "블로그 1,000자+사진 15장",
-        "발표 11/25 · 등록 11/26~12/02"
-      ],
-      "note": "11/23 신청 완료 · 신청 마감이 11/23인 건이라 오늘 신청했어요.",
-      "url": "https://www.revu.net/campaign/1438321",
-      "cta": "체험단 보기",
-      "verifiedAt": "2026-11-23"
-    },
-    {
       "id": "quiz-jijinanjeon-nov2026",
       "cat": "quiz",
       "hot": null,
@@ -3420,6 +3332,52 @@ window.DEUKTEM_DATA = {
       "url": "https://www.goesan.go.kr/www/selectBbsNttView.do?bbsNo=190&key=135&nttNo=140526",
       "cta": "이벤트 안내 보기",
       "verifiedAt": "2026-11-23"
+    },
+    {
+      "id": "deal-coupang-homeplanet-humidifier-4l",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "계절가전",
+      "title": "홈플래닛 초음파 가습기 4L (RD210/화이트)",
+      "highlight": "23,900원",
+      "highlightSub": "정가 49,500원 → 51% · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "4L 대용량",
+        "초음파식",
+        "무드등·타이머"
+      ],
+      "note": "11/24 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-homeplanet-humidifier-4l.webp",
+      "url": "https://link.coupang.com/a/iVkWUN9DtQ",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "deal-coupang-ilwol-water-mat-single",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "계절가전",
+      "title": "일월 숲속애 온수매트 싱글 (100×200cm)",
+      "highlight": "113,050원",
+      "highlightSub": "정가 197,800원 → 42% · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "싱글 100×200cm",
+        "물 순환 온수매트",
+        "분리형 컨트롤러"
+      ],
+      "note": "11/24 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-ilwol-water-mat-single.webp",
+      "url": "https://link.coupang.com/a/iVkYqOv8xM",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-24"
     }
   ]
 };
