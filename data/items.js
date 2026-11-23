@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-23T08:45:00+09:00",
+  "updatedAt": "2026-11-23T15:55:00+09:00",
   "items": [
+    {
+      "id": "deal-coupang-shinil-ptc-heater-seh2000if",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활가전",
+      "title": "신일 PTC 히터 온풍기 SEH-P2000IF 프리미엄 타워형",
+      "highlight": "118,500원",
+      "highlightSub": "정가 159,000원 → 25% · 40,500원 차이",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "타워형 PTC 온풍기 1대 · 프리미엄 타워형",
+        "평점 4.5 · 리뷰 209",
+        "쿠팡 골드박스 특가 · 가격은 수시로 바뀜"
+      ],
+      "note": "11/23 15:38 확인 · 쿠팡 파트너스 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-shinil-ptc-heater-seh2000if.webp",
+      "url": "https://link.coupang.com/a/iUjrZqDtIa",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-23"
+    },
+    {
+      "id": "deal-naver-cuckoo-powerclean-slim-cvc-g820nwm",
+      "cat": "deal",
+      "hot": null,
+      "platform": "네이버",
+      "pkey": "naver",
+      "tag": "생활가전",
+      "title": "쿠쿠 파워클론 Slim 무선청소기 CVC-G820NWM (노블화이트)",
+      "highlight": "199,000원",
+      "highlightSub": "정가 379,000원 → 47% · 무료배송 · 내일(11/24) 도착",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "핸디스틱형 무선청소기 · 흡입력 305W",
+        "평점 4.77 · 리뷰 7,462 · 4점 이상 96%",
+        "무료배송 · 내일(11/24) 도착 · 최대구매 3개"
+      ],
+      "note": "11/23 15:40 확인 · 네이버 쇼핑 커넥트(수수료 10%) · 쿠폰 적용 시 198,000원 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-naver-cuckoo-powerclean-slim-cvc-g820nwm.webp",
+      "url": "https://naver.me/GbykcEYs",
+      "cta": "네이버에서 보기",
+      "verifiedAt": "2026-11-23"
+    },
     {
       "id": "deal-naver-christmas-mini-tree-set-45",
       "cat": "deal",
