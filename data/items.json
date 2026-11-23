@@ -6,8 +6,54 @@
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-23T15:55:00+09:00",
+  "updatedAt": "2026-11-23T21:50:00+09:00",
   "items": [
+    {
+      "id": "deal-toss-ilwon-carbon-mat-single",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "생활가전",
+      "title": "일월 그레이 스퀘어 카본매트 싱글 (1개)",
+      "highlight": "28,800원",
+      "highlightSub": "정가 89,000원 → 67% · 무료배송 · 내일 도착",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "카본매트 싱글(1인용) · 일월 공식 판매",
+        "무료배송 · 11/24 도착 예정(늦으면 보상)",
+        "토스쇼핑 베스트 랭킹 상위 · 수수료 5%"
+      ],
+      "note": "11/23 21:34 확인 · 토스쇼핑 쉐어링크 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-toss-ilwon-carbon-mat-single.webp",
+      "url": "https://toss.shopping/_m/JfzQO8Or",
+      "cta": "토스에서 보기",
+      "verifiedAt": "2026-11-23"
+    },
+    {
+      "id": "deal-ali-oatsbasf-clamp-stand",
+      "cat": "deal",
+      "hot": null,
+      "platform": "알리",
+      "pkey": "ali",
+      "tag": "생활가전",
+      "title": "Oatsbasf 클램프 로봇암 노트북·태블릿 거치대 (360도 회전)",
+      "highlight": "40,400원",
+      "highlightSub": "정가 87,824원 → 54% · 47,424원 차이 · 무료배송",
+      "deadline": "2026-12-03",
+      "deadlineText": "12/3 23:59 종료",
+      "meta": [
+        "책상에 물려 고정하는 클램프형 · 로봇암 360도 회전",
+        "평점 4.9 · 리뷰 205 · 1,000+ 판매",
+        "무료배송 · 11/28~12/4 도착 예정 · 수수료 7%"
+      ],
+      "note": "11/23 21:39 확인 · 알리익스프레스 어필리에이트(트래킹 threads_naongnabi) · 옵션(3관절 그레이그린 등)에 따라 달라짐 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-ali-oatsbasf-clamp-stand.webp",
+      "url": "https://s.click.aliexpress.com/e/_c4sNVT7n",
+      "cta": "알리에서 보기",
+      "verifiedAt": "2026-11-23"
+    },
     {
       "id": "deal-coupang-shinil-ptc-heater-seh2000if",
       "cat": "deal",
