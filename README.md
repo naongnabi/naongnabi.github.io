@@ -31,6 +31,9 @@
 ```
 apps/oneul-deuktem/
 ├─ index.html               # 화면 (원본 · 탭별 페이지의 template)
+├─ guide/index.html         # 📖 꿀팁 가이드 목록 (생성기: tools/build_guide.py)
+├─ guide/<slug>.html        #   ↳ 가이드 글 14편 (자체 콘텐츠 · 직접 수정 금지)
+├─ content/guide/*.md       # ★ 가이드 글 원본 (여기만 고치면 됨)
 ├─ quiz/index.html          # 탭별 페이지 — 생성기(tools/build_tabs.py)가 만듭니다 (직접 수정 금지)
 ├─ exp/index.html           #   ↳ 무료 체험단
 ├─ deal/index.html          #   ↳ 오늘의 특가
@@ -41,6 +44,7 @@ apps/oneul-deuktem/
 ├─ sw.js                    # 서비스 워커 (앱 껍데기 캐시, 네트워크 우선)
 ├─ assets/
 │  ├─ styles.css            # 디자인 (코랄 #FF5A36)
+│  ├─ guide.css             # 꿀팁 가이드 글 전용 타이포·체크리스트
 │  ├─ app.js                # 렌더·검색·찜·공유·PWA 설치 로직
 │  └─ thumbs/               # 상품 사진 21장 (정사각 168×168 WebP, 장당 2~9KB)
 ├─ data/
@@ -56,6 +60,8 @@ apps/oneul-deuktem/
 ├─ tools/
 │  ├─ prerender.py          # index.html 목록·핫 TOP 에 실제 카드 HTML 을 미리 넣기 (크롤러용 정적 프리렌더)
 │  ├─ build_tabs.py         # index.html → 탭별 페이지(/quiz/ …)·sitemap.xml 생성 (탭 카드까지 프리렌더)
+│  ├─ build_guide.py        # content/guide/*.md → /guide/ 목록·글 페이지 + sitemap 목록
+│  ├─ qa_guide.py           # 가이드 페이지 점검 (가로 넘침·애드핏 슬롯·외부 링크 0·콘솔 에러)
 │  ├─ validate.py           # 데이터 검증 + items.js 동기화 + 6개 HTML 프리렌더·탭 페이지 재생성 + 링크 확인
 │  ├─ fetch_adpick.py       # 애드픽 제휴 광고 받아와 data/adpick.json·js 갱신 (텐핑 빈 자리 대체 광고)
 │  ├─ build_preview.py      # 한 파일 미리보기(downloads/oneul-deuktem-preview.html) 생성 — 상품 사진은 data URI 로 인라인
@@ -270,3 +276,29 @@ cd icons && python3 make_icons.py    # 512·192·maskable·apple-touch 전부 �
 ```
 색·모양을 바꾸려면 `make_icons.py`의 `gradient()` / `bag_layer()` 값을 수정하고,
 헤더 로고(`index.html`의 `.brand-mark` SVG)도 같은 비율로 맞춰 주세요.
+
+---
+
+## 9. 📖 꿀팁 가이드 (자체 콘텐츠) — 카카오 애드핏 심사 대응
+
+카카오 애드핏 매체 심사에서 **"대부분의 콘텐츠가 아웃링크로 연결되어 보류"** 사유를 받아,
+사이트 안에서 끝까지 읽히는 **자체 오리지널 콘텐츠 14편**을 `/guide/` 에 두었습니다.
+
+| 항목 | 값 |
+|---|---|
+| 목록 | `guide/index.html` (`https://naongnabi.github.io/guide/`) |
+| 글 | `guide/<slug>.html` — 14편, 편당 본문 약 900~1,100자(공백 제외) |
+| 원본 | `content/guide/*.md` — 앞머리(메타) + 마크다운. **여기만 고치면 됩니다** |
+| 생성 | `python3 tools/build_guide.py` (또는 `validate.py --sync` 한 번으로 함께 갱신) |
+| 진입 경로 | 홈 **헤더 📖 버튼** · 홈 상단 **꿀팁 가이드 가로 카드 7장** · 탭 페이지(같은 구역이 `../guide/` 로 재작성) · 푸터 `📖 꿀팁 가이드` |
+
+**지켜야 할 규칙**
+- 가이드 본문에는 **외부(outbound) 링크를 넣지 않습니다.** 사이트 안의 다른 가이드·탭으로만 연결해요.
+  (본문에 `http` 링크가 있으면 `build_guide.py` 가 `GuideError` 로 멈춥니다 — 애드핏 보류 사유가 아웃링크 비중이었기 때문)
+- 애드핏 코드(`#adfitSlot` · `DAN-uGDXjD28L8ogr0Vq`)는 **목록·글 15장 전부** 같은 마크업으로 들어갑니다.
+- 글을 추가하려면 `content/guide/<slug>.md` 하나만 추가하고 `python3 tools/validate.py --sync` 를 실행하세요.
+  앞머리 필드: `slug · order · emoji · category · title · summary · keywords · takeaway · updated`
+- 확인: `python3 tools/validate.py --today $(date +%Y-%m-%d)` → `꿀팁 가이드 14편 · 본문 합계 …자`,
+  `가이드 페이지 15장 — 애드핏 슬롯 있음 · 외부 링크 0` 두 줄이 통과해야 합니다.
+- 화면 점검: `python3 tools/qa_guide.py` (390×844·320px 가로 넘침 0, 목록 14편, 본문 글자수, 애드핏 슬롯,
+  콘솔 에러 0 → `preview_guide_home.png` · `preview_guide_index.png` · `preview_guide_article.png`)
