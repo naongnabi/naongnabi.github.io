@@ -224,6 +224,36 @@ h1,h2,h3,p{margin:0}
 .urgent-ic{font-size:13px}
 .urgent-strip p{font-size:11.5px;font-weight:700;color:#C3401F;letter-spacing:-.3px;line-height:1.4}
 
+/* ───────── 쿠팡 내 스토어 배너 ───────── */
+.store-banner{margin:2px 16px 10px}
+.store-card{
+  display:flex;align-items:center;gap:9px;
+  padding:11px 11px 11px 13px;border-radius:16px;
+  background:linear-gradient(135deg,#FFF5F0 0%,#FFE7DC 100%);
+  border:1px solid #FFD3C2;
+  box-shadow:0 12px 24px -22px rgba(232,69,31,.9);
+  transition:transform .15s ease;
+}
+.store-card:active{transform:scale(.99)}
+.store-flame{font-size:12px;line-height:1}
+.store-txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+.store-txt strong{
+  font-size:13px;font-weight:900;letter-spacing:-.5px;color:#9B3218;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.store-txt em{
+  display:block;font-style:normal;font-size:10.5px;font-weight:500;color:#A5644E;letter-spacing:-.2px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.store-go{
+  flex:none;display:flex;align-items:center;gap:2px;
+  height:30px;padding:0 10px;border-radius:999px;
+  background:var(--coral);color:#fff;
+  font-size:11px;font-weight:800;letter-spacing:-.3px;white-space:nowrap;
+}
+.store-go .ic{width:12px;height:12px}
+.store-note{margin:5px 2px 0;font-size:9.5px;font-weight:500;color:var(--ink-4);letter-spacing:-.2px}
+
 .list{display:flex;flex-direction:column;gap:11px;padding:0 16px}
 
 .section-h{
