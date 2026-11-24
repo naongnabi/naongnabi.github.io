@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-24T17:45:00+09:00",
+  "updatedAt": "2026-11-24T18:40:00+09:00",
   "items": [
+    {
+      "id": "deal-toss-gogijungdok-samgyeopsal-2kg",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "식품",
+      "title": "고기중독 통삼겹살 구이용·보쌈용 2kg (1개)",
+      "highlight": "15,400원",
+      "highlightSub": "100g당 770원 · 평점 4.4(리뷰 2,478) · 내일 도착",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "2kg 대용량 · 구이용·보쌈용 다 됨",
+        "100g당 770원 · 내일 도착 예정(늦으면 보상)",
+        "토스쇼핑 선착순특가 · 지금 30일 내 최저가"
+      ],
+      "note": "11/24 18:35 확인 · 토스쇼핑 쉐어링크 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-toss-gogijungdok-samgyeopsal-2kg.webp",
+      "url": "https://toss.shopping/_m/NrVvwVT8",
+      "cta": "토스에서 보기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "deal-toss-palgong-hanwoo-modum-gui-600g",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "식품",
+      "title": "대구축산농협 팔공참한우 1++ 특미 모둠구이 600g (삼각살 300g + 설깃머리살 300g)",
+      "highlight": "27,360원",
+      "highlightSub": "100g당 4,560원 · 평점 4.7(리뷰 467) · 내일 출발",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "1++등급 한우 모둠구이 600g",
+        "한우혼합세트 2위 · 지금 30일 내 최저가",
+        "내일 출발 · 모레 도착 예정"
+      ],
+      "note": "11/24 18:35 확인 · 토스쇼핑 쉐어링크 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-toss-palgong-hanwoo-modum-gui-600g.webp",
+      "url": "https://toss.shopping/_m/HmX6Gm0e",
+      "cta": "토스에서 보기",
+      "verifiedAt": "2026-11-24"
+    },
     {
       "id": "deal-coupang-lg-puricare-360hit-as186hw",
       "cat": "deal",
