@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-24T18:40:00+09:00",
+  "updatedAt": "2026-11-24T20:35:00+09:00",
   "items": [
     {
       "id": "deal-toss-gogijungdok-samgyeopsal-2kg",
@@ -3565,6 +3565,50 @@ window.DEUKTEM_DATA = {
       "note": "11/24 확인 · 이전 회차에서 이미 참여한 설문으로 중복 응모 불가(폼에서 확인)",
       "url": "https://form.naver.com/response/AJpHyznLro8",
       "cta": "설문 참여하기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "exp-rplace-huego-mousepad",
+      "cat": "exp",
+      "hot": null,
+      "platform": "리뷰플레이스",
+      "pkey": "etc",
+      "tag": "생활·IT",
+      "title": "[블로그] 휴앤고 나만의 마우스패드 만들기 체험단",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 1명 · 마감 11/24(오늘)",
+      "deadline": "2026-11-24",
+      "deadlineText": null,
+      "meta": [
+        "리뷰플레이스 제품 캠페인",
+        "블로그 1,500~2,000자 + 사진",
+        "발표 11/25 · 리뷰 11/26~11/29"
+      ],
+      "note": "11/24 확인 · 카톡 상담 후 시안 확인 캡처 필요 · 반려동물 사진으로 제작 가능",
+      "url": "https://www.reviewplace.co.kr/pr/?id=323124",
+      "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "exp-stylec-kozis-feeder",
+      "cat": "exp",
+      "hot": null,
+      "platform": "스타일씨",
+      "pkey": "etc",
+      "tag": "반려동물",
+      "title": "[코지스] 반려동물 급식기 (제공형)",
+      "highlight": "0원 제공형",
+      "highlightSub": "모집 5명 · 신청 35명",
+      "deadline": "2026-11-29",
+      "deadlineText": null,
+      "meta": [
+        "스타일씨 제공형(제품 무료)",
+        "인스타 릴스 1편 + 음성 내레이션 필수",
+        "마감 5일 남음"
+      ],
+      "note": "11/24 확인 · 릴스·내레이션 미션이 있어 영상 촬영이 가능할 때 신청하세요",
+      "url": "https://www.stylec.co.kr/trials/167237",
+      "cta": "체험단 신청하기",
       "verifiedAt": "2026-11-24"
     }
   ]
