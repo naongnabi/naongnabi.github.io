@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-24T20:30:36+09:00",
+  "updatedAt": "2026-11-24T20:32:25+09:00",
   "items": [
     {
       "id": "deal-toss-gogijungdok-samgyeopsal-2kg",
@@ -3762,6 +3762,28 @@ window.DEUKTEM_DATA = {
       ],
       "note": "11/24 확인 · 신청 완료. 갈색·회색 단모종 고양이 털 관리용 빗이에요.",
       "url": "https://www.reviewplace.co.kr/pr/?id=318644",
+      "cta": "캠페인 보기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "exp-tqueens-dentyx-sterilizer",
+      "cat": "exp",
+      "hot": null,
+      "platform": "택배의여왕",
+      "pkey": "etc",
+      "tag": "가전·디지털",
+      "title": "[덴틱스] 칫솔살균기 2구",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 신청 342명",
+      "deadline": "2026-11-25",
+      "deadlineText": null,
+      "meta": [
+        "택배의여왕 배송형",
+        "블로그 리뷰(영상 1개·사진 15장)",
+        "발표 11/26 · 리뷰 11/27~12/11"
+      ],
+      "note": "11/24 확인 · 신청 완료. 2구 칫솔살균기로 무선·거치 겸용 리뷰를 쓰는 캠페인이에요.",
+      "url": "https://tqueens.net/taste/1660064",
       "cta": "캠페인 보기",
       "verifiedAt": "2026-11-24"
     }
