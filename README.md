@@ -105,6 +105,18 @@ python3 -m http.server 8000
 
 > 저장소 이름을 `oneul-deuktem`으로 바꾸면 주소도 `https://naongnabi.github.io/oneul-deuktem/` 가 됩니다(로컬 origin URL도 함께 수정).
 
+### 웹 분석 (Google 애널리틱스 4 · 2026-11-24 설치)
+| 항목 | 값 |
+|---|---|
+| 계정 / 속성 | `오늘도득템` (시간대 대한민국·통화 KRW) |
+| 측정 ID | **`G-7X9PJ9433D`** (웹 스트림 `오늘도득템` · `https://naongnabi.github.io`) |
+| 대시보드 | https://analytics.google.com/analytics/web/#/a417375684p565718283/reports/intelligenthome |
+
+> 스니펫은 **`index.html` 의 `<head>`**(탭 5장은 `build_tabs.py` 가 이 파일에서 복사)와
+> **`tools/build_guide.py` 의 `head()`**(가이드 16장) 두 곳에만 들어 있습니다. 측정 ID를 바꿀 때는
+> 이 두 곳(`GA_ID`)만 고치고 `python3 tools/validate.py --sync` 로 다시 만들면 전 페이지에 반영됩니다.
+> `validate.py` 가 배포 전에 22개 HTML 전부에 스니펫이 있는지 검사합니다(누락 시 FAIL).
+
 ### 매일 데이터 갱신 → 라이브 반영 (한 줄)
 ```bash
 cd apps/oneul-deuktem && bash tools/deploy.sh          # 검증 → 커밋 → 푸시 → 라이브 확인
