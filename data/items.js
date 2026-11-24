@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "items": [
+    {
+      "id": "deal-coupang-rapshin-sanitizer-500",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "건강·위생",
+      "title": "랩신 브이3 새니타이저 겔 손소독제 500ml",
+      "highlight": "6,230원",
+      "highlightSub": "정가 8,900원 → 30% · 500ml 1개",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "의약외품 손소독제 500ml",
+        "겔 타입",
+        "현관·아이 가방 상비"
+      ],
+      "note": "11/25 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-rapshin-sanitizer-500.webp",
+      "url": "https://link.coupang.com/a/iWZRRCo0aa",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-25"
+    },
+    {
+      "id": "deal-coupang-kf94-mask-100",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "건강·위생",
+      "title": "혜원클린 국산 KF94 황사 방역 마스크 대형 100매 (블랙·4개입 25매)",
+      "highlight": "9,800원",
+      "highlightSub": "정가 14,900원 → 34% · 장당 98원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "국산 KF94 대형 100매",
+        "장당 98원꼴",
+        "독감·황사철 상비용"
+      ],
+      "note": "11/25 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-kf94-mask-100.webp",
+      "url": "https://link.coupang.com/a/iWZQaOtA4G",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-25"
+    },
     {
       "id": "deal-ali-camping-lantern-13500mah",
       "cat": "deal",
@@ -3018,28 +3064,6 @@ window.DEUKTEM_DATA = {
       ]
     },
     {
-      "id": "exp-revu-kakao-humid",
-      "cat": "exp",
-      "hot": null,
-      "platform": "레뷰",
-      "pkey": "revu",
-      "tag": "가전·디지털",
-      "title": "[카카오프렌즈] 스윙클립 듀얼 무선 가습기",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 핑크/화이트 선택",
-      "deadline": "2026-11-24",
-      "deadlineText": null,
-      "meta": [
-        "레뷰 배송형",
-        "블로그+영상·GIF",
-        "발표 11/26"
-      ],
-      "note": "11/19 확인 · 사진 15장과 영상·GIF 미션, 그리고 네이버 스토어 알림받기·찜 인증이 함께 필요해요.",
-      "url": "https://www.revu.net/campaign/1439671",
-      "cta": "체험단 신청하기",
-      "verifiedAt": "2026-11-19"
-    },
-    {
       "id": "exp-revu-tplink",
       "cat": "exp",
       "hot": null,
@@ -3393,34 +3417,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-23"
     },
     {
-      "id": "quiz-nhis-nursing-ox",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "모바일상품권",
-      "title": "우리동네 간호·간병통합서비스 제대로 알기 OX 퀴즈",
-      "highlight": "모바일 문화상품권 1만원 100명",
-      "highlightSub": "OX 5문항 · 추첨 100명",
-      "answer": [
-        "1번 O — 보호자·사적 간병인 없이 전문 간호인력이 제공",
-        "2번 X — 사적 간병인 고용은 안 됨",
-        "3번 O — 일반병동보다 간병비 부담 70~80% 경감",
-        "4번 X — 모든 병원에서 이용할 수 있는 건 아님",
-        "5번 O — 담당 주치의가 입원 여부 결정"
-      ],
-      "deadline": "2026-11-24",
-      "deadlineText": null,
-      "meta": [
-        "국민건강보험공단",
-        "발표 11/27"
-      ],
-      "note": "11/23 응모 완료 · 이름·휴대폰만 입력하는 설문형",
-      "url": "https://www.nhis.or.kr/nhis/etc/20261104_banner_pop01.do",
-      "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-23"
-    },
-    {
       "id": "quiz-goesan-disability-2026-3",
       "cat": "quiz",
       "hot": null,
@@ -3495,54 +3491,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-24"
     },
     {
-      "id": "quiz-sejongedu-pr-survey",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "상품권",
-      "title": "2026년 하반기 세종교육 홍보 만족도 설문조사",
-      "highlight": "신세계상품권 5만원 3명 외 113명",
-      "highlightSub": "설문 참여형 · 추첨 113명",
-      "answer": [
-        "설문 참여형 (정답 없음)"
-      ],
-      "deadline": "2026-11-24",
-      "deadlineText": null,
-      "meta": [
-        "세종특별자치시교육청",
-        "발표 12/09 · 개인 안내"
-      ],
-      "note": "11/24 응모 완료 · 로그인 없이 네이버폼 15단계 설문 · 이름·휴대폰만 입력 · 신세계상품권 5만원 3명·도미노피자 10명·컴포즈커피 100명",
-      "url": "https://form.naver.com/response/3xmDyb8CL5p",
-      "cta": "설문 참여하기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
-      "id": "quiz-kins-sns-survey",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "치킨",
-      "title": "2026 한국원자력안전기술원 SNS 만족도 조사",
-      "highlight": "BHC 뿌링클 5명·배민 1만원 30명·커피 100명",
-      "highlightSub": "설문 참여형 · 추첨 135명",
-      "answer": [
-        "설문 참여형 (정답 없음)"
-      ],
-      "deadline": "2026-11-24",
-      "deadlineText": null,
-      "meta": [
-        "한국원자력안전기술원",
-        "발표 11/30"
-      ],
-      "note": "11/24 응모 완료 · 로그인 없이 네이버폼 7단계 설문 · 정성 답변은 당첨 확률 UP 안내",
-      "url": "https://form.naver.com/response/ID2HfGrlx0M",
-      "cta": "설문 참여하기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
       "id": "quiz-korail-data-survey",
       "cat": "quiz",
       "hot": null,
@@ -3588,28 +3536,6 @@ window.DEUKTEM_DATA = {
       "note": "11/24 확인 · 이전 회차에서 이미 참여한 설문으로 중복 응모 불가(폼에서 확인)",
       "url": "https://form.naver.com/response/AJpHyznLro8",
       "cta": "설문 참여하기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
-      "id": "exp-rplace-huego-mousepad",
-      "cat": "exp",
-      "hot": null,
-      "platform": "리뷰플레이스",
-      "pkey": "etc",
-      "tag": "생활·IT",
-      "title": "[블로그] 휴앤고 나만의 마우스패드 만들기 체험단",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 1명 · 마감 11/24(오늘)",
-      "deadline": "2026-11-24",
-      "deadlineText": null,
-      "meta": [
-        "리뷰플레이스 제품 캠페인",
-        "블로그 1,500~2,000자 + 사진",
-        "발표 11/25 · 리뷰 11/26~11/29"
-      ],
-      "note": "11/24 확인 · 카톡 상담 후 시안 확인 캡처 필요 · 반려동물 사진으로 제작 가능",
-      "url": "https://www.reviewplace.co.kr/pr/?id=323124",
-      "cta": "체험단 신청하기",
       "verifiedAt": "2026-11-24"
     },
     {
