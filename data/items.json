@@ -3975,6 +3975,53 @@
       "url": "https://www.reviewplace.co.kr/pr/?id=323221",
       "cta": "캠페인 보기",
       "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "exp-rplace-singingbowl",
+      "cat": "exp",
+      "hot": null,
+      "platform": "리뷰플레이스",
+      "pkey": "etc",
+      "tag": "생활용품",
+      "title": "[블로그] 네팔 싱잉볼 프리미엄S 풀문 9.5cm 세트",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 7명 · 신청 87명",
+      "deadline": "2026-12-02",
+      "deadlineText": null,
+      "meta": [
+        "리뷰플레이스 제품 캠페인",
+        "블로그 1,000자 + 사진 15장 + 영상 1개",
+        "발표 12/03 · 리뷰 12/04~12/20"
+      ],
+      "note": "11/25 확인 · 신청 완료. 명상·요가용 싱잉볼로, 연주 소리가 담긴 5초 영상 1개가 필수예요.",
+      "url": "https://www.reviewplace.co.kr/pr/?id=323231",
+      "cta": "캠페인 보기",
+      "verifiedAt": "2026-11-25"
+    },
+    {
+      "id": "quiz-grtc-best-policy",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "설문",
+      "title": "광주교통공사 2026년 Best 시책 선정 설문조사",
+      "highlight": "음료교환권 5,000원 20명",
+      "highlightSub": "로그인 없이 참여 · 4단계 설문",
+      "answer": [
+        "설문 참여형 (정답 없음)"
+      ],
+      "deadline": "2026-11-25",
+      "deadlineText": null,
+      "meta": [
+        "광주교통공사",
+        "자체 설문 페이지",
+        "발표일 미안내"
+      ],
+      "note": "11/25 확인 · 올해 추진 사업 중 3개를 고르는 설문이에요. 오늘 23:59 마감이니 오늘 안에 참여하세요.",
+      "url": "https://www.grtc.co.kr/subway/poll/poll112",
+      "cta": "설문 참여하기",
+      "verifiedAt": "2026-11-25"
     }
   ]
 }
