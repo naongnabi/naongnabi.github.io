@@ -6,8 +6,54 @@
   "threads": "https://www.threads.com/@naong_nabi",
   "youtube": "https://www.youtube.com/@naong_nabi_cat"
  },
- "updatedAt": "2026-11-24T08:05:00+09:00",
+ "updatedAt": "2026-11-24T17:45:00+09:00",
  "items": [
+  {
+   "id": "deal-coupang-lg-puricare-360hit-as186hw",
+   "cat": "deal",
+   "hot": null,
+   "platform": "쿠팡",
+   "pkey": "coupang",
+   "tag": "생활가전",
+   "title": "LG전자 퓨리케어 360도 Hit 공기청정기 62㎡ (AS186HWWA, 화이트)",
+   "highlight": "329,000원",
+   "highlightSub": "정가 731,000원 → 54% · 402,000원 차이 · 로켓배송",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "62㎡ 커버 · 360도 원형 토출 방식",
+    "정가 731,000원 → 329,000원 (54%, 402,000원 차이)",
+    "로켓배송 · 쿠팡 골드박스 특가"
+   ],
+   "note": "11/24 17:30 확인 · 쿠팡 파트너스 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-coupang-lg-puricare-360hit-as186hw.webp",
+   "url": "https://link.coupang.com/a/iV603y3Use",
+   "cta": "쿠팡에서 보기",
+   "verifiedAt": "2026-11-24"
+  },
+  {
+   "id": "deal-naver-jmw-m5001a-plus-pro",
+   "cat": "deal",
+   "hot": null,
+   "platform": "네이버",
+   "pkey": "naver",
+   "tag": "생활가전",
+   "title": "JMW M5001A PLUS PRO 고성능 터보 항공모터 헤어드라이기",
+   "highlight": "85,000원",
+   "highlightSub": "정가 130,000원 → 34% · 45,000원 차이 · 무료배송",
+   "deadline": "2026-11-30",
+   "deadlineText": "네이버PICK 11/30까지 · 쿠폰 D-6",
+   "meta": [
+    "평점 4.88 · 리뷰 16,207 · 4점 이상 98%",
+    "BLDC 항공모터 1700W · 순수 냉풍 토글 스위치",
+    "무료배송 · 내일(11/25) 도착 · 수수료 10%"
+   ],
+   "note": "11/24 17:35 확인 · 네이버 쇼핑 커넥트(브랜드 커넥트 스페이스 바라의 세상 바라보기~*) · 알림받기 쿠폰 적용 시 최대 66,000원 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-naver-jmw-m5001a-plus-pro.webp",
+   "url": "https://naver.me/51uKy55V",
+   "cta": "네이버에서 보기",
+   "verifiedAt": "2026-11-24"
+  },
   {
    "id": "deal-toss-ilwon-carbon-mat-single",
    "cat": "deal",
