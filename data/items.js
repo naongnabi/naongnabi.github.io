@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-24T20:35:00+09:00",
+  "updatedAt": "2026-11-24T20:30:36+09:00",
   "items": [
     {
       "id": "deal-toss-gogijungdok-samgyeopsal-2kg",
@@ -3609,6 +3609,160 @@ window.DEUKTEM_DATA = {
       "note": "11/24 확인 · 릴스·내레이션 미션이 있어 영상 촬영이 가능할 때 신청하세요",
       "url": "https://www.stylec.co.kr/trials/167237",
       "cta": "체험단 신청하기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "exp-tqueens-italico-coffee",
+      "cat": "exp",
+      "hot": null,
+      "platform": "택배의여왕",
+      "pkey": "etc",
+      "tag": "가전·디지털",
+      "title": "[이탈리코] 캡슐커피머신 + 캡슐커피 (180,000원 상당)",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 신청 365명",
+      "deadline": "2026-11-26",
+      "deadlineText": null,
+      "meta": [
+        "택배의여왕 배송형",
+        "블로그 리뷰(영상 1개·사진 15장)",
+        "발표 11/27 · 리뷰 11/28~12/12"
+      ],
+      "note": "11/24 확인 · 신청 완료한 캠페인이에요. 배송비도 0원이고 발표는 11/27입니다.",
+      "url": "https://tqueens.net/taste/1647699",
+      "cta": "캠페인 보기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "exp-tqueens-axive-pumpswing",
+      "cat": "exp",
+      "hot": null,
+      "platform": "택배의여왕",
+      "pkey": "etc",
+      "tag": "생활",
+      "title": "[액사이브] 펌프스윙 (83,000원 상당)",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 신청 23명",
+      "deadline": "2026-11-30",
+      "deadlineText": null,
+      "meta": [
+        "택배의여왕 배송형",
+        "블로그 리뷰(영상 1개·사진 15장)",
+        "발표 12/01 · 리뷰 12/02~12/16"
+      ],
+      "note": "11/24 확인 · 신청 완료. 경쟁률이 낮아 당첨 확률이 높은 편이에요.",
+      "url": "https://tqueens.net/taste/1662696",
+      "cta": "캠페인 보기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "exp-tqueens-kelimbath-shower",
+      "cat": "exp",
+      "hot": null,
+      "platform": "택배의여왕",
+      "pkey": "etc",
+      "tag": "생활",
+      "title": "[계림바스] 온오프 컬러 필터샤워기",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 신청 68명",
+      "deadline": "2026-11-30",
+      "deadlineText": null,
+      "meta": [
+        "택배의여왕 배송형",
+        "블로그 리뷰(영상 1개·사진 15장)",
+        "발표 12/01 · 리뷰 12/02~12/16"
+      ],
+      "note": "11/24 확인 · 신청 완료. 이중필터·온오프 기능 샤워기로 설치형 리뷰예요.",
+      "url": "https://tqueens.net/taste/1662700",
+      "cta": "캠페인 보기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "exp-tqueens-youchEN-sleepingbag",
+      "cat": "exp",
+      "hot": null,
+      "platform": "택배의여왕",
+      "pkey": "etc",
+      "tag": "생활",
+      "title": "[유첸시대] 100cm 와이드 캠핑침낭 + 수납가방",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 신청 50명",
+      "deadline": "2026-11-30",
+      "deadlineText": null,
+      "meta": [
+        "택배의여왕 배송형",
+        "블로그 리뷰(영상 1개·사진 15장)",
+        "발표 12/01 · 리뷰 12/02~12/16"
+      ],
+      "note": "11/24 확인 · 신청 완료. 이불처럼 펼쳐 쓰는 사계절 침낭에 베개·안대·귀마개 3종 증정이에요.",
+      "url": "https://tqueens.net/taste/1662732",
+      "cta": "캠페인 보기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "exp-rplace-korean-values-book",
+      "cat": "exp",
+      "hot": null,
+      "platform": "리뷰플레이스",
+      "pkey": "etc",
+      "tag": "도서",
+      "title": "[블로그] 도서 〈한국의 가치관 트렌드〉",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 신청 167명",
+      "deadline": "2026-11-30",
+      "deadlineText": null,
+      "meta": [
+        "리뷰플레이스 제품 캠페인",
+        "블로그 1,000자 + 사진 15장",
+        "발표 12/01 · 리뷰 12/02~12/16"
+      ],
+      "note": "11/24 확인 · 신청 완료. 책 한 권 무료로 받아 블로그 서평을 쓰는 캠페인이에요.",
+      "url": "https://www.reviewplace.co.kr/pr/?id=322296",
+      "cta": "캠페인 보기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "exp-rplace-maeumthe-pet-shampoo",
+      "cat": "exp",
+      "hot": null,
+      "platform": "리뷰플레이스",
+      "pkey": "etc",
+      "tag": "반려동물",
+      "title": "[블로그] 마음더 비건 고양이·강아지 샴푸 300ml + 거품용기",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 10명 · 신청 87명",
+      "deadline": "2026-11-29",
+      "deadlineText": null,
+      "meta": [
+        "리뷰플레이스 제품 캠페인",
+        "반려묘·반려견 키우는 분",
+        "발표 11/30 · 리뷰 12/01~12/14"
+      ],
+      "note": "11/24 확인 · 신청 완료(반려묘). 고양이 두 마리와 함께 쓴 후기를 쓰면 됩니다.",
+      "url": "https://www.reviewplace.co.kr/pr/?id=322602",
+      "cta": "캠페인 보기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
+      "id": "exp-rplace-smartbrush-cat",
+      "cat": "exp",
+      "hot": null,
+      "platform": "리뷰플레이스",
+      "pkey": "etc",
+      "tag": "반려동물",
+      "title": "[블로그] 스마트브러쉬 죽은털 제거 빗",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 20명 · 신청 80명",
+      "deadline": "2026-11-29",
+      "deadlineText": null,
+      "meta": [
+        "리뷰플레이스 제품 캠페인",
+        "단모종 고양이에 적합",
+        "발표 11/30 · 리뷰 12/01~12/15"
+      ],
+      "note": "11/24 확인 · 신청 완료. 갈색·회색 단모종 고양이 털 관리용 빗이에요.",
+      "url": "https://www.reviewplace.co.kr/pr/?id=318644",
+      "cta": "캠페인 보기",
       "verifiedAt": "2026-11-24"
     }
   ]
