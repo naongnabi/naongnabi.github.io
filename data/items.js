@@ -11,6 +11,29 @@ window.DEUKTEM_DATA = {
   "updatedAt": "2026-11-24",
   "items": [
     {
+      "id": "deal-ali-camping-lantern-13500mah",
+      "cat": "deal",
+      "hot": null,
+      "platform": "알리",
+      "pkey": "ali",
+      "tag": "캠핑·레저",
+      "title": "충전식 캠핑 랜턴 13500mAh 자석 LED 텐트 라이트 (USB-C·무단계 조광)",
+      "highlight": "15,300원",
+      "highlightSub": "정가 33,440원 → 54% · 18,140원 차이 · 무료배송",
+      "deadline": "2026-12-03",
+      "deadlineText": "12/3 23:59 종료",
+      "meta": [
+        "텐트에 붙이는 자석 마운트 + 손잡이 · 13500mAh 대용량",
+        "평점 4.9 · 리뷰 4,375 · 10,000+ 판매",
+        "무료배송 · 11/30~12/5 도착 예정 · 수수료 7%"
+      ],
+      "note": "11/24 22:37 확인 · 알리익스프레스 어필리에이트(트래킹 threads_naongnabi) · 옵션·쿠폰에 따라 달라질 수 있어요",
+      "image": "assets/thumbs/deal-ali-camping-lantern-13500mah.webp",
+      "url": "https://s.click.aliexpress.com/e/_c30SPE0l",
+      "cta": "알리에서 보기",
+      "verifiedAt": "2026-11-24"
+    },
+    {
       "id": "deal-toss-gogijungdok-samgyeopsal-2kg",
       "cat": "deal",
       "hot": null,
