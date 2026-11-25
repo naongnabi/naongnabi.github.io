@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-25T23:05:00+09:00",
+  "updatedAt": "2026-11-26T07:18:17+09:00",
   "items": [
+    {
+      "id": "deal-coupang-cass-hygrometer-t023",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활가전",
+      "title": "카스 디지털 온습도계 T023 (화이트·1개)",
+      "highlight": "9,890원",
+      "highlightSub": "정가 9,890원 · 실내 온도·습도 동시 표시",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "온도·습도 동시 표시 · 벽걸이/거치 겸용",
+        "가습기 옆에 두면 40~60% 유지 확인 쉬움",
+        "건전지 구동"
+      ],
+      "note": "11/26 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-cass-hygrometer-t023.webp",
+      "url": "https://link.coupang.com/a/iYIavUyJyK",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-26"
+    },
+    {
+      "id": "deal-coupang-lejen-heating-humidifier-15l",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활가전",
+      "title": "르젠 듀웰 시그니처 저소음 간편세척 가열식 가습기 1.5L (LZHD-D150·릴리화이트)",
+      "highlight": "26,820원",
+      "highlightSub": "정가 89,800원 → 70% · 62,980원 차이",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "가열식 · 물을 끓여 수증기로 내보내는 방식",
+        "1.5L 물통 · 간편 세척 구조",
+        "소음 낮춘 모델 · 침실 야간 사용"
+      ],
+      "note": "11/26 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-lejen-heating-humidifier-15l.webp",
+      "url": "https://link.coupang.com/a/iYH9xDdiUK",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-26"
+    },
     {
       "id": "deal-ali-usb-foot-warmer",
       "cat": "deal",
