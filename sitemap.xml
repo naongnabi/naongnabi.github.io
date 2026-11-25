@@ -37,6 +37,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://naongnabi.github.io/about.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://naongnabi.github.io/privacy.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://naongnabi.github.io/contact.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://naongnabi.github.io/guide/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -134,6 +152,36 @@
   </url>
   <url>
     <loc>https://naongnabi.github.io/guide/flu-season-checklist.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://naongnabi.github.io/guide/mvno-plan-compare.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://naongnabi.github.io/guide/indemnity-insurance-claim.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://naongnabi.github.io/guide/card-cashback-local-currency.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://naongnabi.github.io/guide/subscription-cleanup.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://naongnabi.github.io/guide/used-market-safety.html</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

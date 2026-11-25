@@ -585,6 +585,13 @@ h1,h2,h3,p{margin:0}
 .foot-tabs a{padding:6px 11px;border:1px solid var(--line-2);border-radius:999px;background:#FBF9F7;font-size:11.5px;font-weight:700;color:var(--ink-2)}
 .foot-tabs a:active{background:#FFF1EB;border-color:#FFD3C4;color:#E8431C}
 
+/* 사이트 안내 링크 (푸터) — 사이트 소개 · 개인정보처리방침 · 문의하기 */
+.foot-trust{display:flex;flex-wrap:wrap;align-items:center;gap:4px 0;margin-top:12px}
+.foot-trust a{position:relative;padding:4px 0;font-size:11px;font-weight:700;color:var(--ink-3);letter-spacing:-.2px}
+.foot-trust a+a{margin-left:12px}
+.foot-trust a+a::before{content:"";position:absolute;left:-7px;top:50%;width:1px;height:9px;margin-top:-4.5px;background:var(--line-2)}
+.foot-trust a:active{color:#E8431C}
+
 /* ───────── 📖 꿀팁 가이드 (자체 콘텐츠) ─────────
    상단 스토어·애드핏 아래에 놓는 가로 스와이프 카드. 외부 이탈 없이 /guide/ 로 이동합니다. */
 .brand-txt strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

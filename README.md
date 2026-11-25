@@ -32,14 +32,18 @@
 apps/oneul-deuktem/
 ├─ index.html               # 화면 (원본 · 탭별 페이지의 template)
 ├─ guide/index.html         # 📖 꿀팁 가이드 목록 (생성기: tools/build_guide.py)
-├─ guide/<slug>.html        #   ↳ 가이드 글 14편 (자체 콘텐츠 · 직접 수정 금지)
+├─ guide/<slug>.html        #   ↳ 가이드 글 21편 (자체 콘텐츠 · 직접 수정 금지)
 ├─ content/guide/*.md       # ★ 가이드 글 원본 (여기만 고치면 됨)
+├─ about.html               # 사이트 소개 (생성기: tools/build_pages.py)
+├─ privacy.html             #   ↳ 개인정보처리방침 (애드센스·GA4·애드핏 쿠키 고지)
+├─ contact.html             #   ↳ 문의하기 (오류 제보·수정 요청·제휴)
+├─ content/pages/*.md       # ★ 신뢰 페이지 3장 원본 (여기만 고치면 됨)
 ├─ quiz/index.html          # 탭별 페이지 — 생성기(tools/build_tabs.py)가 만듭니다 (직접 수정 금지)
 ├─ exp/index.html           #   ↳ 무료 체험단
 ├─ deal/index.html          #   ↳ 오늘의 특가
 ├─ contest/index.html       #   ↳ 공모전
 ├─ apptech/index.html       #   ↳ 앱테크
-├─ sitemap.xml              # 생성기가 items.json 의 updatedAt 으로 갱신 (6개 URL)
+├─ sitemap.xml              # 생성기가 items.json 의 updatedAt 으로 갱신 (31개 URL — 홈·탭 5·가이드 22·안내 3)
 ├─ manifest.webmanifest     # PWA 매니페스트
 ├─ sw.js                    # 서비스 워커 (앱 껍데기 캐시, 네트워크 우선)
 ├─ assets/
@@ -61,6 +65,7 @@ apps/oneul-deuktem/
 │  ├─ prerender.py          # index.html 목록·핫 TOP 에 실제 카드 HTML 을 미리 넣기 (크롤러용 정적 프리렌더)
 │  ├─ build_tabs.py         # index.html → 탭별 페이지(/quiz/ …)·sitemap.xml 생성 (탭 카드까지 프리렌더)
 │  ├─ build_guide.py        # content/guide/*.md → /guide/ 목록·글 페이지 + sitemap 목록
+│  ├─ build_pages.py        # content/pages/*.md → /about.html · /privacy.html · /contact.html (신뢰 페이지)
 │  ├─ qa_guide.py           # 가이드 페이지 점검 (가로 넘침·애드핏 슬롯·외부 링크 0·콘솔 에러)
 │  ├─ qa_adfit.py           # 애드핏 3곳 점검 (ins 3개·광고단위 3종·300×250 잘림 여부·ba.min.js 1회)
 │  ├─ validate.py           # 데이터 검증 + items.js 동기화 + 6개 HTML 프리렌더·탭 페이지 재생성 + 링크 확인
@@ -106,6 +111,18 @@ python3 -m http.server 8000
 
 > 저장소 이름을 `oneul-deuktem`으로 바꾸면 주소도 `https://naongnabi.github.io/oneul-deuktem/` 가 됩니다(로컬 origin URL도 함께 수정).
 
+### 사이트 안내(신뢰) 페이지 · 2026-11-26 추가
+| 페이지 | 주소 | 역할 |
+|---|---|---|
+| 사이트 소개 | `/about.html` | 무엇을 어떤 기준으로 검수해 정리하는지·운영 채널·제휴 고지 |
+| 개인정보처리방침 | `/privacy.html` | 애드센스·GA4(`G-7X9PJ9433D`)·애드핏 쿠키, 맞춤형 광고 끄는 법, 제휴 링크, 회원가입·개인정보 수집 없음 |
+| 문의하기 | `/contact.html` | 오류 제보·정보 수정·제휴·권리 침해 신고 창구(`allmine1981@naver.com`) |
+
+> 원본은 `content/pages/*.md` 이고 `python3 tools/build_pages.py` 가 루트에 3장을 만듭니다.
+> 푸터의 세 링크는 `build_guide.foot_trust()` 가 홈·탭 5장·가이드 22장·안내 3장 모두에 넣습니다.
+> 이 세 페이지에는 **애드핏 광고단위를 넣지 않습니다**(광고 도배 방지, 애드센스 스크립트만 유지).
+> `validate.py` 가 푸터 링크·광고 0·방침 고지 문구·편수 표시를 검사합니다.
+
 ### 웹 분석 (Google 애널리틱스 4 · 2026-11-24 설치)
 | 항목 | 값 |
 |---|---|
@@ -114,9 +131,9 @@ python3 -m http.server 8000
 | 대시보드 | https://analytics.google.com/analytics/web/#/a417375684p565718283/reports/intelligenthome |
 
 > 스니펫은 **`index.html` 의 `<head>`**(탭 5장은 `build_tabs.py` 가 이 파일에서 복사)와
-> **`tools/build_guide.py` 의 `head()`**(가이드 16장) 두 곳에만 들어 있습니다. 측정 ID를 바꿀 때는
-> 이 두 곳(`GA_ID`)만 고치고 `python3 tools/validate.py --sync` 로 다시 만들면 전 페이지에 반영됩니다.
-> `validate.py` 가 배포 전에 22개 HTML 전부에 스니펫이 있는지 검사합니다(누락 시 FAIL).
+> **`tools/build_guide.py`·`tools/build_pages.py` 의 `head()`**(가이드 22장 + 안내 3장)에 들어 있습니다.
+> 측정 ID를 바꿀 때는 이 두 곳(`GA_ID`)만 고치고 `python3 tools/validate.py --sync` 로 다시 만들면 전 페이지에 반영됩니다.
+> `validate.py` 가 배포 전에 31개 HTML 전부에 스니펫이 있는지 검사합니다(누락 시 FAIL).
 
 ### 매일 데이터 갱신 → 라이브 반영 (한 줄)
 ```bash

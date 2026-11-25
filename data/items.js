@@ -1926,34 +1926,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-18"
     },
     {
-      "id": "quiz-sokcho-book",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "음료",
-      "title": "온라인 독서퀴즈 「책은 답을 알고 있다」 11월",
-      "highlight": "모바일 음료 교환권 6명",
-      "highlightSub": "「열일곱의 사계」 독서퀴즈",
-      "answer": [
-        "1번 17살",
-        "2번 과외",
-        "3번 4명",
-        "4번 청소년들의 유대와 연대, 그 사이에서 자라나는 따스함과 성장",
-        "5번 주관식 (정답 없음)"
-      ],
-      "deadline": "2026-11-25",
-      "deadlineText": null,
-      "meta": [
-        "국립속초교육문화관",
-        "발표 11/27 14:00"
-      ],
-      "note": "11/15 확인 · 구글폼 응모 · 정답 11/18 확인",
-      "url": "https://forms.gle/2FzDM3rXq7mRfK4T8",
-      "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-18"
-    },
-    {
       "id": "quiz-hangeul-spelling",
       "cat": "quiz",
       "hot": null,
@@ -3225,97 +3197,6 @@ window.DEUKTEM_DATA = {
       ]
     },
     {
-      "id": "exp-revu-tplink",
-      "cat": "exp",
-      "hot": null,
-      "platform": "레뷰",
-      "pkey": "revu",
-      "tag": "가전·디지털",
-      "title": "[티피링크] Archer BE3600 와이파이7 공유기",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 지원 131명",
-      "deadline": "2026-11-25",
-      "deadlineText": null,
-      "meta": [
-        "레뷰 배송형",
-        "블로그+영상",
-        "발표 11/27"
-      ],
-      "note": "11/19 확인 · 기존 공유기와 속도를 비교하는 미션이라 집 인터넷만 있으면 됩니다. 경쟁이 낮은 편이에요.",
-      "url": "https://www.revu.net/campaign/1439580",
-      "cta": "체험단 신청하기",
-      "verifiedAt": "2026-11-19"
-    },
-    {
-      "id": "quiz-npark-sns-survey",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "생필품",
-      "title": "국립공원 SNS 운영 만족도 조사",
-      "highlight": "다이소 상품권 5,000원 20명",
-      "highlightSub": "로그인 없이 참여 · 설문 25문항",
-      "answer": [
-        "설문 참여형 (정답 없음)"
-      ],
-      "deadline": "2026-11-25",
-      "deadlineText": null,
-      "meta": [
-        "국립공원공단",
-        "네이버폼 응모",
-        "발표일 미안내"
-      ],
-      "note": "11/19 확인 · 네이버폼 설문에 답하면 응모 끝이에요. 5분이면 됩니다.",
-      "url": "https://form.naver.com/response/7pIGBMsnk5X",
-      "cta": "설문 참여하기",
-      "verifiedAt": "2026-11-19"
-    },
-    {
-      "id": "exp-revu-villar-massager",
-      "cat": "exp",
-      "hot": null,
-      "platform": "레뷰",
-      "pkey": "revu",
-      "tag": "가전·디지털",
-      "title": "[빌라르] 울트라 목어깨 마사지기 V2",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 신청 769명",
-      "deadline": "2026-11-25",
-      "deadlineText": null,
-      "meta": [
-        "레뷰 배송형",
-        "사진 15장+영상·GIF 5개",
-        "발표 11/27"
-      ],
-      "note": "11/21 신청 · 이미지 10장과 영상·GIF 5개 이상이 필수라 사진·영상 작업 시간이 조금 필요해요.",
-      "url": "https://www.revu.net/campaign/1440506",
-      "cta": "체험단 신청하기",
-      "verifiedAt": "2026-11-21"
-    },
-    {
-      "id": "exp-revu-iriver-mp3",
-      "cat": "exp",
-      "hot": null,
-      "platform": "레뷰",
-      "pkey": "revu",
-      "tag": "가전·디지털",
-      "title": "[아이리버] MP3 무선이어폰 IB-TMP1",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 신청 678명",
-      "deadline": "2026-11-25",
-      "deadlineText": null,
-      "meta": [
-        "레뷰 배송형",
-        "이미지 15장+영상 2개",
-        "발표 11/27"
-      ],
-      "note": "11/21 신청 · PC에서 음악을 넣어 스마트폰 없이 듣는 과정을 담아야 하고, 영상 2개 이상이 필요해요.",
-      "url": "https://www.revu.net/campaign/1440215",
-      "cta": "체험단 신청하기",
-      "verifiedAt": "2026-11-21"
-    },
-    {
       "id": "exp-rnote-medion",
       "cat": "exp",
       "hot": null,
@@ -3451,31 +3332,6 @@ window.DEUKTEM_DATA = {
       ],
       "note": "11/21 응모 · 휴대폰 번호만 넣고 답하면 되고, 방문 경험이 없으면 중간에 문항이 줄어 10분 안쪽이에요.",
       "url": "https://survey.gg.go.kr/app/onvy/qestnnm.do?onvySn=548",
-      "cta": "설문 참여하기",
-      "verifiedAt": "2026-11-21"
-    },
-    {
-      "id": "quiz-jdlib-survey",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "생필품",
-      "title": "정독도서관 이용서비스 만족도 조사",
-      "highlight": "모바일 커피 쿠폰 150명",
-      "highlightSub": "설문 36문항 · 로그인 없이 참여",
-      "answer": [
-        "설문 참여형 (정답 없음)"
-      ],
-      "deadline": "2026-11-25",
-      "deadlineText": null,
-      "meta": [
-        "서울시교육청 정독도서관",
-        "이름·휴대폰만 입력",
-        "발표 12/07"
-      ],
-      "note": "11/21 응모 · 마지막에 이름과 휴대폰 번호를 넣어야 응모로 인정돼요.",
-      "url": "https://ksurv.kr/akM3PTw2Njs",
       "cta": "설문 참여하기",
       "verifiedAt": "2026-11-21"
     },
@@ -3876,28 +3732,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-24"
     },
     {
-      "id": "exp-tqueens-dentyx-sterilizer",
-      "cat": "exp",
-      "hot": null,
-      "platform": "택배의여왕",
-      "pkey": "etc",
-      "tag": "가전·디지털",
-      "title": "[덴틱스] 칫솔살균기 2구",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 신청 342명",
-      "deadline": "2026-11-25",
-      "deadlineText": null,
-      "meta": [
-        "택배의여왕 배송형",
-        "블로그 리뷰(영상 1개·사진 15장)",
-        "발표 11/26 · 리뷰 11/27~12/11"
-      ],
-      "note": "11/24 확인 · 신청 완료. 2구 칫솔살균기로 무선·거치 겸용 리뷰를 쓰는 캠페인이에요.",
-      "url": "https://tqueens.net/taste/1660064",
-      "cta": "캠페인 보기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
       "id": "exp-tqueens-cashpapa-bathorganizer",
       "cat": "exp",
       "hot": null,
@@ -4159,31 +3993,6 @@ window.DEUKTEM_DATA = {
       "note": "11/25 확인 · 신청 완료. 명상·요가용 싱잉볼로, 연주 소리가 담긴 5초 영상 1개가 필수예요.",
       "url": "https://www.reviewplace.co.kr/pr/?id=323231",
       "cta": "캠페인 보기",
-      "verifiedAt": "2026-11-25"
-    },
-    {
-      "id": "quiz-grtc-best-policy",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "설문",
-      "title": "광주교통공사 2026년 Best 시책 선정 설문조사",
-      "highlight": "음료교환권 5,000원 20명",
-      "highlightSub": "로그인 없이 참여 · 4단계 설문",
-      "answer": [
-        "설문 참여형 (정답 없음)"
-      ],
-      "deadline": "2026-11-25",
-      "deadlineText": null,
-      "meta": [
-        "광주교통공사",
-        "자체 설문 페이지",
-        "발표일 미안내"
-      ],
-      "note": "11/25 확인 · 올해 추진 사업 중 3개를 고르는 설문이에요. 오늘 23:59 마감이니 오늘 안에 참여하세요.",
-      "url": "https://www.grtc.co.kr/subway/poll/poll112",
-      "cta": "설문 참여하기",
       "verifiedAt": "2026-11-25"
     },
     {
