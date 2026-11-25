@@ -8,8 +8,77 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-25",
+  "updatedAt": "2026-11-25T12:52:00+09:00",
   "items": [
+    {
+      "id": "deal-coupang-keriff-klh4000uv",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활가전",
+      "title": "케리프 이지핸들 AIR UV살균 자동건조 5L 가습기 (KLH-4000UV, 화이트)",
+      "highlight": "79,900원",
+      "highlightSub": "정가 120,000원 → 33% · 쿠폰 받으면 77,800원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "5L 대용량 · UV살균 + 자동건조",
+        "위쪽 손잡이 · 리뷰 576개 · 내일(목) 도착",
+        "겨울 건조·정전기철 방에 두기 좋은 초음파식"
+      ],
+      "note": "11/25 12:50 확인 · 쿠팡 판매가 기준 · 쿠폰·가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-keriff-klh4000uv.webp",
+      "url": "https://link.coupang.com/a/iXqNDEpcbY",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-25"
+    },
+    {
+      "id": "deal-naver-fruitboutique-tangerine",
+      "cat": "deal",
+      "hot": null,
+      "platform": "네이버",
+      "pkey": "naver",
+      "tag": "식품",
+      "title": "과일부티크 제주 감귤 타이벡 타이백 조생 노지 하우스 밀감",
+      "highlight": "18,900원",
+      "highlightSub": "정가 37,400원 → 49% · 100g당 378원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "평점 4.78 · 리뷰 18,676개 · 4점 이상 96%",
+        "제주 서귀포 원산지 · 쿠폰 받으면 18,400원",
+        "평균 2일 이내 도착 · 무료교환반품(최초 1회)"
+      ],
+      "note": "11/25 12:55 확인 · 네이버쇼핑 커넥트 · 선택한 중량 옵션에 따라 가격이 달라질 수 있어요",
+      "image": "assets/thumbs/deal-naver-fruitboutique-tangerine.webp",
+      "url": "https://naver.me/FNtH0Gym",
+      "cta": "네이버에서 보기",
+      "verifiedAt": "2026-11-25"
+    },
+    {
+      "id": "deal-naver-hanil-carbon-mat-single",
+      "cat": "deal",
+      "hot": null,
+      "platform": "네이버",
+      "pkey": "naver",
+      "tag": "침구",
+      "title": "한일의료기 탄소매트 전기요 프리즘 1인용 (싱글)",
+      "highlight": "69,000원",
+      "highlightSub": "정가 109,000원 → 36% · 쿠폰 적용 시 68,500원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "1~9단 온도조절 · 15시간 자동 전원 차단",
+        "평점 4.87 · 리뷰 21,099개",
+        "싱글 사이즈 · 겨울 침구용"
+      ],
+      "note": "11/24 발급 링크 · 11/25 앱 반영 · 네이버쇼핑 커넥트 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-naver-hanil-carbon-mat-single.webp",
+      "url": "https://naver.me/Fc6O1nZS",
+      "cta": "네이버에서 보기",
+      "verifiedAt": "2026-11-25"
+    },
     {
       "id": "deal-coupang-rapshin-sanitizer-500",
       "cat": "deal",
