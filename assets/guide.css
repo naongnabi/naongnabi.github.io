@@ -173,8 +173,12 @@
 }
 .g-more-all .ic{width:14px;height:14px}
 
-/* 가이드 페이지의 광고 자리 여백 */
+/* 가이드 페이지의 광고 자리 여백 — 상단(320×100) · 중간(300×250) · 하단(320×100) */
 .g-main .adslot--adfit{margin:6px 16px 4px}
+.g-main .adslot--adfit-square{margin:20px 16px 8px}
+@media (max-width:340px){
+  .g-main .adslot--adfit-square{margin-left:8px;margin-right:8px}
+}
 .g-main .g-body + .g-takeaway{margin-top:20px}
 
 @media (min-width:480px){

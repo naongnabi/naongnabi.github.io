@@ -217,7 +217,12 @@
          ◎ 애드핏(카카오) — 2026-11-23 설치 · 2026-11-23 스토어 배너 아래(상단)로 이동.
             광고단위 DAN-uGDXjD28L8ogr0Vq · 320×100.
             애드핏 규격대로 <ins> 는 style="display:none" 으로 두고, ba.min.js 가 광고를
-            채우면 스스로 보입니다. (심사 봇이 HTML 원본에서 바로 읽도록 주석 없이 둡니다.) -->
+            채우면 스스로 보입니다. (심사 봇이 HTML 원본에서 바로 읽도록 주석 없이 둡니다.)
+         ◎ 2026-11-25 애드핏 3곳 체제 — 상단(DAN-uGDXjD28L8ogr0Vq · 320×100)
+            · 중간(#adfitSquare · DAN-FM14tM6K6e3HPbZ5 · 300×250)
+            · 하단(#adfitBottom · DAN-uNFHWuOLqRWLMbfe · 320×100).
+            ba.min.js 는 이 상단 자리에서 한 번만 불러오고, DOM 준비 후 아래 슬롯들도 함께 채웁니다.
+            (애드핏은 페이지당 최대 3개 — 더 늘리지 마세요.) -->
     <section class="adslot adslot--adfit" id="adfitSlot" aria-label="광고">
       <div class="adslot-head">
         <span class="adslot-tag" aria-hidden="true">AD</span>
@@ -273,6 +278,23 @@
 <article class="gr-item"><h3 class="gr-title"><a href="../guide/apptech-10min-routine.html"><span class="gr-emoji" aria-hidden="true">💸</span> 앱테크 하루 10분 출석 루틴 짜는 법</a></h3><p class="gr-sum">앱테크는 앱 개수보다 &#39;매일 같은 시간에 도는 루틴&#39;이 수익을 만듭니다. 10분 안에 끝내는 순서와 앱을 줄이는 기준을 정리했어요.</p><p class="gr-body">앱테크 앱을 20개 깔아 두면 한 달에 한 번도 안 열게 돼요. 반대로 5개만 골라 매일 열면 한 달 30번이 쌓여요. 앱 수를 줄이고 순서를 정하는 것이 앱테크의 전부라고 해도 과언이 아니에요. 기준은 간단해요. 이 세 조건에 안 맞는 앱은 과감히 지우세요. 설치만 하고 안 열면 오히려 알림만 쌓여요.</p><p class="gr-foot">앱테크 · 약 2분 · <a class="gr-more" href="../guide/apptech-10min-routine.html">끝까지 읽기</a></p></article>
 <article class="gr-item"><h3 class="gr-title"><a href="../guide/lowest-price-checklist.html"><span class="gr-emoji" aria-hidden="true">🛒</span> 온라인 최저가·특가 비교 체크리스트 7단계</a></h3><p class="gr-sum">&#39;할인율 70%&#39;에 흔들리지 않으려면 비교 기준이 필요해요. 실제 결제 금액을 계산하는 순서와 함정을 정리했습니다.</p><p class="gr-body">특가 카드를 보면 가장 먼저 눈에 들어오는 건 할인율이에요. 그런데 정가를 부풀려 놓은 상품은 70% 할인을 해도 다른 곳보다 비싼 경우가 많아요. 비교의 기준은 내가 실제로 내는 금액 하나예요. 정가는 판매자가 표시하는 값이에요. 같은 상품이 지난달에 얼마였는지, 다른 판매처에서는 얼마인지 확인하는 게 먼저예요.</p><p class="gr-foot">쇼핑 · 약 2분 · <a class="gr-more" href="../guide/lowest-price-checklist.html">끝까지 읽기</a></p></article><!--/prerender:guideRead--></div>
       <a class="gread-all" href="../guide/">가이드 14편 전체 보기<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </section>
+
+    <!-- ── 중간 광고 자리 (카카오 애드핏 300×250) — 2026-11-25 추가 ─────────────
+         광고단위 DAN-FM14tM6K6e3HPbZ5. 상단 배너와 멀리 떨어진 섹션 경계
+         (꿀팁 가이드 미리 읽기 ↔ 자주 묻는 질문 사이)에 두어 글 읽기를 방해하지 않습니다.
+         ba.min.js 는 위 상단 자리에서 한 번만 부르고, 이 <ins> 도 같은 스크립트가 채웁니다. -->
+    <section class="adslot adslot--adfit-square" id="adfitSquare" aria-label="광고">
+      <div class="adslot-head">
+        <span class="adslot-tag" aria-hidden="true">AD</span>
+        <span class="adslot-note">광고</span>
+      </div>
+      <div class="adslot-adfit-square">
+        <ins class="kakao_ad_area" style="display:none;"
+        data-ad-unit = "DAN-FM14tM6K6e3HPbZ5"
+        data-ad-width = "300"
+        data-ad-height = "250"></ins>
+      </div>
     </section>
 
     <!-- ❓ 자주 묻는 질문 — 사이트 이용 안내(자체 콘텐츠) -->
@@ -449,6 +471,22 @@
     </div>
 
     <p class="list-foot" id="listFoot">가격·마감·경품은 바뀔 수 있으니 신청 전에 꼭 확인해 주세요.</p>
+
+    <!-- ── 하단 광고 자리 (카카오 애드핏 320×100) — 2026-11-25 추가 ─────────────
+         광고단위 DAN-uNFHWuOLqRWLMbfe · 푸터 바로 위 맨 하단.
+         애드핏은 페이지당 3개까지라 이 자리가 마지막입니다(상단·중간·하단). -->
+    <section class="adslot adslot--adfit" id="adfitBottom" aria-label="광고">
+      <div class="adslot-head">
+        <span class="adslot-tag" aria-hidden="true">AD</span>
+        <span class="adslot-note">광고</span>
+      </div>
+      <div class="adslot-adfit">
+        <ins class="kakao_ad_area" style="display:none;"
+        data-ad-unit = "DAN-uNFHWuOLqRWLMbfe"
+        data-ad-width = "320"
+        data-ad-height = "100"></ins>
+      </div>
+    </section>
 
     <footer class="foot">
       <div class="foot-brand">

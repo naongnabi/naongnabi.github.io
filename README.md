@@ -62,6 +62,7 @@ apps/oneul-deuktem/
 │  ├─ build_tabs.py         # index.html → 탭별 페이지(/quiz/ …)·sitemap.xml 생성 (탭 카드까지 프리렌더)
 │  ├─ build_guide.py        # content/guide/*.md → /guide/ 목록·글 페이지 + sitemap 목록
 │  ├─ qa_guide.py           # 가이드 페이지 점검 (가로 넘침·애드핏 슬롯·외부 링크 0·콘솔 에러)
+│  ├─ qa_adfit.py           # 애드핏 3곳 점검 (ins 3개·광고단위 3종·300×250 잘림 여부·ba.min.js 1회)
 │  ├─ validate.py           # 데이터 검증 + items.js 동기화 + 6개 HTML 프리렌더·탭 페이지 재생성 + 링크 확인
 │  ├─ fetch_adpick.py       # 애드픽 제휴 광고 받아와 data/adpick.json·js 갱신 (텐핑 빈 자리 대체 광고)
 │  ├─ build_preview.py      # 한 파일 미리보기(downloads/oneul-deuktem-preview.html) 생성 — 상품 사진은 data URI 로 인라인
@@ -308,10 +309,39 @@ cd icons && python3 make_icons.py    # 512·192·maskable·apple-touch 전부 �
 **지켜야 할 규칙**
 - 가이드 본문에는 **외부(outbound) 링크를 넣지 않습니다.** 사이트 안의 다른 가이드·탭으로만 연결해요.
   (본문에 `http` 링크가 있으면 `build_guide.py` 가 `GuideError` 로 멈춥니다 — 애드핏 보류 사유가 아웃링크 비중이었기 때문)
-- 애드핏 코드(`#adfitSlot` · `DAN-uGDXjD28L8ogr0Vq`)는 **목록·글 15장 전부** 같은 마크업으로 들어갑니다.
+- 애드핏 코드는 **목록·글 17장 전부** 같은 마크업으로 들어가며, 2026-11-25 부터 페이지당 3곳(상단 #adfitSlot · 중간 #adfitSquare · 하단 #adfitBottom)입니다 — [10. 광고 단위](#10--광고-단위-카카오-애드핏-3곳--텐핑애드픽) 참고.
 - 글을 추가하려면 `content/guide/<slug>.md` 하나만 추가하고 `python3 tools/validate.py --sync` 를 실행하세요.
   앞머리 필드: `slug · order · emoji · category · title · summary · keywords · takeaway · updated`
-- 확인: `python3 tools/validate.py --today $(date +%Y-%m-%d)` → `꿀팁 가이드 14편 · 본문 합계 …자`,
-  `가이드 페이지 15장 — 애드핏 슬롯 있음 · 외부 링크 0` 두 줄이 통과해야 합니다.
-- 화면 점검: `python3 tools/qa_guide.py` (390·360·320px 탭 3줄·가로 넘침 0, 목록 14편, 본문 글자수, 애드핏 슬롯,
+- 확인: `python3 tools/validate.py --today $(date +%Y-%m-%d)` → `꿀팁 가이드 16편 · 본문 합계 …자`,
+  `가이드 페이지 17장 — 애드핏 슬롯 3곳(상·중·하) · 외부 링크 0` 두 줄이 통과해야 합니다.
+- 화면 점검: `python3 tools/qa_guide.py` (390·360·320px 탭 3줄·가로 넘침 0, 목록 16편, 본문 글자수, 애드핏 슬롯,
   콘솔 에러 0 → `preview_guide_home.png` · `preview_guide_index.png` · `preview_guide_article.png`)
+
+---
+
+## 10. 📢 광고 단위 (카카오 애드핏 3곳 + 텐핑·애드픽)
+
+카카오 애드핏은 **페이지당 최대 3개**까지입니다. 2026-11-25 부터 아래 3곳을 목록 6장·가이드 17장
+전부에 같은 마크업으로 넣었고, **더 늘리면 안 됩니다**(한도 초과 시 광고가 내려갑니다).
+
+| 자리 | id | 광고단위 | 크기 | 위치 |
+|---|---|---|---|---|
+| 상단 | `#adfitSlot` | `DAN-uGDXjD28L8ogr0Vq` (2026-11-23) | 320×100 | 스토어 배너 바로 아래 |
+| 중간 | `#adfitSquare` | `DAN-FM14tM6K6e3HPbZ5` (2026-11-25) | 300×250 | 목록: 꿀팁 가이드 미리 읽기 ↔ 자주 묻는 질문 사이 · 가이드 글: 한 줄 정리 뒤(이어서 읽기 앞) · 가이드 목록: 글 목록 아래 |
+| 하단 | `#adfitBottom` | `DAN-uNFHWuOLqRWLMbfe` (2026-11-25) | 320×100 | 푸터 바로 위 맨 하단 |
+
+- **스크립트는 페이지당 한 번만**: `ba.min.js` 는 상단 `#adfitSlot` 안에서만 부르고, 나머지 슬롯은 같은
+  스크립트가 DOM 준비 후 채웁니다. 새 슬롯을 추가할 때 `<script>` 를 또 넣지 마세요.
+- **마크업 규칙**: `<ins class="kakao_ad_area" style="display:none;" data-ad-unit=… data-ad-width=… data-ad-height=…>`
+  (애드핏 규격대로 `display:none` 으로 두고 스크립트가 채우면 스스로 보입니다).
+- **원본 위치**: 목록 6장은 `index.html` 한 장이 원본이고 나머지 5장은 `tools/build_tabs.py` 가 다시 만듭니다.
+  가이드 17장은 `tools/build_guide.py` 의 `ADFIT` · `ADFIT_SQUARE` · `ADFIT_BOTTOM` 상수로 생성됩니다.
+  → 광고 코드를 고칠 때는 **index.html + build_guide.py 둘 다** 고치고 `python3 tools/validate.py --sync`.
+- **CSS**: 중간 300×250 은 `.adslot--adfit-square` · `.adslot-adfit-square` (styles.css / guide.css).
+  320px 폭에서도 잘리지 않도록 340px 이하에서는 좌우 여백을 8px 로 줄입니다.
+- **검증**: `python3 tools/validate.py --today $(date +%Y-%m-%d)` →
+  `가이드 페이지 17장 — 애드핏 슬롯 3곳(상·중·하)` · `아웃링크 비중 정상` 통과.
+  화면: `python3 tools/qa_adfit.py` (8개 주소 × 390·320px 에서 ins 3개·광고단위 3종·ba.min.js 1회·가로 넘침 0 →
+  `preview_adfit_home.png` · `preview_adfit_guide.png` · `preview_adfit_320.png`).
+- 광고가 채워지지 않은 자리는 `AD 광고` 라벨만 남습니다(상단 슬롯과 같은 동작).
+- 목록 안 3번째 카드 아래에는 텐핑(비면 애드픽 폴백) 자리 `#adSlot` 이 따로 있습니다 — 애드핏과 별개입니다.
