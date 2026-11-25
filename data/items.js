@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-26T07:18:17+09:00",
+  "updatedAt": "2026-11-26T07:45:00+09:00",
   "items": [
     {
       "id": "deal-coupang-cass-hygrometer-t023",
@@ -4062,6 +4062,53 @@ window.DEUKTEM_DATA = {
       "url": "https://tqueens.net/taste/1662740",
       "cta": "캠페인 보기",
       "verifiedAt": "2026-11-25"
+    },
+    {
+      "id": "exp-revu-multilock-tower",
+      "cat": "exp",
+      "hot": null,
+      "platform": "레뷰",
+      "pkey": "etc",
+      "tag": "생활용품",
+      "title": "[멀티락] 6중안전 고성능 세로 타워형 멀티탭 12구",
+      "highlight": "0원 배송형",
+      "highlightSub": "모집 20명 · 신청 640명",
+      "deadline": "2026-11-29",
+      "deadlineText": null,
+      "meta": [
+        "레뷰 제품 캠페인",
+        "블로그 1,000자 + 사진 + 영상 1개",
+        "발표 12/02 · 리뷰 12/03~12/10"
+      ],
+      "note": "11/26 확인 · 신청 완료. 좁은 콘센트 자리에 세워 쓰는 4000W 12구 타워형 멀티탭이에요.",
+      "url": "https://www.revu.net/campaign/1442879",
+      "cta": "캠페인 보기",
+      "verifiedAt": "2026-11-26"
+    },
+    {
+      "id": "quiz-daedeok-10news",
+      "cat": "quiz",
+      "hot": null,
+      "platform": "공공",
+      "pkey": "gov",
+      "tag": "치킨·외식",
+      "title": "2026년 대덕구 10대 뉴스 투표 이벤트",
+      "highlight": "치킨 2만원 80명",
+      "highlightSub": "뉴스 5개 고르기",
+      "answer": [
+        "설문 참여형 (정답 없음)"
+      ],
+      "deadline": "2026-11-27",
+      "deadlineText": null,
+      "meta": [
+        "대전광역시 대덕구",
+        "2026.11.16~11.28 00:00",
+        "발표 미정"
+      ],
+      "note": "11/26 응모 완료. 19개 후보 뉴스 중 5개를 골라 투표하면 돼요. 누구나 참여 가능.",
+      "url": "https://form.naver.com/response/Cr4JxOzkF12",
+      "cta": "투표하러 가기",
+      "verifiedAt": "2026-11-26"
     }
   ]
 };
