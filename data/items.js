@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-25T18:55:00+09:00",
+  "updatedAt": "2026-11-25T23:05:00+09:00",
   "items": [
+    {
+      "id": "deal-ali-usb-foot-warmer",
+      "cat": "deal",
+      "hot": null,
+      "platform": "알리",
+      "pkey": "ali",
+      "tag": "생활가전",
+      "title": "USB 전기 발난로 온열 매트 (플란넬·50~60도 항온)",
+      "highlight": "4,400원",
+      "highlightSub": "정가 9,564원 → 54% · 5,164원 차이 · 무료배송",
+      "deadline": "2026-12-03",
+      "deadlineText": "12/3 23:59 슈퍼프라이데이 종료",
+      "meta": [
+        "USB 전원 · 보조배터리·노트북에 꽂아 사용 · 50~60도 항온",
+        "플란넬 겉감 · 세탁 가능 · 사무실·침실·거실 겸용",
+        "평점 4.9 · 6,000+ 판매 · 12/1~12/6 도착 예정"
+      ],
+      "note": "11/25 22:58 확인 · 알리익스프레스 어필리에이트(트래킹 threads_naongnabi) · 옵션·쿠폰에 따라 달라질 수 있어요",
+      "image": "assets/thumbs/deal-ali-usb-foot-warmer.webp",
+      "url": "https://s.click.aliexpress.com/e/_c4pP4feD",
+      "cta": "알리에서 보기",
+      "verifiedAt": "2026-11-25"
+    },
+    {
+      "id": "deal-ali-mini-heater-800w",
+      "cat": "deal",
+      "hot": null,
+      "platform": "알리",
+      "pkey": "ali",
+      "tag": "생활가전",
+      "title": "800W PTC 세라믹 미니 히터 (리모컨·벽걸이/콘센트형, EU 플러그)",
+      "highlight": "9,200원",
+      "highlightSub": "정가 20,409원 → 55% · 11,209원 차이 · 무료배송",
+      "deadline": "2026-12-03",
+      "deadlineText": "12/3 23:59 슈퍼프라이데이 종료",
+      "meta": [
+        "800W PTC 세라믹 · 3초 발열 · 과열 보호 · LCD 온도 표시",
+        "리모컨 포함 · 벽걸이/콘센트형 · 220V 둥근 2핀(EU) 옵션",
+        "평점 4.0 · 리뷰 1,183 · 5,000+ 판매 · 11/30~12/6 도착 예정"
+      ],
+      "note": "11/25 22:45 확인 · 알리익스프레스 어필리에이트(트래킹 threads_naongnabi) · EU(둥근 2핀) 옵션으로 골라야 함 · 가격 변동 잦음",
+      "image": "assets/thumbs/deal-ali-mini-heater-800w.webp",
+      "url": "https://s.click.aliexpress.com/e/_c4OmO7It",
+      "cta": "알리에서 보기",
+      "verifiedAt": "2026-11-25"
+    },
     {
       "id": "deal-toss-maetsaeng-doenjangjjigae-5pack",
       "cat": "deal",
