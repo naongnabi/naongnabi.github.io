@@ -6,8 +6,54 @@
   "threads": "https://www.threads.com/@naong_nabi",
   "youtube": "https://www.youtube.com/@naong_nabi_cat"
  },
- "updatedAt": "2026-11-25T12:52:00+09:00",
+ "updatedAt": "2026-11-25T18:55:00+09:00",
  "items": [
+  {
+   "id": "deal-toss-maetsaeng-doenjangjjigae-5pack",
+   "cat": "deal",
+   "hot": null,
+   "platform": "토스",
+   "pkey": "toss",
+   "tag": "식품",
+   "title": "맛생각 시골 전통 된장찌개 600g × 5팩 (두부·애호박·표고버섯·바지락)",
+   "highlight": "14,980원",
+   "highlightSub": "정가 34,900원 → 57% · 팩당 2,996원꼴 · 무료배송",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "600g × 5팩 · 데우기만 하면 되는 즉석 찌개",
+    "평점 4.7 · 리뷰 9,096개 · 즉석탕·찌개 12위",
+    "무료배송 · 내일 도착 · 지금 30일 내 최저가"
+   ],
+   "note": "11/25 18:42 확인 · 토스쇼핑 쉐어링크 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-toss-maetsaeng-doenjangjjigae-5pack.webp",
+   "url": "https://toss.shopping/_m/diXmSnfA",
+   "cta": "토스에서 보기",
+   "verifiedAt": "2026-11-25"
+  },
+  {
+   "id": "deal-toss-yeongcheon-peeled-garlic-3kg",
+   "cat": "deal",
+   "hot": null,
+   "platform": "토스",
+   "pkey": "toss",
+   "tag": "식품",
+   "title": "국산 영천 깐마늘 3kg 1팩 (중)",
+   "highlight": "19,890원",
+   "highlightSub": "정가 48,700원 → 59% · 100g당 663원 · 무료배송",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "깐마늘 3kg · 손질 없이 바로 쓰는 국산",
+    "평점 4.6 · 리뷰 657개 · 깐마늘 3위",
+    "무료배송 · 내일 출발 · 지금 30일 내 최저가"
+   ],
+   "note": "11/25 18:52 확인 · 토스쇼핑 쉐어링크 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-toss-yeongcheon-peeled-garlic-3kg.webp",
+   "url": "https://toss.shopping/_m/rseikyXc",
+   "cta": "토스에서 보기",
+   "verifiedAt": "2026-11-25"
+  },
   {
    "id": "deal-coupang-keriff-klh4000uv",
    "cat": "deal",
