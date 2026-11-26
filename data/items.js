@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-26T16:35:00+09:00",
+  "updatedAt": "2026-11-26T18:45:00+09:00",
   "items": [
+    {
+      "id": "deal-toss-hongariibi-5kg",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "식품",
+      "title": "국내산 통영 대짜홍가리비 5kg 1박스 (100~125마리 내외)",
+      "highlight": "15,840원",
+      "highlightSub": "정가 50,000원 → 68% · 100g당 317원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "대짜 홍가리비 5kg · 100~125마리 내외 · 국내산(통영)",
+        "3차 선별 세척 · 해감 없이 바로 조리 · 아이스박스 냉매 포장",
+        "평점 4.3(리뷰 471) · 가리비 2위 · 내일 출발"
+      ],
+      "note": "11/26 18:40 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 생물이라 물뱉음으로 10~15% 중량이 줄 수 있어요 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-toss-hongariibi-5kg.webp",
+      "url": "https://toss.shopping/_m/7v6C6vey",
+      "cta": "토스쇼핑에서 보기",
+      "verifiedAt": "2026-11-26"
+    },
+    {
+      "id": "deal-toss-chefchoice-tteokgalbi-2kg",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "간편식",
+      "title": "셰프초이스 육즙가득 도톰도톰 떡갈비 2kg",
+      "highlight": "13,900원",
+      "highlightSub": "정가 25,900원 → 46% · 100g당 695원 · 무료배송",
+      "deadline": "2026-11-26",
+      "deadlineText": "오늘 23:59 마감",
+      "meta": [
+        "도톰하게 성형된 떡갈비 2kg 대용량 · 셰프초이스 공식",
+        "떡갈비 1위 · 평점 4.8(리뷰 3,791) · 베스트판매자",
+        "무료배송 · 내일 도착(늦으면 보상)"
+      ],
+      "note": "11/26 18:41 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 하루특가로 오늘 23:59까지 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-toss-chefchoice-tteokgalbi-2kg.webp",
+      "url": "https://toss.shopping/_m/bey41cO6",
+      "cta": "토스쇼핑에서 보기",
+      "verifiedAt": "2026-11-26"
+    },
     {
       "id": "deal-coupang-lg-codzero-r5",
       "cat": "deal",
