@@ -6,8 +6,54 @@
   "threads": "https://www.threads.com/@naong_nabi",
   "youtube": "https://www.youtube.com/@naong_nabi_cat"
  },
- "updatedAt": "2026-11-26T07:45:00+09:00",
+ "updatedAt": "2026-11-26T16:35:00+09:00",
  "items": [
+  {
+   "id": "deal-coupang-lg-codzero-r5",
+   "cat": "deal",
+   "hot": null,
+   "platform": "쿠팡",
+   "pkey": "coupang",
+   "tag": "생활가전",
+   "title": "LG전자 코드제로 R5 로봇청소기 R585WKA (카밍베이지)",
+   "highlight": "508,230원",
+   "highlightSub": "정가 900,000원 → 43% · 391,770원 차이 · 로켓배송",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "먼지 비움·충전까지 자동 올인원타워",
+    "물걸레 겸용 청소",
+    "상품평 1,604개 · 최근 한 달 800명 이상 구매"
+   ],
+   "note": "11/26 16:20 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-coupang-lg-codzero-r5.webp",
+   "url": "https://link.coupang.com/a/iZkPVx2352",
+   "cta": "쿠팡에서 보기",
+   "verifiedAt": "2026-11-26"
+  },
+  {
+   "id": "deal-naver-gwamegi-yachae-set",
+   "cat": "deal",
+   "hot": null,
+   "platform": "네이버",
+   "pkey": "naver",
+   "tag": "식품",
+   "title": "포항 구룡포 과메기 야채세트 (손질 꽁치 10미 20쪽 + 야채·해초 21종)",
+   "highlight": "32,900원",
+   "highlightSub": "시중 평균가 38,900원보다 6,000원 저렴 · 배송비 3,000원",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "손질된 꽁치 10미 20쪽 · 2인분",
+    "야채 6종·해초 6종·김·쌈장·초장·백김치 등 21종",
+    "리뷰 11만 개 이상 · 평점 4.84"
+   ],
+   "note": "11/26 16:25 확인 · 네이버쇼핑 커넥트 · 배송비 3,000원 별도 · 가격은 변동될 수 있어요",
+   "image": "assets/thumbs/deal-naver-gwamegi-yachae-set.webp",
+   "url": "https://naver.me/5Z1nsAg2",
+   "cta": "네이버에서 보기",
+   "verifiedAt": "2026-11-26"
+  },
   {
    "id": "deal-coupang-cass-hygrometer-t023",
    "cat": "deal",
