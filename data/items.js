@@ -8,7 +8,7 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-26T23:40:00+09:00",
+  "updatedAt": "2026-11-27T07:05:00+09:00",
   "items": [
     {
       "id": "deal-ali-clothes-dryer-1600w",
@@ -76,29 +76,6 @@ window.DEUKTEM_DATA = {
       "note": "11/26 18:40 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 생물이라 물뱉음으로 10~15% 중량이 줄 수 있어요 · 가격은 언제든 바뀔 수 있어요",
       "image": "assets/thumbs/deal-toss-hongariibi-5kg.webp",
       "url": "https://toss.shopping/_m/7v6C6vey",
-      "cta": "토스쇼핑에서 보기",
-      "verifiedAt": "2026-11-26"
-    },
-    {
-      "id": "deal-toss-chefchoice-tteokgalbi-2kg",
-      "cat": "deal",
-      "hot": null,
-      "platform": "토스",
-      "pkey": "toss",
-      "tag": "간편식",
-      "title": "셰프초이스 육즙가득 도톰도톰 떡갈비 2kg",
-      "highlight": "13,900원",
-      "highlightSub": "정가 25,900원 → 46% · 100g당 695원 · 무료배송",
-      "deadline": "2026-11-26",
-      "deadlineText": "오늘 23:59 마감",
-      "meta": [
-        "도톰하게 성형된 떡갈비 2kg 대용량 · 셰프초이스 공식",
-        "떡갈비 1위 · 평점 4.8(리뷰 3,791) · 베스트판매자",
-        "무료배송 · 내일 도착(늦으면 보상)"
-      ],
-      "note": "11/26 18:41 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 하루특가로 오늘 23:59까지 · 가격은 언제든 바뀔 수 있어요",
-      "image": "assets/thumbs/deal-toss-chefchoice-tteokgalbi-2kg.webp",
-      "url": "https://toss.shopping/_m/bey41cO6",
       "cta": "토스쇼핑에서 보기",
       "verifiedAt": "2026-11-26"
     },
@@ -3762,28 +3739,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-24"
     },
     {
-      "id": "exp-tqueens-italico-coffee",
-      "cat": "exp",
-      "hot": null,
-      "platform": "택배의여왕",
-      "pkey": "etc",
-      "tag": "가전·디지털",
-      "title": "[이탈리코] 캡슐커피머신 + 캡슐커피 (180,000원 상당)",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 신청 365명",
-      "deadline": "2026-11-26",
-      "deadlineText": null,
-      "meta": [
-        "택배의여왕 배송형",
-        "블로그 리뷰(영상 1개·사진 15장)",
-        "발표 11/27 · 리뷰 11/28~12/12"
-      ],
-      "note": "11/24 확인 · 신청 완료한 캠페인이에요. 배송비도 0원이고 발표는 11/27입니다.",
-      "url": "https://tqueens.net/taste/1647699",
-      "cta": "캠페인 보기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
       "id": "exp-tqueens-axive-pumpswing",
       "cat": "exp",
       "hot": null,
@@ -3916,72 +3871,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-24"
     },
     {
-      "id": "exp-tqueens-cashpapa-bathorganizer",
-      "cat": "exp",
-      "hot": null,
-      "platform": "택배의여왕",
-      "pkey": "etc",
-      "tag": "생활용품",
-      "title": "[캐쉬파파] 수납온 욕실 정리함 10개",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 신청 305명",
-      "deadline": "2026-11-26",
-      "deadlineText": null,
-      "meta": [
-        "택배의여왕 배송형",
-        "블로그 리뷰(영상 1개)",
-        "발표 11/27 · 리뷰 11/28~12/12"
-      ],
-      "note": "11/24 확인 · 신청 완료. 욕실 정리함 10개를 한 번에 받아 다용도로 쓰는 리뷰 캠페인이에요.",
-      "url": "https://tqueens.net/taste/1661478",
-      "cta": "캠페인 보기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
-      "id": "exp-tqueens-yunjam-neckpillow",
-      "cat": "exp",
-      "hot": null,
-      "platform": "택배의여왕",
-      "pkey": "etc",
-      "tag": "침구",
-      "title": "[윤잠] 메모리폼 경추베개",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 신청 302명",
-      "deadline": "2026-11-26",
-      "deadlineText": null,
-      "meta": [
-        "택배의여왕 배송형",
-        "블로그 리뷰(영상 1개·사진 15장)",
-        "발표 11/27 · 리뷰 11/28~12/12"
-      ],
-      "note": "11/24 확인 · 신청 완료. 경추베개를 무료로 받아 수면·목 컨디션 후기를 쓰는 캠페인이에요.",
-      "url": "https://tqueens.net/taste/1661607",
-      "cta": "캠페인 보기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
-      "id": "exp-tqueens-mellow-hoodblanket",
-      "cat": "exp",
-      "hot": null,
-      "platform": "택배의여왕",
-      "pkey": "etc",
-      "tag": "생활용품",
-      "title": "[MELLOW] 플리스 후드 담요",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 신청 383명",
-      "deadline": "2026-11-26",
-      "deadlineText": null,
-      "meta": [
-        "택배의여왕 배송형",
-        "블로그 리뷰(영상 1개·사진 15장)",
-        "발표 11/27 · 리뷰 11/28~12/12"
-      ],
-      "note": "11/24 확인 · 신청 완료. 겨울철 집에서 입는 플리스 후드 담요로, 겨울 실내템 후기에 잘 맞아요.",
-      "url": "https://tqueens.net/taste/1661593",
-      "cta": "캠페인 보기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
       "id": "exp-tqueens-kozaat-home-pillowcover",
       "cat": "exp",
       "hot": null,
@@ -4000,72 +3889,6 @@ window.DEUKTEM_DATA = {
       ],
       "note": "11/24 확인 · 신청 완료. 신청자가 적어 당첨 확률이 높은 편이에요. 디자인은 랜덤 발송이에요.",
       "url": "https://tqueens.net/taste/1665512",
-      "cta": "캠페인 보기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
-      "id": "exp-rplace-orhom-flatiron",
-      "cat": "exp",
-      "hot": null,
-      "platform": "리뷰플레이스",
-      "pkey": "etc",
-      "tag": "가전·디지털",
-      "title": "[블로그] 오르홈 판고데기 PRO (딥블루)",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 신청 660명",
-      "deadline": "2026-11-26",
-      "deadlineText": null,
-      "meta": [
-        "리뷰플레이스 제품 캠페인",
-        "블로그 1,000자 + 사진 15장 + 영상 1개",
-        "발표 11/27"
-      ],
-      "note": "11/24 확인 · 신청 완료. 판고데기(미용실 고데기) 리뉴얼 제품으로 보관 파우치가 함께 와요.",
-      "url": "https://www.reviewplace.co.kr/pr/?id=322060",
-      "cta": "캠페인 보기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
-      "id": "exp-rplace-orhom-wireless-flatiron",
-      "cat": "exp",
-      "hot": null,
-      "platform": "리뷰플레이스",
-      "pkey": "etc",
-      "tag": "가전·디지털",
-      "title": "[블로그] 오르홈 무선 고데기 (화이트)",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 신청 1,024명",
-      "deadline": "2026-11-26",
-      "deadlineText": null,
-      "meta": [
-        "리뷰플레이스 제품 캠페인",
-        "블로그 1,000자 + 사진 15장 + 영상 1개",
-        "발표 11/27"
-      ],
-      "note": "11/24 확인 · 신청 완료. C타입 충전 무선 고데기로 여행·외출용으로 쓰는 후기 캠페인이에요.",
-      "url": "https://www.reviewplace.co.kr/pr/?id=322077",
-      "cta": "캠페인 보기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
-      "id": "exp-rplace-kupenheim-ricetank",
-      "cat": "exp",
-      "hot": null,
-      "platform": "리뷰플레이스",
-      "pkey": "etc",
-      "tag": "주방용품",
-      "title": "[블로그] 쿠펜하임 밀폐 스텐 쌀통 10kg(12L)",
-      "highlight": "0원 배송형",
-      "highlightSub": "모집 10명 · 신청 1,264명",
-      "deadline": "2026-11-26",
-      "deadlineText": null,
-      "meta": [
-        "리뷰플레이스 제품 캠페인",
-        "블로그 1,000자 + 사진 15장 + 영상 1개",
-        "발표 11/27 · 리뷰 11/28~12/13"
-      ],
-      "note": "11/24 확인 · 신청 완료. 스테인리스 밀폐 쌀통으로 주방 수납 후기를 쓰는 캠페인이에요.",
-      "url": "https://www.reviewplace.co.kr/pr/?id=322250",
       "cta": "캠페인 보기",
       "verifiedAt": "2026-11-24"
     },
@@ -4247,6 +4070,52 @@ window.DEUKTEM_DATA = {
       "url": "https://form.naver.com/response/Cr4JxOzkF12",
       "cta": "투표하러 가기",
       "verifiedAt": "2026-11-26"
+    },
+    {
+      "id": "deal-coupang-snack24-gift-set-22p",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "선물세트",
+      "title": "스낵24 인기과자 종합과자선물세트 라이트 22P (1세트)",
+      "highlight": "20,900원",
+      "highlightSub": "정가 29,900원 → 30%",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "과자 22종",
+        "낱개 포장",
+        "크리스마스 선물세트"
+      ],
+      "note": "11/27 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-snack24-gift-set-22p.webp",
+      "url": "https://link.coupang.com/a/i0jMRnHlbU",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "id": "deal-coupang-cocodor-xmas-diffuser-200ml",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "선물세트",
+      "title": "코코도르 크리스마스 디퓨저 조이풀트리 200ml",
+      "highlight": "8,010원",
+      "highlightSub": "정가 15,900원 → 49%",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "200ml",
+        "우디 호텔 향",
+        "크리스마스 패키지"
+      ],
+      "note": "11/27 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-cocodor-xmas-diffuser-200ml.webp",
+      "url": "https://link.coupang.com/a/i0jOvw9Nu0",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-27"
     }
   ]
 };
