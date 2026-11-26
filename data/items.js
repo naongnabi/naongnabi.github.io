@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-26T18:45:00+09:00",
+  "updatedAt": "2026-11-26T23:40:00+09:00",
   "items": [
+    {
+      "id": "deal-ali-clothes-dryer-1600w",
+      "cat": "deal",
+      "hot": null,
+      "platform": "알리",
+      "pkey": "ali",
+      "tag": "생활가전",
+      "title": "접이식 전기 의류건조기 1600W (3단·타이머·자동 건조)",
+      "highlight": "69,523원",
+      "highlightSub": "정가 145,958원 → 76,435원 인하 · 무료배송 · 12/2~7 도착 예정",
+      "deadline": "2026-12-03",
+      "deadlineText": "12/3 23:59 슈퍼프라이데이 종료",
+      "meta": [
+        "1600W · 3단 수납 · 타이머 · 접이식이라 안 쓸 때 접어서 보관",
+        "평점 5.0(리뷰 11) · 82개 판매 · KASYDoFF 공식 스토어(긍정 97.6%)",
+        "플러그 EU(둥근 2핀) 선택 · 상품명에 전압 표기 없음"
+      ],
+      "note": "11/26 23:15 확인 · 알리익스프레스 어필리에이트(직접 링크 7%) · 전기 제품이라 주문 전 판매자에게 220V·KC 인증 확인 권장 · 1인 1개 최저가 · 가격 변동 잦음",
+      "image": "assets/thumbs/deal-ali-clothes-dryer-1600w.webp",
+      "url": "https://s.click.aliexpress.com/e/_c36xiZgd",
+      "cta": "알리에서 보기",
+      "verifiedAt": "2026-11-26"
+    },
+    {
+      "id": "deal-ali-shoe-dryer-tinsol",
+      "cat": "deal",
+      "hot": null,
+      "platform": "알리",
+      "pkey": "ali",
+      "tag": "생활가전",
+      "title": "TINSOL 접이식 신발 건조기 130W (터치스크린·살균·타이머)",
+      "highlight": "9,300원",
+      "highlightSub": "정가 19,669원 → 10,369원 차이 · 무료배송 · 12/2~7 도착 예정",
+      "deadline": "2026-12-03",
+      "deadlineText": "12/3 23:59 슈퍼프라이데이 종료",
+      "meta": [
+        "130W · 220V · 플러그 KR/EU 선택 · 접이식",
+        "평점 4.4(리뷰 474) · 4,000개 이상 판매 · 1인 최대 20개",
+        "KC 인증정보는 판매자가 제공하지 않음"
+      ],
+      "note": "11/26 23:25 확인 · 알리익스프레스 어필리에이트(7%) · 판매자 Orange Fruit Store(긍정 87.2%) · KR 플러그를 골라도 EU 플러그가 올 수 있다는 후기가 있어요",
+      "image": "assets/thumbs/deal-ali-shoe-dryer-tinsol.webp",
+      "url": "https://s.click.aliexpress.com/e/_c3HzVR9R",
+      "cta": "알리에서 보기",
+      "verifiedAt": "2026-11-26"
+    },
     {
       "id": "deal-toss-hongariibi-5kg",
       "cat": "deal",
