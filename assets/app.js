@@ -367,13 +367,14 @@
     if (rest) ad.insertAdjacentHTML("afterend", rest);
   }
 
-  /* ───────── 자체 콘텐츠(가이드 미리 읽기·FAQ·이용 안내) 노출 ─────────
+  /* ───────── 자체 콘텐츠(꿀팁 가이드 카드 줄·가이드 미리 읽기·FAQ·이용 안내) 노출 ─────────
      홈 '전체' 탭에서만 목록 위에 두어 사이트 안에서 읽을 거리를 먼저 보여 주고,
      카테고리 탭(특가·체험단·퀴즈·공모전·앱테크)에서는 카드 목록만 깔끔하게 보이도록
-     세 블록을 아예 숨깁니다. '전체'로 돌아오면 다시 보입니다.
-     탭별 페이지(/quiz/ 등)는 tools/build_tabs.py 가 이 세 블록을 HTML 에서 빼고 만들므로
+     네 블록을 아예 숨깁니다('전체'로 돌아오면 다시 보입니다).
+     · #guideStrip(가로 꿀팁 카드 줄)도 같은 규칙 — 2026-11-27 혜영 님 요청으로 카테고리 탭에서는 뺐습니다.
+     탭별 페이지(/quiz/ 등)는 tools/build_tabs.py 가 이 네 블록을 HTML 에서 빼고 만들므로
      여기서는 숨길 것도 없습니다. (홈 HTML 원문에는 남겨 크롤러·심사 로봇은 그대로 읽습니다) */
-  var guideBlocks = ["#guideRead", "#faq", "#siteGuide"]
+  var guideBlocks = ["#guideStrip", "#guideRead", "#faq", "#siteGuide"]
     .map(function (sel) { return $(sel); }).filter(Boolean);
 
   function placeGuideBlocks() {

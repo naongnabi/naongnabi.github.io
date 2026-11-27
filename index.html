@@ -210,6 +210,7 @@
       </div>
     </section>
 
+    <!--tabpage-cut--> <!-- ↓ 탭별 페이지(/quiz/ 등)에서는 tools/build_tabs.py 가 이 구역을 빼고 만듭니다 -->
     <!-- 📖 꿀팁 가이드 — 오늘도득템이 직접 쓴 자체 콘텐츠 (외부 이탈 없이 사이트 안에서 읽는 글)
          글 목록은 content/guide/*.md → tools/build_guide.py 가 /guide/ 에 만들고,
          여기 카드는 tools/prerender.py 가 그 글들로 자동으로 채웁니다. -->
@@ -244,7 +245,6 @@
 <a class="gcard" href="guide/christmas-gift-pick-checklist.html"><span class="gcard-emoji" aria-hidden="true">🎁</span><strong>크리스마스 선물, 2만원으로 실패 안 하는 체크 4</strong><span class="gcard-sum">쿠팡 &#39;크리스마스 선물&#39; 랭킹 1페이지 36개를 세어보니 30개(83%)가 2만원 이하였어요. 예산 안에서 실패를 줄이는 확인 순서를 정리했습니다.</span><span class="gcard-meta">쇼핑 · 약 2분</span></a><!--/prerender:guideStrip--></div>
     </section>
 
-    <!--tabpage-cut--> <!-- ↓ 탭별 페이지(/quiz/ 등)에서는 tools/build_tabs.py 가 이 구역을 빼고 만듭니다 -->
     <!-- 📖 가이드 미리 읽기 — 자체 콘텐츠 본문을 홈에서 바로 읽습니다(외부 이탈 없음).
          목록은 content/guide/*.md → tools/prerender.py 가 자동으로 채웁니다. -->
     <section class="gread" id="guideRead" aria-labelledby="guideReadTitle">
@@ -639,6 +639,37 @@
         <a href="https://www.threads.com/@naong_nabi" target="_blank" rel="noopener noreferrer">쓰레드</a>
         <a href="https://www.youtube.com/@naong_nabi_cat" target="_blank" rel="noopener noreferrer">유튜브</a>
       </div>
+      <!-- 📖 꿀팁 가이드 전체 바로가기 — 접어 두는 내부 링크 목록.
+           카테고리 페이지에서 가로 카드 줄(#guideStrip)을 빼면서 내부 링크 밀도가 떨어지지 않도록
+           푸터에서 가이드 23편 링크를 그대로 유지합니다(애드핏 '아웃 링크 위주' 재발 방지 ·
+           tools/validate.py 12번 검사). 목록은 tools/prerender.py 가 자동으로 채웁니다. -->
+      <details class="foot-guides" id="footGuides">
+        <summary>📖 꿀팁 가이드 전체 바로가기</summary>
+        <nav class="foot-guides-list" aria-label="꿀팁 가이드 전체"><!--prerender:guideFoot--><a href="guide/quiz-win-tips.html">🎯 경품 퀴즈 당첨 확률 높이는 실전 팁 7가지</a>
+<a href="guide/first-experience-campaign.html">🎁 무료 체험단 첫 선정 받는 법 — 블로그·인스타 기준 정리</a>
+<a href="guide/experience-campaign-mission.html">📸 체험단 선정 뒤 미션 체크리스트 — 사진·글자수·표기</a>
+<a href="guide/winter-heating-saving.html">🔥 겨울 난방비·전기요금 아끼는 5가지 생활 습관</a>
+<a href="guide/apptech-10min-routine.html">💸 앱테크 하루 10분 출석 루틴 짜는 법</a>
+<a href="guide/lowest-price-checklist.html">🛒 온라인 최저가·특가 비교 체크리스트 7단계</a>
+<a href="guide/coupon-stacking-order.html">🎟️ 쿠폰·포인트·카드할인 겹쳐 쓰는 순서</a>
+<a href="guide/year-end-tax-checklist.html">📋 연말정산, 12월 전에 챙길 공제 항목</a>
+<a href="guide/health-insurance-refund.html">🏥 건강보험 본인부담금·환급금 찾아가는 방법</a>
+<a href="guide/electricity-bill-reading.html">⚡ 전기요금 고지서 읽는 법 — 누진구간과 기본요금</a>
+<a href="guide/contest-entry-checklist.html">🏆 공모전 응모 전 확인할 다섯 가지</a>
+<a href="guide/gift-card-buying-tips.html">🎫 상품권·기프티콘 할인 구매할 때 확인할 것</a>
+<a href="guide/cat-winter-care.html">🐱 겨울철 반려묘 건강 관리 체크리스트</a>
+<a href="guide/delivery-claim-guide.html">📦 택배 파손·오배송·분실 대응 순서</a>
+<a href="guide/black-friday-deal-check.html">🛍️ 블랙프라이데이·연말 세일에서 안 속고 사는 5단계</a>
+<a href="guide/flu-season-checklist.html">🤒 독감 유행철, 집에서 확인할 것 5가지</a>
+<a href="guide/mvno-plan-compare.html">📶 알뜰폰 요금제 고르는 법 — 비교 항목과 번호이동 체크리스트</a>
+<a href="guide/indemnity-insurance-claim.html">🏥 실손보험 비급여 청구, 막히지 않고 받는 순서</a>
+<a href="guide/card-cashback-local-currency.html">💳 카드 캐시백·지역화폐, 새는 돈 막고 챙기는 순서</a>
+<a href="guide/subscription-cleanup.html">🔁 구독 서비스 정리 — 자동결제 찾아내고 해지하는 순서</a>
+<a href="guide/used-market-safety.html">🤝 중고거래 안전결제 — 사기 패턴과 거래 전 확인 순서</a>
+<a href="guide/humidifier-winter-care.html">💧 겨울 가습기, 물만 갈아도 미생물 87% 줄어요</a>
+<a href="guide/christmas-gift-pick-checklist.html">🎁 크리스마스 선물, 2만원으로 실패 안 하는 체크 4</a><!--/prerender:guideFoot--></nav>
+      </details>
+
       <p class="foot-disc">일부 링크는 쿠팡 파트너스·네이버 쇼핑 커넥트·토스 쉐어링크·알리익스프레스 어필리에이트 제휴 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다. 가격·마감일·경품은 각 사이트 사정에 따라 바뀔 수 있으니 신청 전에 꼭 확인해 주세요.</p>
       <p class="foot-meta"><span id="updatedAt">마지막 확인 2026.11.27</span></p>
     </footer>
