@@ -8,8 +8,31 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-27T20:10:00+09:00",
+  "updatedAt": "2026-11-27T22:50:00+09:00",
   "items": [
+    {
+      "id": "deal-coupang-komet-micofiber-duvet",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "침구",
+      "title": "코멧 홈 양면 극세사 솔리드 차렵이불 (슈퍼싱글 150×200cm)",
+      "highlight": "19,990원",
+      "highlightSub": "정가 47,800원 → 58% · 무료배송·무료반품",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "겨울용 양면 극세사 차렵이불 1장 · 150×200cm(슈퍼싱글)",
+        "상품평 6,153개 · 한 달간 1,000명 이상 구매",
+        "폴리에스터 100% · 핑크·블루·차콜그레이, 퀸(4kg)까지 선택"
+      ],
+      "note": "11/27 22:45 확인 · 쿠팡 파트너스 링크 · 내일(11/28) 도착 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-komet-micofiber-duvet.webp",
+      "url": "https://link.coupang.com/a/i1r3WYqPgi",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-27"
+    },
     {
       "id": "deal-coupang-komet-hotpack-150g-30",
       "cat": "deal",
