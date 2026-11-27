@@ -463,6 +463,16 @@ h1,h2,h3,p{margin:0}
    광고가 채워지면 가운데, 비어 있으면 라벨만 남습니다. */
 .adslot--adfit{display:flex;flex-direction:column;align-items:center;margin:4px 16px}
 .adslot--adfit .adslot-head{align-self:flex-start}
+/* 카테고리 화면(홈의 카테고리 탭 · 탭 페이지)에서만 중간 광고를 목록 뒤로 —
+   꿀팁 카드 줄·가이드를 숨기면 상단 320×100 배너 바로 아래에 300×250 광고가 붙어
+   첫 카드보다 광고가 먼저 보입니다. 애드핏 <ins> 는 DOM 그대로 두고 CSS order 만 씁니다
+   (광고 스크립트가 채운 iframe 을 DOM 에서 옮기면 다시 불러 비어 버립니다). */
+.main.is-cat{display:flex;flex-direction:column}
+.main.is-cat > *{order:10}
+.main.is-cat > #adfitSquare{order:20}
+.main.is-cat > #adfitBottom{order:30}
+.main.is-cat > .foot{order:40}
+
 .adslot-adfit{width:100%;display:flex;justify-content:center;overflow:hidden}
 .adslot-adfit .kakao_ad_area{max-width:100%}
 

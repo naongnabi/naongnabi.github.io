@@ -381,6 +381,12 @@
     if (!guideBlocks.length) return;
     var show = state.tab === "all";
     guideBlocks.forEach(function (el) { el.hidden = !show; });
+    /* 카테고리 화면('전체'가 아닐 때): 위 블록들이 숨으면 상단 320×100 배너와
+       중간 300×250 광고가 나란히 붙어 첫 카드보다 광고가 먼저 보입니다.
+       그래서 중간 광고 자리를 CSS order 로 목록 뒤로 보냅니다(.main.is-cat).
+       애드핏 <ins> 는 DOM 에서 옮기지 않습니다 — 스크립트가 채운 iframe 이 다시 불러와 비어요. */
+    var main = $("#main");
+    if (main) main.classList.toggle("is-cat", !show);
   }
 
   /* ───────── 렌더 ───────── */
