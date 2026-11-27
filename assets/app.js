@@ -11,6 +11,7 @@
   /* 광고 상태 — render() 가 adCheck() 를 부르므로 먼저 선언해 둡니다 */
   var adState = { mode: "", t0: 0, offer: null };
   var FAV_KEY = "deuktem.favs";
+  var SORT_KEY = "deuktem.sort";
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
@@ -24,6 +25,14 @@
 
   /* ───────── 찜 (localStorage) ───────── */
   var favs = new Set(loadFavs());
+  /* 정렬 선택도 기억해 둡니다 — 카테고리를 옮겨도 같은 정렬로 보입니다 */
+  function loadSort() {
+    try { return localStorage.getItem(SORT_KEY) === "deadline" ? "deadline" : "new"; }
+    catch (e) { return "new"; }
+  }
+  function saveSort(v) {
+    try { localStorage.setItem(SORT_KEY, v); } catch (e) {}
+  }
   function loadFavs() {
     try {
       var arr = JSON.parse(localStorage.getItem(FAV_KEY) || "[]");
@@ -72,7 +81,8 @@
   var state = {
     tab: CAT[startTab] ? startTab : (TAB_PAGE || "all"),
     q: "",
-    onlyFav: false
+    onlyFav: false,
+    sort: loadSort()   /* new = 최신순(기본) · deadline = 마감임박순 */
   };
 
   /* 탭별 페이지(/quiz/ 등)는 한 단계 아래에 있어서 사진 같은 자료 경로에 "../" 를 붙입니다.
@@ -111,13 +121,27 @@
     return da - db;
   }
 
+  /* 기본 정렬 — 마지막으로 올린(확인한) 날이 최근인 것부터. 같은 날은 items.json 순서 그대로 */
+  function byNewest(a, b) {
+    var va = String(a.verifiedAt || ""), vb = String(b.verifiedAt || "");
+    if (va === vb) return 0;
+    return va < vb ? 1 : -1;
+  }
+  function sortFn() { return state.sort === "deadline" ? byUrgency : byNewest; }
+
+  /* 오늘·어제(한국 시간 기준) 올라온 항목 — 모든 카테고리 카드에 NEW 배지 */
+  function isNew(it) {
+    var d = dday(it.verifiedAt);
+    return d !== null && d <= 0 && d >= -1;
+  }
+
   function filtered() {
     var q = state.q.trim().toLowerCase();
     return live().filter(function (it) {
       if (state.onlyFav && !favs.has(it.id)) return false;
       if (state.tab !== "all" && it.cat !== state.tab) return false;
       return matchesQuery(it, q);
-    }).sort(byUrgency);
+    }).sort(sortFn());
   }
 
   /* ───────── 공통 조각 ───────── */
@@ -248,6 +272,7 @@
       '<article class="card card--' + esc(it.cat) + '" data-id="' + esc(it.id) + '">' +
         '<div class="card-top">' +
           '<span class="pbadge pb-' + esc(it.pkey || "gov") + '">' + esc(it.platform) + "</span>" +
+          (isNew(it) ? '<span class="new-badge">NEW</span>' : "") +
           (it.tag ? '<span class="tag">' + esc(it.tag) + "</span>" : "") +
           '<span class="spacer"></span>' + ddayBadge(it) +
         "</div>" +
@@ -474,6 +499,13 @@
     // 탭
     $$(".tab").forEach(function (b) {
       var on = b.getAttribute("data-tab") === state.tab;
+      b.classList.toggle("is-on", on);
+      b.setAttribute("aria-pressed", String(on));
+    });
+
+    // 정렬 칩
+    $$(".sort-chip").forEach(function (b) {
+      var on = b.getAttribute("data-sort") === state.sort;
       b.classList.toggle("is-on", on);
       b.setAttribute("aria-pressed", String(on));
     });
@@ -762,6 +794,16 @@
 
   $$(".tab").forEach(function (btn) {
     btn.addEventListener("click", function () { setTab(btn.getAttribute("data-tab")); });
+  });
+
+  $$(".sort-chip").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var m = btn.getAttribute("data-sort");
+      if (state.sort === m) return;
+      state.sort = m;
+      saveSort(m);
+      render();
+    });
   });
 
   $("#q").addEventListener("input", function (e) { state.q = e.target.value; render(); });

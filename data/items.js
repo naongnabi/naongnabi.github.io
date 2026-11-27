@@ -8,8 +8,31 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-27T12:55:00+09:00",
+  "updatedAt": "2026-11-27T20:10:00+09:00",
   "items": [
+    {
+      "id": "deal-coupang-komet-hotpack-150g-30",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활용품",
+      "title": "코멧 포켓형 손난로 핫팩 150g, 30개",
+      "highlight": "10,990원",
+      "highlightSub": "정가 14,990원 → 26% · 1개당 366원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "대용량 150g × 30개 · 1개당 366원",
+        "리뷰 1,573개 · 코멧(쿠팡 PB) 포켓형 손난로",
+        "겨울 외출·출퇴근·차량용으로 두고 쓰기 좋은 사이즈"
+      ],
+      "note": "11/27 20:00 확인 · 쿠팡 파트너스 링크 · 개별 포장이라 필요한 만큼만 꺼내 쓰면 돼요 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-komet-hotpack-150g-30.webp",
+      "url": "https://link.coupang.com/a/i1fkhop832",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-27"
+    },
     {
       "id": "deal-coupang-hankyung-steamer-hsi-d1601a1",
       "cat": "deal",
@@ -3676,20 +3699,20 @@ window.DEUKTEM_DATA = {
       "pkey": "coupang",
       "tag": "계절가전",
       "title": "홈플래닛 초음파 가습기 4L (RD210/화이트)",
-      "highlight": "23,900원",
-      "highlightSub": "정가 49,500원 → 51% · 무료배송",
+      "highlight": "22,490원",
+      "highlightSub": "정가 49,500원 → 54% · 4L·연속 16시간 · 무료배송",
       "deadline": null,
       "deadlineText": "가격 변동",
       "meta": [
-        "4L 대용량",
-        "초음파식",
-        "무드등·타이머"
+        "초음파식 4L · 연속가습 16시간 · 상부급수(위에서 붓는 방식)",
+        "리뷰 51,617개 · 한 달간 1만 명 이상 구매 · 내일(토) 도착",
+        "무드등·분무량 조절 · 리뷰 요약 \"소음 조용한 편 56%·세척 편리 59%\""
       ],
-      "note": "11/24 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "note": "11/27 19:40 확인 · 11/24 23,900원 → 22,490원으로 내려감 · 쿠팡 파트너스 링크 · 가격은 언제든 바뀔 수 있어요",
       "image": "assets/thumbs/deal-coupang-homeplanet-humidifier-4l.webp",
-      "url": "https://link.coupang.com/a/iVkWUN9DtQ",
+      "url": "https://link.coupang.com/a/i1eZhTG4ke",
       "cta": "쿠팡에서 보기",
-      "verifiedAt": "2026-11-24"
+      "verifiedAt": "2026-11-27"
     },
     {
       "id": "deal-coupang-ilwol-water-mat-single",

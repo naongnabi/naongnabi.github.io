@@ -191,14 +191,19 @@
     <!-- 카테고리 탭 (스크롤해도 상단 고정) -->
     <div class="tabbar">
       <nav class="tabs" id="tabs" aria-label="카테고리">
-        <button class="tab is-on" type="button" data-tab="all" aria-pressed="true">전체 <span class="tab-n" id="n-all">187</span></button>
-        <button class="tab" type="button" data-tab="deal" aria-pressed="false">🔥 오늘의 특가 <span class="tab-n" id="n-deal">93</span></button>
+        <button class="tab is-on" type="button" data-tab="all" aria-pressed="true">전체 <span class="tab-n" id="n-all">188</span></button>
+        <button class="tab" type="button" data-tab="deal" aria-pressed="false">🔥 오늘의 특가 <span class="tab-n" id="n-deal">94</span></button>
         <button class="tab" type="button" data-tab="exp" aria-pressed="false">🎁 무료 체험단 <span class="tab-n" id="n-exp">40</span></button>
         <button class="tab" type="button" data-tab="quiz" aria-pressed="false">🎯 경품 퀴즈 <span class="tab-n" id="n-quiz">25</span></button>
         <button class="tab" type="button" data-tab="contest" aria-pressed="false">🏆 공모전 <span class="tab-n" id="n-contest">16</span></button>
         <button class="tab" type="button" data-tab="apptech" aria-pressed="false">💸 앱테크 <span class="tab-n" id="n-apptech">13</span></button>
         <a class="tab-link" href="../guide/">📖 꿀팁 가이드</a>
       </nav>
+      <!-- 정렬 — 기본은 '최신' (마지막으로 올린 날 순), 원하면 '마감임박'으로 바로 전환 -->
+      <div class="sortbar" id="sortBar" role="group" aria-label="목록 정렬">
+        <button class="sort-chip is-on" type="button" data-sort="new" aria-pressed="true">최신순</button>
+        <button class="sort-chip" type="button" data-sort="deadline" aria-pressed="false">마감임박순</button>
+      </div>
     </div>
 
     <!-- 쿠팡 인플루언서 내 스토어 바로가기 (혜영 님 스토어 · 2026-11-23 추가) -->
@@ -295,7 +300,7 @@
         <strong id="todayDate">11월 27일 금요일</strong>
         <span>확인한 것만 올려요 · 매일 저녁 갱신</span>
       </div>
-      <p class="today-count"><span id="todayTotal">187</span>건 진행 중</p>
+      <p class="today-count"><span id="todayTotal">188</span>건 진행 중</p>
     </div>
 
     <div class="urgent-strip" id="urgentStrip">
