@@ -200,11 +200,38 @@
       "</button>";
   }
 
+  /* ───────── 핫 TOP — 어떤 6개를 보여 줄지 ─────────
+     items.json 의 수동 hot 번호에만 기대지 않고,
+     진행 중인 항목을 '마지막으로 확인한 날' 최신순으로 골라, 오늘 새 특가가 올라오면
+     다음 '새로고침' 없이도 자동으로 바뀝니다.
+     (수동 hot 번호는 같은 날 확인한 항목끼리의 순서로만 씁니다 — tools/prerender.py 와 같은 규칙) */
+  var HOT_N = 6;
+
+  function hotPick() {
+    var pool = live(), pick = [], used = {};
+    function byFresh(a, b) {
+      var va = String(a.verifiedAt || ""), vb = String(b.verifiedAt || "");
+      if (va !== vb) return va < vb ? 1 : -1;                 /* 최근 확인한 것 먼저 */
+      var ha = a.hot == null ? 99 : a.hot, hb = b.hot == null ? 99 : b.hot;
+      return ha - hb;                                          /* 같은 날이면 수동 순번 */
+    }
+    function take(list, cap) {
+      var top = Math.min(HOT_N, cap == null ? HOT_N : cap);
+      list.slice().sort(byFresh).forEach(function (it) {
+        if (pick.length < top && !used[it.id]) { used[it.id] = 1; pick.push(it); }
+      });
+    }
+    /* ① 오늘 마감하는 특가(급한 것) 2장까지 → ② 최근에 올린 특가로 채우고 → ③ 그래도 모자라면 다른 카테고리 */
+    take(pool.filter(function (it) { return it.cat === "deal" && dday(it.deadline) === 0; }), 2);
+    take(pool.filter(function (it) { return it.cat === "deal"; }));
+    take(pool);
+    return pick;
+  }
+
   function renderHot() {
     var block = $("#hotBlock");
     var show = state.tab === "all" && !state.q.trim() && !state.onlyFav;
-    var hot = show ? live().filter(function (it) { return it.hot != null; })
-      .sort(function (a, b) { return (a.hot || 99) - (b.hot || 99); }) : [];
+    var hot = show ? hotPick() : [];
     if (!hot.length) { block.hidden = true; return; }
     block.hidden = false;
     $("#hotTrack").innerHTML = hot.map(function (it, i) { return hotCard(it, i + 1); }).join("");
@@ -315,26 +342,19 @@
     if (rest) ad.insertAdjacentHTML("afterend", rest);
   }
 
-  /* ───────── 자체 콘텐츠(가이드 미리 읽기·FAQ·이용 안내) 위치 ─────────
-     홈 '전체'에서는 목록 위에 두어 사이트 안에서 읽을 거리를 먼저 보여 주고,
-     카테고리 탭·탭 페이지에서는 카드를 먼저 보여 주고 읽을 거리는 목록 아래로 내립니다.
-     (HTML 원문에는 두 곳 모두 들어 있어 크롤러·심사 로봇은 그대로 읽습니다) */
+  /* ───────── 자체 콘텐츠(가이드 미리 읽기·FAQ·이용 안내) 노출 ─────────
+     홈 '전체' 탭에서만 목록 위에 두어 사이트 안에서 읽을 거리를 먼저 보여 주고,
+     카테고리 탭(특가·체험단·퀴즈·공모전·앱테크)에서는 카드 목록만 깔끔하게 보이도록
+     세 블록을 아예 숨깁니다. '전체'로 돌아오면 다시 보입니다.
+     탭별 페이지(/quiz/ 등)는 tools/build_tabs.py 가 이 세 블록을 HTML 에서 빼고 만들므로
+     여기서는 숨길 것도 없습니다. (홈 HTML 원문에는 남겨 크롤러·심사 로봇은 그대로 읽습니다) */
   var guideBlocks = ["#guideRead", "#faq", "#siteGuide"]
     .map(function (sel) { return $(sel); }).filter(Boolean);
-  var todayStrip = $(".today-strip"), footEl = $(".foot");
 
   function placeGuideBlocks() {
     if (!guideBlocks.length) return;
-    var toTop = state.tab === "all";
-    guideBlocks.forEach(function (el) {
-      if (toTop) {
-        if (todayStrip && el.nextElementSibling !== todayStrip) {
-          todayStrip.parentNode.insertBefore(el, todayStrip);
-        }
-      } else if (footEl && el.nextElementSibling !== footEl) {
-        footEl.parentNode.insertBefore(el, footEl);
-      }
-    });
+    var show = state.tab === "all";
+    guideBlocks.forEach(function (el) { el.hidden = !show; });
   }
 
   /* ───────── 렌더 ───────── */
