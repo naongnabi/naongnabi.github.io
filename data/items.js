@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-27T22:50:00+09:00",
+  "updatedAt": "2026-11-28T07:00:54+09:00",
   "items": [
+    {
+      "id": "deal-coupang-comet-pipe-insulation-cover-25mm-5p",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "겨울살림",
+      "title": "코멧 동파방지 보온커버 25mm x 1m, 5개",
+      "highlight": "6,400원",
+      "highlightSub": "정가 12,800원 → 50%",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "25mm x 1m",
+        "5개입",
+        "배관 보온"
+      ],
+      "note": "11/28 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-comet-pipe-insulation-cover-25mm-5p.webp",
+      "url": "https://link.coupang.com/a/i11mSacgG4",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-28"
+    },
+    {
+      "id": "deal-coupang-adlife-pipe-cover-1m-5p",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "겨울살림",
+      "title": "애드라이프 동파 보온 커버 1M, 5개",
+      "highlight": "6,650원",
+      "highlightSub": "52% 할인",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "1M",
+        "5개입",
+        "동파방지"
+      ],
+      "note": "11/28 확인 · 쿠팡 판매가 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-adlife-pipe-cover-1m-5p.webp",
+      "url": "https://link.coupang.com/a/i11od3GvcG",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-28"
+    },
     {
       "id": "deal-coupang-komet-micofiber-duvet",
       "cat": "deal",
@@ -2349,28 +2395,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-18"
     },
     {
-      "id": "contest-seoul-shortform",
-      "cat": "contest",
-      "hot": null,
-      "platform": "서울특별시",
-      "pkey": "gov",
-      "tag": "숏폼 영상",
-      "title": "2026 내가 소개하는 서울 숏폼 공모전",
-      "highlight": "총 1,000만원",
-      "highlightSub": "대상 300만원 · 60초 영상",
-      "deadline": "2026-11-27",
-      "deadlineText": null,
-      "meta": [
-        "국내 거주 외국인도 가능",
-        "가로·세로 모두 OK",
-        "발표 12/14"
-      ],
-      "note": "11/18 확인 · 27일 17시 마감이라 주말에 폰으로 60초만 찍어 두면 됩니다. AI로 만든 영상도 되고 여러 편 내도 돼요.",
-      "url": "https://mediahub.seoul.go.kr/gongmo/2000791",
-      "cta": "서울시 공모전 안내 보기",
-      "verifiedAt": "2026-11-18"
-    },
-    {
       "id": "contest-nia-onewindow-idea",
       "cat": "contest",
       "hot": null,
@@ -2953,33 +2977,6 @@ window.DEUKTEM_DATA = {
       ]
     },
     {
-      "id": "quiz-jinahn-tsunami-ox",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "상품권",
-      "title": "지진안전 누리집 11월 OX 퀴즈 — 지진해일 행동요령",
-      "highlight": "모바일 상품권 5,000원 30명",
-      "highlightSub": "OX 3문항",
-      "deadline": "2026-11-27",
-      "deadlineText": null,
-      "meta": [
-        "행정안전부",
-        "구글폼 응모",
-        "발표 12/4"
-      ],
-      "note": "11/18 확인 · 3문항 모두 OX라 1분이면 끝나요. 해안가 조업 선박은 얕은 곳이 아니라 깊은 바다로 이동해야 해서 3번은 X입니다.",
-      "url": "https://www.xn--le5b23c9wbqa.com/communication/event.php?code=event02&idx=5364&page=1&ptype=view",
-      "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-18",
-      "answer": [
-        "1번 O — 해안에서 벗어나 높은 곳으로",
-        "2번 O — 특보 해제까지 안전한 곳에서 대기",
-        "3번 X — 선박은 수심이 깊은 먼 바다로"
-      ]
-    },
-    {
       "id": "quiz-nps-initial",
       "cat": "quiz",
       "hot": null,
@@ -3023,50 +3020,6 @@ window.DEUKTEM_DATA = {
       ],
       "note": "11/18 확인 · 가까운 숲에서 아쉬웠던 점을 '일상 맞춤형' 또는 '생활 속 융복합' 서비스 아이디어로 적어 온라인 설문폼에 내면 됩니다. 개인도 팀(5인 이하)도 됩니다.",
       "url": "https://www.wevity.com/?c=find&s=1&gbn=view&gp=1&ix=112363",
-      "cta": "공모 요강 보기",
-      "verifiedAt": "2026-11-18"
-    },
-    {
-      "id": "contest-kps-slogan",
-      "cat": "contest",
-      "hot": null,
-      "platform": "한전KPS",
-      "pkey": "gov",
-      "tag": "표어·슬로건",
-      "title": "한전KPS 정보보안·개인정보보호 대국민 표어 공모전",
-      "highlight": "최우수 10만원",
-      "highlightSub": "표어 한 줄 · 전 국민",
-      "deadline": "2026-11-27",
-      "deadlineText": null,
-      "meta": [
-        "제한 없음",
-        "정보보안·개인정보 표어",
-        "접수 11/16~11/27"
-      ],
-      "note": "11/18 확인 · 정보보안과 개인정보 보호를 담은 짧은 문구 한 줄이면 됩니다. 접수 방법은 공고문을 확인해 주세요.",
-      "url": "https://www.kps.co.kr/web/Board/47789/detailView.do?pageIndex=1&menu=2467",
-      "cta": "공모 요강 보기",
-      "verifiedAt": "2026-11-18"
-    },
-    {
-      "id": "contest-hwaseong-esg-idea",
-      "cat": "contest",
-      "hot": null,
-      "platform": "화성도시공사",
-      "pkey": "gov",
-      "tag": "아이디어",
-      "title": "2026년 ESG경영·경영혁신 시민 아이디어 공모전",
-      "highlight": "최우수 온누리상품권 60만원",
-      "highlightSub": "관심 있는 누구나",
-      "deadline": "2026-11-27",
-      "deadlineText": null,
-      "meta": [
-        "화성도시공사 업무 관련",
-        "ESG·경영혁신 아이디어",
-        "시상 3명"
-      ],
-      "note": "11/18 확인 · 화성도시공사의 ESG경영·경영혁신 아이디어를 제안하는 공모전이에요. 화성 시민이 아니어도 응모할 수 있습니다.",
-      "url": "https://www.wevity.com/?c=find&s=1&gbn=view&gp=1&ix=112337",
       "cta": "공모 요강 보기",
       "verifiedAt": "2026-11-18"
     },
@@ -3661,60 +3614,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-21"
     },
     {
-      "id": "quiz-jijinanjeon-nov2026",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "모바일상품권",
-      "title": "2026 지진안전 누리집 11월 퀴즈",
-      "highlight": "모바일 상품권 5,000원 30명",
-      "highlightSub": "OX 3문항 · 추첨 30명",
-      "answer": [
-        "1번 O — 해안에서 벗어나 멀리 높은 곳으로 대피",
-        "2번 O — 특보 해제까지 안전한 곳에서 대기",
-        "3번 X — 선박은 수심이 깊은 먼 바다로"
-      ],
-      "deadline": "2026-11-27",
-      "deadlineText": null,
-      "meta": [
-        "행정안전부 지진안전 누리집",
-        "발표 12/04 · 누리집 공지"
-      ],
-      "note": "11/23 응모 완료 · 구글폼 3문항 제출 · 경품은 국내에서만 사용 가능",
-      "url": "https://www.xn--le5b23c9wbqa.com/communication/event.php?code=event02&idx=5364&ptype=view",
-      "cta": "퀴즈 풀러 가기",
-      "verifiedAt": "2026-11-23"
-    },
-    {
-      "id": "quiz-goesan-disability-2026-3",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "편의점",
-      "title": "괴산군장애인복지관 제3차 장애인 고용캠페인 퀴즈",
-      "highlight": "CU 편의점 쿠폰 80명",
-      "highlightSub": "객관식 5문항 · 추첨 80명",
-      "answer": [
-        "1번 ② 일정 규모 이상 공공기관·민간기업의 장애인 고용 의무",
-        "2번 ④ ㄱ·ㄴ·ㄷ·ㄹ 모두 가능",
-        "3번 ② 4월 20일",
-        "4번 ② 1.1% 이상",
-        "5번 ③ 50인 미만이라고 면제되지는 않음"
-      ],
-      "deadline": "2026-11-27",
-      "deadlineText": null,
-      "meta": [
-        "괴산군장애인복지관",
-        "발표 12/01 · 쿠폰 12/04"
-      ],
-      "note": "11/23 확인 · 홍보물 QR로 네이버폼 접속(링크 따로 없음) · 정답은 홍보물 문제 기준",
-      "url": "https://www.goesan.go.kr/www/selectBbsNttView.do?bbsNo=190&key=135&nttNo=140526",
-      "cta": "이벤트 안내 보기",
-      "verifiedAt": "2026-11-23"
-    },
-    {
       "id": "deal-coupang-homeplanet-humidifier-4l",
       "cat": "deal",
       "hot": null,
@@ -3781,30 +3680,6 @@ window.DEUKTEM_DATA = {
       ],
       "note": "11/24 응모 완료 · 로그인 없이 네이버폼 15단계 · 이름·휴대폰만 입력 · 공공데이터 인식·수요 조사",
       "url": "https://form.naver.com/response/8iZIZqjRoVE",
-      "cta": "설문 참여하기",
-      "verifiedAt": "2026-11-24"
-    },
-    {
-      "id": "quiz-mafra-nuri-survey",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "상품권",
-      "title": "농식품정보누리 이용자 만족도 조사",
-      "highlight": "소정 경품 40명",
-      "highlightSub": "설문 참여형 · 추첨 40명",
-      "answer": [
-        "설문 참여형 (정답 없음)"
-      ],
-      "deadline": "2026-11-27",
-      "deadlineText": null,
-      "meta": [
-        "농림축산식품부 농식품정보누리",
-        "발표 개별 안내"
-      ],
-      "note": "11/24 확인 · 이전 회차에서 이미 참여한 설문으로 중복 응모 불가(폼에서 확인)",
-      "url": "https://form.naver.com/response/AJpHyznLro8",
       "cta": "설문 참여하기",
       "verifiedAt": "2026-11-24"
     },
@@ -4139,31 +4014,6 @@ window.DEUKTEM_DATA = {
       "verifiedAt": "2026-11-26"
     },
     {
-      "id": "quiz-daedeok-10news",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "치킨·외식",
-      "title": "2026년 대덕구 10대 뉴스 투표 이벤트",
-      "highlight": "치킨 2만원 80명",
-      "highlightSub": "뉴스 5개 고르기",
-      "answer": [
-        "설문 참여형 (정답 없음)"
-      ],
-      "deadline": "2026-11-27",
-      "deadlineText": null,
-      "meta": [
-        "대전광역시 대덕구",
-        "2026.11.16~11.28 00:00",
-        "발표 미정"
-      ],
-      "note": "11/26 응모 완료. 19개 후보 뉴스 중 5개를 골라 투표하면 돼요. 누구나 참여 가능.",
-      "url": "https://form.naver.com/response/Cr4JxOzkF12",
-      "cta": "투표하러 가기",
-      "verifiedAt": "2026-11-26"
-    },
-    {
       "id": "deal-coupang-snack24-gift-set-22p",
       "cat": "deal",
       "hot": null,
@@ -4317,31 +4167,6 @@ window.DEUKTEM_DATA = {
       "note": "11/27 확인 · 신청 완료. 터치·디밍·색온도 조절되는 무선 무드등이에요.",
       "url": "https://www.reviewnote.co.kr/campaigns/1551869",
       "cta": "캠페인 보기",
-      "verifiedAt": "2026-11-27"
-    },
-    {
-      "id": "quiz-haman-policy10",
-      "cat": "quiz",
-      "hot": null,
-      "platform": "공공",
-      "pkey": "gov",
-      "tag": "상품권",
-      "title": "2026 함안을 빛낸 「함안 으뜸 정책 10선」 온라인 설문",
-      "highlight": "함안사랑상품권 1만원 100명",
-      "highlightSub": "정책 15개 중 5개 선택",
-      "answer": [
-        "설문 참여형 (정답 없음)"
-      ],
-      "deadline": "2026-11-27",
-      "deadlineText": null,
-      "meta": [
-        "함안군",
-        "2026.11.16~11.27",
-        "발표 12/10"
-      ],
-      "note": "11/27 응모 완료. 관심 정책 5개를 고르고 경품 추첨 참여 '예'까지 선택해야 응모돼요.",
-      "url": "https://form.naver.com/response/LAdTkP9EClx",
-      "cta": "설문하러 가기",
       "verifiedAt": "2026-11-27"
     }
   ]
