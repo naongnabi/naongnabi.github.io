@@ -199,11 +199,6 @@
         <button class="tab" type="button" data-tab="apptech" aria-pressed="false">💸 앱테크 <span class="tab-n" id="n-apptech">13</span></button>
         <a class="tab-link" href="../guide/">📖 꿀팁 가이드</a>
       </nav>
-      <!-- 정렬 — 기본은 '최신' (마지막으로 올린 날 순), 원하면 '마감임박'으로 바로 전환 -->
-      <div class="sortbar" id="sortBar" role="group" aria-label="목록 정렬">
-        <button class="sort-chip is-on" type="button" data-sort="new" aria-pressed="true">최신순</button>
-        <button class="sort-chip" type="button" data-sort="deadline" aria-pressed="false">마감임박순</button>
-      </div>
     </div>
 
     <!-- 쿠팡 인플루언서 내 스토어 바로가기 (혜영 님 스토어 · 2026-11-23 추가) -->
@@ -306,6 +301,12 @@
     <div class="urgent-strip" id="urgentStrip">
       <span class="urgent-ic" aria-hidden="true">⏰</span>
       <p id="urgentText">오늘 마감 9건 · 3일 안에 51건 마감이에요. 놓치지 마세요!</p>
+    </div>
+
+    <!-- 정렬 — 기본은 '최신순'(마지막으로 올린 날 순), 원하면 '마감임박순'으로 바로 전환 -->
+    <div class="sortbar" id="sortBar" role="group" aria-label="목록 정렬">
+      <button class="sort-chip is-on" type="button" data-sort="new" aria-pressed="true">최신순</button>
+      <button class="sort-chip" type="button" data-sort="deadline" aria-pressed="false">마감임박순</button>
     </div>
 
     <!-- 목록 — 광고 자리(#adSlot)는 이 안에 고정으로 두고, 카드만 그 앞뒤로 다시 그립니다.
