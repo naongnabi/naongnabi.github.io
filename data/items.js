@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-27",
+  "updatedAt": "2026-11-27T12:55:00+09:00",
   "items": [
+    {
+      "id": "deal-coupang-hankyung-steamer-hsi-d1601a1",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활가전",
+      "title": "한경희생활과학 스탠드형 스팀다리미 HSI-D1601A1 (아이보리)",
+      "highlight": "99,000원",
+      "highlightSub": "정가 109,000원 → 9% · 무료배송·무료반품 · 내일(토) 11/28 도착",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "물통 2L · 2400W · 스팀 모드 10가지",
+        "다림판 수직·수평 조절",
+        "리뷰 1,580개 · 한 달간 200명 이상 구매"
+      ],
+      "note": "11/27 12:40 확인 · 쿠팡 파트너스 · 쓰고 나서 물통 비우고 뚜껑 열어 말리기 · 색상별 재고 차이 있음 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-hankyung-steamer.webp",
+      "url": "https://link.coupang.com/a/i0KC0jAvZs",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-27"
+    },
+    {
+      "id": "deal-naver-gatoblanco-cattower",
+      "cat": "deal",
+      "hot": null,
+      "platform": "네이버",
+      "pkey": "naver",
+      "tag": "반려동물",
+      "title": "가또블랑코 캣타워 아이언 캣폴 + 발판 3개 (원목·천장고정형)",
+      "highlight": "129,000원",
+      "highlightSub": "정가 218,000원 → 40% · 무료배송 · 오늘출발(평균 2일 내 도착)",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "알루미늄 아이언 기둥 · 자작나무 원목 발판 · 발판 하나당 20kg 지지",
+        "천장 260cm 이하 어디든 설치 · 세로 97cm 자리면 설치 가능",
+        "평점 4.85 · 리뷰 14,889개 · 4점 이상 98%"
+      ],
+      "note": "11/27 12:40 확인 · 네이버쇼핑 커넥트 · 개봉 후 반품 불가 · 제주·도서 배송비 10,000원 추가 · 설치 전 천장 높이 확인하세요",
+      "image": "assets/thumbs/deal-naver-gatoblanco-cattower.webp",
+      "url": "https://naver.me/xCjHOYPD",
+      "cta": "네이버에서 보기",
+      "verifiedAt": "2026-11-27"
+    },
     {
       "id": "deal-ali-clothes-dryer-1600w",
       "cat": "deal",
