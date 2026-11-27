@@ -6,8 +6,126 @@
   "threads": "https://www.threads.com/@naong_nabi",
   "youtube": "https://www.youtube.com/@naong_nabi_cat"
  },
- "updatedAt": "2026-11-28T07:00:54+09:00",
+ "updatedAt": "2026-11-28",
  "items": [
+  {
+   "id": "exp-revu-ellinelab-ems-massager",
+   "cat": "exp",
+   "hot": null,
+   "platform": "레뷰",
+   "pkey": "revu",
+   "tag": "가전·디지털",
+   "title": "[얼라인랩] 미니 EMS 마사지기 블랙버전",
+   "highlight": "0원 배송형",
+   "highlightSub": "모집 20명 · 신청 509명",
+   "deadline": "2026-11-29",
+   "deadlineText": null,
+   "meta": [
+    "레뷰 제품 캠페인",
+    "블로그 1,000자 + 사진 15장 + 영상 1개",
+    "발표 12/01 · 리뷰 12/02~12/09"
+   ],
+   "note": "11/28 확인 · 신청 완료. 목·어깨 승모근용 EMS 마사지기, 강도 조절되는 휴대형이에요.",
+   "url": "https://www.revu.net/campaign/1444404",
+   "cta": "캠페인 보기",
+   "verifiedAt": "2026-11-28"
+  },
+  {
+   "id": "exp-revu-muas-handdryer",
+   "cat": "exp",
+   "hot": null,
+   "platform": "레뷰",
+   "pkey": "revu",
+   "tag": "가전·디지털",
+   "title": "[무아스] 멀티 손 건조 헤어드라이기",
+   "highlight": "0원 배송형",
+   "highlightSub": "모집 10명 · 신청 579명",
+   "deadline": "2026-11-29",
+   "deadlineText": null,
+   "meta": [
+    "레뷰 제품 캠페인",
+    "블로그 1,000자 + 사진 15장 (영상 없음)",
+    "발표 12/01 · 리뷰 12/02~12/07"
+   ],
+   "note": "11/28 확인 · 신청 완료. 손 건조기 + 헤어드라이 2in1, 욕실 무타공 거치대 설치형이에요(긴급 체험단).",
+   "url": "https://www.revu.net/campaign/1445036",
+   "cta": "캠페인 보기",
+   "verifiedAt": "2026-11-28"
+  },
+  {
+   "id": "exp-tqueens-italico-coffee45",
+   "cat": "exp",
+   "hot": null,
+   "platform": "택배의여왕",
+   "pkey": "etc",
+   "tag": "가전·디지털",
+   "title": "[이탈리코] 캡슐커피머신+캡슐커피 45차 1차",
+   "highlight": "0원 배송형",
+   "highlightSub": "모집 10명 · 신청 25명",
+   "deadline": "2026-12-06",
+   "deadlineText": null,
+   "meta": [
+    "택배의여왕 체험단",
+    "블로그 800자 + 사진 15장 + 영상 1개",
+    "발표 12/07 · 리뷰 12/08~12/22"
+   ],
+   "note": "11/28 확인 · 신청 완료. 18만 원 상당 캡슐커피머신 + 캡슐 45개 구성, 경쟁률이 낮아요.",
+   "url": "https://tqueens.net/taste/1661071",
+   "cta": "캠페인 보기",
+   "verifiedAt": "2026-11-28"
+  },
+  {
+   "id": "quiz-kstamp-survey",
+   "cat": "quiz",
+   "hot": null,
+   "platform": "공공",
+   "pkey": "gov",
+   "tag": "커피·치킨",
+   "title": "2026년 한국우표포털 만족도 설문조사 이벤트",
+   "highlight": "치킨 교환권 15명 · 커피 40명",
+   "highlightSub": "설문 22문항 · 6분",
+   "answer": [
+    "설문 참여형 (정답 없음)"
+   ],
+   "deadline": "2026-12-08",
+   "deadlineText": null,
+   "meta": [
+    "한국우표포털(우정사업본부)",
+    "랜덤우표 50명 · 케이크 5명 · 치킨 15명 · 커피 40명",
+    "발표 12/10 · 주소 입력 필요"
+   ],
+   "note": "11/28 확인 · 응모 완료. 로그인 없이 네이버폼으로 참여, 개인정보 동의 후 이름·연락처·주소를 적어요.",
+   "url": "https://form.naver.com/response/GCp2zo64P7F",
+   "cta": "설문 참여하기",
+   "verifiedAt": "2026-11-28"
+  },
+  {
+   "id": "quiz-mogef-alba-quiz",
+   "cat": "quiz",
+   "hot": null,
+   "platform": "공공",
+   "pkey": "gov",
+   "tag": "커피·제과",
+   "title": "성평등가족부 11월 이벤트 · 청소년 알바 퀴즈",
+   "highlight": "커피&제과 1만원 10명 · 제과 5천원 80명",
+   "highlightSub": "3문항 · 정답 공개",
+   "answer": [
+    "퀴즈1 2008년 이후 출생자",
+    "퀴즈2 노래방",
+    "퀴즈3 X"
+   ],
+   "deadline": "2026-11-30",
+   "deadlineText": null,
+   "meta": [
+    "성평등가족부",
+    "정답자 중 90명 추첨",
+    "발표 12/04 · 휴대전화만 입력"
+   ],
+   "note": "11/28 확인. 1회만 참여 가능하고 제출 때 자동입력방지 6자리를 직접 입력해야 해요.",
+   "url": "https://www.mogef.go.kr/cp/ocp/cp_ocp_s001d.do",
+   "cta": "퀴즈 풀러 가기",
+   "verifiedAt": "2026-11-28"
+  },
   {
    "id": "deal-coupang-comet-pipe-insulation-cover-25mm-5p",
    "cat": "deal",
