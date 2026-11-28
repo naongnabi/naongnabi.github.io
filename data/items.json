@@ -6,8 +6,54 @@
   "threads": "https://www.threads.com/@naong_nabi",
   "youtube": "https://www.youtube.com/@naong_nabi_cat"
  },
- "updatedAt": "2026-11-28T18:42:00+09:00",
+ "updatedAt": "2026-11-28T22:50:00+09:00",
  "items": [
+  {
+   "id": "deal-coupang-vaseline-daily-moisture-hand-cream-500ml-2",
+   "cat": "deal",
+   "hot": null,
+   "platform": "쿠팡",
+   "pkey": "coupang",
+   "tag": "뷰티",
+   "title": "바세린 데일리 모이스처 핸드크림 500ml 2개 (펌프형 대용량)",
+   "highlight": "8,900원",
+   "highlightSub": "1개 8,250원 → 2개 8,900원(10ml당 89원) · 무료배송·무료반품 · 내일(일) 새벽 7시 전 도착",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "500ml 펌프형 2개 · 머스크/파우더향 · 모든 피부",
+    "상품평 3,866개 · 한 달간 1,000명 이상 구매",
+    "향 만족도 '아주 만족' 68% · 보습력 '아주 만족' 62%"
+   ],
+   "note": "11/28 22:45 확인 · 쿠팡 파트너스 · 설거지·손 씻은 뒤 건조할 때 쓰는 대용량 · 가격은 수시로 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-coupang-vaseline-daily-moisture-hand-cream-500ml-2.webp",
+   "url": "https://link.coupang.com/a/i26FoffFbE",
+   "cta": "쿠팡에서 보기",
+   "verifiedAt": "2026-11-28"
+  },
+  {
+   "id": "deal-coupang-gounbal-foot-cream-110g",
+   "cat": "deal",
+   "hot": null,
+   "platform": "쿠팡",
+   "pkey": "coupang",
+   "tag": "뷰티",
+   "title": "고운발 명품 크림 110g (발뒤꿈치 보습·각질 관리)",
+   "highlight": "5,690원",
+   "highlightSub": "정가 10,000원 → 43% · 10g당 517원 · 무료배송 · 12/1(화) 도착 예정",
+   "deadline": null,
+   "deadlineText": "가격 변동",
+   "meta": [
+    "110g 1개입 · 발 전체 보습용 크림",
+    "상품평 55,309개 · 한 달간 1만 명 이상 구매",
+    "판매자 바이코(구매평가 98%) · 한진택배 배송"
+   ],
+   "note": "11/28 22:50 확인 · 쿠팡 파트너스 · 로켓배송 아님(12/1 도착 예정) · 가격은 수시로 바뀔 수 있어요",
+   "image": "assets/thumbs/deal-coupang-gounbal-foot-cream-110g.webp",
+   "url": "https://link.coupang.com/a/i26I1iOFIO",
+   "cta": "쿠팡에서 보기",
+   "verifiedAt": "2026-11-28"
+  },
   {
    "id": "deal-toss-gogi-junky-lagalbi-1kg",
    "cat": "deal",
