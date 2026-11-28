@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-28",
+  "updatedAt": "2026-11-28T12:45:00+09:00",
   "items": [
+    {
+      "id": "deal-coupang-homeplanet-dehumidifier-12l",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활가전",
+      "title": "홈플래닛 저소음 드라이핏 제습기 12L 대용량 화이트 (FDD6-5184V4R2)",
+      "highlight": "119,990원",
+      "highlightSub": "정가 210,000원 → 42% · 무료배송·무료반품 · 내일(일) 11/29 도착",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "하루 12L 제습 · 소비전력 180W",
+        "에너지소비효율 3등급 · 상품평 484개",
+        "한 달간 200명 이상 구매 · 제습력 '정말 강력해요' 56%"
+      ],
+      "note": "11/28 12:40 확인 · 쿠팡 파트너스 · 원룸·방 하나 기준 후기가 대부분 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-homeplanet-dehumidifier-12l.webp",
+      "url": "https://link.coupang.com/a/i2prxGVFvg",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-28"
+    },
+    {
+      "id": "deal-coupang-comet-wide-moisture-absorber-250g-24",
+      "cat": "deal",
+      "hot": null,
+      "platform": "쿠팡",
+      "pkey": "coupang",
+      "tag": "생활용품",
+      "title": "코멧 와이드 습기제거제 250g, 24개 (흡습면 넓은 제습제)",
+      "highlight": "18,490원",
+      "highlightSub": "정가 35,600원 → 48% · 1개당 770원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "250g × 24개 · 1개당 770원",
+        "옷장·서랍·창틀·신발장에 두는 제습제",
+        "물이 고이면 갈아주는 방식"
+      ],
+      "note": "11/28 12:40 확인 · 쿠팡 파트너스 · 6개입(5,490원)보다 개당 145원 저렴 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-coupang-comet-wide-moisture-absorber-250g-24.webp",
+      "url": "https://link.coupang.com/a/i2pwyH2gRE",
+      "cta": "쿠팡에서 보기",
+      "verifiedAt": "2026-11-28"
+    },
     {
       "id": "exp-revu-ellinelab-ems-massager",
       "cat": "exp",
