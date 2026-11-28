@@ -8,8 +8,54 @@ window.DEUKTEM_DATA = {
     "threads": "https://www.threads.com/@naong_nabi",
     "youtube": "https://www.youtube.com/@naong_nabi_cat"
   },
-  "updatedAt": "2026-11-28T12:45:00+09:00",
+  "updatedAt": "2026-11-28T18:42:00+09:00",
   "items": [
+    {
+      "id": "deal-toss-gogi-junky-lagalbi-1kg",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "식품",
+      "title": "고기중독 양념 LA갈비 1kg 1팩",
+      "highlight": "16,240원",
+      "highlightSub": "정가 51,000원 → 68% · 100g당 1,624원 · 무료배송 · 내일(일) 도착",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "양념 LA갈비 1kg 1팩 · 굽기만 하면 되는 양념육",
+        "판매자 렛츠커넥트 공식 · 원산지는 상세페이지 참조",
+        "평점 4.5(리뷰 11,824) · 양념·가공육 6위 · 늦으면보상"
+      ],
+      "note": "11/28 18:36 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 선착순특가라 수량 차면 가격이 돌아갈 수 있어요 · 원산지·구성은 상세페이지 참조",
+      "image": "assets/thumbs/deal-toss-gogi-junky-lagalbi-1kg.webp",
+      "url": "https://toss.shopping/_m/BAeAoxgj",
+      "cta": "토스쇼핑에서 보기",
+      "verifiedAt": "2026-11-28"
+    },
+    {
+      "id": "deal-toss-seogwipo-tangerine-10kg",
+      "cat": "deal",
+      "hot": null,
+      "platform": "토스",
+      "pkey": "toss",
+      "tag": "식품",
+      "title": "서귀포 조생 감귤 최고15Brix 10kg 1박스",
+      "highlight": "11,800원",
+      "highlightSub": "정가 40,000원 → 70% · 100g당 118원 · 무료배송",
+      "deadline": null,
+      "deadlineText": "가격 변동",
+      "meta": [
+        "서귀포 조생 감귤 10kg 1박스 · 최고 15Brix",
+        "판매자 제주의맛 · 귤 2위 · 리뷰 1,512개",
+        "평점 4.3 · 토스 표시 최대할인가 기준"
+      ],
+      "note": "11/28 18:38 확인 · 토스쇼핑 쉐어링크(수수료 5%) · 산지 직송 상품이라 도착일은 상세페이지 기준 · 가격은 언제든 바뀔 수 있어요",
+      "image": "assets/thumbs/deal-toss-seogwipo-tangerine-10kg.webp",
+      "url": "https://toss.shopping/_m/vwRCdNAb",
+      "cta": "토스쇼핑에서 보기",
+      "verifiedAt": "2026-11-28"
+    },
     {
       "id": "deal-coupang-homeplanet-dehumidifier-12l",
       "cat": "deal",
